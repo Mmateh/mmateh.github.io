@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<!-- saved from url=(0057)https://www.site24x7.com/tools/ipv4-subnetcalculator.html -->
+<html lang="en">
+
+	<head>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+				
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="website icon" href="css/fix-photo/info_icon.jpg">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<script type="text/javascript"
+			src="./css/JavaScript/jquery.min-dc5e7f18c8.js"></script>
+
+		<script type="text/javascript"
+			src="./css/JavaScript/info"></script>
+		<script
+			type="text/javascript">let imagesUrl = '//img-wc.site24x7static.com/site24x7/client/6116540/images/';</script>
+		<script>var iamZuid = parseInt();
+			var page_uri = '\x2Ftools\x2Fipv4\x2Dsubnetcalculator.html';
+			var toolsV2 = true;
+			var languageCode = 'en';</script>
+		<script type="text/javascript"
+			src="./css/JavaScript/ipv4-subnet.js"></script>
+		<script type="text/javascript">var beanmsg = { "invalidemail": "???en.fb.valid.email???", "input_url": "Please enter a valid webpage url/domain", "empty_domain": "Please enter a  domain name", "invalid_accessKey": "Invalid Access Keyword", "valid_website": "Please specify a valid website to monitor", "domain_name": "Domain Name", "invalid_url": "Enter a valid url", "empty_accessKey": "Please Enter Access Keyword", "input_location": "Please Select the Location" };  //No I18N
+			$(document).ready(function () {
+				$('#tabs div').hide(); //No I18N
+				$('#tabs div:nth-child(3)').show(); //No I18N
+				$('#tabs ul li:nth-child(1)').removeClass('active'); //No I18N
+				$('#tabs ul li:nth-child(3)').removeClass('active'); //No I18N
+				$('#tabs ul li:nth-child(2)').addClass('active'); //No I18N
+				$('#tabs ul li a').click(function () {  //No I18N
+					$('#tabs ul li').removeClass('active'); //No I18N
+					$(this).parent().addClass('active');  //No I18N
+					var currentTab = $(this).attr('href');   //No I18N
+					$('#tabs div').hide(); //No I18N
+					$(currentTab).show();
+					return false;
+				});
+				calculateAndUpdateValues('initialize', 'design'); //No I18N
+				tableResize();
+				$('#id_request_div').show();
+				$('#id_response_div').hide();
+				$('.tabcontent').hide();
+				$('#view1').show();
+				$('#tab1').attr('checked', true);  //No I18N 
+			});
+			function tableResize() {
+				$('#newDiv').addClass('table-responsive');
+				$('#newtable').addClass('table mb-0');
+				$("#newtable").find('td').addClass('text-center');
+				$('.col-sm').css('overflow-wrap', 'anywhere');
+			}</script>
+
+		<title>Hálózatok</title>
+
+	</head>
+
+
+	<body class="text-dark" id="halozat">
+
+		<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <div class="collapse navbar-collapse container-fluid" >
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Főoldal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="fizika.html">Fizika</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="matek.html">Matek</a>
+                    </li>
+					<li class="nav-item">
+						<a class="nav-link disabled" href="#">Hálózat</a>
+					</li>
+					<li class="nav-item">
+                        <a class="nav-link" href="hálózatelmélet.html">Hálózat elmélet</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="python.html">Python</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="html.html">HTML</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+		<div class="bg-secondary container">
+
+            <br>
+            <br>
+            <br>
+
+			<h3>IP cím számoló</h3>
+			<div id="temp-body">
+				<section class="tools-hero-section">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="input-wrap">
+									<form action="javascript:void(0);">
+										<div class="multi-fields style-2">
+											<div class="form-group"><label>IP cím és maszk</label>
+												<input type="text"
+													onchange="calculateAndUpdateValues(&#39;setAddressBlock&#39;, &#39;design&#39;);tableResize();"
+													id="addressBlock" class="form-control" autocorrect="off"
+													autocapitalize="none">
+											</div>
+											<div class="form-group select-field"><label>Maszk</label>
+												<select class="form-control"
+													onchange="calculateAndUpdateValues(&#39;setSubnetMask&#39;, &#39;design&#39;);tableResize();"
+													id="subnetMask">
+													<option value="255.0.0.0">255.0.0.0/8</option>
+													<option value="255.128.0.0">255.128.0.0/9</option>
+													<option value="255.192.0.0">255.192.0.0/10</option>
+													<option value="255.224.0.0">255.224.0.0/11</option>
+													<option value="255.240.0.0">255.240.0.0/12</option>
+													<option value="255.248.0.0">255.248.0.0/13</option>
+													<option value="255.252.0.0">255.252.0.0/14</option>
+													<option value="255.254.0.0">255.254.0.0/15</option>
+													<option value="255.255.0.0">255.255.0.0/16</option>
+													<option value="255.255.128.0">255.255.128.0/17</option>
+													<option value="255.255.192.0">255.255.192.0/18</option>
+													<option value="255.255.224.0">255.255.224.0/19</option>
+													<option value="255.255.240.0">255.255.240.0/20</option>
+													<option value="255.255.248.0">255.255.248.0/21</option>
+													<option value="255.255.252.0">255.255.252.0/22</option>
+													<option value="255.255.254.0">255.255.254.0/23</option>
+													<option value="255.255.255.0">255.255.255.0/24</option>
+													<option value="255.255.255.128">255.255.255.128/25</option>
+													<option value="255.255.255.192">255.255.255.192/26</option>
+													<option value="255.255.255.224">255.255.255.224/27</option>
+													<option value="255.255.255.240">255.255.255.240/28</option>
+													<option value="255.255.255.248">255.255.255.248/29</option>
+													<option value="255.255.255.252">255.255.255.252/30</option>
+													<option value="255.255.255.254">255.255.255.254/31</option>
+													<option value="255.255.255.255">255.255.255.255/32</option>
+												</select>
+											</div>
+											<div class="form-group select-field"><label>Hostok száma</label>
+												<select class="form-control"
+													onchange="calculateAndUpdateValues(&#39;setNoOfHosts&#39;, &#39;design&#39;);tableResize();"
+													id="hostBits">
+													<option value="0">1</option>
+													<option value="1">2</option>
+													<option value="2">4</option>
+													<option value="3">8</option>
+													<option value="4">16</option>
+													<option value="5">32</option>
+													<option value="6">64</option>
+													<option value="7">128</option>
+													<option value="8">256</option>
+													<option value="9">512</option>
+													<option value="10">1024</option>
+													<option value="11">2048</option>
+													<option value="12">4096</option>
+													<option value="13">8192</option>
+													<option value="14">16384</option>
+													<option value="15">32768</option>
+													<option value="16">65536</option>
+													<option value="17">131072</option>
+													<option value="18">262144</option>
+													<option value="19">524288</option>
+													<option value="20">1048576</option>
+													<option value="21">2097152</option>
+													<option value="22">4194304</option>
+													<option value="23">8388608</option>
+													<option value="24">16777216</option>
+												</select>
+											</div>
+											<div class="form-group select-field min-field"><label>Alhálózatok száma</label>
+												<select class="form-control"
+													onchange="calculateAndUpdateValues(&#39;setNoOfSubnets&#39;, &#39;design&#39;);tableResize();"
+													id="subnetBits">
+													<option value="0">1</option>
+													<option value="1">2</option>
+													<option value="2">4</option>
+													<option value="3">8</option>
+													<option value="4">16</option>
+													<option value="5">32</option>
+													<option value="6">64</option>
+													<option value="7">128</option>
+													<option value="8">256</option>
+													<option value="9">512</option>
+													<option value="10">1024</option>
+													<option value="11">2048</option>
+													<option value="12">4096</option>
+													<option value="13">8192</option>
+													<option value="14">16384</option>
+													<option value="15">32768</option>
+													<option value="16">65536</option>
+													<option value="17">131072</option>
+													<option value="18">262144</option>
+													<option value="19">524288</option>
+													<option value="20">1048576</option>
+													<option value="21">2097152</option>
+													<option value="22">4194304</option>
+													<option value="23">8388608</option>
+													<option value="24">16777216</option>
+												</select>
+											</div>
+										</div>
+								<hr>								
+										<div class="multi-fields style-2">
+											<div class="form-group"><label>Hálózat</label>
+												<input type="text" class="form-control" readonly="" id="cidrNotation_in"
+													autocorrect="off" autocapitalize="none">
+											</div>
+											<div class="form-group"><label>Első és utolsó cím</label>
+												<input type="text" class="form-control" readonly="" id="addressRange_cidr_in"
+													autocorrect="off" autocapitalize="none">
+											</div>
+											<div class="form-group"><label>Szórási cím</label>
+												<input type="text" class="form-control" readonly="" id="broadcast_cidr_in"
+													autocorrect="off" autocapitalize="none">
+											</div>
+											<div class="form-group min-field"><label>Wildcard Mask</label>
+												<input type="text" class="form-control" readonly="" id="wildcard_cidr_in"
+													autocorrect="off" autocapitalize="none">
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="com-section pb-0 " id="SubnetDetailsDiv" style="display: block;">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12">
+								<h3>Alhálózatok</h3>
+								<div class="table-responsive">
+									<div id="tableDiv" style="display: block;">
+										<div id="newDiv" class="table-responsive">
+											<table id="newtable" class="table table-bordered table-stripped mb-0">
+												<tbody>
+													<tr class="sticky-header">
+														<td class="bg-banner-solid--blue text-center">Subnet ID</td>
+														<td class="bg-banner-solid--blue text-center">Subnet Address</td>
+														<td class="bg-banner-solid--blue text-center">Host Address Range</td>
+														<td class="bg-banner-solid--blue text-center">Broadcast Address</td>
+													</tr>
+													<tr>
+														<td class="dynamicTableCell text-center">1</td>
+														<td class="dynamicTableCell text-center">10.0.0.0</td>
+														<td class="dynamicTableCell text-center">10.0.0.1 - 10.255.255.254</td>
+														<td class="dynamicTableCell text-center">10.255.255.255</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<br>
+
+				<h3>Hálózat parancsok</h3>
+					
+					<h5>(config)#:</h5>
+
+					<h6>Elnevezés:</h6>
+						<ul>
+							<li>hostname {név}</li>
+						</ul>
+
+					<h6>Jelszavak:</h6>
+					-belépési jelszó
+						<ul>
+							<li>enable password {jelszó} </li>
+						</ul>
+					-telnet vonal jelszó
+						<ul>
+							<li>line vty 0 15</li>
+							<li>password {jelszó}</li>
+							<li>login</li>
+						</ul>
+					-konzol vonal jelszó
+						<ul>
+							<li>line console 0</li>
+							<li>password {jelszó}</li>
+							<li>login</li>
+						</ul>
+					-titkosítás
+						<ul>
+							<li>enable secret {jelszó}</li>
+							<li>service password-encryption</li>
+						</ul>
+
+					<h6>Üdvözlő szöveg:</h6>
+						<ul>
+							<li>banner motd "{szöveg}"</li>
+						</ul>
+
+					<h6>Router:</h6>
+					-static
+						<ul>
+							<li>interface {interface neve}</li>
+							<li>ip address {IP cím} {maszk}</li>
+							<li>no shutdown</li>
+							<li>description {leírás}</li>
+						</ul>
+					-dhcp
+						<ul>
+							<li>ip dhcp pool {elnevezés}</li>
+							<li>network {IP cím} {maszk}</li>
+							<li>default-router {IP cím}</li>
+							<li>exit</li>
+							<li>ip dhcp excluded-address {kezdő IP} {vég IP}</li>
+						</ul>
+					-forgalomirányítás
+						<ul>
+							<li>ip route {nem látott hálózat {IP} + {maszk}} {másik bemenő interface IP}</li>
+						</ul>
+					!optimális
+						<ul>
+							<li>dns-server {IP cím}</li>
+						</ul>
+
+					<h6>Switch:</h6>
+					-static
+						<ul>
+							<li>interface vlan1</li>
+							<li>ip address {IP cím} {maszk}</li>
+							<li>no shutdown</li>
+							<li>exit</li>
+							<li>ip default-gateway {router IP cím}</li>
+						</ul>
+					-ssh
+						<ul>
+							<li>username {felhasználó név} privilege 15 password {jelszó}</li>
+							<li>hostname {elnevezés}</li>
+							<li>ip domain-name {név.com}</li>
+							<li>crypto key generate rsa</li>
+							<li>How many bits: 0-2048</li>
+							<li>ip ssh version {verzió szám}</li>
+							<li>line vty 0 15</li>
+							<li>transport input ssh</li>
+							<li>login local</li>
+						</ul>
+
+					<h6>PC:</h6>
+					-static
+						<ul>
+							<li>IP cím: {IP cím}</li>
+							<li>Maszk: {Maszk}</li>
+							<li>Default gateway: {Alapértelmezett átjáró IP címe}</li>
+						</ul>
+					-dhcp
+						<ul>
+							<li>Automatic</li>
+						</ul>
+
+					<h6>Server:</h6>
+					<p>A Servereken a SERVICES fülön lehet állítani.</p>
+					-WEB
+					<p>ㅤBe kell kapcsolni és lehet változtatni a tartalmát a weboldalnak.
+					<br>ㅤVagy URL vagy IP címmel lehet csatlakozni a PC "Web browser" alkalmazásával.
+					</p>
+
+					-DNS
+					<p>ㅤMeg kell adni a Name: {URL} és egy Address: {IP cím}, valamint bekapcsolni.</p>
+
+					-FTP
+					<p>ㅤAz FTP serveren meg kell adni a felhasználó nevét, jelszavát és jogosultságait.
+					<br>ㅤEgy gép consolejából kell az "ftp {URL/IP}" paranccsal csatlakozni majd bejelentkezni.
+						<ul>
+							<span class="underline">A parancsok:</span>
+							<li>dir: listázás</li>
+							<li>put: feltöltés</li>
+							<li>get: letöltés</li>
+							<li>delete: törlés</li>
+							<li>quit: kilépés</li>
+							<li>rename: átnevezés</li>
+						</ul>
+					</p>
+
+					-E-mail
+					<p>ㅤMeg kell adni a Domain nevét.
+					<br>ㅤEz után hozzá lehet adni felhasználóneveket jelszóval.
+					<br>ㅤA PC-n az "Email" alkalmazásban a "Configure mail" opciónál be kell állítani a
+					<ul>
+						<li>Your name: {neved}</li>
+						<li>Email address: {valami}@{domain név}</li>
+						<li>Incoming Mail Server: {URL/IP}</li>
+						<li>Outgoing Mail Server: {URL/IP}</li>
+						<li>User name: {felhasználónév}</li>
+						<li>Password: {jelszó}</li>
+					</ul>
+					ㅤHa kész akkor a PC "Email" alkalmazásába üzenetet lehet küldeni a {másik felhasználó}@{domain név} számára.
+					</p>
+
+					-DHCP
+					<p>A hálózat gépeihez automatikusan ad IP címet.</p>
+					<ul>
+						<li>Pool name: {dhcp neve}</li>
+						<li>Default Gateway: {router IP cím}</li>
+						<li>DNS Server: {dns IP címe}</li>
+						<li>Start IP Address: {IP cím}</li>
+						<li>Subnet Mask: {Maszk}</li>
+						<li>Maximum Number of Users: {Max. felhasználók száma}</li>
+					</ul>
+
+					<h6>Ellenőrzés kikerülése:</h6>
+						<ul>
+							<li>no ip domain-lookup</li>
+						</ul>
+
+					<h5>#</h5>
+
+					<h6>Mentés:</h6>
+						<ul>
+							<li>copy running-config startup-config</li>
+							<li>write</li>
+							<li>do write</li>
+						</ul>
+
+					<h6>Config:</h6>
+					-futó
+						<ul>
+							<li>show running-config</li>
+						</ul>
+					-mentett
+						<ul>
+							<li>show startup-config</li>
+						</ul>
+					-interfacek
+						<ul>
+							<li>show interfaces {interface neve}</li>
+						</ul>
+					-mac címtábla
+						<ul>
+							<li>show arp</li>
+							<li>show mac-address-table</li>
+						</ul>
+					-ip route
+						<ul>
+							<li>show ip route</li>
+						</ul>
+						ㅤㅤC: közvetlenül
+						<br>ㅤㅤS: statikus útvonal
+						<br>ㅤㅤO: ospf útvonal
+						<br>
+						<br>
+
+					<h6>Idő beállítás:</h6>
+						<ul>
+							<li>clock set {idő}</li>
+						</ul>
+
+		</div>
+
+	</body>
+
+</html>

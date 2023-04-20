@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="website icon" href="css/fix-photo/info_icon.jpg">
+        
+        <title>Tananyagok</title>
+
+    </head>
+
+
+    <body class="text-dark" id="python">
+
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <div class="collapse navbar-collapse container-fluid" >
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Főoldal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="fizika.html">Fizika</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="matek.html">Matek</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="hálózat.html">Hálózat</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="hálózatelmélet.html">Hálózat elmélet</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Python</a>
+                            <ul class="dropdown-menu dropdown-menu-dark scrollable-menu">
+                                <li>
+                                    <a class="dropdown-item" href="#vált">Változók</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#műv1">Műveletek 1/2</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#műv2">Műveletek 2/2</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#lista1">Lista műveletek 1/2</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#lista2">Lista műveletek 2/2</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#file">Fájl műveletek</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="html.html">HTML</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="bg-secondary container">
+
+            <br id="vált">
+            
+            <h3 class="felso">Változók</h3>
+                <p>    
+                    <p class="cim bg-dark mark text-secondary">#  Kiírás</p>
+                    <br>print("Ez az első anyag")
+                    <br>
+                    <br>
+                    <p class="cim bg-dark mark text-secondary">#  Az alap változó</p>
+                    <br>alap1 = 3
+                    <br>alap2 = "szöveg"
+                    <br>print(alap1)
+                    <br>print(alap2)
+                    <br>
+                    <br>
+                    <p class="cim bg-dark mark text-secondary">#  Lista változó</p>
+                    <br>lista = [2,7,"b","alma"]
+                    <br>print(lista)
+                    <br>
+                    <br>
+                    <p class="cim bg-dark mark text-secondary">#  Változó bekérése</p>
+                    <br>bekérés = input("Adj meg valamit: ")
+                    <br>print(bekérés)
+                    <br>
+                    <br>
+                    <p class="cim bg-dark mark text-secondary">#  Változó értékének megadása</p>
+                    <br>szám = int(2)
+                    <br>print(szám)
+                    <br>
+                    <br>tört = float(2.5)
+                    <br>print(tört)
+                    <br>
+                    <br>szöveg = str("szöveg")
+                    <br id="műv1">print(szöveg)
+                </p>
+
+            <h3 class="felso">Műveletek 1/2</h3>
+
+                <p>
+                    <p class="cim bg-dark mark text-secondary">#  Összeadás</p>
+                    <br>a = 4
+                    <br>print(a)
+                    <br>a += 2
+                    <br>print(a)
+                    <br>
+                    <br>
+                    <p class="cim bg-dark mark text-secondary">#  Kivonás</p>
+                    <br>b = 10
+                    <br>print(b)
+                    <br>b -= 3
+                    <br>print(b)
+                    <br>
+                    <br>
+                    <p class="cim bg-dark mark text-secondary">#  Szorzás</p>
+                    <br>c = 2*3
+                    <br>print(c)
+                    <br>
+                    <br>
+                    <p class="cim bg-dark mark text-secondary">#  Osztás</p>
+                    <br>d = 10/3
+                    <br>print(d)
+                    <br>
+                    <br>
+                    <p class="cim bg-dark mark text-secondary">#  Hányszor van meg benne</p>
+                    <br>e = int(10/3)
+                    <br>print(e)
+                    <br>
+                    <br>
+                    <p class="cim bg-dark mark text-secondary">#  Maradék</p>
+                    <br>f = 10%3
+                    <br>print(f)
+                    <br>
+                    <br>
+                    <p class="cim bg-dark mark text-secondary">#  Hatványozás</p>
+                    <br>g = 3**2
+                    <br>print(g)
+                    <br>
+                    <br>
+                    <p class="cim bg-dark mark text-secondary">#  Gyökvonás</p>
+                    <br>h = 9**(1/2)
+                    <br id="műv2">print(h)
+                </p>
+
+            <h3 class="felso">Műveletek 2/2</h3>
+                    
+                <p>
+                    <p class="cim bg-dark mark text-secondary">#  if művelet</p>
+                    <br>a = int(input("Add meg az a-t: "))
+                    <br>if a == 2:
+                    <br>ㅤㅤprint("Az a értéke 2")
+                    <br>else:
+                    <br>ㅤㅤprint("Az a értéke nem 2, hanem",a)
+                    <br>
+                    <br>
+                    <p class="cim bg-dark mark text-secondary">#  for művelet</p>
+                    <br> for resz in range(a):
+                    <br>ㅤㅤprint(resz)
+                    <br>
+                    <br>
+                    <p class="cim bg-dark mark text-secondary">#  while művelet</p>
+                    <br>c = 0
+                    <br>while c != a:
+                    <br>ㅤㅤprint("Nem egyenlő még!")
+                    <br>ㅤㅤc += 1
+                    <br>
+                    <br>
+                    <p class="cim bg-dark mark text-secondary">#  def művelet</p>
+                    <br>def próba():
+                    <br>ㅤㅤprint("Működik")
+                    <br>
+                    <br id="lista1">próba()
+                </p>
+
+            <h3 class="felso">Lista műveletek 1/2</h3>
+                
+                <p>
+                    <p class="cim bg-dark mark text-secondary">#  Lista kiírása</p>
+                    <br>szamok = [4,5,2,5,4,5,12,4,6]
+                    <br>print(szamok)
+                    <br>a = len(szamok)
+                    <br>for c in range(a):
+                    <br>ㅤㅤprint(szamok[c])
+                    <br>
+                    <br>
+                    <br>
+                    <p class="cim bg-dark mark text-secondary">#  Átírás</p>
+                    <br>szamok[3] = 111
+                    <br>print(szamok)
+                    <br>
+                    <br>
+                    <br>
+                    <p class="cim bg-dark mark text-secondary">#  Adatbeadás (For)</p>
+                    <br>n = int(input("Hány eleme legyen?: "))
+                    <br>szam = [0]*n
+                    <br>for i in range(n):
+                    <br>ㅤㅤszam[i] = input("Mi legyen a szám?: ")
+                    <br>print(szam)
+                    <br>
+                    <br>
+                    <br>
+                    <p class="cim bg-dark mark text-secondary">#  Adatbeadás (While)</p>
+                    <br>k = int(input("Hány eleme legyen?: "))
+                    <br>h = 0
+                    <br>sz = [0]*k
+                    <br> while h < k:
+                    <br>ㅤㅤsz[h] = input("Mi legyen a szám?: ")
+                    <br>ㅤㅤh += 1
+                    <br>print(sz)
+                    <br>
+                    <br>
+                    <br>
+                    <p class="cim bg-dark mark text-secondary">#  Lista bővítése</p>
+                    <br>s = [ ]
+                    <br>j = int(input("Mennyi adatot tegyünk be?: "))
+                    <br>for i in range(j):
+                    <br>ㅤㅤg = input("Kérek egy számot: ")
+                    <br>ㅤㅤs.append(g)
+                    <br>print(s)
+                    <br>
+                    <br>
+                    <br>
+                    <p class="cim bg-dark mark text-secondary">#  Lista bővítése ameddig nem nulla</p>
+                    <br>r = int(input("Kérek egy számot: "))
+                    <br>t = [ ]
+                    <br>while r != 0:
+                    <br>ㅤㅤt.append(r)
+                    <br>ㅤㅤr = int(input("Kérek egy számot: "))
+                    <br>print(t)
+                    <br>
+                    <br>
+                    <br>
+                    <p class="cim bg-dark mark text-secondary">#  Lista bővítése ameddig a név nem "vége"</p>
+                    <br>aa = input("Kérek egy nevet: ")
+                    <br>nev = [ ]
+                    <br>suly = [ ]
+                    <br>while aa != "vége":
+                    <br>ㅤㅤnev.append(aa)
+                    <br>ㅤㅤbb = input("Kérem a súlyát: ")
+                    <br>ㅤㅤsuly.append(bb)
+                    <br id="lista2">ㅤㅤaa = input("Kérek egy nevet: ")
+                </p>
+
+            <h3 class="felso">Lista műveletek 2/2</h3>
+
+                <p>
+                    <br>neve = ["a","b","c"]
+                    <br>suly = [40,60,50]
+                    <br>
+                    <br>
+                    <br>
+                    <p class="cim bg-dark mark text-secondary">#  Hosszmérés  //len()</p>
+                    <br>print("__________________")
+                    <br>hossz = len(neve)
+                    <br>print(hossz,"a lista eleme.")
+                    <br>
+                    <br>
+                    <br>
+                    <p class="cim bg-dark mark text-secondary">#  Összegzés listában  //sum()</p>
+                    <br>print("__________________")
+                    <br>osszeg = sum(suly)
+                    <br>print(osszeg,"a súlyok összege.")
+                    <br>
+                    <br>
+                    <br>
+                    <p class="cim bg-dark mark text-secondary">#  Súlyok között a legnagyobb adat meghatározása  //max()</p>
+                    <br>print("__________________")
+                    <br>legnagyobb = max(suly)
+                    <br>print(legnagyobb,"a legnagyobb a súlyok között.")
+                    <br>
+                    <br>
+                    <br>
+                    <p class="cim bg-dark mark text-secondary">#  Súlyok között a legkissebb adat meghatározása  //min()</p>
+                    <br>print("__________________")
+                    <br>legkissebb = min(suly)
+                    <br>print(legkissebb,"a legkissebb a súlyok között.")
+                    <br>
+                    <br>
+                    <br>
+                    <p class="cim bg-dark mark text-secondary">#  Növekvő sorrendbe rendezni a listát  //.sort()</p>
+                    <br>print("__________________")
+                    <br>suly.sort()
+                    <br>print(suly)
+                    <br>
+                    <br>
+                    <br>
+                    <p class="cim bg-dark mark text-secondary">#  Csökkenő sorrendbe rendezni a listát  //.reverse()</p>
+                    <br>print("__________________")
+                    <br>suly.reverse()
+                    <br>print(suly)
+                    <br>
+                    <br>
+                    <br>
+                    <p class="cim bg-dark mark text-secondary">#  Egy adat eleme e a listának  //'adat' in 'lista'</p>
+                    <br>print("__________________")
+                    <br>h = int(input("Kérek egy számot: "))
+                    <br>c = h in suly
+                    <br>print("Benne van a listában?",c)
+                    <br>
+                    <br>hh = input("Kérek egy nevet: ")
+                    <br>cc = hh in neve
+                    <br>print("Benne van a listában?",cc)
+                    <br>
+                    <br>
+                    <br>
+                    <p class="cim bg-dark mark text-secondary">#  Elem törlése a listából  //.remove('hányadik elem')</p>
+                    <br>print("__________________")
+                    <br>print(suly)
+                    <br>aa = int(input("Melyik elemet törölje: "))
+                    <br>if aa in suly:
+                    <br>ㅤㅤsuly.remove(aa)
+                    <br>ㅤㅤprint(suly)
+                    <br>else:
+                    <br>ㅤㅤprint("Ilyen elem nincs")
+                    <br>
+                    <br>
+                    <br>
+                    <p class="cim bg-dark mark text-secondary">#  Törlés jobb megoldással  //del 'lista'</p>
+                    <br>keres = input("Kit akarunk törölni: ")
+                    <br>if keres in neve:
+                    <br>ㅤㅤhany = neve.index(keres)
+                    <br>ㅤㅤdel neve[hany]
+                    <br>ㅤㅤdel suly[hany]
+                    <br>else:
+                    <br>ㅤㅤprint("Nem eleme a listának")
+                    <br>print(neve)
+                    <br>print(suly)
+                    <br>
+                    <br>
+                    <br>
+                    <p class="cim bg-dark mark text-secondary">#  Elem keresés és hányadik ha benne van  //.index('keresett dolog')</p>
+                    <br>print("__________________")
+                    <br>kit = input("Kit keresünk: ")
+                    <br>if kit in neve:
+                    <br>ㅤㅤsor = neve.index(kit)
+                    <br>ㅤㅤprint("A listában a sora",sor)
+                    <br>ㅤㅤprint("Neve:",neve[sor],"    Súlya:",suly[sor])
+                    <br>else:
+                    <br id="file">ㅤㅤprint("Nem eleme a listának")
+                </p>
+
+            <h3 class="felso">Fájl műveletek</h3>
+
+                <p>
+                    <p class="cim bg-dark mark text-secondary">Fájl megnyitása</p>
+                    <br>file = open("teszt.txt","művelet",encoding="UTF-8")
+                    <h5>Művelet típusok</h5>
+                    <ul>
+                        <li>"r" - Beolvasás</li>
+                        <li>"a" - Bővítés</li>
+                        <li>"w" - Írás</li>
+                        <li>"x" - Létrehozás</li>
+                        <br>
+                        <li>"t" - Szövegtípus</li>
+                        <li>"b" - Számtípus</li>
+                    </ul>
+                    <p class="cim bg-dark mark text-secondary">Fájl szerkesztése</p>
+                    <br>file.write("példa")ㅤ-ㅤÍrás, Bővítés
+                    <br>print(file.read())ㅤ-ㅤMinden beolvasása
+                    <br>print(file.read(szám))ㅤ-ㅤAnnyi beolvasása amennyi a szám
+                    <br>print(file.readline())ㅤ-ㅤEgy sor beolvasása
+                    <br>print(file.readline())ㅤ-ㅤAnnyi sor beolvasása amennyi a szám
+                    <br>
+                    <br>
+                    <br>
+                    <p class="cim bg-dark mark text-secondary">Fájl bezárása</p>
+                    <br>file.close()
+                    <br>
+                    <br>
+                    <br>
+                    <p class="cim bg-dark mark text-secondary">Fájl törlése</p>
+                    <br>import os
+                    <br>os.remove("teszt.txt")
+                    <br>
+                    <br>
+                    <br>
+
+                </p>
+
+        </div>
+
+    </body>
+
+</html>
