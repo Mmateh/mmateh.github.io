@@ -82,6 +82,9 @@
 					<li class="nav-item">
                         <a class="nav-link" href="hálózatelmélet.html">Hálózat elmélet</a>
                     </li>
+					<li class="nav-item">
+						<a class="nav-link" href="git.html">Git</a>
+					</li>
                     <li class="nav-item">
                         <a class="nav-link" href="python.html">Python</a>
                     </li>
@@ -101,164 +104,143 @@
 			<h3>IP cím számoló</h3>
 			<div id="temp-body">
 				<section class="tools-hero-section">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-12">
-								<div class="input-wrap">
-									<form action="javascript:void(0);">
-										<div class="multi-fields style-2">
-											<div class="form-group"><label>IP cím és maszk</label>
-												<input type="text"
-													onchange="calculateAndUpdateValues(&#39;setAddressBlock&#39;, &#39;design&#39;);tableResize();"
-													id="addressBlock" class="form-control" autocorrect="off"
-													autocapitalize="none">
-											</div>
-											<div class="form-group select-field"><label>Maszk</label>
-												<select class="form-control"
-													onchange="calculateAndUpdateValues(&#39;setSubnetMask&#39;, &#39;design&#39;);tableResize();"
-													id="subnetMask">
-													<option value="255.0.0.0">255.0.0.0/8</option>
-													<option value="255.128.0.0">255.128.0.0/9</option>
-													<option value="255.192.0.0">255.192.0.0/10</option>
-													<option value="255.224.0.0">255.224.0.0/11</option>
-													<option value="255.240.0.0">255.240.0.0/12</option>
-													<option value="255.248.0.0">255.248.0.0/13</option>
-													<option value="255.252.0.0">255.252.0.0/14</option>
-													<option value="255.254.0.0">255.254.0.0/15</option>
-													<option value="255.255.0.0">255.255.0.0/16</option>
-													<option value="255.255.128.0">255.255.128.0/17</option>
-													<option value="255.255.192.0">255.255.192.0/18</option>
-													<option value="255.255.224.0">255.255.224.0/19</option>
-													<option value="255.255.240.0">255.255.240.0/20</option>
-													<option value="255.255.248.0">255.255.248.0/21</option>
-													<option value="255.255.252.0">255.255.252.0/22</option>
-													<option value="255.255.254.0">255.255.254.0/23</option>
-													<option value="255.255.255.0">255.255.255.0/24</option>
-													<option value="255.255.255.128">255.255.255.128/25</option>
-													<option value="255.255.255.192">255.255.255.192/26</option>
-													<option value="255.255.255.224">255.255.255.224/27</option>
-													<option value="255.255.255.240">255.255.255.240/28</option>
-													<option value="255.255.255.248">255.255.255.248/29</option>
-													<option value="255.255.255.252">255.255.255.252/30</option>
-													<option value="255.255.255.254">255.255.255.254/31</option>
-													<option value="255.255.255.255">255.255.255.255/32</option>
-												</select>
-											</div>
-											<div class="form-group select-field"><label>Hostok száma</label>
-												<select class="form-control"
-													onchange="calculateAndUpdateValues(&#39;setNoOfHosts&#39;, &#39;design&#39;);tableResize();"
-													id="hostBits">
-													<option value="0">1</option>
-													<option value="1">2</option>
-													<option value="2">4</option>
-													<option value="3">8</option>
-													<option value="4">16</option>
-													<option value="5">32</option>
-													<option value="6">64</option>
-													<option value="7">128</option>
-													<option value="8">256</option>
-													<option value="9">512</option>
-													<option value="10">1024</option>
-													<option value="11">2048</option>
-													<option value="12">4096</option>
-													<option value="13">8192</option>
-													<option value="14">16384</option>
-													<option value="15">32768</option>
-													<option value="16">65536</option>
-													<option value="17">131072</option>
-													<option value="18">262144</option>
-													<option value="19">524288</option>
-													<option value="20">1048576</option>
-													<option value="21">2097152</option>
-													<option value="22">4194304</option>
-													<option value="23">8388608</option>
-													<option value="24">16777216</option>
-												</select>
-											</div>
-											<div class="form-group select-field min-field"><label>Alhálózatok száma</label>
-												<select class="form-control"
-													onchange="calculateAndUpdateValues(&#39;setNoOfSubnets&#39;, &#39;design&#39;);tableResize();"
-													id="subnetBits">
-													<option value="0">1</option>
-													<option value="1">2</option>
-													<option value="2">4</option>
-													<option value="3">8</option>
-													<option value="4">16</option>
-													<option value="5">32</option>
-													<option value="6">64</option>
-													<option value="7">128</option>
-													<option value="8">256</option>
-													<option value="9">512</option>
-													<option value="10">1024</option>
-													<option value="11">2048</option>
-													<option value="12">4096</option>
-													<option value="13">8192</option>
-													<option value="14">16384</option>
-													<option value="15">32768</option>
-													<option value="16">65536</option>
-													<option value="17">131072</option>
-													<option value="18">262144</option>
-													<option value="19">524288</option>
-													<option value="20">1048576</option>
-													<option value="21">2097152</option>
-													<option value="22">4194304</option>
-													<option value="23">8388608</option>
-													<option value="24">16777216</option>
-												</select>
-											</div>
-										</div>
-								<hr>								
-										<div class="multi-fields style-2">
-											<div class="form-group"><label>Hálózat</label>
-												<input type="text" class="form-control" readonly="" id="cidrNotation_in"
-													autocorrect="off" autocapitalize="none">
-											</div>
-											<div class="form-group"><label>Első és utolsó cím</label>
-												<input type="text" class="form-control" readonly="" id="addressRange_cidr_in"
-													autocorrect="off" autocapitalize="none">
-											</div>
-											<div class="form-group"><label>Szórási cím</label>
-												<input type="text" class="form-control" readonly="" id="broadcast_cidr_in"
-													autocorrect="off" autocapitalize="none">
-											</div>
-											<div class="form-group min-field"><label>Wildcard Mask</label>
-												<input type="text" class="form-control" readonly="" id="wildcard_cidr_in"
-													autocorrect="off" autocapitalize="none">
-											</div>
-										</div>
-									</form>
-								</div>
+					<form action="javascript:void(0);">
+						<div class="multi-fields style-2">
+							<div class="form-group">
+								<label>IP cím és maszk</label>
+								<input type="text" onchange="calculateAndUpdateValues(&#39;setAddressBlock&#39;, &#39;design&#39;);tableResize();" id="addressBlock" class="form-control" autocorrect="off" autocapitalize="none">
+							</div>
+							<div class="form-group select-field">
+								<label>Maszk</label>
+								<select class="form-control" onchange="calculateAndUpdateValues(&#39;setSubnetMask&#39;, &#39;design&#39;);tableResize();" id="subnetMask">
+									<option value="255.0.0.0">255.0.0.0/8</option>
+									<option value="255.128.0.0">255.128.0.0/9</option>
+									<option value="255.192.0.0">255.192.0.0/10</option>
+									<option value="255.224.0.0">255.224.0.0/11</option>
+									<option value="255.240.0.0">255.240.0.0/12</option>
+									<option value="255.248.0.0">255.248.0.0/13</option>
+									<option value="255.252.0.0">255.252.0.0/14</option>
+									<option value="255.254.0.0">255.254.0.0/15</option>
+									<option value="255.255.0.0">255.255.0.0/16</option>
+									<option value="255.255.128.0">255.255.128.0/17</option>
+									<option value="255.255.192.0">255.255.192.0/18</option>
+									<option value="255.255.224.0">255.255.224.0/19</option>
+									<option value="255.255.240.0">255.255.240.0/20</option>
+									<option value="255.255.248.0">255.255.248.0/21</option>
+									<option value="255.255.252.0">255.255.252.0/22</option>
+									<option value="255.255.254.0">255.255.254.0/23</option>
+									<option value="255.255.255.0">255.255.255.0/24</option>
+									<option value="255.255.255.128">255.255.255.128/25</option>
+									<option value="255.255.255.192">255.255.255.192/26</option>
+									<option value="255.255.255.224">255.255.255.224/27</option>
+									<option value="255.255.255.240">255.255.255.240/28</option>
+									<option value="255.255.255.248">255.255.255.248/29</option>
+									<option value="255.255.255.252">255.255.255.252/30</option>
+									<option value="255.255.255.254">255.255.255.254/31</option>
+									<option value="255.255.255.255">255.255.255.255/32</option>
+								</select>
+							</div>
+							<div class="form-group select-field">
+								<label>Hostok száma</label>
+								<select class="form-control" onchange="calculateAndUpdateValues(&#39;setNoOfHosts&#39;, &#39;design&#39;);tableResize();" id="hostBits">
+									<option value="0">1</option>
+									<option value="1">2</option>
+									<option value="2">4</option>
+									<option value="3">8</option>
+									<option value="4">16</option>
+									<option value="5">32</option>
+									<option value="6">64</option>
+									<option value="7">128</option>
+									<option value="8">256</option>
+									<option value="9">512</option>
+									<option value="10">1024</option>
+									<option value="11">2048</option>
+									<option value="12">4096</option>
+									<option value="13">8192</option>
+									<option value="14">16384</option>
+									<option value="15">32768</option>
+									<option value="16">65536</option>
+									<option value="17">131072</option>
+									<option value="18">262144</option>
+									<option value="19">524288</option>
+									<option value="20">1048576</option>
+									<option value="21">2097152</option>
+									<option value="22">4194304</option>
+									<option value="23">8388608</option>
+									<option value="24">16777216</option>
+								</select>
+							</div>
+							<div class="form-group select-field min-field">
+								<label>Alhálózatok száma</label>
+								<select class="form-control" onchange="calculateAndUpdateValues(&#39;setNoOfSubnets&#39;, &#39;design&#39;);tableResize();" id="subnetBits">
+									<option value="0">1</option>
+									<option value="1">2</option>
+									<option value="2">4</option>
+									<option value="3">8</option>
+									<option value="4">16</option>
+									<option value="5">32</option>
+									<option value="6">64</option>
+									<option value="7">128</option>
+									<option value="8">256</option>
+									<option value="9">512</option>
+									<option value="10">1024</option>
+									<option value="11">2048</option>
+									<option value="12">4096</option>
+									<option value="13">8192</option>
+									<option value="14">16384</option>
+									<option value="15">32768</option>
+									<option value="16">65536</option>
+									<option value="17">131072</option>
+									<option value="18">262144</option>
+									<option value="19">524288</option>
+									<option value="20">1048576</option>
+									<option value="21">2097152</option>
+									<option value="22">4194304</option>
+									<option value="23">8388608</option>
+									<option value="24">16777216</option>
+								</select>
 							</div>
 						</div>
-					</div>
+						
+			<hr>								
+										
+						<div class="multi-fields style-2">
+							<div class="form-group"><label>Hálózat</label>
+								<input type="text" class="form-control" readonly="" id="cidrNotation_in" autocorrect="off" autocapitalize="none">
+							</div>
+							<div class="form-group"><label>Első és utolsó cím</label>
+								<input type="text" class="form-control" readonly="" id="addressRange_cidr_in" autocorrect="off" autocapitalize="none">
+							</div>
+							<div class="form-group"><label>Szórási cím</label>
+								<input type="text" class="form-control" readonly="" id="broadcast_cidr_in" autocorrect="off" autocapitalize="none">
+							</div>
+							<div class="form-group min-field"><label>Wildcard Mask</label>
+								<input type="text" class="form-control" readonly="" id="wildcard_cidr_in" autocorrect="off" autocapitalize="none">
+							</div>
+						</div>
+					</form>
 				</section>
 				<section class="com-section pb-0 " id="SubnetDetailsDiv" style="display: block;">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-12">
-								<h3>Alhálózatok</h3>
-								<div class="table-responsive">
-									<div id="tableDiv" style="display: block;">
-										<div id="newDiv" class="table-responsive">
-											<table id="newtable" class="table table-bordered table-stripped mb-0">
-												<tbody>
-													<tr class="sticky-header">
-														<td class="bg-banner-solid--blue text-center">Subnet ID</td>
-														<td class="bg-banner-solid--blue text-center">Subnet Address</td>
-														<td class="bg-banner-solid--blue text-center">Host Address Range</td>
-														<td class="bg-banner-solid--blue text-center">Broadcast Address</td>
-													</tr>
-													<tr>
-														<td class="dynamicTableCell text-center">1</td>
-														<td class="dynamicTableCell text-center">10.0.0.0</td>
-														<td class="dynamicTableCell text-center">10.0.0.1 - 10.255.255.254</td>
-														<td class="dynamicTableCell text-center">10.255.255.255</td>
-													</tr>
-												</tbody>
-											</table>
-										</div>
-									</div>
-								</div>
+					<h3>Alhálózatok</h3>
+					<div class="table-responsive" style="background-color: white; border-radius: 10px;">
+						<div id="tableDiv" style="display: block;">
+							<div id="newDiv" class="table-responsive">
+								<table id="newtable" class="table table-bordered table-stripped mb-0">
+									<tbody>
+										<tr class="sticky-header">
+											<td class="bg-banner-solid--blue text-center">Subnet ID</td>
+											<td class="bg-banner-solid--blue text-center">Subnet Address</td>
+											<td class="bg-banner-solid--blue text-center">Host Address Range</td>
+											<td class="bg-banner-solid--blue text-center">Broadcast Address</td>
+										</tr>
+										<tr>
+											<td class="dynamicTableCell text-center">1</td>
+											<td class="dynamicTableCell text-center">10.0.0.0</td>
+											<td class="dynamicTableCell text-center">10.0.0.1 - 10.255.255.254</td>
+											<td class="dynamicTableCell text-center">10.255.255.255</td>
+										</tr>
+									</tbody>
+								</table>
 							</div>
 						</div>
 					</div>
@@ -317,14 +299,11 @@
 							<li>default-router {IP cím}</li>
 							<li>exit</li>
 							<li>ip dhcp excluded-address {kezdő IP} {vég IP}</li>
+							<li>dns-server {IP cím}</li>
 						</ul>
 					-forgalomirányítás
 						<ul>
 							<li>ip route {nem látott hálózat {IP} + {maszk}} {másik bemenő interface IP}</li>
-						</ul>
-					!optimális
-						<ul>
-							<li>dns-server {IP cím}</li>
 						</ul>
 
 					<h6>Switch:</h6>

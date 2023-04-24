@@ -1,5 +1,5 @@
 #hatter {
-    background-image: url(photo/spring.jpg);
+    background-image: url(photo/summer.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -38,6 +38,14 @@
     background-size: cover;
 }
 
+#git {
+    background-image: url(fix-photo/git.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 #python {
     background-image: url(fix-photo/python.jpg);
     background-position: center center;
@@ -56,13 +64,9 @@
 
 
 
-.overlay {
-    background-color: rgba(255, 255, 255, 0.5);
-    z-index: 1;
-}
 
 .backgrund {
-    background-color: #313338;
+    background-color: rgba(49, 51, 56, 0.99);
     color: #f2f3f5;
 }
 
