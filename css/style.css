@@ -56,6 +56,15 @@
 
 
 
+.overlay {
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 1;
+}
+
+.backgrund {
+    background-color: #313338;
+    color: #f2f3f5;
+}
 
 .scrollable-menu {
     height: auto;
@@ -122,18 +131,17 @@
 }
 
 .underline {
-    border-bottom: #252525 solid 1px;
+    border-bottom: white solid 1px;
 }
 
 .upperline {
-    border-top: #252525 solid 1px;
+    border-top: white solid 1px;
 }
 
 .navbar {
-    background-color: #151515;
+    background-color: #1e1f22;
     color: #fff;
     height: 50px;
-    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -142,7 +150,6 @@
   
 .navbar li {
     height: 100%;
-    display: flex;
     align-items: center;
     margin: 0 10px;
 }
@@ -151,7 +158,6 @@
     color: #fff;
     text-decoration: none;
     height: 100%;
-    display: flex;
     align-items: center;
     padding: 0 10px;
 }
@@ -170,11 +176,11 @@ body {
 
 h5 {
     margin-top: 30px;
-    text-decoration: underline black;
+    text-decoration: underline white;
 }
 
 h6 {
-    text-decoration: underline black;
+    text-decoration: underline white;
 }
 
 a {
