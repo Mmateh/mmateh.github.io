@@ -170,6 +170,16 @@
     top: -50px;
 }
 
+.nav-link {
+    background-color: #1e1f22;
+}
+.dropdown-item {
+    background-color: #1e1f22;
+}
+.dropdown-menu-dark {
+    background-color: #1e1f22;
+}
+
 
 
 

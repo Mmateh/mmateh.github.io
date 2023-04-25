@@ -1,63 +1,21 @@
 <!DOCTYPE html>
-<!-- saved from url=(0057)https://www.site24x7.com/tools/ipv4-subnetcalculator.html -->
-<html lang="en">
+<html lang="hu">
 
 	<head>
 
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-				
+		<meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<script type="text/javascript" src="./css/JavaScript/jquery.min-dc5e7f18c8.js"></script>
+		<script type="text/javascript" src="./css/JavaScript/ipv4-subnet.js"></script>
+		<script type="text/javascript">$(document).ready(function () {$('#tabs div').hide();$('#tabs div:nth-child(3)').show();$('#tabs ul li:nth-child(1)').removeClass('active');$('#tabs ul li:nth-child(3)').removeClass('active');$('#tabs ul li:nth-child(2)').addClass('active');$('#tabs ul li a').click(function () { $('#tabs ul li').removeClass('active');$(this).parent().addClass('active');var currentTab = $(this).attr('href');$('#tabs div').hide();$(currentTab).show();return false;});calculateAndUpdateValues('initialize', 'design');tableResize();$('#id_request_div').show();$('#id_response_div').hide();$('.tabcontent').hide();$('#view1').show();$('#tab1').attr('checked', true);});function tableResize() {$('#newDiv').addClass('table-responsive');$('#newtable').addClass('table mb-0');$("#newtable").find('td').addClass('text-center');$('.col-sm').css('overflow-wrap', 'anywhere');}</script>
+
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="website icon" href="css/fix-photo/info_icon.jpg">
-		
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-		<script type="text/javascript"
-			src="./css/JavaScript/jquery.min-dc5e7f18c8.js"></script>
-
-		<script type="text/javascript"
-			src="./css/JavaScript/info"></script>
-		<script
-			type="text/javascript">let imagesUrl = '//img-wc.site24x7static.com/site24x7/client/6116540/images/';</script>
-		<script>var iamZuid = parseInt();
-			var page_uri = '\x2Ftools\x2Fipv4\x2Dsubnetcalculator.html';
-			var toolsV2 = true;
-			var languageCode = 'en';</script>
-		<script type="text/javascript"
-			src="./css/JavaScript/ipv4-subnet.js"></script>
-		<script type="text/javascript">var beanmsg = { "invalidemail": "???en.fb.valid.email???", "input_url": "Please enter a valid webpage url/domain", "empty_domain": "Please enter a  domain name", "invalid_accessKey": "Invalid Access Keyword", "valid_website": "Please specify a valid website to monitor", "domain_name": "Domain Name", "invalid_url": "Enter a valid url", "empty_accessKey": "Please Enter Access Keyword", "input_location": "Please Select the Location" };  //No I18N
-			$(document).ready(function () {
-				$('#tabs div').hide(); //No I18N
-				$('#tabs div:nth-child(3)').show(); //No I18N
-				$('#tabs ul li:nth-child(1)').removeClass('active'); //No I18N
-				$('#tabs ul li:nth-child(3)').removeClass('active'); //No I18N
-				$('#tabs ul li:nth-child(2)').addClass('active'); //No I18N
-				$('#tabs ul li a').click(function () {  //No I18N
-					$('#tabs ul li').removeClass('active'); //No I18N
-					$(this).parent().addClass('active');  //No I18N
-					var currentTab = $(this).attr('href');   //No I18N
-					$('#tabs div').hide(); //No I18N
-					$(currentTab).show();
-					return false;
-				});
-				calculateAndUpdateValues('initialize', 'design'); //No I18N
-				tableResize();
-				$('#id_request_div').show();
-				$('#id_response_div').hide();
-				$('.tabcontent').hide();
-				$('#view1').show();
-				$('#tab1').attr('checked', true);  //No I18N 
-			});
-			function tableResize() {
-				$('#newDiv').addClass('table-responsive');
-				$('#newtable').addClass('table mb-0');
-				$("#newtable").find('td').addClass('text-center');
-				$('.col-sm').css('overflow-wrap', 'anywhere');
-			}</script>
-			<script src="css/JavaScript/navbar.js"></script>
-
-		<title>Hálózatok</title>
+		<title>Tananyagok - Hálózat</title>
 
 	</head>
 
@@ -66,32 +24,37 @@
 
 		<nav class="navbar navbar-expand-md navbar-dark fixed-top">
             <div class="collapse navbar-collapse container-fluid" >
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Főoldal</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="fizika.html">Fizika</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="matek.html">Matek</a>
-                    </li>
-					<li class="nav-item">
-						<a class="nav-link disabled" href="#">Hálózat</a>
-					</li>
-					<li class="nav-item">
-                        <a class="nav-link" href="hálózatelmélet.html">Hálózat elmélet</a>
-                    </li>
-					<li class="nav-item">
-						<a class="nav-link" href="git.html">Git</a>
-					</li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="python.html">Python</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="html.html">HTML</a>
-                    </li>
-                </ul>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Főoldal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="fizika.html">Fizika</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="matek.html">Matek</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">Hálózat</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="hálózatelmélet.html">Hálózat elmélet</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="git.html">Git</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="python.html">Python</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="html.html">HTML</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
 
