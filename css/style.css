@@ -62,6 +62,14 @@
     background-size: cover;
 }
 
+#gamehub {
+    background-image: url(fix-photo/gamehub.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 
 
 
