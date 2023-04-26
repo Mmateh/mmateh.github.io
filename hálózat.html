@@ -12,8 +12,10 @@
 	<script type="text/javascript">$(document).ready(function () {$('#tabs div').hide();$('#tabs div:nth-child(3)').show();$('#tabs ul li:nth-child(1)').removeClass('active');$('#tabs ul li:nth-child(3)').removeClass('active');$('#tabs ul li:nth-child(2)').addClass('active');$('#tabs ul li a').click(function () { $('#tabs ul li').removeClass('active');$(this).parent().addClass('active');var currentTab = $(this).attr('href');$('#tabs div').hide();$(currentTab).show();return false;});calculateAndUpdateValues('initialize', 'design');tableResize();$('#id_request_div').show();$('#id_response_div').hide();$('.tabcontent').hide();$('#view1').show();$('#tab1').attr('checked', true);});function tableResize() {$('#newDiv').addClass('table-responsive');$('#newtable').addClass('table mb-0');$("#newtable").find('td').addClass('text-center');$('.col-sm').css('overflow-wrap', 'anywhere');}</script>
 
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="website icon" href="css/fix-photo/info_icon.jpg">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="website icon" href="css/fix-photo/info_icon.jpg">
+        <script src="css/JavaScript/navbar.js"></script>
 
 	<title>Tananyagok - Hálózat</title>
 
