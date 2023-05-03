@@ -47,13 +47,13 @@ const pieces = [
 ];
 const colors = [
     null,
-    '#FF0D72',
+    '#FFCC33',
     '#0DC2FF',
-    '#0DFF72',
-    '#F538FF',
+    '#33FF66',
+    '#F51111',
     '#FF8E0D',
-    '#FFE138',
-    '#3877FF'
+    '#003DF5',
+    '#CC33FF'
 ];
 
 let arena = [];
