@@ -4,6 +4,7 @@ const ctx = canvas.getContext('2d');
 const scale = 20;
 
 ctx.scale(scale, scale);
+var score = 0;
 
 const tWidth = canvas.width / scale;
 const tHeight = canvas.height / scale;
@@ -139,6 +140,7 @@ function clearBlocks() {
             arena.splice(1, 0, r);
         }
     }
+    score()
 }
 
 function drawArena() {
@@ -216,6 +218,13 @@ function update(time = 0) {
     drawMatrix(player.matrix, player.pos.x, player.pos.y);
 
     requestAnimationFrame(update);
+}
+
+function score() {
+
+    score += 1200;
+    document.getElementById(score).innerHTML = "Score: " + score;
+
 }
 
 document.addEventListener("keydown", event => {
