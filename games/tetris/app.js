@@ -140,7 +140,6 @@ function clearBlocks() {
             arena.splice(1, 0, r);
         }
     }
-    score()
 }
 
 function drawArena() {
@@ -218,13 +217,6 @@ function update(time = 0) {
     drawMatrix(player.matrix, player.pos.x, player.pos.y);
 
     requestAnimationFrame(update);
-}
-
-function score() {
-
-    score += 1200;
-    document.getElementById(score).innerHTML = "Score: " + score;
-
 }
 
 document.addEventListener("keydown", event => {
