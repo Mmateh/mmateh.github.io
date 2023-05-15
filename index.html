@@ -12,13 +12,35 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="website icon" href="css/fix-photo/icon.png">
         <script src="css/JavaScript/navbar.js"></script>
+        <script>
+            document.onkeydown = function (e) {
+                if (event.keyCode == 123) {
+                    return false;
+                }
+                if (e.ctrlKey && e.shiftKey && (e.keyCode == 'I'.charCodeAt(0) || e.keyCode == 'i'.charCodeAt(0))) {
+                    return false;
+                }
+                if (e.ctrlKey && e.shiftKey && (e.keyCode == 'C'.charCodeAt(0) || e.keyCode == 'c'.charCodeAt(0))) {
+                    return false;
+                }
+                if (e.ctrlKey && e.shiftKey && (e.keyCode == 'J'.charCodeAt(0) || e.keyCode == 'j'.charCodeAt(0))) {
+                    return false;
+                }
+                if (e.ctrlKey && (e.keyCode == 'U'.charCodeAt(0) || e.keyCode == 'u'.charCodeAt(0))) {
+                    return false;
+                }
+                if (e.ctrlKey && (e.keyCode == 'S'.charCodeAt(0) || e.keyCode == 's'.charCodeAt(0))) {
+                    return false;
+                }
+            }
+        </script>
         
         <title>Tananyagok - Főoldal</title>
 
     </head>
 
 
-    <body class="text-dark" id="hatter">
+    <body class="text-dark" id="hatter" oncontextmenu="return false;">
 
         <nav class="navbar navbar-expand-md navbar-dark fixed-top">
             <div class="collapse navbar-collapse container-fluid" >
@@ -68,7 +90,6 @@
                 <p>Remélem hasznát fogod venni és megtalálsz itt mindent ami kell.</p>
                 <p>Folyamatosan bővítem mindenféle tantárggyal.</p>
                 <p>A témákat a felső navigációs sávban találjátok.</p>
-                <p>Ha hibát találsz kérlek jelezd felém: moriczmate2006@gmail.com</p>
                 <p>Jó tanulást! :)</p>
                 <br>
                 <p><b>Ha esetleg támogatni szeretnétek, itt lehet megtenni:</b>
