@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="website icon" href="css/fix-photo/icon.png">
         <script src="css/JavaScript/navbar.js"></script>
+        <script src="css/JavaScript/fizika-calculator.js"></script>
         <script>
             document.onkeydown = function (e) {
                 if (event.keyCode == 123) {
@@ -342,7 +343,7 @@
             <h3>Sebesség</h3>
                 <p>A sebesség nem más mint időegyseég alatt megtett távolság.
                 Ha 1 m/s a sebesség akkor a tömegpont 1 sec alatt 1 métert tesz meg.
-                <br>Képlet: v =<span class="underline"> s </span>
+                <br>Képlet: v =<span class="unli"> s </span>
                 <br>ㅤㅤㅤㅤㅤt
                 <sup><b>
                     <br>v = sebesség (m/s)
@@ -369,46 +370,10 @@
                 <button onclick="on_seb()" class="btn btn-success mt-4">Új számítás</button>
                 <br>
                 <br id="gyors">
-                <script>
-                    function szamitas_seb() {
-                        var v = document.getElementById("seb_v").value;
-                        var s = document.getElementById("seb_s").value;
-                        var t = document.getElementById("seb_t").value;
-                        var kitoltott = 0;
-                        if (v!="") {kitoltott++;}
-                        if (s!="") {kitoltott++;}
-                        if (t!="") {kitoltott++;}
-                        if (kitoltott!=2) {
-                            alert("Pontosan két mezőt kell kitölteni!")
-                            on_seb()}
-                        else if (v=="") {
-                            v = s/t;
-                            document.getElementById("seb_v").value = v
-                            off_seb()}
-                        else if (s=="") {
-                            s = v*t;
-                            document.getElementById("seb_s").value = s
-                            off_seb()}
-                        else {
-                            t = s/v;
-                            document.getElementById("seb_t").value = t
-                            off_seb()}}
-                    function off_seb() {
-                        document.getElementById("seb_v").disabled = true;
-                        document.getElementById("seb_s").disabled = true;
-                        document.getElementById("seb_t").disabled = true;}
-                    function on_seb() {
-                        document.getElementById("seb_v").disabled = false;
-                        document.getElementById("seb_s").disabled = false;
-                        document.getElementById("seb_t").disabled = false;
-                        document.getElementById("seb_v").value = "";
-                        document.getElementById("seb_s").value = "";
-                        document.getElementById("seb_t").value = "";}
-                </script>
         
             <h3>Gyorsulás</h3>
                 <p>A gyorsulás nem más, mint időegység alatti sebességváltozás.
-                <br>Képlet: a =<span class="underline"> v </span>
+                <br>Képlet: a =<span class="unli"> v </span>
                 <br>ㅤㅤㅤㅤㅤt
                 <sup><b>
                     <br>a = gyorsulás (m/s<sup>2</sup>)
@@ -434,42 +399,6 @@
                 <button onclick="on_gyors()" class="btn btn-success mt-4">Új számítás</button>
                 <br>
                 <br id="szab">
-                <script>
-                    function szamitas_gyors() {
-                        var a = document.getElementById("gyors_a").value;
-                        var v = document.getElementById("gyors_v").value;
-                        var t = document.getElementById("gyors_t").value;
-                        var kitoltott = 0;
-                        if (a!="") {kitoltott++;}
-                        if (v!="") {kitoltott++;}
-                        if (t!="") {kitoltott++;}
-                        if (kitoltott!=2) {
-                            alert("Pontosan két mezőt kell kitölteni!")
-                            on_gyors()}
-                        else if (v=="") {
-                            a = v/t;
-                            document.getElementById("gyors_a").value = a
-                            off_gyors()}
-                        else if (s=="") {
-                            v = a*t;
-                            document.getElementById("gyors_v").value = v
-                            off_gyors()}
-                        else {
-                            t = v/a;
-                            document.getElementById("gyors_t").value = t
-                            off_gyors()}}
-                    function off_gyors() {
-                        document.getElementById("gyors_a").disabled = true;
-                        document.getElementById("gyors_v").disabled = true;
-                        document.getElementById("gyors_t").disabled = true;}
-                    function on_gyors() {
-                        document.getElementById("gyors_a").disabled = false;
-                        document.getElementById("gyors_v").disabled = false;
-                        document.getElementById("gyors_t").disabled = false;
-                        document.getElementById("gyors_a").value = "";
-                        document.getElementById("gyors_v").value = "";
-                        document.getElementById("gyors_t").value = "";}
-                </script>
                 
             <h3>Szabadesés</h3>
                 <p>A levegő ellenállása miatt igazán csak légüres térben lehetséges. (Newton cső)
@@ -502,49 +431,6 @@
                 <button onclick="on_szab()" class="btn btn-success mt-4">Új számítás</button>
                 <br>
                 <br id="test">
-                <script>
-                    function szamitas_szab() {
-                        var v = document.getElementById("szab_v").value;
-                        var t = document.getElementById("szab_t").value;
-                        var s = document.getElementById("szab_s").value;
-                        var g = 10;           
-                        var kitoltott = 0;                 
-                        if (v!="") {kitoltott++;}
-                        if (t!="") {kitoltott++;}
-                        if (s!="") {kitoltott++;}                  
-                        if (kitoltott!=1) {
-                            alert("Pontosan egy mezőt kell kitölteni!");
-                            on_szab()}
-                        else if (s=="" && v=="") {                    
-                            s = 0.5*g*Math.pow(t, 2);                   
-                            document.getElementById("szab_s").value = s;
-                            v = g*t;
-                            document.getElementById("szab_v").value = v;
-                            off_szab()}
-                        else if (s=="" && t=="") {
-                            t = v/g;
-                            document.getElementById("szab_t").value = t;
-                            s = 0.5*g*Math.pow(t, 2);                   
-                            document.getElementById("szab_s").value = s;
-                            off_szab()}
-                        else {
-                            t = Math.sqrt(s/(0.5*g));
-                            document.getElementById("szab_t").value = t;
-                            v = g*t;
-                            document.getElementById("szab_v").value = v;
-                            off_szab()}}
-                    function off_szab() {
-                        document.getElementById("szab_v").disabled = true;
-                        document.getElementById("szab_t").disabled = true;
-                        document.getElementById("szab_s").disabled = true;}           
-                    function on_szab() {                   
-                        document.getElementById("szab_v").disabled = false;
-                        document.getElementById("szab_t").disabled = false;
-                        document.getElementById("szab_s").disabled = false;                   
-                        document.getElementById("szab_v").value = "";
-                        document.getElementById("szab_t").value = "";
-                        document.getElementById("szab_s").value = "";}
-                </script>
             
             <h3>Testek súlya</h3>
                 <p>A tömeg sehol nem változik, csak a súly.
@@ -1080,7 +966,7 @@
                     <br>Coulomb - 18. század - francia fizikus
                     <br>Róla nevezték el az elektromos töltés egységét.
                     <img src="css/fix-photo/coulomb.png" alt="Vonzás, taszítás" class="img-thumbnail float-end">
-                    <br>F<sub>elektromos</sub> = k * <span class="underline">Q<sub>1</sub> * Q<sub>2</sub></span> 
+                    <br>F<sub>elektromos</sub> = k * <span class="unli">Q<sub>1</sub> * Q<sub>2</sub></span> 
                     <br>ㅤㅤㅤㅤ    ㅤㅤ ㅤr<sup>2</sup>
                     <sup><b>
                         <br>F = erő (N)
@@ -1097,7 +983,7 @@
                     <img src="css/fix-photo/elektromos.png" alt="Elektromos térerősség" class="img-thumbnail float-end">
                     <p>Az elektromos térerősség, vagy másnéven intenzitás az elektromos erő és a 
                     <br>töltés hányadosaként definiálható.
-                    <br>E = <span class="underline"> F </span> <b>=</b><span class="underline">k * Q</span>
+                    <br>E = <span class="unli"> F </span> <b>=</b><span class="unli">k * Q</span>
                     <br>ㅤ    Q ㅤ   r<sup>2</sup>
                     <sup><b>
                         <br>E = térerősség (N/C)
@@ -1130,7 +1016,7 @@
                 <h5>Elektromos potenciál</h5>
                     <p>Volta - 18. század - olasz fizikus
                     <br>Az elektromos potenciál az elektromos energia és a töltés hányadosa. 
-                    <br>φ<sub>e</sub> = <span class="underline">W</span> <b>=</b> <span class="underline">Q * E * d</span> <b>=</b> E * d
+                    <br>φ<sub>e</sub> = <span class="unli">W</span> <b>=</b> <span class="unli">Q * E * d</span> <b>=</b> E * d
                     <br>ㅤ  ㅤQㅤㅤㅤQ
                     <sup><b>
                         <br>W = munka (J)
@@ -1161,9 +1047,9 @@
                     <br>Olajcsepp akkor lesz egyensúlyban, ha
                     <br>ㅤㅤㅤF<sub>elektromos</sub> = F<sub>gravitációs</sub>
                     <br>ㅤㅤㅤㅤㅤE * Q = m * g
-                    <br>ㅤ ㅤ ㅤ ㅤQ * <span class="underline">U</span> = m * g
+                    <br>ㅤ ㅤ ㅤ ㅤQ * <span class="unli">U</span> = m * g
                     <br>ㅤㅤㅤ ㅤ ㅤㅤd
-                    <br>ㅤㅤ ㅤ ㅤㅤㅤQ = <span class="underline">m * g * d</span>
+                    <br>ㅤㅤ ㅤ ㅤㅤㅤQ = <span class="unli">m * g * d</span>
                     <br>ㅤㅤ ㅤ ㅤㅤㅤㅤ ㅤ ㅤU
                     <sup><b>
                         <br>Q = töltés (C)
@@ -1193,7 +1079,7 @@
                 <br><sub>n</sub>F = 10<sup>-9</sup>F
                 <br><sub>p</sub>F = 10<sup>-12</sup>F
                 <br>
-                <br>C = <span class="underline">Q</span>
+                <br>C = <span class="unli">Q</span>
                 <br>ㅤ    U
                 <sup><b>
                     <br>C = kapacitás (F - farad)
@@ -1213,7 +1099,7 @@
                 <br>A lemezes kondenzátor kapacitása függ a lemezek felületétől,
                 <br>a köztük lévő távolságtól és a szigetelétől. 
                 <br>C
-                <br>C = <span class="underline">𝜺<sub>o</sub> * A</span>
+                <br>C = <span class="unli">𝜺<sub>o</sub> * A</span>
                 <br>ㅤㅤㅤd
                 <sup><b>
                     <br>C = kapacitás (F)
@@ -1242,7 +1128,7 @@
                 <br>Párhuzamos kapcsolás esetén az eredő kapacitás az egyes kapacitások összege.
                 <br>C<sub>1</sub> = 1<sub>n</sub>F
                 <br>C<sub>2</sub> = 2<sub>n</sub>F
-                <br><span class="underline">C<sub>3</sub> = 40<sub>n</sub>F</span>
+                <br><span class="unli">C<sub>3</sub> = 40<sub>n</sub>F</span>
                 <br>C<sub>eredő</sub> = C<sub>1</sub> + C<sub>2</sub> + C<sub>3</sub>
                 <br>
                 <br>C<sub>eredő</sub> = 1<sub>n</sub>F + 2<sub>n</sub>F + 40<sub>n</sub>F = 43<sub>n</sub>F
@@ -1252,11 +1138,11 @@
                 <br>Soros kapcsolásnál az eredő kapacitás reciproka egyenlő az 
                 <br>egyes kapacitások reciprokainak összegével.
                 <br><br><br>
-                <br><span class="underline"> 1 </span>ㅤ=ㅤ<span class="underline"> 1 </span> + <span class="underline"> 1 </span> + <span class="underline"> 1 </span>
+                <br><span class="unli"> 1 </span>ㅤ=ㅤ<span class="unli"> 1 </span> + <span class="unli"> 1 </span> + <span class="unli"> 1 </span>
                 <br>C<sub>eredő</sub>     C<sub>1</sub>      C<sub>2</sub>      C<sub>3</sub>
-                <br><span class="underline">  1  </span>ㅤ=ㅤ<span class="underline">  1  </span>ㅤ+ㅤ<span class="underline">  1  </span>ㅤ+ㅤ<span class="underline">  1  </span>ㅤ=ㅤ<span class="underline">40 + 20 + 1</span>ㅤ=ㅤ<span class="underline"> 61 </span>
+                <br><span class="unli">  1  </span>ㅤ=ㅤ<span class="unli">  1  </span>ㅤ+ㅤ<span class="unli">  1  </span>ㅤ+ㅤ<span class="unli">  1  </span>ㅤ=ㅤ<span class="unli">40 + 20 + 1</span>ㅤ=ㅤ<span class="unli"> 61 </span>
                 <br>C<sub>eredő </sub>     1<sub>n</sub>F ㅤ       2<sub>n</sub>F ㅤ      40<sub>n</sub>Fㅤㅤㅤㅤ40<sub>n</sub>Fㅤ  ㅤㅤㅤ41
-                <br><span class="underline"> 1 </span>ㅤ=ㅤ<span class="underline"> 40 </span>ㅤ= 0,6557<sub>n</sub>F
+                <br><span class="unli"> 1 </span>ㅤ=ㅤ<span class="unli"> 40 </span>ㅤ= 0,6557<sub>n</sub>F
                 <br id="veszi">C<sub>eredő</sub>    61<sub>n</sub>F
                 <br>
                 <sup><b>
@@ -1293,7 +1179,7 @@
 
             <h3>Az áramerősség</h3>
                 <p>Az áramerősség nem más, mint időegység alatt áthaladó töltések száma. 
-                <br>I = <span class="underline">Q</span>
+                <br>I = <span class="unli">Q</span>
                 <br>ㅤ    t
                 <sup id="ohm"><b>
                     <br>I = áram (A - amper)
@@ -1325,7 +1211,7 @@
                 <br>Ezt a folyamatot rezisztenciának nevezzük.
                 <br>Minden fogyasztó, illetve vezető ohmos ellenállásnak tekinthető. 
                 <br>
-                <br>R = ρ *<span class="underline"> l  </span>
+                <br>R = ρ *<span class="unli"> l  </span>
                 <br>ㅤㅤ ㅤA
                 <sup><b>
                     <br>ρ = fajlagos ellenállás (Ωmm/m)
@@ -1351,7 +1237,7 @@
                 <br>Eredő ellenállás
                 <br>R<sub>eredő</sub> = R<sub>1</sub> + R<sub>2</sub> + R<sub>3</sub>
                 <br>
-                <br>I = <span class="underline"> U </span>
+                <br>I = <span class="unli"> U </span>
                 <br>ㅤ    R<sub>eredő</sub>
                 <br>
                 <br>U = U<sub>1</sub> * U<sub>2</sub> * U<sub>3</sub>
@@ -1363,17 +1249,17 @@
                 <br><img src="css/fix-photo/parhuzamos_ellen.png" alt="Párhuzamos" class="img-thumbnail kond">
                 <br><br><br><br><br>
                 <br>Eredő ellenállás
-                <br><span class="underline"> 1 </span>    =   <span class="underline"> 1 </span> + <span class="underline"> 1 </span> + <span class="underline"> 1 </span>
+                <br><span class="unli"> 1 </span>    =   <span class="unli"> 1 </span> + <span class="unli"> 1 </span> + <span class="unli"> 1 </span>
                 <br>R<sub>eredő</sub>   R<sub>1</sub>     R<sub>2</sub>     R<sub>3</sub>
                 <br>
                 <br>U = R<sub>eredő</sub> * I
                 <br>
                 <br>I = I<sub>1</sub> + I<sub>2</sub> + I<sub>3</sub>
-                <br>I<sub>1</sub> = <span class="underline"> U </span>
+                <br>I<sub>1</sub> = <span class="unli"> U </span>
                 <br>ㅤㅤR<sub>1</sub>
-                <br>I<sub>2</sub> = <span class="underline"> U </span>
+                <br>I<sub>2</sub> = <span class="unli"> U </span>
                 <br>ㅤㅤR<sub>2</sub>
-                <br>I<sub>3</sub> = <span class="underline"> U </span>
+                <br>I<sub>3</sub> = <span class="unli"> U </span>
                 <br>ㅤㅤR<sub>3</sub>
                 <br id="mero">
                 <sup><b>
@@ -1406,15 +1292,15 @@
                 <br>ㅤU = R * I
                 <br>ㅤW = U * I * t <b>=</b> R * I * I * t <b>=</b> R * I<sup>2</sup> * t
                 <br>ㅤ<b>W = R * I<sup>2</sup> * t</b>
-                <br>ㅤI = <span class="underline"> U </span>
+                <br>ㅤI = <span class="unli"> U </span>
                 <br>ㅤㅤ    R
-                <br>ㅤW = U * I * t <b>=</b> U * <span class="underline"> U </span> * t <b>=</b> <span class="underline"> U<sup>2 </sup></span> * t
+                <br>ㅤW = U * I * t <b>=</b> U * <span class="unli"> U </span> * t <b>=</b> <span class="unli"> U<sup>2 </sup></span> * t
                 <br>ㅤㅤㅤㅤㅤㅤㅤㅤㅤ   Rㅤㅤㅤ R
-                <br>ㅤ<b>W = <span class="underline"> U<sup>2 </sup></span> * t
+                <br>ㅤ<b>W = <span class="unli"> U<sup>2 </sup></span> * t
                 <br>ㅤㅤㅤ   R</b>
                 <br>
                 <br>A teljesítményt úgy számoljuk ki, hogy a munkát elosztjuk az idővel.
-                <br>p = <span class="underline"> W </span>
+                <br>p = <span class="unli"> W </span>
                 <br>ㅤㅤ t
                 <sup><b>
                     <br>p = teljesítmény (W)
@@ -1423,7 +1309,7 @@
                 </b></sup>
                 <br>p = U * I
                 <br>p = R * I<sup>2</sup>
-                <br>p = <span class="underline"> U<sup>2</sup> </span>
+                <br>p = <span class="unli"> U<sup>2</sup> </span>
                 <br>ㅤㅤ R
                 <br>
                 <br>Áram hatására a vezetők felmelegednek és amennyiben más energiaátalakító nincs 
@@ -1469,7 +1355,7 @@
                         </p>
                     <h6>2. törvény:</h6>
                         <p>1 mol egyszeres töltésű ion semlegesítéséhez 96 500 C töltésre van szükség:
-                        <br><span class="underline"> Q </span>
+                        <br><span class="unli"> Q </span>
                         <br> n 
                         <br>Elektrolízis segítségével tárgyakat fémekkel lehet bevonni:
                         <br>nikkelezés, krómozás, aranyozás illetve ezüstözés

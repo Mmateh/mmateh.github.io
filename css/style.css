@@ -106,22 +106,6 @@
     width: 300px;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    grid-gap: 5px;
-    row-gap: 5px;
-    column-gap: 5px;
-}
-
-.grid-item {
-    border-radius: 10px;
-    line-height: 50px;
-    text-align: center;
-    background-color: #252525;
-    color: white;
-}
-
 .felso {
     margin-top: 50px;
 }
@@ -134,7 +118,7 @@
 }
 
 .sorol {
-    padding-left: 40px;
+    padding-left: 30px;
 }
 
 .kond {
@@ -142,11 +126,11 @@
     margin: 10px;
 }
 
-.underline {
+.unli {
     border-bottom: white solid 1px;
 }
 
-.upperline {
+.upli {
     border-top: white solid 1px;
 }
 
@@ -165,7 +149,7 @@
     align-items: center;
     margin: 0 10px;
 }
-  
+
 .navbar li a {
     color: #fff;
     text-decoration: none;
@@ -173,7 +157,7 @@
     align-items: center;
     padding: 0 10px;
 }
-  
+
 .navbar.hidden {
     top: -50px;
 }
