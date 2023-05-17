@@ -6,6 +6,14 @@
     background-size: cover;
 }
 
+#tori {
+    background-image: url(fix-photo/tori.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 #fizika {
     background-image: url(fix-photo/fizika.webp);
     background-position: center center;
@@ -170,6 +178,20 @@
 }
 .dropdown-menu-dark {
     background-color: #1e1f22;
+}
+
+.keret {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+
+.keret iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 
