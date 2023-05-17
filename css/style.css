@@ -82,8 +82,9 @@
 
 
 .backgrund {
-    background-color: rgba(49, 51, 56, 0.99);
+    background-color: rgba(49, 51, 56, 0.97);
     color: #f2f3f5;
+    padding-top: 60px;
 }
 
 .scrollable-menu {
@@ -151,7 +152,7 @@
     right: 0;
     transition: top 0.3s;
 }
-  
+
 .navbar li {
     height: 100%;
     align-items: center;
@@ -198,12 +199,16 @@
 
 
 body {
-    max-width: 80%;
+    max-width: 90%;
     margin: auto;
 }
 
-h5 {
+h3 {
     margin-top: 30px;
+}
+
+h5 {
+    margin-top: 20px;
     text-decoration: underline white;
 }
 
@@ -213,6 +218,14 @@ h6 {
 
 a {
     text-decoration: none;
+}
+
+p {
+    text-indent: 10px;
+}
+
+img {
+    margin: 10px;
 }
 
 section {

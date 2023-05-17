@@ -88,9 +88,7 @@
 
         <div class="container backgrund">
 
-            <br><br><br id="szallitasireteg">
-
-            <h3>Szállítási réteg</h3>
+            <h3 id="szallitasireteg">Szállítási réteg</h3>
                 
                 <h5>Szállítási réteg szerepe</h5>
                     <p>Különböző állomásokon futó alkalmazások közötti logikai kommunikáció. A szállítási rétegnek nincs tudomása a célállomás típusáról, az adathordozó típusáról, az adatok által megtett útvonalról, a kapcsolat torlódásáról vagy a hálózat méretéről.</p>
@@ -143,7 +141,16 @@
             <h3>Adatkapcsolati réteg</h3>
                 
                 <h5>Adatkapcsolati réteg szerepe</h5>
-                    <p></p>
+                    <p>Az adatkapcsolati réteg felelős a hálózati kártyák (NIC) egymás közti kommunikációjáért.
+                        <ul>
+                            <li>Felsőbb rétegek számára nyújt hozzáférést</li>
+                            <li>Fogadja a 3. rétegbeli csomagokat és beágyazza 2. rétegbeli keretbe</li>
+                            <li>Szabályozza az adatok közegre helyezését és fogadását</li>
+                            <li>Keretek cseréjét végzi a végpontok között a közegen keresztül</li>
+                            <li>Fogadja a 3. rétegbeli csomagokat és megfelelő felsőbb rétegbeli protokollhoz irányítja őket</li>
+                            <li>Hibakeresést hajt végre, és elutasítja a hibás kereteket</li>
+                        </ul>
+                    </p>
                 
         </div>
 
