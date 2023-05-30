@@ -1,12 +1,10 @@
 function Search(){
-    if("töri" in document.baseURI){
+    if(document.baseURI.includes("t%C3%B6ri.html")){
         var all = document.getElementById("pdfselector").innerHTML;
         var query = document.getElementById("keres").value;
-        if(query in all){
-            alert("Success")
-        }
-        else{
-            alert("Nincs találat")
+        const Arr = Array.from(all.matchAll(query))
+        if(Arr.length <= 10){
+            alert(Arr)
         }
     }
 }
