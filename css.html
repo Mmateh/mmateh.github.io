@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="website icon" href="css/fix-photo/icon.png">
+        <script src="css/JavaScript/navbar.js"></script>
+        <script src="css/JavaScript/search.js"></script>
+        <script>
+            document.onkeydown = function (e) {
+                if (event.keyCode == 123) {
+                    return false;
+                }
+                if (e.ctrlKey && e.shiftKey && (e.keyCode == 'I'.charCodeAt(0) || e.keyCode == 'i'.charCodeAt(0))) {
+                    return false;
+                }
+                if (e.ctrlKey && e.shiftKey && (e.keyCode == 'C'.charCodeAt(0) || e.keyCode == 'c'.charCodeAt(0))) {
+                    return false;
+                }
+                if (e.ctrlKey && e.shiftKey && (e.keyCode == 'J'.charCodeAt(0) || e.keyCode == 'j'.charCodeAt(0))) {
+                    return false;
+                }
+                if (e.ctrlKey && (e.keyCode == 'U'.charCodeAt(0) || e.keyCode == 'u'.charCodeAt(0))) {
+                    return false;
+                }
+                if (e.ctrlKey && (e.keyCode == 'S'.charCodeAt(0) || e.keyCode == 's'.charCodeAt(0))) {
+                    return false;
+                }
+            }
+        </script>
+        
+        <title>Tananyagok</title>
+
+    </head>
+
+
+    <body class="text-dark" id="css" oncontextmenu="return false;">
+
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+            <div class="collapse navbar-collapse container-fluid" >
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Főoldal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="töri.html">Történelem</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="fizika.html">Fizika</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="matek.html">Matek</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="hálózat.html">Hálózat</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="hálózatelmélet.html">Hálózat elmélet</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="git.html">Git</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="python.html">Python</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="html.html">HTML</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="css.html">CSS</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container backgrund">
+
+            <br><br><br>
+
+        </div>
+
+    </body>
+
+</html>
