@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="website icon" href="css/fix-photo/icon.png">
     <script src="css/JavaScript/navbar.js"></script>
-    <script src="css/JavaScript/search.js"></script>
     <script>
         document.onkeydown = function (e) {
             if (event.keyCode == 123) {
@@ -36,7 +35,7 @@
         }
     </script>
     <script src="css/JavaScript/töri.js"></script>
-
+    <script src="css/JavaScript/search.js"></script>
     <title>Tananyagok</title>
 
 </head>
@@ -84,6 +83,9 @@
                 </ul>
             </div>
             <input type="search" onkeypress="Search()" placeholder="Keresés" id="keres">
+            <div class="row">
+                <div class="sm-12 col" id="result"></div>
+            </div>
         </div>
     </nav>
 
