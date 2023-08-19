@@ -42,7 +42,7 @@
     </head>
 
     
-    <body class="text-dark" id="fizika" oncontextmenu="return false;">
+    <body class="text-dark" id="fizika"> oncontextmenu="return false;"
 
         <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
             <div class="collapse navbar-collapse container-fluid">
@@ -312,6 +312,9 @@
                                     <li>
                                         <a class="dropdown-item" href="#indukcio">A mágneses indukció</a>
                                     </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#Amper">Ampér törvénye</a>
+                                    </li>
                                 </ul>
                             </ul>
                         </li>
@@ -328,13 +331,37 @@
                             <a class="nav-link" href="git.html">Git</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="python.html">Python</a>
+                            <a class="nav-link disabled" href="php.html">PHP</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="html.html">HTML</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="css.html">CSS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="javascript.html">JavaScript</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="mysql.html">MySQL</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="mongodb.html">MongoDB</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="python.html">Python</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="java.html">Java</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="c.html">C</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="c#.html">C#</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="c++.html">C++</a>
                         </li>
                     </ul>
                 </div>
@@ -345,157 +372,258 @@
         <div class="container backgrund">
 
             <h3 id="seb">Sebesség</h3>
-                <p>A sebesség nem más mint időegyseég alatt megtett távolság.
-                Ha 1 m/s a sebesség akkor a tömegpont 1 sec alatt 1 métert tesz meg.
-                <br>Képlet: v =<span class="unli"> s </span>
-                <br>ㅤㅤㅤㅤㅤt
-                <sup><b>
-                    <br>v = sebesség (m/s)
-                    <br>s = távolság (m)
-                    <br>t = idő (s)
-                </b></sup>
-                <br>1 m/s = 3,6 km/h
-                </p>
+                <p>A sebesség nem más mint időegyseég alatt megtett távolság. Ha 1 m/s a sebesség akkor a tömegpont 1 sec alatt 1 métert tesz meg.</p>
+                <p>1 m/s = 3,6 km/h</p>
+                <p>Képlet: v =<span class="unli">  s  </span> <br><span style="padding-left: 83px;"></span>t</p>
+                <section class="in"><sup><b>
+                        v - sebesség (m/s)
+                    <br>s - távolság (m)
+                    <br>t - idő (s)
+                </b></sup></section>
                 <div class="row">
                     <div class="col-sm-12 col-md-4 mb-3">                        
-                        <label for="seb_v">Sebesség (v)</label>
-                        <input type="number" id="seb_v" class="font-control">m/s                  
+                        <label for="seb_v">Sebesség (v)</label><br>
+                        <input type="number" id="seb_v" class="font-control" placeholder="m/s">
                     </div>
                     <div class="col-sm-12 col-md-4 mb-3">
-                        <label for="seb_s">Távolság (s)</label>
-                        <input type="number" id="seb_s" class="font-control">m
+                        <label for="seb_s">Távolság (s)</label><br>
+                        <input type="number" id="seb_s" class="font-control" placeholder="m">
                     </div>
                     <div class="col-sm-12 col-md-4 mb-3">                        
-                        <label for="seb_t">Idő (t)</label>
-                        <input type="number" id="seb_t" class="font-control">s                  
+                        <label for="seb_t">Idő (t)</label><br>
+                        <input type="number" id="seb_t" class="font-control" placeholder="s">                  
                     </div>
                 </div>
-                <button onclick="szamitas_seb()" class="btn btn-primary mt-4">Számol</button>
-                <button onclick="on_seb()" class="btn btn-success mt-4">Új számítás</button>
-                <br>
-                <br id="gyors">
+                <button onclick="szamitas_seb()" class="btn btn-primary mt-4 in">Számol</button>
+                <button id="gyors" onclick="on_seb()" class="btn btn-success mt-4">Új számítás</button>
         
             <h3>Gyorsulás</h3>
                 <p>A gyorsulás nem más, mint időegység alatti sebességváltozás.
-                <br>Képlet: a =<span class="unli"> v </span>
-                <br>ㅤㅤㅤㅤㅤt
-                <sup><b>
-                    <br>a = gyorsulás (m/s<sup>2</sup>)
-                    <br>v = sebesség (m/s)
-                    <br>t = idő (s)
-                </b></sup>
+                <br>Képlet: a =<span class="unli">  v  </span><br><span style="padding-left: 83px;"></span>t
+                <section class="in"><sup><b>
+                        a - gyorsulás (m/s<sup>2</sup>)
+                    <br>v - sebesség (m/s)
+                    <br>t - idő (s)
+                </b></sup></section>
                 </p>
                 <div class="row">
-                    <div class="col-sm-12 col-md-4 mb-3">                        
-                        <label for="gyors_a">Gyorsulás (a)</label>
-                        <input type="number" id="gyors_a" class="font-control">m/s<sup>2</sup>              
+                    <div class="col-sm-12 col-md-4 mb-3">
+                        <label for="gyors_a">Gyorsulás (a)</label><br>
+                        <input type="number" id="gyors_a" class="font-control" placeholder="m/s">
                     </div>
                     <div class="col-sm-12 col-md-4 mb-3">
-                        <label for="gyors_v">Sebesség (v)</label>
-                        <input type="number" id="gyors_v" class="font-control">m/s
+                        <label for="gyors_v">Sebesség (v)</label><br>
+                        <input type="number" id="gyors_v" class="font-control" placeholder="m/s&sup2">
                     </div>
-                    <div class="col-sm-12 col-md-4 mb-3">                        
-                        <label for="gyors_t">Idő (t)</label>
-                        <input type="number" id="gyors_t" class="font-control">s                
+                    <div class="col-sm-12 col-md-4 mb-3">
+                        <label for="gyors_t">Idő (t)</label><br>
+                        <input type="number" id="gyors_t" class="font-control" placeholder="sec">
                     </div>
                 </div>
-                <button onclick="szamitas_gyors()" class="btn btn-primary mt-4">Számol</button>
-                <button onclick="on_gyors()" class="btn btn-success mt-4">Új számítás</button>
-                <br>
-                <br id="szab">
+                <button onclick="szamitas_gyors()" class="btn btn-primary mt-4 in">Számol</button>
+                <button id="szab" onclick="on_gyors()" class="btn btn-success mt-4">Új számítás</button>
                 
             <h3>Szabadesés</h3>
-                <p>A levegő ellenállása miatt igazán csak légüres térben lehetséges. (Newton cső)
-                A szabadesés egyenletesen gyorsuló mozgás.
-                A szabadon eső testnek másodpercenként 10 m/s-mal nő a sebesége.
-                <br>Képlet: v = g * t
-                <br>ㅤ ㅤㅤs = 0,5 * g * t<sup>2</sup>
-                <sup><b>
-                    <br>v = sebesség (m/s)
-                    <br>g = nehézségi gyorsulás(gravitáció) (m/s<sup>2</sup>)
-                    <br>t = idő (s)
-                    <br>s = távolság (m)
-                </b></sup>
-                </p>
+                <p>A levegő ellenállása miatt igazán csak légüres térben lehetséges. (Newton cső) A szabadesés egyenletesen gyorsuló mozgás. A szabadon eső testnek másodpercenként 10 m/s-mal nő a sebesége.</p>
+                <p>Képlet: v = g * t <br><span style="padding-left: 53px;"></span>s = 0,5 * g * t<sup>2</sup></p>
+                <section class="in"><sup><b>
+                        v - sebesség (m/s)
+                    <br>g - nehézségi gyorsulás(gravitáció) (m/s<sup>2</sup>)
+                    <br>t - idő (s)
+                    <br>s - távolság (m)
+                </b></sup></section>
                 <div class="row">
                     <div class="col-sm-12 col-md-4 mb-3">
-                        <label for="szab_v">Sebesség (v)</label>
-                        <input type="number" id="szab_v" class="font-control">m/s            
+                        <label for="szab_v">Sebesség (v)</label><br>
+                        <input type="number" id="szab_v" class="font-control" placeholder="m/s">
                     </div>
                     <div class="col-sm-12 col-md-4 mb-3">                   
-                        <label for="szab_t">Idő (t)</label>
-                        <input type="number" id="szab_t" class="font-control">s           
+                        <label for="szab_t">Idő (t)</label><br>
+                        <input type="number" id="szab_t" class="font-control" placeholder="sec">           
                     </div>
                     <div class="col-sm-12 col-md-4 mb-3">       
-                        <label for="szab_s">Távolság (s)</label>
-                        <input type="number" id="szab_s" class="font-control">m
+                        <label for="szab_s">Távolság (s)</label><br>
+                        <input type="number" id="szab_s" class="font-control" placeholder="m">
                     </div>
                 </div>
-                <button onclick="szamitas_szab()" class="btn btn-primary mt-4">Számol</button>
-                <button onclick="on_szab()" class="btn btn-success mt-4">Új számítás</button>
-                <br>
-                <br id="test">
+                <button onclick="szamitas_szab()" class="btn btn-primary mt-4 in">Számol</button>
+                <button id="test" onclick="on_szab()" class="btn btn-success mt-4">Új számítás</button>
             
             <h3>Testek súlya</h3>
-                <p>A tömeg sehol nem változik, csak a súly.
-                Minden testet a föld egy bizinyos erővel vonz.
-                Ezt az erőt nehézségi erőnek nevezzük, amelynek nagysága megegyezik a test súlyával.
-                <br>Jele: G
-                <br>Képlet: G = m * g
-                <br id="mech">Mértékegység: N
-                </p>
+                <p>A tömeg sehol nem változik, csak a súly. Minden testet a föld egy bizinyos erővel vonz. Ezt az erőt nehézségi erőnek nevezzük, amelynek nagysága megegyezik a test súlyával.</p>
+                <p>Képlet: G = m * g</p>
+                <section class="in"><sup><b>
+                        G - nehézségi erő (N - Newton)
+                    <br>g - nehézségi gyorsulás(gravitáció) (m/s<sup>2</sup>)
+                    <br>m - tömeg (kg)
+                </b></sup></section>
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 mb-6">
+                        <label for="test_G">Nehézségi erő (G)</label><br>
+                        <input type="number" id="test_G" class="font-control" placeholder="N">
+                    </div>
+                    <div class="col-sm-12 col-md-6 mb-6">
+                        <label for="test_m">Tömeg (m)</label><br>
+                        <input type="number" id="test_m" class="font-control" placeholder="kg">
+                    </div>
+                </div>
+                <button onclick="szamitas_test()" class="btn btn-primary mt-4 in">Számol</button>
+                <button id="mech" onclick="on_test()" class="btn btn-success mt-4">Új számítás</button>
             
             <hr>
 
             <h3>Mechanikai munka</h3>
-                <p>Fizikai értelemben akkor beszélünk munkavégzésről, ha egy test erő hatására elmozdul.
-                <br>Jele: W
-                <br>Képlet: W = F * s
-                <br id="telj">Mértékegység: J
-                </p>
+                <p>Fizikai értelemben akkor beszélünk munkavégzésről, ha egy test erő hatására elmozdul.</p>
+                <p>Joule - 19. század - angol fizikus</p>
+                <p>Képlet: W = F * s</p>
+                <section class="in"><sup><b>
+                        W - munka (J - Joule)
+                    <br>F - erő (N)
+                    <br>s - hossz (m)
+                </b></sup></section>
+                <div class="row">
+                    <div class="col-sm-12 col-md-4 mb-3">
+                        <label for="mech_W">Munka (W)</label><br>
+                        <input type="number" id="mech_W" class="font-control" placeholder="J">
+                    </div>
+                    <div class="col-sm-12 col-md-4 mb-3">                   
+                        <label for="mech_F">Erő (F)</label><br>
+                        <input type="number" id="mech_F" class="font-control" placeholder="N">
+                    </div>
+                    <div class="col-sm-12 col-md-4 mb-3">       
+                        <label for="mech_s">Hossz (s)</label><br>
+                        <input type="number" id="mech_s" class="font-control" placeholder="m">
+                    </div>
+                </div>
+                <button onclick="szamitas_mech()" class="btn btn-primary mt-4 in">Számol</button>
+                <button id="telj" onclick="on_mech()" class="btn btn-success mt-4">Új számítás</button>
             
             <h3>Teljesítmény</h3>
-                <p>A munkavégzés soránm fontos, hogy mennyi ideig tart a munkavégzés.
-                A teljesítmény nem más mint időegység alatti munkavégzés.
-                <br>Jele: P
-                <br>Képlet: P = W/t
-                <br id="hely">Mértékegység: Watt
-                </p>
+                <p>A munkavégzés során fontos, hogy mennyi ideig tart a munkavégzés. A teljesítmény nem más mint időegység alatti munkavégzés.</p>
+                <p>Watt - 18. század - skót mechanikus, feltaláló</p>
+                <p>Képlet: P =<span class="unli">  W  </span> <br><span style="padding-left: 87px;"></span> t</p>
+                <section class="in"><sup><b>
+                        P - teljesítmény (W - Watt)
+                    <br>W - munka (J)
+                    <br>t - idő (s)
+                </b></sup></section>
+                <div class="row">
+                    <div class="col-sm-12 col-md-4 mb-3">
+                        <label for="telj_P">Teljesítmény (P)</label><br>
+                        <input type="number" id="telj_P" class="font-control" placeholder="W">
+                    </div>
+                    <div class="col-sm-12 col-md-4 mb-3">
+                        <label for="telj_W">Munka (W)</label><br>
+                        <input type="number" id="telj_W" class="font-control" placeholder="J">
+                    </div>
+                    <div class="col-sm-12 col-md-4 mb-3">
+                        <label for="telj_t">Idő (t)</label><br>
+                        <input type="number" id="telj_t" class="font-control" placeholder="sec">
+                    </div>
+                </div>
+                <button onclick="szamitas_telj()" class="btn btn-primary mt-4 in">Számol</button>
+                <button id="hely" onclick="on_telj()" class="btn btn-success mt-4">Új számítás</button>
             
             <h3>Helyzeti energia</h3>
-                <p>Ha egy m tömegű testet h magasságba felemelünk, akkor annak a testnek helyzeti energiája lesz.
-                <br>Jele: E helyzeti  vagy  E potenciális
-                <br>Képlet: E = m * g * h
-                <br id="mozg">Mértékegység: J
-                </p>
+                <p>Ha egy m tömegű testet h magasságba felemelünk, akkor annak a testnek helyzeti energiája lesz.</p>
+                <p>Képlet: E<sub>helyzeti</sub> = E<sub>potenciális</sub> = m * g * h</p>
+                <section class="in"><sup><b>
+                        E - energia (J)
+                    <br>m - tömeg (kg)
+                    <br>g - gravitáció
+                    <br>h - magasság (m)
+                </b></sup></section>
+                <div class="row">
+                    <div class="col-sm-12 col-md-4 mb-3">
+                        <label for="hely_E">Energia (E)</label><br>
+                        <input type="number" id="hely_E" class="font-control" placeholder="J">
+                    </div>
+                    <div class="col-sm-12 col-md-4 mb-3">
+                        <label for="hely_m">Tömeg (m)</label><br>
+                        <input type="number" id="hely_m" class="font-control" placeholder="kg">
+                    </div>
+                    <div class="col-sm-12 col-md-4 mb-3">
+                        <label for="hely_h">Magasság (h)</label><br>
+                        <input type="number" id="hely_h" class="font-control" placeholder="m">
+                    </div>
+                </div>
+                <button onclick="szamitas_hely()" class="btn btn-primary mt-4 in">Számol</button>
+                <button id="mozg" onclick="on_hely()" class="btn btn-success mt-4">Új számítás</button>
             
             <h3>Mozgási energia</h3>
-                <p>A mozgási enmergia függ a test tömegétől és a sebességétől.
-                <br>Jele: E mozgási  vagy  E kinetikus
-                <br>Képlet: E = 0,5 * m * v<sup>2</sup>
-                <br id="new">Mértékegység: J
-                </p>
+                <p>A mozgási enmergia függ a test tömegétől és a sebességétől.</p>
+                <p>Képlet: E<sub>mozgási</sub> = E<sub>kinetikus</sub> = 0,5 * m * v<sup>2</sup></p>
+                <section class="in"><sup><b>
+                        E - energia (J)
+                    <br>m - tömeg (kg)
+                    <br>v - gyorsulás (m/s)
+                </b></sup></section>
+                <div class="row">
+                    <div class="col-sm-12 col-md-4 mb-3">
+                        <label for="mozg_E">Energia (E)</label><br>
+                        <input type="number" id="mozg_E" class="font-control" placeholder="J">
+                    </div>
+                    <div class="col-sm-12 col-md-4 mb-3">
+                        <label for="mozg_m">Tömeg (m)</label><br>
+                        <input type="number" id="mozg_m" class="font-control" placeholder="kg">
+                    </div>
+                    <div class="col-sm-12 col-md-4 mb-3">
+                        <label for="mozg_v">Sebesség (v)</label><br>
+                        <input type="number" id="mozg_v" class="font-control" placeholder="m/s">
+                    </div>
+                </div>
+                <button onclick="szamitas_mozg()" class="btn btn-primary mt-4 in">Számol</button>
+                <button id="new" onclick="on_mozg()" class="btn btn-success mt-4">Új számítás</button>
             
             <h3>Newton gravitációs törvénye</h3>
-                <p>A gravitációs erő egyenesen arányos a két test tömegének szorzatával
-                és fordítva arányos a köztük lévő távolság négyzetével.
-                Ez a képlet azt jelenti, hogy minden test vonza
-                egymást egyenlő nagyságú de ellentétes irányű erővel.
-                <br>Kappa: gravitációs állandó: 6,67 * 10<sup>-11</sup>
-                <br>ㅤㅤㅤㅤa világegyetemben ez az érték mindenhol ugyanaz.
-                <br>Jele: F gravitációs
-                <br>Képlet: F = Κ * (m<sub>1</sub> * m<sub>2</sub>)/r<sup>2</sup>
-                <br id="imp">Mértékegység: N
+                <p>A gravitációs erő egyenesen arányos a két test tömegének szorzatával és fordítva arányos a köztük lévő távolság négyzetével.</p>
+                <p>Ez a képlet azt jelenti, hogy minden test vonza egymást egyenlő nagyságú de ellentétes irányű erővel.</p>
+                <p>Képlet: F<sub>g</sub> = Κ * <span class="unli">  m<sub>1</sub> * m<sub>2</sub>  </span> <br><span style="padding-left: 140px;"></span>r<sup> 2</sup></p>
+                <section class="in"><sup><b>
+                        Κ - Kappa: gravitációs állandó: 6,67 * 10<sup>-11</sup>
+                    <br>A világegyetemben ez az érték mindenhol ugyanaz.
+                    <br>F - gravitációs erő (N)
+                    <br>m - tömeg (kg)
+                    <br>r - távolság (m)
+                </b></sup></section>
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 mb-3">
+                        <label for="new_F">Gravitációs erő (F)</label><br>
+                        <input type="number" id="new_F" class="font-control" placeholder="N">
+                    </div>
+                    <div class="col-sm-12 col-md-6 mb-3">
+                        <label for="new_m1">Tömeg (m<sub>1</sub>)</label><br>
+                        <input type="number" id="new_m1" class="font-control" placeholder="kg">
+                    </div>
+                    <div class="col-sm-12 col-md-6 mb-3">
+                        <label for="new_m2">Tömeg (m<sub>2</sub>)</label><br>
+                        <input type="number" id="new_m2" class="font-control" placeholder="kg">
+                    </div>
+                    <div class="col-sm-12 col-md-6 mb-3">
+                        <label for="new_r">Távolság (r)</label><br>
+                        <input type="number" id="new_r" class="font-control" placeholder="m">
+                    </div>
+                </div>
+                <button onclick="szamitas_new()" class="btn btn-primary mt-4 in">Számol</button>
+                <button onclick="on_new()" class="btn btn-success mt-4">Új számítás</button>
+                <br>
+                <br id="imp">
                 </p>
             
             <h3>Impulzus</h3>
-                <p>Az impulzus a tömeg és a sebesség szorzata.
-                Newton az F = m * a-t az impulzusból vezette le.
-                <br>Jele: p
-                <br>Képlet: p = m * v
-                <br>ㅤㅤㅤF = p/t = (m * v)/t = m * a
-                <br id="forg">Mértékegység: kgm/s
-                </p>
+                <p>Az impulzus a tömeg és a sebesség szorzata.</p>
+                <p>Newton az "F = m * a"-t az impulzusból vezette le.</p>
+                <p>Képlet: p = m * v <br><span style="padding-left: 54px;"></span>F =<span class="unli">  p  </span> =<span class="unli">  m * v  </span> = m * a <br><span style="padding-left: 85px;"></span>t <span style="padding-left: 42px;"></span>t</p>
+                <section class="in"><sup><b>
+                    p - impulzus (kgm/s)
+                <br>m - tömeg (kg)
+                <br>v - sebesség (m/s)
+                <br>F - erő (N)
+                <br>t - idő (s)
+                <br>a - gyorsulás(m/s<sup>2</sup>)
+                </b></sup></section>
+                <br id="forg">
+                
             
             <h3>Forgatónyomaték</h3>
                 <p>Az erő és az erőkar szorzata.
@@ -1457,6 +1585,7 @@
                     <p>Tesla - 19-20. század - délszláv származású Amerikában élt elektrotechnikus</p>
                     <p>A mágneses indukcióvektormennyiség iránya megegyezik az indukcióvonalakhoz húzott érintő vonalával.</p>
                     <img src="css/fix-photo/indukciovektor.png" alt="Indukcióvektro iránya" class="img-thumbnail" width="380x">
+                    <br><br id="Amper">
 
                 <h5>Ampér törvénye</h5>
                     <p>Homogén mágneses térben két egyenes, párhuzamos vezető között fellépő mágneses erő nagysága egyenesen arányos az áramerősségek szorzatával, illetve a vezetők hosszával, és fordítva a köztük lévő távolsággal.</p>
@@ -1483,27 +1612,28 @@
                         <br>μ = permeabilitás (A)
                         <br>𝝅 = pí
                     </b></sup>
+                    <br id="perma">
                     
                     <h6>Három féle permabilitás létezik</h6>
-                    <p>μ = közeg</p>
-                    <p>μ<sub>0</sub> = vákumㅤㅤμ<sub>0</sub> = 4*𝝅*10<sup>-7</sup>NA<sup>-2</sup></p>
-                    <p>μ<sub>r</sub> = relatív</p>
-                    <br>
-                    <p>μ<sub>r (levegő)</sub> = 1</p>
-                    <h6>Az áramerősség egységének a definíciója</h6>
-                    <p>1 Amper az áramerősség akkor, ha két párhuzamos vezetőben amelyik egymástól 1 m távolságra vannak vákumban vagy levegőn, a köztük lévő vonzóerő vagy taszítóerő 2*10<sup>-7</sup>N.</p>
-                    <br>
-                    <p>A már ismert mágneses erő képleteiből meghatározható csak a mágneses indukció.</p>
-                    <p>F<sub>m</sub> = B * I * l</p>
-                    <p>F<sub>m</sub> = <span class="unli">k * I<sub>1</sub>*I<sub>2</sub> * l</span> <br> ㅤㅤㅤ ㅤd </p>
-                    <p>B * I * l =<span class="unli"> k * I<sub>1</sub> * I<sub>2</sub> * l </span> <br> ㅤㅤ ㅤㅤㅤㅤd</p>
-                    <p>B =<span class="unli"> k * I </span> <b>ㅤ=</b><span class="unli">  μ  </span>*<span class="unli">  I  </span> <br> ㅤㅤ dㅤㅤㅤ𝝅ㅤd</p>
-                    <p>B = <span class="unli">   μ * I   </span> <br>ㅤㅤ2𝝅 * d</p>
-                    <p>A mágneses indukció egyensen arányos az áramerősséggel és fordítva a vezetőtől mért távolságtól.</p>
-                    <p>Vákum esetén a képlet így néz ki:</p>
-                    
-                    <p>B = <span class="unli">   μ<sub>0</sub> * I   </span> <br>ㅤㅤ2𝝅 * d</p>
-                    <p>μ<sub>0</sub> = 4*𝝅*10<sup>-7</sup>NA<sup>-2</sup></p>
+                        <p>μ = közeg</p>
+                        <p>μ<sub>0</sub> = vákumㅤㅤμ<sub>0</sub> = 4*𝝅*10<sup>-7</sup>NA<sup>-2</sup></p>
+                        <p>μ<sub>r</sub> = relatív</p>
+                        <br>
+                        <p>μ<sub>r (levegő)</sub> = 1</p>
+                        <h6>Az áramerősség egységének a definíciója</h6>
+                        <p>1 Amper az áramerősség akkor, ha két párhuzamos vezetőben amelyik egymástól 1 m távolságra vannak vákumban vagy levegőn, a köztük lévő vonzóerő vagy taszítóerő 2*10<sup>-7</sup>N.</p>
+                        <br>
+                        <p>A már ismert mágneses erő képleteiből meghatározható csak a mágneses indukció.</p>
+                        <p>F<sub>m</sub> = B * I * l</p>
+                        <p>F<sub>m</sub> = <span class="unli">k * I<sub>1</sub>*I<sub>2</sub> * l</span> <br> ㅤㅤㅤ ㅤd </p>
+                        <p>B * I * l =<span class="unli"> k * I<sub>1</sub> * I<sub>2</sub> * l </span> <br> ㅤㅤ ㅤㅤㅤㅤd</p>
+                        <p>B =<span class="unli"> k * I </span> <b>ㅤ=</b><span class="unli">  μ  </span>*<span class="unli">  I  </span> <br> ㅤㅤ dㅤㅤㅤ𝝅ㅤd</p>
+                        <p>B = <span class="unli">   μ * I   </span> <br>ㅤㅤ2𝝅 * d</p>
+                        <p>A mágneses indukció egyensen arányos az áramerősséggel és fordítva a vezetőtől mért távolságtól.</p>
+                        <p>Vákum esetén a képlet így néz ki:</p>
+                        
+                        <p>B = <span class="unli">   μ<sub>0</sub> * I   </span> <br>ㅤㅤ2𝝅 * d</p>
+                        <p>μ<sub>0</sub> = 4*𝝅*10<sup>-7</sup>NA<sup>-2</sup></p>
 
                 <h5>A tekercs mágneses tere</h5>
                     <p>A hosszú, henger alakú tekercset szolenoid tekercsnek hívják.</p>

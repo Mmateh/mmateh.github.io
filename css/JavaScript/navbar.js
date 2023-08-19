@@ -8,3 +8,8 @@ window.onscroll = function() {
   }
   prevScrollpos = currentScrollPos;
 }
+
+document.getElementById("toggleButton").addEventListener("click", function() {
+  var nav = document.querySelector("nav");
+  nav.classList.toggle("active");
+});
