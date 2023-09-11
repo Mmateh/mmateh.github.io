@@ -20,7 +20,14 @@ function Search(){
                 name = items.slice(items.indexOf('>'), items.indexOf('<')).toString()
                 console.log(item)
                 console.log(name)
-                many.push({name:item})
+                many.push({"name":name, "id":item})
+        }
+        for(let cunt=0;cunt<=many.length;cunt++){
+            if(query in many[cunt].name){
+                var result = document.getElementById("result").innerHTML;
+                result = "<h3>"+many[cunt].name+"</h3>"
+                document.getElementById("result").innerHTML = result
+            }
         }
         }
     }
