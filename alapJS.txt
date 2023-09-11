@@ -1,36 +1,34 @@
-		<script>
-                    function szamitas() {
-                        var u = document.getElementById("txt_u").value;
-                        var i = document.getElementById("txt_i").value;
-                        var r = document.getElementById("txt_r").value;
-                        var kitoltott = 0;    
-                        if (u!="") {kitoltott++;}
-                        if (i!="") {kitoltott++;}
-                        if (r!="") {kitoltott++;}                   
-                        if (kitoltott!=2) {
-                            alert("Pontosan két mezőt kell kitölteni!")
-                            on()}
-                        else if (r=="") {                    
-                            r = u/i;                   
-                            document.getElementById("txt_r").value = r
-                            off()}
-                        else if (u=="") {
-                            u = r*i;
-                            document.getElementById("txt_u").value = u
-                            off()}
-                        else {
-                            i = u/r;
-                            document.getElementById("txt_i").value = i
-                            off()}}
-                    function off() {
-                        document.getElementById("txt_u").disabled = true;
-                        document.getElementById("txt_i").disabled = true;
-                        document.getElementById("txt_r").disabled = true;}           
-                    function on() {                   
-                        document.getElementById("txt_u").disabled = false;
-                        document.getElementById("txt_i").disabled = false;
-                        document.getElementById("txt_r").disabled = false;                   
-                        document.getElementById("txt_u").value = "";
-                        document.getElementById("txt_i").value = "";
-                        document.getElementById("txt_r").value = "";}
-                </script>
+function szamitas() {
+    var u = document.getElementById("txt_u").value;
+    var i = document.getElementById("txt_i").value;
+    var r = document.getElementById("txt_r").value;
+    var kitoltott = 0;
+    if (u!="") {kitoltott++;}
+    if (i!="") {kitoltott++;}
+    if (r!="") {kitoltott++;}
+    if (kitoltott!=2) {
+        alert("Pontosan két mezőt kell kitölteni!")
+        on()}
+    else if (r=="") {
+        r = u/i;
+        document.getElementById("txt_r").value = r
+        off()}
+    else if (u=="") {
+        u = r*i;
+        document.getElementById("txt_u").value = u
+        off()}
+    else {
+        i = u/r;
+        document.getElementById("txt_i").value = i
+        off()}}
+function off() {
+    document.getElementById("txt_u").disabled = true;
+    document.getElementById("txt_i").disabled = true;
+    document.getElementById("txt_r").disabled = true;}
+function on() {
+    document.getElementById("txt_u").disabled = false;
+    document.getElementById("txt_i").disabled = false;
+    document.getElementById("txt_r").disabled = false;
+    document.getElementById("txt_u").value = "";
+    document.getElementById("txt_i").value = "";
+    document.getElementById("txt_r").value = "";}

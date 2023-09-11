@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="website icon" href="css/fix-photo/icon.png">
+        <script src="css/JavaScript/navbar.js"></script>
+        <script src="css/JavaScript/search.js"></script>
+        <script>
+            document.onkeydown = function (e) {
+                if (event.keyCode == 123) {
+                    return false;
+                }
+                if (e.ctrlKey && e.shiftKey && (e.keyCode == 'I'.charCodeAt(0) || e.keyCode == 'i'.charCodeAt(0))) {
+                    return false;
+                }
+                if (e.ctrlKey && e.shiftKey && (e.keyCode == 'C'.charCodeAt(0) || e.keyCode == 'c'.charCodeAt(0))) {
+                    return false;
+                }
+                if (e.ctrlKey && e.shiftKey && (e.keyCode == 'J'.charCodeAt(0) || e.keyCode == 'j'.charCodeAt(0))) {
+                    return false;
+                }
+                if (e.ctrlKey && (e.keyCode == 'U'.charCodeAt(0) || e.keyCode == 'u'.charCodeAt(0))) {
+                    return false;
+                }
+                if (e.ctrlKey && (e.keyCode == 'S'.charCodeAt(0) || e.keyCode == 's'.charCodeAt(0))) {
+                    return false;
+                }
+            }
+        </script>
+        
+        <title>Tananyagok</title>
+
+    </head>
+
+
+    <body class="text-dark" id="mysql" oncontextmenu="return false;">
+
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+            <div class="collapse navbar-collapse container-fluid" >
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Főoldal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="töri.html">Történelem</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="fizika.html">Fizika</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="matek.html">Matek</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="hálózat.html">Hálózat</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="hálózatelmélet.html">Hálózat elmélet</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="git.html">Git</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="php.html">PHP</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="html.html">HTML</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="css.html">CSS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="javascript.html">JavaScript</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="mysql.html">MySQL</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="mongodb.html">MongoDB</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="python.html">Python</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="java.html">Java</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="c.html">C</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="c#.html">C#</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="c++.html">C++</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container backgrund">
+
+            <h1>Eredeti videó:</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/5OdVJbNCSso" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                
+                <h3>Jelzések:</h3>
+                    <p>'name'ㅤ-ㅤAdott dolognak a neve</p>
+                    <p>'condition'ㅤ-ㅤAdott dolognak megadottt feltétel</p>
+                    <p><b class="db">type</b>ㅤ-ㅤAdott dolog típusa ami lehet:</p>
+                    <section style="margin-left: 100px;">
+                        <ul>
+                            <li><b class="db">INT</b>ㅤ-ㅤEgész számok halmaza</li>
+                            <li><b class="db">DECIMAL</b>ㅤ-ㅤValós számok halmaza</li>
+                            <li><b class="db">VARCHAR</b>ㅤ-ㅤBetűkarakter</li>
+                            <li><b class="db">DATE</b>ㅤ-ㅤDátum</li>
+                            <li><b class="db">TIME</b>ㅤ-ㅤIdő</li>
+                            <li><b class="db">DATETIME</b>ㅤ-ㅤDátum és idő</li>
+                            <li>'<b class="db">type</b>'(20)ㅤ-ㅤA zárójelben a szám a maximum megadható karakterszám</li>
+                        </ul>
+                    </section>
+                    <p><b class="db">function</b>ㅤ-ㅤAdott dolog funkciója ami lehet:</p>
+                    <section style="margin-left: 100px;">
+                        <ul>
+                            <li><b class="db">CURRENT_DATE</b>()ㅤ-ㅤA pontos jelenlegi dátumot adja meg</li>
+                            <li><b class="db">CURRENT_TIME</b>()ㅤ-ㅤA pontos jelenlegi időt adja meg</li>
+                            <li><b class="db">NOW</b>()ㅤ-ㅤA pontos jelenlegi dátumot és időt adja meg</li>
+                        </ul>
+                    </section>
+                    <p><b class="db">constraint</b>ㅤ-ㅤAdott dolog elvárása ami lehet:</p>
+                    <section style="margin-left: 100px;">
+                        <ul>
+                            <li><b class="db">UNIQUE</b>ㅤ-ㅤNem ismétlődhet az oszlopban adat</li>
+                            <li><b class="db">NOT NULL</b>ㅤ-ㅤAz oszlop értéke nem lehet NULL</li>
+                        </ul>
+                    </section>
+
+                <h3>Alapok</h3>
+                    <section class="text">
+                        <p><b class="db">CREATE DATABASE</b> 'name';ㅤ-ㅤLétrehoz egy adatbázist a megadott néven</p>
+                        <p><b class="db">DROP DATABASE</b> 'name';ㅤ-ㅤKitörli a megadott adatbázist</p>
+                        <p><b class="db">USE</b> 'name';ㅤ-ㅤA megadott nevű adatbázist fogja használni</p>
+                    </section>
+                    <section class="text">
+                        <p><b class="db">SELECT</b> 'name' <b class="db">FROM</b> 'name';ㅤ-ㅤA megadott oszlopokat írja ki a kiválasztott táblázatban</p>
+                        <p><b class="db">SELECT</b> * <b class="db">FROM</b> 'name';ㅤ-ㅤAz összes oszlopot kiírja a kiválasztott táblázatban</p>
+                        <p><b class="db">SELECT</b> * <b class="db">FROM</b> 'name' <b class="db">WHERE</b> 'condition';ㅤ-ㅤAz összes oszlopot kiírja a kiválasztott táblázatban a feltételnek megfelelően</p>
+                    </section>
+
+                <h3>Mentés</h3>
+                    <section class="text">
+                        <p><b class="db">COMMIT</b>;ㅤ-ㅤCsinál egy mentéspontot</p>
+                        <p><b class="db">SET</b> autocommit = <b class="db">ON</b>;ㅤ-ㅤAz autómata mentést bekapcsolja</p>
+                        <p><b class="db">SET</b> autocommit = <b class="db">OFF</b>;ㅤ-ㅤAz autómata mentést kikapcsolja</p>
+                        <p><b class="db">ROLLBACK</b>;ㅤ-ㅤVisszaállítja a mentésponthoz</p>
+                    </section>
+
+                <h3>Táblázat alapok</h3>
+                    <section class="text">
+                        <p><b class="db">CREATE TABLE</b> 'name' (ㅤ-ㅤTáblázat létrehozása</p>
+                        <p class="be">'name' <b class="db">type</b>,ㅤ-ㅤHozzáad egy oszlopot a megadott névvel és értékkel rendelkezve</p>
+                        <p class="be">'name' <b class="db">type UNIQUE</b>ㅤ-ㅤHozzáad egy oszlopot a megadott névvel és értékkel rendelkezve amiben nem ismétlődhet az érték</p>
+                        <p class="be"><b class="db">CONSTRAINT</b> 'name' <b class="db">CHECK</b> ('condition')ㅤ-ㅤBeállít egy ellenőrzést a megadott néven a feltételnek megfelelően</p>
+                        <p>);</p>
+                        <p><b class="db">RENAME TABLE</b> 'name' <b class="db">TO</b> 'name';ㅤ-ㅤA táblázat régi nevét az újra cseréli</p>
+                        <p><b class="db">ALTER TABLE</b> 'name' <b class="db">ADD</b> 'name' <b class="db">type</b>;ㅤ-ㅤHozzáad a kiválasztott tánlázathoz mégegy oszlopot</p>
+                        <p><b class="db">DROP TABLE</b> 'name';ㅤ-ㅤKitörli a megadott táblázatot</p>
+                    </section>
+
+                <h3>Adatok táblázatba helyezése</h3>
+                    <section class="text">
+                        <p><b class="db">INSERT INTO</b> 'name' <b class="db">VALUES</b> ('name');ㅤ-ㅤA kiválasztott táblázatba betölti a beírt adatokat</p>
+                        <p><b class="db">INSERT INTO</b> 'name' ('name') <b class="db">VALUES</b> ('name');ㅤ-ㅤA kiválasztott táblázat megadott oszlopaiba betölti a beírt adatokat</p>
+                    </section>
+                
+                <h3>Formázások</h3>
+                    <section class="text">
+                        <p><b class="db">ALTER DATABASE</b> 'name' <b class="db">READ ONLY</b> = 1;ㅤ-ㅤCsak olvasni lehet az adatbázist</p>
+                        <p><b class="db">ALTER DATABASE</b> 'name' <b class="db">READ ONLY</b> = 0;ㅤ-ㅤÍrni és olvasni is lehet az adatbázist</p>
+                    </section>
+                    <section class="text">
+                        <p><b class="db">ALTER TABLE</b> 'name' <b class="db">RENAME COLUMN</b> 'name' <b class="db">TO</b> 'name';ㅤ-ㅤA kiválasztott táblázat megadott oszlopának régi nevét az újra váltja</p>
+                        <p><b class="db">ALTER TABLE</b> 'name' <b class="db">MODIFY COLUMN</b> 'name' <b class="db">type</b>;ㅤ-ㅤA kiválasztott táblázat megadott oszlopának az értékét váltja a kiválasztottra</p>
+                        <p><b class="db">ALTER TABLE</b> 'name' <b class="db">MODIFY</b> 'name' <b class="db">type FIRST</b>;ㅤ-ㅤA kiválasztott táblázat megadott oszlopát helyezi az első helyre</p>
+                        <p><b class="db">ALTER TABLE</b> 'name' <b class="db">MODIFY</b> 'name' <b class="db">type AFTER</b> 'name';ㅤ-ㅤA kiválasztott táblázat megadott oszlopát helyezi a kiválasztott oszlop mögé</p>
+                        <p><b class="db">ALTER TABLE</b> 'name' <b class="db">MODIFY</b> 'name' <b class="db">type constraint</b>;ㅤ-ㅤA kiválasztott táblázat</p>
+                        <p><b class="db">ALTER TABLE</b> 'name' <b class="db">DROP COLUMN</b> 'name';ㅤ-ㅤA kiválasztott táblázat megadott oszlopát kitörli</p>
+                        <p><b class="db">ALTER TABLE</b> 'name' <b class="db">ADD CONSTRAINT constraint</b>('name');ㅤ-ㅤA kiválasztott táblázat megadott oszlopának az elvárását állítja</p>
+                        <p><b class="db">ALTER TABLE</b> 'name' <b class="db">ADD CONSTRAINT</b> 'name' <b class="db">CHECK</b>('condition')ㅤ-ㅤHozzáad egy ellenőrzést a feltételnek megfelelően</p>
+                    </section>
+                    <section class="text">
+                        <p><b class="db">UPDATE</b> 'name' <b class="db">SET</b> 'condition';ㅤ-ㅤA kiválasztott táblázat megadott feltétele alapján átírja az oszlop összes adatát</p>
+                        <p><b class="db">UPDATE</b> 'name' <b class="db">SET</b> 'condition' <b class="db">WHERE</b> 'condition';ㅤ-ㅤA kiválasztott táblázat megadott feltétele alapján átírja az oszlop adatát a beírt feltételnek megfelelő sorban</p>
+                    </section>
+
+        </div>
+
+    </body>
+
+</html>

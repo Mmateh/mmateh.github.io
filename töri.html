@@ -71,14 +71,38 @@
                     <li class="nav-item">
                         <a class="nav-link" href="git.html">Git</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="python.html">Python</a>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="php.html">PHP</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="html.html">HTML</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="css.html">CSS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="javascript.html">JavaScript</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mysql.html">MySQL</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="mongodb.html">MongoDB</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="python.html">Python</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="java.html">Java</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="c.html">C</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="c#.html">C#</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="c++.html">C++</a>
                     </li>
                 </ul>
             </div>
@@ -89,9 +113,9 @@
         </div>
     </nav>
 
-    <div class="container backgrund">
+    <div class="container backgrund custom-select">
 
-        <select id="pdfselector">
+        <select id="pdfselector" class="pdfselector" style="width: 90%; background-color: #232729; color: white;" width="20px">
             <option value="1">Őskor</option>
             <option value="2">A polisz születése</option>
             <option value="3">Az athéni demokrácia</option>
@@ -129,14 +153,16 @@
             <option value="35">A nagy francia forradalom 1789-1795</option>
             <option value="36">A nagy francia forradalom vége és Napóleon uralma - l. RÉSZ</option>
             <option value="37">A nagy francia forradalom vége és Napóleon uralma - II. RÉSZ</option>
-            <option value="38">A „reformkor” és előzményei - A magyar „jakobinus” mozgalom, a napoleoni háborúk és a nemzeti ébredés kora</option>
+            <option value="38">A „reformkor” és előzményei - A magyar „jakobinus” mozgalom, a napóleoni háborúk és a nemzeti ébredés kora</option>
             <option value="39">Reformkor</option>
             <option value="40">AZ 1848-as forradalom</option>
             <option value="41">Az 1848-49-es szabadságharc</option>
             <option value="42">Az ipari forradalom újabb hulláma (második 1F)</option>
             <option value="43">Népesedési folyamatok és a polgári állam jellemzői</option>
+            <option value="44">Az amerikai függetlenségi háború - 1775-1783</option>
+            <option value="45">Az Amerikai Egyesült Államok kialakulása</option>
         </select>
-        <input type="submit" onclick="load()">
+        <button type="button" onclick="load()">Keresés</button>
 
         <span id="pdfek"></span>
 

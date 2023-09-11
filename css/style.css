@@ -54,14 +54,6 @@
     background-size: cover;
 }
 
-#python {
-    background-image: url(fix-photo/python.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-}
-
 #html {
     background-image: url(fix-photo/html.jpg);
     background-position: center center;
@@ -72,6 +64,22 @@
 
 #css {
     background-image: url(fix-photo/css.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#mysql {
+    background-image: url(fix-photo/mysql.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#python {
+    background-image: url(fix-photo/python.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -89,20 +97,72 @@
 
 
 
+/*......Weboldal beállításai......*/
+
+/*Weboldal háttere*/
 .backgrund {
     background-color: rgba(49, 51, 56, 0.97);
     color: #f2f3f5;
     padding-top: 60px;
+    border: black 1px solid;
+}
+/*Weboldal hátterének kerete*/
+.bg-secondary {
+    border: black 1px solid;
 }
 
+/*......Info odalak formázása......*/
+
+/*Parancsok*/
+.text {
+    background-color: #232729;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+/*Parancsok betolása*/
+.be {
+    margin-left: 55px;
+}
+/*Példa*/
+.end {
+    background-color: white;
+    color: black;
+    border-radius: 50px;
+    margin-top: 10px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+/*Adatbázis színe*/
+.db {
+    color: #5BA4E0;
+}
+
+/*......Matek oldal formázása......*/
+
+/*Bekezdések*/
+.space {
+    padding-bottom: 25px;
+}
+
+
+/*......Töri oldal formázása......*/
+
+
+/**/
 .scrollable-menu {
     height: auto;
     max-height: 400px;
     overflow-x: hidden;
 }
 
-.bg-secondary {
-    border: black 1px solid;
+.in {
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.row {
+    margin-left: 3%;
+    margin-right: 3%;
 }
 
 .be1 {
@@ -111,11 +171,6 @@
 
 .be2 {
     margin-left: 40px;
-}
-
-.cim {
-    line-height: 40px;
-    border-radius: 7px;
 }
 
 .kep {
@@ -150,7 +205,8 @@
 .upli {
     border-top: white solid 1px;
 }
-
+/*......Navigációs sáv......*/
+/*Navigációs sáv alap beállításai*/
 .navbar {
     background-color: #1e1f22;
     color: #fff;
@@ -160,13 +216,13 @@
     right: 0;
     transition: top 0.3s;
 }
-
+/*Navigációs sáv címei*/
 .navbar li {
     height: 100%;
     align-items: center;
     margin: 0 10px;
 }
-
+/*Navigációs sáv felsorásai*/
 .navbar li a {
     color: #fff;
     text-decoration: none;
@@ -174,11 +230,11 @@
     align-items: center;
     padding: 0 10px;
 }
-
+/*Navigációs sáv rejtett*/
 .navbar.hidden {
     top: -50px;
 }
-
+/*Navigációs sáv színes*/
 .nav-link {
     background-color: #1e1f22;
 }
@@ -189,12 +245,13 @@
     background-color: #1e1f22;
 }
 
+/**/
 .keret {
     position: relative;
     overflow: hidden;
     padding-top: 56.25%;
 }
-
+/**/
 .keret iframe {
     position: absolute;
     top: 0;
@@ -203,8 +260,18 @@
     height: 100%;
 }
 
+.custom-select {
+    position: relative;
+    overflow: hidden;
+}
 
 
+
+
+::placeholder {
+    text-align: right;
+    color: #bbbbbb;
+}
 
 html {
     scroll-behavior: smooth;
@@ -217,14 +284,24 @@ body {
 
 h3 {
     margin-top: 30px;
+    line-height: 40px;
+    border-radius: 7px;
+    background-color: #212529;
+    font-weight: bolder;
+    color: #6C757D;
+    padding: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 h5 {
+    margin-left: 1%;
     margin-top: 20px;
     text-decoration: underline white;
 }
 
 h6 {
+    margin-left: 2%;
     text-decoration: underline white;
 }
 
@@ -233,7 +310,8 @@ a {
 }
 
 p {
-    text-indent: 10px;
+    margin-left: 3%;
+    margin-right: 3%;
 }
 
 img {
@@ -241,6 +319,7 @@ img {
 }
 
 section {
-    padding: 15px;
+    padding: 5px;
+    padding-top: 20px;
     border-radius: 30px;
 }

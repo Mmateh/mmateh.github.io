@@ -129,4 +129,10 @@ function load() {
     else if (selected == "43") {
         document.getElementById("pdfek").innerHTML = '<div class="keret"><iframe src="Töri/TöriÚj2/24.Nepesedesi_folyamatok_polgari_allam.pdf" frameborder="0"></iframe></div>'
     }
+    else if (selected == "44") {
+        document.getElementById("pdfek").innerHTML = '<div class="keret"><iframe src="Töri/TöriÚj2/25.Az amerikai fuggetlensegi haboru01.pdf" frameborder="0"></iframe></div>'
+    }
+    else if (selected == "45") {
+        document.getElementById("pdfek").innerHTML = '<div class="keret"><iframe src="Töri/TöriÚj2/26.07_Az_USA_kialakulása.pdf" frameborder="0"></iframe></div>'
+    }
 }
