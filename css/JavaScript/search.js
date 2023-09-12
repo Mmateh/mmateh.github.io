@@ -7,26 +7,23 @@ function Search(){
             const Arr = Array.from(all.matchAll("<option"));
             console.log(Arr)
             var many = []
+            var result = []
             var count = 0
             var item = NaN
             var name = NaN
             var items = NaN
             for(let cunt=1;cunt<=Arr.length;cunt++){
-                console.log(cunt)
                 items = all.slice(all.indexOf("<option", count)+7, all.indexOf("/option>", count))
                 count = all.indexOf("</option>", count)+9
-                console.log(count)
                 item = items.slice(items.indexOf('value="')+7, items.indexOf('">', items.indexOf('value="')+6)).toString()
-                name = items.slice(items.indexOf('>'), items.indexOf('<')).toString()
-                console.log(item)
-                console.log(name)
+                name = items.slice(items.indexOf('>')+1, items.indexOf('<')).toString()
                 many.push({"name":name, "id":item})
         }
-        for(let cunt=0;cunt<=many.length;cunt++){
-            if(query in many[cunt].name){
-                var result = document.getElementById("result").innerHTML;
-                result = "<h3>"+many[cunt].name+"</h3>"
-                document.getElementById("result").innerHTML = result
+        for(let cunt=0;cunt<many.length;cunt++){
+            console.log(cunt)
+            console.log(many[cunt].name)
+            if(many[cunt].name.includes(query)){
+                result.push({"name":many[cunt].name, "id":many[cunt].id})
             }
         }
         }

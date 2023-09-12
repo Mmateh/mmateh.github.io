@@ -53,90 +53,67 @@
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Főoldal</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Történelem</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Tantárgyak</a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item disabled" href="töri.html">Történelem</a></li>
+                          <li><a class="dropdown-item" href="fizika.html">Fizika</a></li>
+                          <li><a class="dropdown-item" href="matek.html">Matek</a></li>
+                          <li><a class="dropdown-item" href="hálózat.html">Hálózat</a></li>
+                          <li><a class="dropdown-item" href="hálózatelmélet.html">Hálózat elmélet</a></li>
+                        </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="fizika.html">Fizika</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="matek.html">Matek</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="hálózat.html">Hálózat</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="hálózatelmélet.html">Hálózat elmélet</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Programozási nyelvek</a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item disabled" href="php.html">PHP</a></li>
+                          <li><a class="dropdown-item" href="html.html">HTML</a></li>
+                          <li><a class="dropdown-item" href="css.html">CSS</a></li>
+                          <li><a class="dropdown-item disabled" href="javascript.html">JavaScript</a></li>
+                          <li><a class="dropdown-item" href="python.html">Python</a></li>
+                          <li><a class="dropdown-item disabled" href="java.html">Java</a></li>
+                          <li><a class="dropdown-item disabled" href="c.html">C</a></li>
+                          <li><a class="dropdown-item disabled" href="c#.html">C#</a></li>
+                          <li><a class="dropdown-item disabled" href="c++.html">C++</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="git.html">Git</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="php.html">PHP</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="html.html">HTML</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="css.html">CSS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="javascript.html">JavaScript</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="mysql.html">MySQL</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link disabled" href="mongodb.html">MongoDB</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="python.html">Python</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="java.html">Java</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="c.html">C</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="c#.html">C#</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="c++.html">C++</a>
-                    </li>
                 </ul>
             </div>
             <input type="search" onkeypress="Search()" placeholder="Keresés" id="keres">
-            <div class="row">
-                <div class="sm-12 col" id="result"></div>
-            </div>
         </div>
     </nav>
-
     <div class="container backgrund custom-select">
 
-        <select id="pdfselector" class="pdfselector" style="width: 90%; background-color: #232729; color: white;" width="20px">
+        <select id="pdfselector" class="pdfselector" style="width: 90%; background-color: #232729; color: white;" width="20px" size="1">
             <option value="1">Őskor</option>
             <option value="2">A polisz születése</option>
             <option value="3">Az athéni demokrácia</option>
             <option value="4">A görög-perzsa háborúk</option>
             <option value="5">A görög mitológia és istenek</option>
-            <option value="6">Róma város alapítása és királyság kora</option>
-            <option value="7">Az ókóri Róma - A köztársaság kora</option>
-            <option value="8">Az ókóri Róma - A köztársaság válsága</option>
-            <option value="9">Az ókóri Róma - A polgárháborúk kora</option>
-            <option value="10">Az ókóri Róma - A Pun-Római háborók</option>
-            <option value="11">A keresztánység születése és egyházza szerveződése</option>
+            <option value="6">Róma városának alapítása és a királyság kora</option>
+            <option value="7">Az ókori Róma - A köztársaság kora</option>
+            <option value="8">Az ókori Róma - A köztársaság válsága</option>
+            <option value="9">Az ókori Róma - A polgárháborúk kora</option>
+            <option value="10">Az ókori Róma - A Pun-Római háborúk</option>
+            <option value="11">A kereszténység születése és egyházzá szerveződése</option>
             <option value="12">A nagy népvándorlás kora</option>
             <option value="13">Az iszlám vallás kialakulása és főbb tanításai</option>
-            <option value="14">Kalandozások és a magyar nép életmódja a X. sz.-ban</option>
+            <option value="14">Kalandozások és a magyar nép életmódja a X.században</option>
             <option value="15">Géza fejedelem és Szent István király államalapító tevékenysége</option>
-            <option value="16">A Magyar Királyság első évszázada - Szent Istvántól l. Béláig</option>
+            <option value="16">A Magyar Királyság első évszázada - Szent Istvántól I. Béláig</option>
             <option value="17">A Magyar Királyság első évszázada - Salamontól Könyves Kálmánig</option>
-            <option value="18">Gazdaság és népesség a 12. századi Magyarországon Ill. Béla uralkodása (1172 — 1196)</option>
+            <option value="18">Gazdaság és népesség a 12. századi Magyarországon III. Béla uralkodása (1172 — 1196)</option>
             <option value="19">II. András uralkodása (1205 — 1235) és az aranybulla</option>
-            <option value="20">l. Károly (Róbert), a királyi hatalom helyreállítója</option>
-            <option value="21">A nagy földrajzi fel fedezések és hatásuk</option>
+            <option value="20">I. Károly (Róbert), a királyi hatalom helyreállítója</option>
+            <option value="21">A nagy földrajzi felfedezések és hatásuk</option>
             <option value="22">A reformáció kibontakozása és hatásai</option>
             <option value="23">A Habsburgok felemelkedése és a katolikus megújulás</option>
             <option value="24">A franciák évszázada</option>
@@ -144,12 +121,12 @@
             <option value="26">A Jagelló-kor — a rendi monarchia válsága</option>
             <option value="27">A mohácsi csata és következményei</option>
             <option value="28">Várháborúk - A királyi Magyarország és a hódoltság</option>
-            <option value="29">A tizenöteves háború és a Bocskai szabadságharc 1591/93 - 1606</option>
+            <option value="29">A tizenötéves háború és a Bocskai szabadságharc 1591/93 - 1606</option>
             <option value="30">A királyi Magyarország a 17. században</option>
             <option value="31">A török kiűzése Magyarországról</option>
-            <option value="32">A Rákóczi - szabadságharc</option>
+            <option value="32">A Rákóczi-szabadságharc</option>
             <option value="33">Mária Terézia uralkodása és II. József felvilágosult abszolutizmusa</option>
-            <option value="34">felvilágosodás 17. század — 19. század eleje</option>
+            <option value="34">Felvilágosodás 17. század — 19. század eleje</option>
             <option value="35">A nagy francia forradalom 1789-1795</option>
             <option value="36">A nagy francia forradalom vége és Napóleon uralma - l. RÉSZ</option>
             <option value="37">A nagy francia forradalom vége és Napóleon uralma - II. RÉSZ</option>
@@ -157,13 +134,12 @@
             <option value="39">Reformkor</option>
             <option value="40">AZ 1848-as forradalom</option>
             <option value="41">Az 1848-49-es szabadságharc</option>
-            <option value="42">Az ipari forradalom újabb hulláma (második 1F)</option>
+            <option value="42">Az ipari forradalom újabb hulláma (második IF)</option>
             <option value="43">Népesedési folyamatok és a polgári állam jellemzői</option>
-            <option value="44">Az amerikai függetlenségi háború - 1775-1783</option>
+            <option value="44">Az Amerikai függetlenségi háború - 1775-1783</option>
             <option value="45">Az Amerikai Egyesült Államok kialakulása</option>
         </select>
-        <button type="button" onclick="load()">Keresés</button>
-
+        <button type="button" onclick="load()">Kiválasztás</button>
         <span id="pdfek"></span>
 
     </div>
