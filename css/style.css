@@ -295,13 +295,19 @@ h3 {
 }
 
 h5 {
+    color: rgb(155, 155, 155);
     margin-left: 1%;
     margin-top: 20px;
-    text-decoration: underline white;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 27px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: underline rgb(104, 103, 103);
 }
 
 h6 {
     margin-left: 2%;
+    font-size: 20px;
     text-decoration: underline white;
 }
 

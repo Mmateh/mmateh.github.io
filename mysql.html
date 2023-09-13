@@ -55,7 +55,7 @@
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Tantárgyak</a>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu dropdown-menu-dark scrollable-menu">
                               <li><a class="dropdown-item" href="töri.html">Történelem</a></li>
                               <li><a class="dropdown-item" href="fizika.html">Fizika</a></li>
                               <li><a class="dropdown-item" href="matek.html">Matek</a></li>
@@ -65,7 +65,7 @@
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Programozási nyelvek</a>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu dropdown-menu-dark scrollable-menu">
                               <li><a class="dropdown-item disabled" href="php.html">PHP</a></li>
                               <li><a class="dropdown-item" href="html.html">HTML</a></li>
                               <li><a class="dropdown-item" href="css.html">CSS</a></li>
@@ -94,13 +94,13 @@
         <div class="container backgrund">
 
             <h1>Eredeti videó:</h1>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/5OdVJbNCSso" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div style="width: 100%; height: 25vh;"><iframe class="responsive-iframe" height="100%" width="100%" src="https://www.youtube.com/embed/5OdVJbNCSso" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
                 
                 <h3>Jelzések:</h3>
-                    <p>'name'ㅤ-ㅤAdott dolognak a neve</p>
-                    <p>'condition'ㅤ-ㅤAdott dolognak megadottt feltétel</p>
-                    <p><b class="db">type</b>ㅤ-ㅤAdott dolog típusa ami lehet:</p>
-                    <section style="margin-left: 100px;">
+                    <section class="text"><p>'name'ㅤ-ㅤAdott dolognak a neve</p></section>
+                    <section class="text"><p>'condition'ㅤ-ㅤAdott dolognak megadottt feltétel</p></section>
+                    <section class="text"><p><b class="db">type</b>ㅤ-ㅤAdott dolog típusa ami lehet:</p>
+                    <section style="margin-left: 5%;">
                         <ul>
                             <li><b class="db">INT</b>ㅤ-ㅤEgész számok halmaza</li>
                             <li><b class="db">DECIMAL</b>ㅤ-ㅤValós számok halmaza</li>
@@ -110,22 +110,22 @@
                             <li><b class="db">DATETIME</b>ㅤ-ㅤDátum és idő</li>
                             <li>'<b class="db">type</b>'(20)ㅤ-ㅤA zárójelben a szám a maximum megadható karakterszám</li>
                         </ul>
-                    </section>
-                    <p><b class="db">function</b>ㅤ-ㅤAdott dolog funkciója ami lehet:</p>
-                    <section style="margin-left: 100px;">
+                    </section></section>
+                    <section class="text"><p><b class="db">function</b>ㅤ-ㅤAdott dolog funkciója ami lehet:</p>
+                    <section style="margin-left: 5%;">
                         <ul>
                             <li><b class="db">CURRENT_DATE</b>()ㅤ-ㅤA pontos jelenlegi dátumot adja meg</li>
                             <li><b class="db">CURRENT_TIME</b>()ㅤ-ㅤA pontos jelenlegi időt adja meg</li>
                             <li><b class="db">NOW</b>()ㅤ-ㅤA pontos jelenlegi dátumot és időt adja meg</li>
                         </ul>
-                    </section>
-                    <p><b class="db">constraint</b>ㅤ-ㅤAdott dolog elvárása ami lehet:</p>
-                    <section style="margin-left: 100px;">
+                    </section></section>
+                    <section class="text"><p><b class="db">constraint</b>ㅤ-ㅤAdott dolog elvárása ami lehet:</p>
+                    <section style="margin-left: 5%;">
                         <ul>
                             <li><b class="db">UNIQUE</b>ㅤ-ㅤNem ismétlődhet az oszlopban adat</li>
                             <li><b class="db">NOT NULL</b>ㅤ-ㅤAz oszlop értéke nem lehet NULL</li>
                         </ul>
-                    </section>
+                    </section></section>
 
                 <h3>Alapok</h3>
                     <section class="text">
