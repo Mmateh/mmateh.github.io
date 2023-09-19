@@ -137,7 +137,7 @@
                                     <li><a class="dropdown-item smol" href="#pascal">Pascal elve</a></li>
                                     <li><a class="dropdown-item smol" href="#hidro">Hidrosztatikai nyomás</a></li>
                                     <li><a class="dropdown-item smol" href="#arch">Archimédesz törvénye</a></li>
-                                    <li><a class="dropdown-item smol" href="#atm">Atmoszdférikus nyomás(légnyomás)</a></li>
+                                    <li><a class="dropdown-item smol" href="#atm">Atmoszférikus nyomás(légnyomás)</a></li>
                                     <li><a class="dropdown-item smol" href="#legnyom">Légnyomáson alapuló berendezések</a></li>
                                     <li><a class="dropdown-item smol" href="#fold">A föld légkörének felhajtóereje</a></li>
                                 </ul>
@@ -176,6 +176,7 @@
                                 <ul class="sorol">
                                     <li><a class="dropdown-item" href="#elektrolit">Az elektromos áram elektrolitokban</a></li>
                                     <li><a class="dropdown-item" href="#faraday">Faraday törvényei</a></li>
+                                    <li><a href="#villam">Az elektromos áramvezetés ritkított gázokban és vákumban</a></li>
                                     <li><a class="dropdown-item" href="#aramritka">Elektromos áramvezetés ritkított gázokban</a></li>
                                     <li><a class="dropdown-item" href="#katod">Katódsugárzás</a></li>
                                 </ul>
@@ -188,7 +189,32 @@
                                     <li><a class="dropdown-item" href="#amper">Amper-féle jobbkézszabály</a></li>
                                     <li><a class="dropdown-item" href="#indukcio">A mágneses indukció</a></li>
                                     <li><a class="dropdown-item" href="#Amper">Ampér törvénye</a></li>
+                                    <li><a class="dropdown-item" href="#magnester">A tekercs mágneses tere</a></li>
+                                    <li><a class="dropdown-item" href="#toltmagnes">Töltéssel rendelkező részecske mágneses térben</a></li>
+                                    <li><a class="dropdown-item" href="#magnestulaj">Az anyagok mágneses tulajdonságai</a></li>
+                                    <li><a class="dropdown-item" href="#terero">A mágneses térerősség</a></li>
+                                    <li><a class="dropdown-item" href="#mindukcio">A mágneses indukció</a></li>
                                 </ul>
+                                <li><a class="dropdown-item" href="#elealkalm">Elektromágnes alkalmazásai</a></li>
+                                <li><a class="dropdown-item" href="#eleindukcio">Elektromágneses indukció</a></li>
+                                <li><a class="dropdown-item" href="#lenz">Lenz törvénye</a></li>
+                                <li><a class="dropdown-item" href="#faradayind">Faraday indukciós törvénye</a></li>
+                                <li><a class="dropdown-item" href="#onindukcio">Önindukció</a></li>
+                                <li><a class="dropdown-item" href="#tekercsmagnes">A tekercs mágneses terének energiája</a></li>
+                                <li><a class="dropdown-item" href="#oszcillator">Az elektromos oszcillátor</a></li>
+                                <div class="dropdown-divider"></div>
+                                <li><a class="dropdown-item" href="#kormozgas">Egyenletes körmozgás</a></li>
+                                <ul class="sorol">
+                                    <li><a class="dropdown-item" href="#periodusido">Periódusidő(keringési idő), frekvencia(fordulatszám)</a></li>
+                                    <li><a class="dropdown-item" href="#keruletseb">Kerületi sebesség</a></li>
+                                    <li><a class="dropdown-item" href="#szogseb">Szögsebesség</a></li>
+                                    <li><a class="dropdown-item" href="#centrip">Centipetális gyorsulás</a></li>
+                                </ul>
+                                <li><a class="dropdown-item" href="#rezgom">A rezgőmozgás</a></li>
+                                <ul class="sorol">
+                                    <li><a class="dropdown-item" href="#amplitudo">Amplitúdó és pillanatnyi kitérés</a></li>
+                                </ul>
+                                <li><a class="dropdown-item" href="#rezgomkin">A rezgőmozgás kinematikája</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -223,9 +249,9 @@
                     </div>
                 </div>
                 <button onclick="szamitas_seb()" class="btn btn-primary mt-4 in">Számol</button>
-                <button id="gyors" onclick="on_seb()" class="btn btn-success mt-4">Új számítás</button>
+                <button onclick="on_seb()" class="btn btn-success mt-4">Új számítás</button>
         
-            <h3>Gyorsulás</h3>
+            <h3 id="gyors">Gyorsulás</h3>
                 <p>A gyorsulás nem más, mint időegység alatti sebességváltozás.
                 <br>Képlet: a =<span class="unli">  v  </span><br><span style="padding-left: 83px;"></span>t
                 <section class="in"><sup><b>
@@ -249,9 +275,9 @@
                     </div>
                 </div>
                 <button onclick="szamitas_gyors()" class="btn btn-primary mt-4 in">Számol</button>
-                <button id="szab" onclick="on_gyors()" class="btn btn-success mt-4">Új számítás</button>
+                <button onclick="on_gyors()" class="btn btn-success mt-4">Új számítás</button>
                 
-            <h3>Szabadesés</h3>
+            <h3 id="szab">Szabadesés</h3>
                 <p>A levegő ellenállása miatt igazán csak légüres térben lehetséges. (Newton cső) A szabadesés egyenletesen gyorsuló mozgás. A szabadon eső testnek másodpercenként 10 m/s-mal nő a sebesége.</p>
                 <p>Képlet: v = g * t <br><span style="padding-left: 53px;"></span>s = 0,5 * g * t<sup>2</sup></p>
                 <section class="in"><sup><b>
@@ -275,9 +301,9 @@
                     </div>
                 </div>
                 <button onclick="szamitas_szab()" class="btn btn-primary mt-4 in">Számol</button>
-                <button id="test" onclick="on_szab()" class="btn btn-success mt-4">Új számítás</button>
+                <button onclick="on_szab()" class="btn btn-success mt-4">Új számítás</button>
             
-            <h3>Testek súlya</h3>
+            <h3 id="test">Testek súlya</h3>
                 <p>A tömeg sehol nem változik, csak a súly. Minden testet a föld egy bizinyos erővel vonz. Ezt az erőt nehézségi erőnek nevezzük, amelynek nagysága megegyezik a test súlyával.</p>
                 <p>Képlet: G = m * g</p>
                 <section class="in"><sup><b>
@@ -296,11 +322,11 @@
                     </div>
                 </div>
                 <button onclick="szamitas_test()" class="btn btn-primary mt-4 in">Számol</button>
-                <button id="mech" onclick="on_test()" class="btn btn-success mt-4">Új számítás</button>
+                <button onclick="on_test()" class="btn btn-success mt-4">Új számítás</button>
             
             <hr>
 
-            <h3>Mechanikai munka</h3>
+            <h3 id="mech">Mechanikai munka</h3>
                 <p>Fizikai értelemben akkor beszélünk munkavégzésről, ha egy test erő hatására elmozdul.</p>
                 <p>Joule - 19. század - angol fizikus</p>
                 <p>Képlet: W = F * s</p>
@@ -324,9 +350,9 @@
                     </div>
                 </div>
                 <button onclick="szamitas_mech()" class="btn btn-primary mt-4 in">Számol</button>
-                <button id="telj" onclick="on_mech()" class="btn btn-success mt-4">Új számítás</button>
+                <button onclick="on_mech()" class="btn btn-success mt-4">Új számítás</button>
             
-            <h3>Teljesítmény</h3>
+            <h3 id="telj">Teljesítmény</h3>
                 <p>A munkavégzés során fontos, hogy mennyi ideig tart a munkavégzés. A teljesítmény nem más mint időegység alatti munkavégzés.</p>
                 <p>Watt - 18. század - skót mechanikus, feltaláló</p>
                 <p>Képlet: P =<span class="unli">  W  </span> <br><span style="padding-left: 87px;"></span> t</p>
@@ -350,9 +376,9 @@
                     </div>
                 </div>
                 <button onclick="szamitas_telj()" class="btn btn-primary mt-4 in">Számol</button>
-                <button id="hely" onclick="on_telj()" class="btn btn-success mt-4">Új számítás</button>
+                <button onclick="on_telj()" class="btn btn-success mt-4">Új számítás</button>
             
-            <h3>Helyzeti energia</h3>
+            <h3 id="hely">Helyzeti energia</h3>
                 <p>Ha egy m tömegű testet h magasságba felemelünk, akkor annak a testnek helyzeti energiája lesz.</p>
                 <p>Képlet: E<sub>helyzeti</sub> = E<sub>potenciális</sub> = m * g * h</p>
                 <section class="in"><sup><b>
@@ -376,9 +402,9 @@
                     </div>
                 </div>
                 <button onclick="szamitas_hely()" class="btn btn-primary mt-4 in">Számol</button>
-                <button id="mozg" onclick="on_hely()" class="btn btn-success mt-4">Új számítás</button>
+                <button onclick="on_hely()" class="btn btn-success mt-4">Új számítás</button>
             
-            <h3>Mozgási energia</h3>
+            <h3 id="mozg">Mozgási energia</h3>
                 <p>A mozgási enmergia függ a test tömegétől és a sebességétől.</p>
                 <p>Képlet: E<sub>mozgási</sub> = E<sub>kinetikus</sub> = 0,5 * m * v<sup>2</sup></p>
                 <section class="in"><sup><b>
@@ -401,9 +427,9 @@
                     </div>
                 </div>
                 <button onclick="szamitas_mozg()" class="btn btn-primary mt-4 in">Számol</button>
-                <button id="new" onclick="on_mozg()" class="btn btn-success mt-4">Új számítás</button>
+                <button onclick="on_mozg()" class="btn btn-success mt-4">Új számítás</button>
             
-            <h3>Newton gravitációs törvénye</h3>
+            <h3 id="new">Newton gravitációs törvénye</h3>
                 <p>A gravitációs erő egyenesen arányos a két test tömegének szorzatával és fordítva arányos a köztük lévő távolság négyzetével.</p>
                 <p>Ez a képlet azt jelenti, hogy minden test vonza egymást egyenlő nagyságú de ellentétes irányű erővel.</p>
                 <p>Képlet: F<sub>g</sub> = Κ * <span class="unli">  m<sub>1</sub> * m<sub>2</sub>  </span> <br><span style="padding-left: 140px;"></span>r<sup> 2</sup></p>
@@ -434,11 +460,9 @@
                 </div>
                 <button onclick="szamitas_new()" class="btn btn-primary mt-4 in">Számol</button>
                 <button onclick="on_new()" class="btn btn-success mt-4">Új számítás</button>
-                <br>
-                <br id="imp">
                 </p>
             
-            <h3>Impulzus</h3>
+            <h3 id="imp">Impulzus</h3>
                 <p>Az impulzus a tömeg és a sebesség szorzata.</p>
                 <p>Newton az "F = m * a"-t az impulzusból vezette le.</p>
                 <p>Képlet: p = m * v <br><span style="padding-left: 54px;"></span>F =<span class="unli">  p  </span> =<span class="unli">  m * v  </span> = m * a <br><span style="padding-left: 85px;"></span>t <span style="padding-left: 42px;"></span>t</p>
@@ -450,19 +474,19 @@
                 <br>t - idő (s)
                 <br>a - gyorsulás(m/s<sup>2</sup>)
                 </b></sup></section>
-                <br id="forg">
+                <br>
                 
             
-            <h3>Forgatónyomaték</h3>
+            <h3 id="forg">Forgatónyomaték</h3>
                 <p>Az erő és az erőkar szorzata.
                 <br>Jele: M
                 <br>Képlet: M = F * r
-                <br id="hőmé">Mértékegység: Nm
+                <br>Mértékegység: Nm
                 </p>
             
             <hr>
 
-            <h3>Hőmérséklet mérése</h3>
+            <h3 id="hőmé">Hőmérséklet mérése</h3>
                 <p>A hőmérséklet mérése hőmérővel történik.
                 <br>A fizikában higanyhőmérőt használnak.
                 <br>Ha a hőmérőt melegítjük a higany térfogata tágul és a higany a csőben tágul.
@@ -476,10 +500,10 @@
                 <br>A világegyetemben előforduló hőmérséklet a -273,15°C
                 <br>Azért nincs hidegebb, mert a részecskék nem mozognak, ezért nem termelődik belső energia.
                 <br>-273,15°C = 0K
-                <br id="testb">A K a Kelvinfokot jelenti. A K negatív nem lehet.
+                <br>A K a Kelvinfokot jelenti. A K negatív nem lehet.
                 </p>
             
-            <h3>Test belső energiája</h3>
+            <h3 id="testb">Test belső energiája</h3>
                 <p>Minden test részecskéből épül fel (szilárd, folyékony, gáz).
                 Ezek a részecskék állandóan rezegnek vagy mozognak.
                 Ha a testeket melegítik a részecskék felgyorsulnak,
@@ -487,18 +511,18 @@
                 Abban az esetben ha a test hőmérséklete csökken,
                 akkor a test belső energiája is csökken.
                 A test belső energiája 0 sosem lehet.
-                <br id="hőv">Mértékegység: J
+                <br>Mértékegység: J
                 </p>
             
-            <h3>Hővezetők és hőszigetelők</h3>
+            <h3 id="hőv">Hővezetők és hőszigetelők</h3>
                 <p>A hővezetés a szilárd anyagoknál fordul elő.
                 <br>Hővezetők: réz, alumínium, vas
                 <br>Félvezetők: kő, üveg, cserép, porcelán
                 <br>Hőszigetelők: gyapjú, toll, hungarocel, fa, fűrészpor, jég
-                <br id="hőár">Egy hótakaró védőhatása akkora, mint egy ugyanolyan vastag téglafalé.
+                <br>Egy hótakaró védőhatása akkora, mint egy ugyanolyan vastag téglafalé.
                 </p>
             
-            <h3>Hőáramlás</h3>
+            <h3 id="hőár">Hőáramlás</h3>
                 <p>A hőáramlás folyadékoknál és gázoknál jöhet létre.
                 Ha a folyadékokat vagy gázokat melegítjük, akkor a térfogatuk megnő,
                 sűrűségük csökken. Aminek kissebb a sűrűsége mindig feláramlik
@@ -506,25 +530,25 @@
                 <br>Folyadékokra példa a radiátorokban a víz.
                 <br>Gáznál a léggömb.
                 <br>Jele: görög delta
-                <br id="hős">Képlet: ρ = m/V
+                <br>Képlet: ρ = m/V
                 </p>
             
-            <h3>Hősugárzás</h3>
+            <h3 id="hős">Hősugárzás</h3>
                 <p>Hideg téli napokon is érezzük a napnak a sugarát annak ellenére,
                 hogy a környezetet nem melegíti fel. 
-                <br id="hőm">Ezt nevezzük hősugárzásnak.
+                <br>Ezt nevezzük hősugárzásnak.
                 </p>
 
-            <h3>Hőmennyiség</h3>
+            <h3 id="hőm">Hőmennyiség</h3>
                 <p>A belső energiaváltozást hőmennyiségnek nevezzük.
                 <br>Jele: Q
                 <br>Képlet: Q = m * c * ΔT
                 <br>Mértékegység: J
                 <br>Ha a test hőmérséklete nő pl.: melegítés, akkor a belső energiája is nő.
-                <br id="faj">Ha a test hőmérséklete csökken pl.: hűtés, akkor a belső energiája is csökken.
+                <br>Ha a test hőmérséklete csökken pl.: hűtés, akkor a belső energiája is csökken.
                 </p>
 
-            <h3>Fajhő</h3>
+            <h3 id="faj">Fajhő</h3>
                 <p>A fajhő megmutatja, hogy 1kg anyag 1°C-al való melegítésekor
                 vagy hűtésekor mennyivel növekszik vagy csökken a test belső energiája.
                 Pl.: A víz fajhője 4200 J/kg°C vagy 4,2 kJ/kg°C
@@ -541,10 +565,10 @@
                 <br>ㅤ-Vízgőz:ㅤㅤㅤㅤ2000 J/kg°C
                 <br>ㅤ-Alumínium:ㅤㅤㅤ880 J/kg°C
                 <br>ㅤ-Acél:ㅤㅤㅤㅤㅤㅤ460 J/kg°C
-                <br id="szilárd">ㅤ-Réz:ㅤㅤㅤㅤㅤㅤ400 J/kg°C
+                <br>ㅤ-Réz:ㅤㅤㅤㅤㅤㅤ400 J/kg°C
                 </p>
             
-            <h3>Szilárd testek hőtágulása</h3>
+            <h3 id="szilárd">Szilárd testek hőtágulása</h3>
                 <p>Melegítés hatására a szilárd anyagok megnyúlnak pl.: vasúti sínek.
                 Ilyen hosszúságváltozásokat figyelembe vesznek hidak építésekor is.
                 A híd egyik végét rögzítik, a másik vége görgőkön nyukszik.
@@ -557,10 +581,10 @@
                 <br>Ha egy rudat melegítünk, akkor a következő képlettel számolható ki a hosszúságváltozás
                 <br>Jele: l
                 <br>Képlet: l<sub>t</sub> = l<sub>o</sub>(1+α*T)
-                <br id="folyadék">Mértékegység: m
+                <br>Mértékegység: m
                 </p>
             
-            <h3>Folyadékok hőtágulása</h3>
+            <h3 id="folyadék">Folyadékok hőtágulása</h3>
                 <p>Melegítés hatására a folyadékok térfogata megnő. Különböző anyagok különböző
                 képpen tágulnak. 1l(1000cm<sup>2</sup>) folyadék hőmérséklete ha 10°C-kal nő, akkor:
                 <br>Jele: V
@@ -569,27 +593,27 @@
                 <br>ㅤ-Alkohol:ㅤㅤ11 cm<sup>2</sup>-rel nő
                 <br>ㅤ-Petróleum:ㅤ10 cm<sup>2</sup>-rel nő
                 <br>ㅤ-Higany:ㅤㅤㅤ1,8 cm<sup>2</sup>-rel nő
-                <br id="gáz">ㅤ-Víz:ㅤㅤㅤㅤ0,6 cm<sup>2</sup>-rel nő
+                <br>ㅤ-Víz:ㅤㅤㅤㅤ0,6 cm<sup>2</sup>-rel nő
                 </p>
             
-            <h3>Gázok hőtágulása</h3>
+            <h3 id="gáz">Gázok hőtágulása</h3>
                 <p>Melegítés hatására  agázok kitágulnak, viszont egyformán és egyenletesen.
-                <br id="hat">Ez azt jelenti, hogy a gázok hőtágulása független a gázok fajtájától.
+                <br>Ez azt jelenti, hogy a gázok hőtágulása független a gázok fajtájától.
                 </p>
 
-            <h3>Hatásfok</h3>
+            <h3 id="hat">Hatásfok</h3>
                 <p>A hatásfok megmutatja, hogy a hasznos energiaváltozás a befektetett energiának hányad
                 része, amit mindig százalékban fejeznek ki. A hatásfok mindig kisebb egynél,
                 vagyis 100%-nál. Ez azt jelenti, hogy a befektetett energia 70%-a hasznos, 30% meg a veszteség.
                 <br>Négyütemű benzinmotor hatásfoka kb. 30%, a dízelmotorok hatásfoka kb. 40%.
                 <br>Jele: üpszilon
                 <br>Képlet: Υ = (hasznos energia)/(befektetett energia)
-                <br id="halm">Mértékegység: J
+                <br>Mértékegység: J
                 </p>
             
             <hr>
 
-            <h3>Halmazállapot változások</h3>
+            <h3 id="halm">Halmazállapot változások</h3>
                 <p>Három féle halmazállapotot fogunk vizsgálni:
                 <br>ㅤ-szilárd
                 <br>ㅤ-cseppfolyós
@@ -609,9 +633,9 @@
                 Légnemű anyagok hűtéskor folyékonnyá válnak. Ez a lecsapódás.
                 Egyes szilárd anyagokazonnal légneművé válnak. Pl a naftin.
                 Ezt szublimációnak nevezzük. Fordítottja a dér kialakulása.
-                <br id="olvadas">
+                <br>
 
-                <h5>Olvadás</h5>
+                <h5 id="olvadas">Olvadás</h5>
                     <p>Az olvadás szilárd anyagoknál meghatározott hőmérsékleten történik,
                     amely anyagonként változik. Ezt nevezzük az anyag olvadáspontjának.
                     <br>ㅤ-Aluimínium:ㅤ660°C   
@@ -632,11 +656,11 @@
                     <br>ㅤ-Cukor:ㅤㅤㅤ60 000 J/kg    
                     <br>ㅤ-Jég:ㅤㅤㅤㅤ340 000 J/kg
                     <br>
-                    <br id="fagyas">A jég olvadáshőkje azt jelenti, hogy 1kg jég megolvadásához 340 000 J/kg
+                    <br>A jég olvadáshőkje azt jelenti, hogy 1kg jég megolvadásához 340 000 J/kg
                     energia szükséges.
                     </p>
                 
-                <h5>Fagyás</h5>
+                <h5 id="fagyas">Fagyás</h5>
                     <p>A fagyás cseppfolyós anyagoknál meghatározott hőmérsékleten történik.
                     Ez anyagonként különböző. Ez az anyag fagypontja. Ugyanazon anyag
                     fagyás és olvadáspontja megegyezik. Az a mennyiség amely megmutatja,
@@ -650,10 +674,10 @@
                     <br>! Viszont a víz kivétel. Ezt nevezzük a víz anomáliájának. !
                     <br>Télen a vízcsövekben fagyáskor a jég térfogata megnő, ez szétrepeszti a
                     csöveket. 
-                    <br id="forras">Fagyáskor a jég sűrűsége csökken. Ezért úszik a jég a vizen.
+                    <br>Fagyáskor a jég sűrűsége csökken. Ezért úszik a jég a vizen.
                     </p>
                 
-                <h5>Forrás</h5>
+                <h5 id="forras">Forrás</h5>
                     <p>Az a hőmérséklet amelyen a folyadék forrni kezd, forrráspontnak nevezzük.
                     Forráskor a felszínen és a folyadék belselyében is megindul a ggőzképzés.
                     Különböző anyagok forráspontja különböző. Forráspontot elérve a folyadék
@@ -678,10 +702,10 @@
                     <br>Egy folyadék forráspontja mindig függ a nyomástól. Ahol nagyobb a nyomás,
                     nagyobb a forráspont. Pl a kuktában nagyobb a nyomás mint a külső és 100°C
                     felett forr a víz. 
-                    <br id="parolgas">Kis nyomáson pl hegyekben 100°C alatt forr a víz.
+                    <br>Kis nyomáson pl hegyekben 100°C alatt forr a víz.
                     </p>
                 
-                <h5>Párolgás</h5>
+                <h5 id="parolgas">Párolgás</h5>
                     <p>Minden folyadék, minden hőmérsékleten párolog. Párolgáskor a részecskék
                     hagyják el a folyadékot. Ezért a megmaradt folyadék belső energiája csökken.
                     (Nyáron ha kijössz a medencéből bármennyire süt a nap fázni fogsz.)
@@ -690,10 +714,10 @@
                     <br>ㅤ-anyag fajtájától (alkohol gyorsabban párolog mint a víz)
                     <br>ㅤ-párolgó felület nagyságától (teregetés)
                     <br>ㅤ-hőmérséklettől (nyáron előbb szárad)
-                    <br id="lecsapodas">ㅤ-környezet páratartalmától
+                    <br>ㅤ-környezet páratartalmától
                     </p>
             
-                <h5>Lecsapódás</h5>
+                <h5 id="lecsapodas">Lecsapódás</h5>
                     <p>Főzéskor a konyhaablak bepárásodik, fürdéskor a levegőben lévő vízgőz a
                     hideg csempén lecsapódik, folyadékká válik.
                     <br>A lecsapódás a párolgás fordítottja.
@@ -701,72 +725,70 @@
                     <br>A lecsapódás játszik szerepet a felhőképződésben is:
                     <br>ㅤㅤA földön található víz párolog és a magasban ahol hideg van lecsapódik 
                     <br>ㅤㅤés vízcseppekké áll össze, a vízcseppekből felhő lesz. Egy felhő minél
-                    <br id="kod">ㅤㅤszürkébb, annál valószínűbb hogy esni fog.
+                    <br>ㅤㅤszürkébb, annál valószínűbb hogy esni fog.
                     </p>
 
-                <h5>Köd</h5>
+                <h5 id="kod">Köd</h5>
                     <p>A köd a föld felszínén kialakult felhő. A köd a levegő lehűlésekor jön
                     létre. Ilyenkor a látótávolság 1km alá csökken. Ha 1km-nél messzebb
                     ellátunk, akkor azt mondjuk, hogy a levegő párás.
-                    <br id="talaj">
                     </p>
 
-                <h5>Talajmenti csapadék</h5>
+                <h5 id="talaj">Talajmenti csapadék</h5>
                     <p>A talajmenti csapadék is lehűléssel alakul ki, amikor a földfelszín hűl le,
                     akkor alakul ki a harmat, a dér és a zúzmara.
-                    <br id="harmatpont">
                     </p>
 
-                <h5>Harmatpont</h5>
+                <h5 id="harmatpont">Harmatpont</h5>
                     <p>Amikor egy köbméter levegőben annyi vízgőz van, hogy többet nem képes befogadni,
                     akkor azt mondják, hogy a levegő telített. 
-                    <br id="leg">Ezt a hőmérsékleti értéket harmatpontnak nevezzük.
+                    <br>Ezt a hőmérsékleti értéket harmatpontnak nevezzük.
                     </p>    
                     
-                <h5>Légnedvesség páratartalom</h5>
+                <h5 id="leg">Légnedvesség páratartalom</h5>
                     <p>A légkörben vízgőz található, amely anedvességet okozza.
                     Tökéletesen száraz, vízgőzt nem tartalmazó helyek a sivatagok, itt a nedvesség 0%.
                     Ha a vízzel a levegő teljesen telítve van, akkor a légnedvesség 100% mint az esőerdők.
                     Zárt helységekben az a legjobb, ha a hőmérrséklet 20°C és a légnedvesség 50%.
-                    <br id="harom">A légnedvességet légnedvességmérővel vagy higrométerrel mérik.
+                    <br>A légnedvességet légnedvességmérővel vagy higrométerrel mérik.
                     </p>
 
-                <h5>A víz hármaspontja</h5>
+                <h5 id="harom">A víz hármaspontja</h5>
                     <p>611 Pascal nyomáson a víz olvadás és forráspontja is 0,01°C. Ez a víz hármaspontja.
-                    <br id="felulet">A jég, a víz és a vízgőz egyensúly állapotba kerül.
+                    <br>A jég, a víz és a vízgőz egyensúly állapotba kerül.
                     </p>
 
             <hr>
 
-            <h3>Felületi feszültség</h3>
+            <h3 id="felulet">Felületi feszültség</h3>
                 <p>Ha a víz felszínére óvatosan varrótűt vagy gilette pengét teszünk, akkor azt tapasztaljuk,
                 hogy a folyadék felszíne kissé behorpad, mint ha a víz felszíne rugalmas lenne. A folyadék
                 szabad felszíne olyan, mint egy rugalmas hártya, aminek vastagsága mikrométer vagy nanométer 
                 nagyságú. 
-                <br id="kapilaris">(mikerométer = 10<sup>-6</sup> m, nanométer = 10<sup>-9</sup> m)
+                <br>(mikerométer = 10<sup>-6</sup> m, nanométer = 10<sup>-9</sup> m)
                 </p>
             
             <img src="css/fix-photo/kapillar.png" alt="Kapilláris jelenség" class="img-thumbnail float-end">
-            <h3>Kapilláris jelenségek</h3> 
+            <h3 id="kapilaris">Kapilláris jelenségek</h3> 
                 <p>Tapasztalat szerint a nyugvó folyadékok és az edény fala között homorú, illetve dombotú alakú
                 lehet a folyadék, ahogyan a képen is látszik.
                 <br>A víz (H<sub>2</sub>O) az üveg esetén nedvesítő folyadék.
-                <br id="hajszal">A higany (Hg) az üveg esetén nem nedvesítő folyadék.
+                <br>A higany (Hg) az üveg esetén nem nedvesítő folyadék.
                 </p>
 
-            <h3>Hajszálcsövesség</h3>
+            <h3 id="hajszal">Hajszálcsövesség</h3>
                 <p>A hajszálcsövet más néven kapillárisnak is nevezzük. 1-2 mm átmérőjű csöveket kapillárisnak nevezzük.
                 A víz a kapilláris csőben mindig felemelkedik. A kapiláris jelenségek fordulnak elő a természetben.
                 Így jutnak vízhez a növények, fák, bokrok. Illetve ha a házak nincsenek jól szigetelve,
                 a falakba feljut a víz és bepenészesedik. 
-                <br id="folygz">Erre a jelenségre szintén a képen látunk példát.
+                <br>Erre a jelenségre szintén a képen látunk példát.
                 </p>
 
             <hr>
 
-            <h3 id="pascal">Folyadékok és gázok mechanikája</h3>
+            <h3 id="folygz">Folyadékok és gázok mechanikája</h3>
         
-                <h5>Pascal elve</h5>
+                <h5 id="pascal">Pascal elve</h5>
                     <p>Pascal - 17.szㅤㅤfrancia matematikus, fizikus, filozófus
                     <br>A nyomást a felületre merőlegesen ható nyomóerővel definiáljuk.
                     <br>A nyomás egyenesen arányos a nyomóerővel (F) és fordítva a felülettel (A).
@@ -778,17 +800,17 @@
                     <h6><b>Hidraulikus berendezések</b></h6>
                     <img src="css/fix-photo/hidraulikus.jpg" alt="Hidraulikus berendezés" class="img-thumbnail">
                     <br>F<sub>1</sub>/A<sub>1</sub> = F<sub>2</sub>/A<sub>2</sub>
-                    <br id="hidro">
+                    <br>
                     </p>
 
-                <h5>Hidrosztatikai nyomás</h5>
+                <h5 id="hidro">Hidrosztatikai nyomás</h5>
                     <p>A hidrosztatikai nyomás nem más, mint a folyadék súlyából származó nyomás.
                     <br>Jele: p
                     <br>Képlet: p = F/A = m * a/A
-                    <br id="arch">Mértékegység: N/m
+                    <br>Mértékegység: N/m
                     </p>
 
-                <h5>Archimédesz törvénye</h5>
+                <h5 id="arch">Archimédesz törvénye</h5>
                     <p>Ke. 2. század - ógörög matematikus, fizikus és filozófus
                     <br>Minden folyadékba merülő testre felhajtóerő hat, amely az általa kiszorított 
                     <br>folyadék súlyával egyenlő nagyságú, de ellentétes irányú.
@@ -801,11 +823,11 @@
                     <br>
                     <br>Jele: F
                     <br>Képlet: F<sub>fel</sub> = G → V<sub>test</sub> * ρ<sub>foly</sub> * q
-                    <br id="atm">Mértékegység: N
+                    <br>Mértékegység: N
                     </p>
 
                 <img src="css/fix-photo/atmoszferikus.jpg" alt="Atmoszférikus nyomás" class="img-thumbnail float-end">
-                <h5>Atmoszdférikus nyomás(légnyomás)</h5>
+                <h5 id="atm">Atmoszdférikus nyomás(légnyomás)</h5>
                     <p>A levegő súlyátúl származó nyomást atmoszférikus nyomásnak nevezzük.
                     <br>17. század - olasz fizikus Torricelli mérte meg először a légnyomást.
                     <br>1 m hosszú csövek egyik vége be volt forrasztva, a másik része nyitva volt.
@@ -821,19 +843,19 @@
                     <br>
                     <br>A fülben a dobhártya nyomáskülönbség hatására kétféleképpen sérülhet:
                     <br>ㅤ-beszakad (nyomás növekedés)
-                    <br id="legnyom">ㅤ-kiszakad (nyomás csökkenés)
+                    <br>ㅤ-kiszakad (nyomás csökkenés)
                     </p>
 
-                <h5>Légnyomáson alapuló berendezések</h5>
+                <h5 id="legnyom">Légnyomáson alapuló berendezések</h5>
                     <p>Laboratóriumokban higanyos légnyomásmérőt használnak.
                     <br>Légnyomás mérésére használják még az aneroidát is.
                     <br>Meteorológiai állomásokon légnyomás mérésére barográfot használnak.
                     <br>A vérnyomásmérők is nyomáskülönbségen alapulnak.
                     <br>A kart körülvevő párnát addig kell levegővel pumpálni amíg a vér keringése a karban megszűnik.
-                    <br id="fold">Ekkor leolvassák a levegő nyomását és az egyenlő a vér nyomásával.
+                    <br>Ekkor leolvassák a levegő nyomását és az egyenlő a vér nyomásával.
                     </p>
 
-                <h5>A föld légkörének felhajtóereje</h5>
+                <h5 id="fold">A föld légkörének felhajtóereje</h5>
                     <p>Archimédesz törvénye nem csak folyadékokra de gázokra is érvényes.
                     <br>Ennek hatására emelkedik a léghajó / léggömb.
                     <br>Gázoknál a felhajtóeerő egyenlő a test által kiszorított gáz súlyával.
@@ -848,21 +870,21 @@
                     <br>ㅤ-nagyobb a felhajtóerőnél, akkor a test lesüllyed
                     <br>
                     <br>A leggömböket a levegőnél könnyebb gázzal töltik (H, He).
-                    <br id="aram">A vákumban a testekre felhajtóerő nem hat.
+                    <br>A vákumban a testekre felhajtóerő nem hat.
                     </p>
 
             <hr>
 
-            <h3 id="folytonos">Áramló közeg mechanikája</h3>
+            <h3 id="aram">Áramló közeg mechanikája</h3>
             
                 <img src="css/fix-photo/aramvonal.png" alt="Áramvonalas cső" class="img-thumbnail float-end">
-                <h5>A folytonossági (kontinuitási) egyenlet</h5>
+                <h5 id="folytonos">A folytonossági (kontinuitási) egyenlet</h5>
                     <p>Ha a keresztmetszet csökken, akkor az áramlás sebessége növekszik.
-                    <br id="nyomasi">Ez azt jelenti, hogy A<sub>1</sub> * v<sub>1</sub> =  A<sub>2</sub> * v<sub>2</sub>
+                    <br>Ez azt jelenti, hogy A<sub>1</sub> * v<sub>1</sub> =  A<sub>2</sub> * v<sub>2</sub>
                     </p>
                     <br>
 
-                <h5>Nyomási energia</h5>
+                <h5 id="nyomasi">Nyomási energia</h5>
                     <img src="css/fix-photo/nyomasi.png" alt="Nyyomási energia" class="img-thumbnail float-end">
                     <p>A nyomással rendelkező víz munkát végez, szóval energiája van.
                     <br>Ezt az energiát nyomási energiának nevezzük.
@@ -870,20 +892,20 @@
                     <br>változásának szorzata adja.
                     <br>Jele: W
                     <br>Képlet: W = F * s
-                    <br id="Bernoulli">ㅤㅤㅤW = p * V
+                    <br>ㅤㅤㅤW = p * V
                     </p>
 
-                <h5>Bernoulli egyenlete</h5>
+                <h5 id="Bernoulli">Bernoulli egyenlete</h5>
                     <img src="css/fix-photo/bernoulli.png" alt="Bernoulli egyenlete" class="img-thumbnail float-end">
                     <p>18. század - svájci matematikus, fizikus
                     <br>Az áramló folyadék sebessége és nyomása közti összefüggést állapította meg.
                     <br>Azt állapította meg, hogy ha növekszik a sebesség akkor a nyomás csökken.
                     <br>Ezt nevezzük hidrodinamikai vagy aerodinamikai paradoxonnak.
                     <br>Befúváskor megnövekszik a levegőáram sebessége, így lecsökken a nyomás.
-                    <br id="kozeg">A külső nyomás azonban változatlan marad (a bentinél nagyobb), ezért összenyomja a két papírlapot.
+                    <br>A külső nyomás azonban változatlan marad (a bentinél nagyobb), ezért összenyomja a két papírlapot.
                     </p>
 
-                <h5>A közegellenállás</h5>
+                <h5 id="kozeg">A közegellenállás</h5>
                     <img src="css/fix-photo/kozeg.png" alt="Közegellenállás" class="img-thumbnail float-end">
                     <p>Közegellenállásnak nevezzük azt az erőt, amely a test és az áramló közeg kölcsönhatásából származik.
                     <h6>A repülés elve</h6>
@@ -891,14 +913,14 @@
                     <br>sebessége nő → a nyomás csökken. A szárny alatt a nyomás marad. Akkor repül, ha a
                     <br>felhajtóerő nagyobb, mint a gép súlya.
                     <br>Bernoulli törvénye az adott közegben mért hangsebességhez közeli, vagy azt meghaladó
-                    <br id="elekter">sebességeknél érvényét veszti.
+                    <br>sebességeknél érvényét veszti.
                     </p>
 
             <hr>
 
-            <h3 id="alapf">Az elektromos tér</h3>
+            <h3 id="elekter">Az elektromos tér</h3>
 
-                <h5>Alapfogalmak</h5>
+                <h5 id="alapf">Alapfogalmak</h5>
                     <p>Ha egy műanyag vonalzót gyapjúdarabbal dörzsölünk, feltöltődik és magához 
                     <br>vonzza a papírszeleteket.
                     <br>Fésülködéskor a fésű vonzza a száraz hajszálakat.
@@ -936,10 +958,10 @@
                     </b></sup>
                     <br>
                     <br>A Coulomb törvény kimondja, hogy egymástól bizonyos távolságra elhelyezett két
-                    <br id="et">töltés között mekkora lesz a vonzó illetve taszitó erő.
+                    <br>töltés között mekkora lesz a vonzó illetve taszitó erő.
                     </p>
 
-                <h5>Elektromos térerősség</h5>
+                <h5 id="et">Elektromos térerősség</h5>
                     <img src="css/fix-photo/elektromos.png" alt="Elektromos térerősség" class="img-thumbnail float-end">
                     <p>Az elektromos térerősség, vagy másnéven intenzitás az elektromos erő és a 
                     <br>töltés hányadosaként definiálható.
@@ -954,10 +976,10 @@
                     </b></sup>
                     <br>Az erő vektormennyiség. Van nagysága és iránya, ezért az elektromos térerő is
                     <br>vektormennyiség. Megállapodás szerint a pozitív töltésnél az elektromos
-                    <br id="met">térerősség kifelé mutat, negatív töltésnél befelé mutat.
+                    <br>térerősség kifelé mutat, negatív töltésnél befelé mutat.
                     </p>
 
-                <h5>Elektromos tér</h5>
+                <h5 id="met">Elektromos tér</h5>
                     <img src="css/fix-photo/elektromos ter.png" alt="Elektromos térerősség" class="img-thumbnail float-end" style="width: 200px;">
                     <p>Az elektromos tér elektromos erővel mozgatja az elektronokat egy bizonyos
                     <br>úton. Ekkor az elektromos tér munkát végez.
@@ -969,11 +991,10 @@
                         <br>Q = töltés (C)
                         <br>d = távolság (m)
                     </b></sup>
-                    <br>
-                    <br id="ep">Elektromos munkánál "s" helyett "d"-t írunk.
+                    <br>Elektromos munkánál "s" helyett "d"-t írunk.
                     </p>
 
-                <h5>Elektromos potenciál</h5>
+                <h5 id="ep">Elektromos potenciál</h5>
                     <p>Volta - 18. század - olasz fizikus
                     <br>Az elektromos potenciál az elektromos energia és a töltés hányadosa. 
                     <br>φ<sub>e</sub> = <span class="unli">W</span> <b>=</b> <span class="unli">Q * E * d</span> <b>=</b> E * d
@@ -984,10 +1005,9 @@
                         <br>Q = töltés (C)
                         <br>d = távolság (m)
                     </b></sup>
-                    <br id="ef">
                     </p>
 
-                <h5>Elektromos feszültség</h5>
+                <h5 id="ef">Elektromos feszültség</h5>
                     <p>Az elektromos feszültség nem más mint potenciál különbség.
                     <br>U = E * d
                     <sup><b>
@@ -995,10 +1015,9 @@
                         <br>E = térerősség (N/C)
                         <br>d = távolság (m)
                     </b></sup>
-                    <br id="mk">
                     </p>
                 
-                <h5>Millikan kísérlete</h5>
+                <h5 id="mk">Millikan kísérlete</h5>
                     <img src="css/fix-photo/millikan.png" alt="Az olajcsepp a lapok közt" class="img-thumbnail float-end">
                     <p>Millikan - 20. század - amerikai fizikus
                     <br>2 vízszintes lap köré olajcseppet helyezett. A lapok között elektromos tér volt.
@@ -1025,12 +1044,12 @@
                     <br>2 * 1,6 * 10<sup>-19</sup>C
                     <br>3 * 1,6 * 10<sup>-19</sup>C
                     <br>Az olajcsepp egyensúlya csak a feszültség érékétől függött és ebből jött rá, hogy
-                    <br id="k">egész számú többszörösként fordul elő az elemi töltés.
+                    <br>egész számú többszörösként fordul elő az elemi töltés.
                     </p>
 
             <hr>
 
-            <h3>Kapacitás</h3>
+            <h3 id="k">Kapacitás</h3>
                 <p>Faraday - 19. század - angol fizikus
                 <br>A kapacitás azt határozza meg, hogy egy testet mennyire sikerült töltéssel feltöltenünk.
                 <br>Mivel az 1C töltés kb. 10<sup>19</sup>db elektron töltésnek felel meg, ezért az F kisebb értékét használjuk.
@@ -1046,10 +1065,9 @@
                     <br>Q = töltés (C)
                     <br>U = feszültség (V)
                 </b></sup>
-                <br id="kon">
                 </p>
 
-            <h3>Kondenzátorok</h3>
+            <h3 id="kon">Kondenzátorok</h3>
                 <p>Két egymástól szigetelővel ellátott fémlemezt kondenzátornak nevezzük.
                 <br>A szigetelőanyag lehet papír, olaj, kerámia, levegő. A kondenzátor a töltések tárolására szolgál,
                 <br>például a fényképezőgép vakuja, amely először feltöltődik, majd az összegyűlt enegiát fény formájában adja ki.
@@ -1067,10 +1085,9 @@
                     <br>A = felület (m<sup>2</sup>)
                     <br>d = távolság (m)
                 </b></sup>
-                <br id="kone">
                 </p>
 
-            <h3>Kondenzátorok energiája</h3>
+            <h3 id="kone">Kondenzátorok energiája</h3>
                 <p>A feltöltött kondenzátor energiája függ a kapacitástól és a feszültség négyzetétől.
                 <br>E = 0.5 * C * U<sup>2</sup>
                 <sup><b>
@@ -1078,10 +1095,9 @@
                     <br>C = kapacitás (F)
                     <br>U = feszültség (V)
                 </b></sup>
-                <br id="konk">
                 </p>
 
-            <h3>Kondenzátorok kapcsolása</h3>
+            <h3 id="konk">Kondenzátorok kapcsolása</h3>
                 <p>A kondenzátorokat két féle képpen kapcsolhatjuk. Sorosan és párhuzamosan.
                 <br><b>PÁRHUZAMOS</b>
                 <br><img src="css/fix-photo/parhuzamos_kond.png" alt="Párhuzamos" class="img-thumbnail kond" style="width: 215px;">
@@ -1103,14 +1119,14 @@
                 <br><span class="unli">  1  </span>ㅤ=ㅤ<span class="unli">  1  </span>ㅤ+ㅤ<span class="unli">  1  </span>ㅤ+ㅤ<span class="unli">  1  </span>ㅤ=ㅤ<span class="unli">40 + 20 + 1</span>ㅤ=ㅤ<span class="unli"> 61 </span>
                 <br>C<sub>eredő </sub>     1<sub>n</sub>F ㅤ       2<sub>n</sub>F ㅤ      40<sub>n</sub>Fㅤㅤㅤㅤ40<sub>n</sub>Fㅤ  ㅤㅤㅤ41
                 <br><span class="unli"> 1 </span>ㅤ=ㅤ<span class="unli"> 40 </span>ㅤ= 0,6557<sub>n</sub>F
-                <br id="veszi">C<sub>eredő</sub>    61<sub>n</sub>F
+                <br>C<sub>eredő</sub>    61<sub>n</sub>F
                 <br>
                 <sup><b>
                     <br>C = kapacitás (F)
                 </b></sup>
                 </p>
 
-            <h3>Vezetők és szigetelők</h3>
+            <h3 id="veszi">Vezetők és szigetelők</h3>
                 <p>Az anyagok elektromos szempontból 2 csoportba oszthatók:
                 <br>ㅤ-vezetők
                 <br>ㅤ-szigetelők
@@ -1125,30 +1141,30 @@
                 <br>Másik csoportba tartoznak az elektromos szigetelőanyagok (pl.: üveg, porcelán, fa, műanyagok)
                 <br>ezekben az anyagokban minimális mozgásképes töltéshordozók vannak vagy nincsenek.
                 <br>
-                <br id="eak">A szelén, a germánium és a szilícium félvezetők, ezért a vezetők és szigetelők között vannak.
+                <br>A szelén, a germánium és a szilícium félvezetők, ezért a vezetők és szigetelők között vannak.
                 </p>
 
-            <h3>Az elektromos áram keletkezése</h3>
+            <h3 id="eak">Az elektromos áram keletkezése</h3>
 
                 <h5>Egyenáram</h5>
                     <p>Ha egy zseblámpa elem két végéhez izzólámpát kapcsolunk, akkor a lámpa világít. Ennek az az
                     <br>oka, hogy a töltéshordozók rendezett irányú mozgást végeznek. Az elektronok mindig a negatív
                     <br>pólustól a pozitív pólus felé mozognak, de megállapodás alapján fordítva jelöljük.
-                    <br id="áe"><img src="css/fix-photo/elektromosaramkeletkezes.png" alt="Áramkör" class="kep">
+                    <br><img src="css/fix-photo/elektromosaramkeletkezes.png" alt="Áramkör" class="kep">
                     </p>
 
-            <h3>Az áramerősség</h3>
+            <h3 id="áe">Az áramerősség</h3>
                 <p>Az áramerősség nem más, mint időegység alatt áthaladó töltések száma. 
                 <br>I = <span class="unli">Q</span>
                 <br>ㅤ    t
-                <sup id="ohm"><b>
+                <sup><b>
                     <br>I = áram (A - amper)
                     <br>Q = töltés (C)
                     <br>t = idő (s)
                 </b></sup>
                 </p>
 
-            <h3>Ohm törvénye</h3>
+            <h3 id="ohm">Ohm törvénye</h3>
                 <p>Ohm - 18-19. század - német fizikus
                 <br>Kísérletileg igazolta, hogy a feszültség az árammal egyenesen arányos.
                 <br>Mindig a feszültség hozza létre az áramot, nem pedig fordítva.
@@ -1182,7 +1198,7 @@
                 <br>
                 <br>Az elektromos ellenállás a fémhuzal anyagi minőségétől és méretétől függ.
                 <br>R = R<sub>0</sub>(1 + a * Δt)
-                <sup id="ellen"><b>
+                <sup><b>
                     <br>R = t hőmérséklete mint ellenállás (Ω)
                     <br>R<sub>0</sub> = t<sub>0</sub> hőmérséklete mint ellenállás (Ω)
                     <br>Δt = hőmérséklet
@@ -1190,7 +1206,7 @@
                 </b></sup>
                 </p>
 
-            <h3>Az ellenállások kapcsolása</h3>
+            <h3 id="ellen">Az ellenállások kapcsolása</h3>
                 <p><b>SOROS</b>
                 <br><img src="css/fix-photo/soros_ellen.png" alt="Soros" class="img-thumbnail kond">
                 <br><br><br><br>
@@ -1221,7 +1237,6 @@
                 <br>ㅤㅤR<sub>2</sub>
                 <br>I<sub>3</sub> = <span class="unli"> U </span>
                 <br>ㅤㅤR<sub>3</sub>
-                <br id="mero">
                 <sup><b>
                     <br>U = feszültség (V)
                     <br>I = áram (A)
@@ -1229,16 +1244,15 @@
                 </b></sup>
                 </p>
 
-            <h3>Mérőműszerek kapcsolása</h3>
+            <h3 id="mero">Mérőműszerek kapcsolása</h3>
                 <p>Az áramerősség mérésére ampmérőt használunk. Az ampmérő az áramkörbe mindig SOROSAN kötjük be a fogyasztóhoz képest.
                 <img src="css/fix-photo/amper_mer.png" alt="Az ampmérő áramköre" class="img-thumbnail">
                 <br>
                 <br>A feszültség mérésére voltmérőt használunk. A voltmérőt mindig PÁRHUZAMOSAN kapcsoljuk be a fogyasztóhoz képest.
                 <img src="css/fix-photo/volt_mer.png" alt="A voltmérő áramköre" class="img-thumbnail">
-                <br id="elemunka">
                 </p>
             
-            <h3>Elektromos munkavégzés és teljesítmény</h3>
+            <h3 id="elemunka">Elektromos munkavégzés és teljesítmény</h3>
                 <span>Az elektromos munkát úgy  számítjuk ki, hogy a feszültséget, az áramot és az időt összehasonlítjuk.
                 <br>W = U * I * t
                 <sup><b>
@@ -1276,7 +1290,7 @@
                 <br>az elektromos energia hővé alakul át. Ezt Joule hővel mérjük.
                 <br>elektromosㅤ=ㅤJoule
                 <br>munkaㅤㅤㅤㅤㅤhő
-                <br id="elevegyi">ㅤ    U * I * tㅤ=ㅤm * c * ΔT
+                <br>ㅤ    U * I * tㅤ=ㅤm * c * ΔT
                 <sup><b>
                     <br>U = feszültség (V)ㅤ ㅤm = tömeg (kg)
                     <br>I = áram (A)ㅤㅤㅤㅤㅤ c = fajhő (J/kg°C)
@@ -1284,9 +1298,9 @@
                 </b></sup>
                 </p>
 
-            <h3 id="elektrolit">Az elektromos áram vegyi hatásai</h3>
+            <h3 id="elevegyi">Az elektromos áram vegyi hatásai</h3>
 
-                <h5>Az elektromos áram elektrolitokban</h5>
+                <h5 id="elektrolit">Az elektromos áram elektrolitokban</h5>
                     <p>Sók, savak, bázisok vizes oldatait elektrolitoknak nevezzük.
                     <div class="row">
                         <div class="col-sm-12 col-md-5 col-lg-3">
@@ -1296,10 +1310,10 @@
                             Az áramforrás feszültségének hatására a pozitív ionok a negatív, a negatív ionok a pozitív pólusok felé mozognak.
                         </div>
                     </div>
-                    <br id="faraday">Elektrolitokban az elektromos áramot az ionok létesítik.
+                    <br>Elektrolitokban az elektromos áramot az ionok létesítik.
                     </p>
 
-                <h5>Faraday törvényei</h5>
+                <h5 id="faraday">Faraday törvényei</h5>
                     Faraday - 19. század - angol fizikus
                     <h6>1. törvény:</h6>
                         <p>Az elektrolitokból kiváló anyag tömege egyenesen arányos az áramerősséggel, illetve töltéssel:
@@ -1323,7 +1337,7 @@
                 
             <hr>
 
-            <h3>Az elektromos áramvezetés gázokban és vákumban</h3>
+            <h3 id="villam">Az elektromos áramvezetés gázokban és vákumban</h3>
                 
                 <h5>A villám</h5>
                     <p>A villám elektromos önálló gázkisülés, amely a felhők vagy a talaj és felhők között jön létre.
@@ -1336,26 +1350,26 @@
                     <br>Legegyszerűbb és leggyakoribban megfigyelhető fajtája a síkvillám.
                     <br>Általában többször lecsap, gyors egymásutánban - a lefényképezett rekord 42-szöre egy ugyanazon csatornán.
                     <br>Nem célszerű villámláskor magas fák vagy csúcsban végződő épületek alá állni.
-                    <br id="aramritka">v = 340 m/s vagyis 3 másodpercenként 1 km-et tesz meg a hang.
+                    <br>v = 340 m/s vagyis 3 másodpercenként 1 km-et tesz meg a hang.
                     </p>
 
-            <h3>Elektromos áramvezetés ritkított gázokban</h3>
+            <h3 id="aramritka">Elektromos áramvezetés ritkított gázokban</h3>
                 <p>Ha nagyfeszültségű áramfkrráshoz üvegcsövet kötünk, akkor a csőben fényjelenséget tapasztalunk.
                 <br>Az így keletkezett fény színe a gáz fajtájától függ.
-                <br id="katod">A világítóberendezések használják pl.: neoncső, reklámcső.
+                <br>A világítóberendezések használják pl.: neoncső, reklámcső.
                 </p>
                 
-                <h5>Katódsugárzás</h5>
+                <h5 id="katod">Katódsugárzás</h5>
                     <p>A katód felületéről nagy feszültség hatására katód sugarak inulnak ki, amelyek valójában elektronokból állnak.
                     <br>Két fajtáját ismerjük:
                     <br>ㅤ-foszforeszkálás pl.: órák
                     <br>ㅤ-fluoreszkálás pl.: kilóméterkövek
-                    <br id="magneses">A régi tévé készülékekben voltak katódsugár csövek és a régi rádiókészülékekben.
+                    <br>A régi tévé készülékekben voltak katódsugár csövek és a régi rádiókészülékekben.
                     </p>
 
-            <h3 id="magnesester">Mágnesesség</h3>
+            <h3 id="magneses">Mágnesesség</h3>
                 
-                <h5>Mágneses tér</h5>
+                <h5 id="magnesester">Mágneses tér</h5>
                     <p>Egy szabadon forgó mágnes mindig észak-dél irányba állapodik meg.
                     <br>Ez azért van így, mert a föld egy nagy mágnes.
                     <div class="row">
@@ -1372,26 +1386,22 @@
                     <br>
                     <br>Ha egy mágnest feldarabolunk apró részekre, akkor minden egyes új résznek lesz északi és déli pólusa.
                     <br>A mágnesek körüli teret indukció vonalakkal szemléltetjük.
-                    <br id="oersted"><img src="css/fix-photo/pólus.png" alt="Mágnes indukciós vonalai" class="img-thumbnail">
+                    <br><img src="css/fix-photo/pólus.png" alt="Mágnes indukciós vonalai" class="img-thumbnail">
                     </p>
 
-                <h5>Oersted kísérlete</h5>
-                    <p>Oersted - 18-19. század - dán fizikus
-                    <br>Az áramjárta vezető körül az irányító kibillen egyensúlyhelyzetéből.
-                    <br id="erovonal">Ez azért van, mert az áramjárta vezető körül mágneses tér alakul ki.
-                    </p>
+                <h5 id="oersted">Oersted kísérlete</h5>
+                    <p>Oersted - 18-19. század - dán fizikus</p>
+                    <p>Az áramjárta vezető körül az irányító kibillen egyensúlyhelyzetéből.</p>
+                    <p>Ez azért van, mert az áramjárta vezető körül mágneses tér alakul ki.</p>
 
-                <h5>A mágneses erővonalak - indukcióvonalak</h5>
-                    <p>A mágneses tér grafikus ábrázolására szolgáló görbéket indukcióvonalaknak nevezzük.
-                    <br id="amper">Az indukcióvonalakat vasreszelék segítségével tudjuk láthatóvá tenni.
-                    </p>
+                <h5 id="erovonal">A mágneses erővonalak - indukcióvonalak</h5>
+                    <p>A mágneses tér grafikus ábrázolására szolgáló görbéket indukcióvonalaknak nevezzük.</p>
+                    <p>Az indukcióvonalakat vasreszelék segítségével tudjuk láthatóvá tenni.</p>
 
-                <h5>Amper-féle jobbkézszabály</h5>
-                    <p>Ha a vezetőt jobb kezünkkel úgy fogjuk be, hogy kifeszített hüvelykujjunk az áram irányába
-                    <br id="indukcio">mutasson, akkor behajlított ujjaink a mágneses indukcióvonalak irányát mutatják.
-                    </p>
+                <h5 id="amper">Amper-féle jobbkézszabály</h5>
+                    <p>Ha a vezetőt jobb kezünkkel úgy fogjuk be, hogy kifeszített hüvelykujjunk az áram irányába mutasson, akkor behajlított ujjaink a mágneses indukcióvonalak irányát mutatják.</p>
 
-                <h5>A mágneses indukció</h5>
+                <h5 id="indukcio">A mágneses indukció</h5>
                     <p>A mágneses teret egy új fizikai mennyiséggel jellemezzük. Ez a mágneses indukció. Az indukció jele: B és egysége a: Tesla</p>
                     <div class="row">
                         <div class="col-md-2 col-sm-4 col-5">
@@ -1413,9 +1423,8 @@
                     <p>Tesla - 19-20. század - délszláv származású Amerikában élt elektrotechnikus</p>
                     <p>A mágneses indukcióvektormennyiség iránya megegyezik az indukcióvonalakhoz húzott érintő vonalával.</p>
                     <img src="css/fix-photo/indukciovektor.png" alt="Indukcióvektro iránya" class="img-thumbnail" width="380x">
-                    <br><br id="Amper">
 
-                <h5>Ampér törvénye</h5>
+                <h5 id="Amper">Ampér törvénye</h5>
                     <p>Homogén mágneses térben két egyenes, párhuzamos vezető között fellépő mágneses erő nagysága egyenesen arányos az áramerősségek szorzatával, illetve a vezetők hosszával, és fordítva a köztük lévő távolsággal.</p>
                     <div class="row">
                         <div class="col-md-4 col-sm-12 col-lg-3">
@@ -1431,18 +1440,17 @@
                             <br>ㅤ   2𝝅</p>
                         </div>
                     </div>
-                    <sup><b>
-                        <br>I = áram (A)
+                    <section class="in"><sup><b>
+                        I = áram (A)
                         <br>l = vezeték hossza (m)
                         <br>d = vezeték közötti távolság (m)
                         <br>k = mágneses állandó
                         <br>
                         <br>μ = permeabilitás (A)
                         <br>𝝅 = pí
-                    </b></sup>
-                    <br id="perma">
+                    </b></sup></section>
                     
-                    <h6>Három féle permabilitás létezik</h6>
+                    <h6 id="perma">Három féle permabilitás létezik</h6>
                         <p>μ = közeg</p>
                         <p>μ<sub>0</sub> = vákumㅤㅤμ<sub>0</sub> = 4*𝝅*10<sup>-7</sup>NA<sup>-2</sup></p>
                         <p>μ<sub>r</sub> = relatív</p>
@@ -1463,18 +1471,18 @@
                         <p>B = <span class="unli">   μ<sub>0</sub> * I   </span> <br>ㅤㅤ2𝝅 * d</p>
                         <p>μ<sub>0</sub> = 4*𝝅*10<sup>-7</sup>NA<sup>-2</sup></p>
 
-                <h5>A tekercs mágneses tere</h5>
+                <h5 id="magnester">A tekercs mágneses tere</h5>
                     <p>A hosszú, henger alakú tekercset szolenoid tekercsnek hívják.</p>
                     <p>A benne lévő mágneses tér indukciója:</p>
-                    <p>B = μ * <span class="unli">N * I</span> <br>ㅤㅤㅤㅤ l</p>
-                    <sup><b>
-                        <br>I = áramerősség (A)
+                    <p>B = μ * <span class="unli">N * I</span> <br><span style="padding-left: 68px;">l</span></p>
+                    <section class="in"><sup><b>
+                        I = áramerősség (A)
                         <br>l = tekercs hossza (m)
                         <br>N = menetszám
                         <br>μ = permeabilitás (A)
-                    </b></sup>
+                    </b></sup></section>
 
-                <h5>Töltéssel rendelkező részecske mágneses térben</h5>
+                <h5 id="toltmagnes">Töltéssel rendelkező részecske mágneses térben</h5>
                     <p>A mágneses tér nem csak a vezetőre, hanem a benne mozgó szabad elektronokra is hatást gyakorol.</p>
                     <p>A mágneses erőre használt két képletből az <b>F<sub>m</sub>= B * I * l * sin α</b> képletre lesz szükségünk.</p>
                     <p>F<sub>m</sub>= B * I * l * sin α</p>
@@ -1491,7 +1499,7 @@
                     </b></sup>
                     <p>Lorentz - 19-20. század - Nóbel-díjas holland fizikus</p>
                 
-                <h5>Az anyagok mágneses tulajdonságai</h5>
+                <h5 id="magnestulaj">Az anyagok mágneses tulajdonságai</h5>
                     <p>Az anyagokat három csoportba osztjuk: </p>
                     <ul>
                         <li>diamágneses</li>
@@ -1513,7 +1521,7 @@
                     <p>Curie - 19-20. század - Nóbel-díjas francia fizikus</p>
                     <p>A Curie-pont felett a ferromágneses anyagok paramágneses anyagokká válnak.</p>
                 
-                <h5>A mágneses térerősség</h5>
+                <h5 id="terero">A mágneses térerősség</h5>
                     <p>H = <span class="unli">  N * I  </span> <br>ㅤㅤ  ㅤl</p>
                     <sup><b>
                         <br>H - mágneses térerősség/gerjesztettség (A/m) 
@@ -1523,7 +1531,7 @@
                     </b></sup>
                     <p>A mágneses térerősség egy vektormennyiség. Indukcióvonalakkal szemléltetjük. Iránya megegyezik a mágneses indukció irányával.</p>
 
-                <h5>A mágneses indukciófluxus</h5>
+                <h5 id="mindukcio">A mágneses indukciófluxus</h5>
                     <p>Φ = B * A</p>
                     <sup><b>
                         <br>Φ - mágneses indukciófluxus (Wb - Weber)
@@ -1535,7 +1543,7 @@
 
                 <hr>
 
-                <h3>Elektromágnes alkalmazásai</h3>
+                <h3 id="elealkalm">Elektromágnes alkalmazásai</h3>
                     <p>Az elektromágnes egy vasmagra csévélt tekercsből áll.</p>
                     <p>Mivel a vas permabilitása (μ) nagy, ezért nagy indukciófluxus jön létre.</p>
                     <p>Φ = B * A <b>=</b> μ * H * A</p>
@@ -1545,7 +1553,7 @@
                         <li>mozgató elektromágnes (pl.: villanycsengő)</li>
                     </ol>
 
-                <h3>Elektromágneses indukció</h3>
+                <h3 id="eleindukcio">Elektromágneses indukció</h3>
                     <h5>Mozgási indukció</h5>
                         <p>Azt a jelenséget amikor a mágneses térben mozgatott vezetőben áram keletkezik, mozgási elektromágneses indukciónak nevezzük.</p>
                         <p>Ennél a jelenségnél nincs feszültségforrás.</p>
@@ -1554,12 +1562,12 @@
                         <p>Ez a jelenség az előzőtől abban tér el, hogy itt egyetlen vezetékdarabot sem mozgatunk.</p>
                         <p>Ha a prrimír tekercsben megnöveljük az áramerősséget, akkor a szekundér tekercsben az ampermérő mutatója kilibben, majd visszaugrik.</p>
 
-                <h3>Lenz törvénye</h3>
+                <h3 id="lenz">Lenz törvénye</h3>
                     <p>Lenz - 19. század - orosz származású német fizikus</p>
                     <p>Az indukált áramot létesítő mozgás iránya és az áram hatására bekövetkező elmozdulás iránya mindig ellentétes.</p>
                     <p>Az indukált áram iránya mindig olyan, hogy mágneses áram hatására akadályozza az őt létrehozó változást.</p>
 
-                <h3>Faraday indukciós törvénye</h3>
+                <h3 id="faradayind">Faraday indukciós törvénye</h3>
                     <p>Ha a vezetőben U feszültség jön létre vagy más néven indukálódik, akkor ez a feszültség egyenesen arányos a mágneses indukccióval, a vezető hosszával és a vezető sebességével. Ezt a törvényt Neumann-törvénynek hívjuk.</p>
                     <p>U = B * l * v</p>
                     <sup><b>
@@ -1574,7 +1582,7 @@
                     <p>U = N *<span class="unli">  ΔΦ  </span> <br>ㅤㅤㅤ    Δt</p>
                     <p>Ez Faraday indukciós törvénye.</p>
                 
-                <h3>Önindukció</h3>
+                <h3 id="onindukcio">Önindukció</h3>
                     <p>Ha a tekercsben folyó áram erőssége megváltozik (pl.: be és kikapcsolásnál), akkor a körülötte lévő mágneses fluxus is megváltozik és a tekercsben is indukálódik feszültség.</p>
                     <p>Az így létrejött indukált feszültséget önindukciós feszültségnek nevezzük.</p>
                     <p>Az önindukciós feszültségre érvényes a következő összefüggés.</p>
@@ -1586,7 +1594,7 @@
                         <br>I - feszültség (A)
                     </b></sup>
 
-                <h3>A tekercs mágneses terének energiája</h3>
+                <h3 id="tekercsmagnes">A tekercs mágneses terének energiája</h3>
                     <p>Ha a tekercset áramforráshoz kapcsoljuk, akkor az elektromos energia lassan átalakul  mágneses energiává.</p>
                     <p>Az elektromos energia képlete:</p>
                     <p>E<sub>e</sub> = <span class="unli">  1  </span> * C * U<sup>2</sup> <br>ㅤㅤ   2</p>
@@ -1600,13 +1608,13 @@
                         L - tekercs induktivitása
                     </b></sup>
 
-                <h3>Az elektromos oszcillátor</h3>
+                <h3 id="oszcillator">Az elektromos oszcillátor</h3>
                     <p>Ez egy olyan berendezés amelyben energiaátalakulás figyelhető meg. Az elektromos energia átalakul mágnesessé vagy fordítva. Ez a berendezés egy kondenzátorból és egy tekercsből áll.</p>
                     <img src="css/fix-photo/oszcillátor.png" alt="Elektromos oszcillátor" class="img-thumbnail" width="300px">
 
                 <hr>
 
-                <h3>Egyenletes körmozgás</h3>
+                <h3 id="kormozgas">Egyenletes körmozgás</h3>
                     <p>Az olyan mozgást, amely közpályán történik, körmozgásnak hívjuk. Ha egyenlő idők alatt egyenlő utat tesz meg a test, akkor egyenletes körmozgásnak nevezzük.</p>
                     <p>Pl.: körhinta</p>
                     <img src="css/fix-photo/kormozgas.png" alt="Elektromos oszcillátor" class="img-thumbnail" width="300px">
@@ -1616,7 +1624,7 @@
                     <br>s - körív hossza (m)
                     </b></sup></section>
                 
-                    <h5>Periódusidő(keringési idő), frekvencia(fordulatszám)</h5>
+                    <h5 id="periodusido">Periódusidő(keringési idő), frekvencia(fordulatszám)</h5>
                         <p>A periódusidő egy teljes kör megtételéhez szükséges idő.</p>
                         <p>A frekvencia pedig azt mutatja meg, hogy 1 sec alatt mennyi a fordulatok száma.</p>
                         <section class="in"><sup><b>
@@ -1626,7 +1634,7 @@
                         <p>A periódusidő és a frekvencia egymásnak a reciproka.</p>
                         <p>T = <span class="unli">1</span> és f = <span class="unli">1</span> <br><span style="padding-left: 30px;">f</span><span style="padding-left: 51px;">T</span></p>
 
-                    <h5>Kerületi sebessség</h5>
+                    <h5 id="keruletseb">Kerületi sebessség</h5>
                         <p>A sebességet úgy számítjuk ki, hogy az utat eelosztjuk az idővel.</p>
                         <p>v = <span class="unli">  út  </span> = <span class="unli">2 * 𝝅 * r</span> <br><span style="padding-left: 30px;">idő</span><span style="padding-left: 45px;">T</span></p>
                         <p>mivel <span class="unli">1</span> = f <br><span style="padding-left: 42px;">T</span></p>
@@ -1634,7 +1642,7 @@
                         <p>A kerületi sebesség vektormennyiség, amely mindig erintő irányú.</p>
                         <img src="css/fix-photo/keruletseb.png" alt="Kerületi sebesség" class="img-thumbnail" width="300px">
 
-                    <h5>Szögsebesség</h5>
+                    <h5 id="szogseb">Szögsebesség</h5>
                         <p>A sebesség nem más, mint időegység alatti szögfordulás.</p>
                         <img src="css/fix-photo/szogsebessseg.png" alt="Szögsebesség" class="img-thumbnail" width="300px">
                         <p>A szögsebességre érvényes: ω = <span class="unli">2 * 𝝅</span> és 2 * 𝝅 * f <br><span style="padding: 247px;">T</span></p>
@@ -1651,12 +1659,12 @@
                         <br>r - sugár (m)
                         </b></sup></section>
 
-                    <h5>Centripetális gyorsulás</h5>
+                    <h5 id="centrip">Centripetális gyorsulás</h5>
                         <p>A centripetális gyorsulás mindigg a fforgásközéppont felé mutat.</p>
                         <p>a<sub>cp</sub> = v * ω</p>
                         <img src="css/fix-photo/centripetal.png" alt="Centripetális gyorsulás" class="img-thumbnail" width="300px">
                         
-                <h3>A rezgőmozgás</h3>
+                <h3 id="rezgom">A rezgőmozgás</h3>
                     <p>Rezgésnek nevezzük minden olyan fizikai jelenséget, amely az időben szakaszosan (periodikusan) ismétlődik.</p>
                     <p>Rezgés például a rugóra akasztott test mozgása, az inga mozgása, illetve a váltóáram is periodikus lefolyású.</p>
                     <p>A rezgések legegyszerűbb fajtálya a harmonikus rezgés (mechanikai rezgés).</p>
@@ -1664,6 +1672,24 @@
                     <img src="css/fix-photo/rugo.png" alt="Rugó" class="img-thumbnail" width="300px"><br>
                     <img src="css/fix-photo/inga.png" alt="Inga" class="img-thumbnail" width="90%">
 
+                    <h5 id="amplitudo">Amplitúdó és pillanatnyi kitérés</h5>
+                        <p>Az amplitúdó jele az "A" és maximális kitérést jelent.</p>
+                        <p>A pillanatnyi kitérés jele pedig az "y".</p>
+                        <p>y = A * sin <span class="unli">360</span> * t <br><span style="padding-left: 86px;">T</span></p>
+                        <section class="in"><sup><b>
+                            y - pillanatnyi kitéréss (m vagy cm)
+                        <br>A - maximális kitérés (m vagy cm)
+                        <br>T - periódus idő (s)
+                        <br>t - pillanatnyi kitérés ideje (s)
+                        </b></sup></section>
+
+                <h3 id="rezgomkin">A rezgőmozgás kinematikája</h3>
+                    <p>pillanatnyi kitérés:</p>
+                    <p style="padding-left: 30px;">y = A * sin ω t</p>
+                    <p>sebesség:</p>
+                    <p style="padding-left: 30px;">v = A * ω * cos ω t</p>
+                    <p>gyorsulás:</p>
+                    <p style="padding-left: 30px;">a = A * ω<sup>2</sup> * sin ω t</p>
         </div>
 
     </body>
