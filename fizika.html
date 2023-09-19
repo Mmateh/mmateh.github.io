@@ -88,7 +88,7 @@
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Fizika</a>
-                            <ul class="dropdown-menu dropdown-menu-dark scrollable-menu">
+                            <ul class="dropdown-menu dropdown-menu-dark scrollable-menu" id="items">
                                 <li><a class="dropdown-item" href="#seb">Sebesség</a></li>
                                 <li><a class="dropdown-item" href="#gyors">Gyorsulás</a></li>
                                 <li><a class="dropdown-item" href="#szab">Szabadesés</a></li>
@@ -219,7 +219,10 @@
                         </li>
                     </ul>
                 </div>
-                <input type="search" onkeypress="Search()" placeholder="Keresés" id="keres">
+                <li class="nav-item dropdown"><input type="search" onkeypress="Search()" placeholder="Keresés" id="keres" data-bs-toggle="dropdown" role="search">
+                    <ul class="dropdown-menu dropdown-menu-dark scrollable-menu", id="inner">
+                    </ul>
+                </li>
             </div>
         </nav>
             
