@@ -282,6 +282,11 @@ body {
     margin: auto;
 }
 
+h1 {
+    text-align: center;
+    border: #f2f3f5 2px solid;
+}
+
 h3 {
     margin-top: 30px;
     line-height: 40px;

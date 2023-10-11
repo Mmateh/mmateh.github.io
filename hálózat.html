@@ -247,49 +247,56 @@
 					
 					<h5>(config)#:</h5>
 
+					<section class="text">
 					<h6>Elnevezés:</h6>
-						<ul>
+						<ul style="padding-left: 6%;">
 							<li>hostname {név}</li>
 						</ul>
+					</section>
 
+					<section class="text">
 					<h6>Jelszavak:</h6>
-					-belépési jelszó
-						<ul>
+					<p>-belépési jelszó</p>
+						<ul style="padding-left: 6%;">
 							<li>enable password {jelszó} </li>
 						</ul>
-					-telnet vonal jelszó
-						<ul>
+					<p>-telnet vonal jelszó</p>
+						<ul style="padding-left: 6%;">
 							<li>line vty 0 15</li>
 							<li>password {jelszó}</li>
 							<li>login</li>
 						</ul>
-					-konzol vonal jelszó
-						<ul>
+					<p>-konzol vonal jelszó</p>
+						<ul style="padding-left: 6%;">
 							<li>line console 0</li>
 							<li>password {jelszó}</li>
 							<li>login</li>
 						</ul>
-					-titkosítás
-						<ul>
+					<p>-titkosítás</p>
+						<ul style="padding-left: 6%;">
 							<li>enable secret {jelszó}</li>
 							<li>service password-encryption</li>
 						</ul>
+					</section>
 
+					<section class="text">
 					<h6>Üdvözlő szöveg:</h6>
-						<ul>
+						<ul style="padding-left: 6%;">
 							<li>banner motd "{szöveg}"</li>
 						</ul>
+					</section>
 
+					<section class="text">
 					<h6>Router:</h6>
-					-static
-						<ul>
+					<p>-IP cím adás</p>
+						<ul style="padding-left: 6%;">
 							<li>interface {interface neve}</li>
 							<li>ip address {IP cím} {maszk}</li>
 							<li>no shutdown</li>
 							<li>description {leírás}</li>
 						</ul>
-					-dhcp
-						<ul>
+					<p>-DHCP</p>
+						<ul style="padding-left: 6%;">
 							<li>ip dhcp pool {elnevezés}</li>
 							<li>network {IP cím} {maszk}</li>
 							<li>default-router {IP cím}</li>
@@ -297,22 +304,38 @@
 							<li>ip dhcp excluded-address {kezdő IP} {vég IP}</li>
 							<li>dns-server {IP cím}</li>
 						</ul>
-					-forgalomirányítás
-						<ul>
-							<li>ip route {nem látott hálózat {IP} + {maszk}} {másik bemenő interface IP}</li>
+					<p>-forgalomirányítás (ip route)</p>
+						<ul style="padding-left: 6%;">
+							<li>ip route {nem látott hálózat {IP cím} + {maszk}} {másik bemenő interface IP}</li>
 						</ul>
+					<p>-forgalomirányítás (RIP)</p>
+						<ul style="padding-left: 6%;">
+							<li>passive-interface {nem router felé néző interface neve}</li>
+							<li>router rip</li>
+							<li>version 2</li>
+							<li>network {hálózat lábánál {IP cím}}</li>
+						</ul>
+					<p>-forgalomirányítás (OSPF)</p>
+						<ul style="padding-left: 6%;">
+							<li>passive-interface {nem router felé néző interface neve}</li>
+							<li>router OSPF {folyamatazonosító}</li>
+							<li>network {hálózat lábánál {IP cím} {inverz maszk}} area 0</li>
+						</ul>
+					</section>
 
+					<section class="text">
 					<h6>Switch:</h6>
-					-static
-						<ul>
-							<li>interface vlan1</li>
+					<p>-IP cím adás</p>
+						<ul style="padding-left: 6%;">
+							<li>interface vlan {vlan szám}</li>
 							<li>ip address {IP cím} {maszk}</li>
+							<li>ipv6 address {IPv6 cím}/{maszk}</li>
 							<li>no shutdown</li>
 							<li>exit</li>
 							<li>ip default-gateway {router IP cím}</li>
 						</ul>
-					-ssh
-						<ul>
+					<p>-SSH</p>
+						<ul style="padding-left: 6%;">
 							<li>username {felhasználó név} privilege 15 password {jelszó}</li>
 							<li>hostname {elnevezés}</li>
 							<li>ip domain-name {név.com}</li>
@@ -323,34 +346,51 @@
 							<li>transport input ssh</li>
 							<li>login local</li>
 						</ul>
+					<p>-Vlanok létrehozása</p>
+						<ul style="padding-left: 6%;">
+							<li>vlan {vlan száma}</li>
+							<li>name {vlan neve}</li>
+						</ul>
+						<ul style="padding-left: 6%;">
+							<li>interface {interface neve}</li>
+							<li>switchport access vlan {vlan száma}</li>
+							<li>switchport mode access</li>
+						</ul>
+						<ul style="padding-left: 6%;">
+							<li>interface {interface neve}</li>
+							<li>switchport mode trunk</li>
+						</ul>
+					</section>
 
+					<section class="text">
 					<h6>PC:</h6>
-					-static
-						<ul>
+					<p>-IP cím adás</p>
+						<ul style="padding-left: 6%;">
 							<li>IP cím: {IP cím}</li>
 							<li>Maszk: {Maszk}</li>
 							<li>Default gateway: {Alapértelmezett átjáró IP címe}</li>
 						</ul>
-					-dhcp
-						<ul>
-							<li>Automatic</li>
+					<p>-DHCP</p>
+						<ul style="padding-left: 6%;">
+							<li>Routernél beállított alapján</li>
 						</ul>
+					</section>
 
+					<section class="text">
 					<h6>Server:</h6>
-					<p>A Servereken a SERVICES fülön lehet állítani.</p>
-					-WEB
-					<p>ㅤBe kell kapcsolni és lehet változtatni a tartalmát a weboldalnak.
-					<br>ㅤVagy URL vagy IP címmel lehet csatlakozni a PC "Web browser" alkalmazásával.
-					</p>
+					<p style="padding-left: 2%;">A Servereken a SERVICES fülön lehet állítani.</p>
+					<p>-WEB</p>
+					<p style="padding-left: 2%;">Be kell kapcsolni és lehet változtatni a tartalmát a weboldalnak.
+					<br>Vagy URL vagy IP címmel lehet csatlakozni a PC "Web browser" alkalmazásával.</p>
 
-					-DNS
-					<p>ㅤMeg kell adni a Name: {URL} és egy Address: {IP cím}, valamint bekapcsolni.</p>
+					<p>-DNS</p>
+					<p style="padding-left: 2%;">Meg kell adni a Name: {URL} és egy Address: {IP cím}, valamint bekapcsolni.</p>
 
-					-FTP
-					<p>ㅤAz FTP serveren meg kell adni a felhasználó nevét, jelszavát és jogosultságait.
-					<br>ㅤEgy gép consolejából kell az "ftp {URL/IP}" paranccsal csatlakozni majd bejelentkezni.
-						<ul>
-							<span class="underline">A parancsok:</span>
+					<p>-FTP</p>
+					<p style="padding-left: 2%;">Az FTP serveren meg kell adni a felhasználó nevét, jelszavát és jogosultságait.
+					<br>Egy gép consolejából kell az "ftp {URL/IP}" paranccsal csatlakozni majd bejelentkezni.</p>
+					<p>A parancsok:</p>
+						<ul style="padding-left: 6%;">
 							<li>dir: listázás</li>
 							<li>put: feltöltés</li>
 							<li>get: letöltés</li>
@@ -358,13 +398,12 @@
 							<li>quit: kilépés</li>
 							<li>rename: átnevezés</li>
 						</ul>
-					</p>
 
-					-E-mail
-					<p>ㅤMeg kell adni a Domain nevét.
-					<br>ㅤEz után hozzá lehet adni felhasználóneveket jelszóval.
-					<br>ㅤA PC-n az "Email" alkalmazásban a "Configure mail" opciónál be kell állítani a
-					<ul>
+					<p>-E-mail</p>
+					<p style="padding-left: 2%;">Meg kell adni a Domain nevét.
+					<br>Ez után hozzá lehet adni felhasználóneveket jelszóval.
+					<br>A PC-n az "Email" alkalmazásban a "Configure mail" opciónál be kell állítani a
+					<ul style="padding-left: 6%;">
 						<li>Your name: {neved}</li>
 						<li>Email address: {valami}@{domain név}</li>
 						<li>Incoming Mail Server: {URL/IP}</li>
@@ -372,12 +411,11 @@
 						<li>User name: {felhasználónév}</li>
 						<li>Password: {jelszó}</li>
 					</ul>
-					ㅤHa kész akkor a PC "Email" alkalmazásába üzenetet lehet küldeni a {másik felhasználó}@{domain név} számára.
-					</p>
+					<p style="padding-left: 2%;">Ha kész akkor a PC "Email" alkalmazásába üzenetet lehet küldeni a {másik felhasználó}@{domain név} számára.</p>
 
-					-DHCP
-					<p>A hálózat gépeihez automatikusan ad IP címet.</p>
-					<ul>
+					<p>-DHCP</p>
+					<p style="padding-left: 2%;">A hálózat gépeihez automatikusan ad IP címet.</p>
+					<ul style="padding-left: 6%;">
 						<li>Pool name: {dhcp neve}</li>
 						<li>Default Gateway: {router IP cím}</li>
 						<li>DNS Server: {dns IP címe}</li>
@@ -385,62 +423,73 @@
 						<li>Subnet Mask: {Maszk}</li>
 						<li>Maximum Number of Users: {Max. felhasználók száma}</li>
 					</ul>
+					</section>
 
+					<section class="text">
 					<h6>Ellenőrzés kikerülése:</h6>
-						<ul>
+						<ul style="padding-left: 6%;">
 							<li>no ip domain-lookup</li>
 						</ul>
+					</section>
 
 					<h5>#</h5>
 
+					<section class="text">
 					<h6>Mentés:</h6>
-					-configuráció mentése
-						<ul>
+					<p>-configuráció mentése</p>
+						<ul style="padding-left: 6%;">
 							<li>copy running-config startup-config</li>
 							<li>write</li>
 							<li>do write</li>
 						</ul>
-					-flash mentése
-					    <ul>
+					<p>-flash mentése</p>
+					    <ul style="padding-left: 6%;">
 							<li>copy flash tftp</li>
 						</ul>
+					</section>
 
+					<section class="text">
 					<h6>Config:</h6>
-					-futó
-						<ul>
+					<p>-futó</p>
+						<ul style="padding-left: 6%;">
 							<li>show running-config</li>
 						</ul>
-					-mentett
-						<ul>
+					<p>-mentett</p>
+						<ul style="padding-left: 6%;">
 							<li>show startup-config</li>
 						</ul>
-					-flash
-					    <ul>
+					<p>-flash</p>
+					    <ul style="padding-left: 6%;">
 							<li>show flash</li>
 						</ul>
-					-interfacek
-						<ul>
+					<p>-interfacek</p>
+						<ul style="padding-left: 6%;">
 							<li>show interfaces {interface neve}</li>
 						</ul>
-					-mac címtábla
-						<ul>
+					<p>-mac címtábla</p>
+						<ul style="padding-left: 6%;">
 							<li>show arp</li>
 							<li>show mac-address-table</li>
 						</ul>
-					-ip route
-						<ul>
+					<p>-ip route</p>
+						<ul style="padding-left: 6%;">
 							<li>show ip route</li>
 						</ul>
-						ㅤㅤC: közvetlenül
-						<br>ㅤㅤS: statikus útvonal
-						<br>ㅤㅤO: ospf útvonal
-						<br>
-						<br>
+						<p>C: közvetlenül
+						<br>S: statikus útvonal
+						<br>O: ospf útvonal</p>
+					<p>-vlan</p>
+						<ul style="padding-left: 6%;">
+							<li>show vlan brief</li>
+						</ul>
+					</section>
 
+					<section class="text">
 					<h6>Idő beállítás:</h6>
-						<ul>
+						<ul style="padding-left: 6%;">
 							<li>clock set {idő}</li>
 						</ul>
+					</section>
 
 		</div>
 
