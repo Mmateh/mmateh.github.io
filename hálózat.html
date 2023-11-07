@@ -321,6 +321,10 @@
 							<li>router OSPF {folyamatazonosító}</li>
 							<li>network {hálózat lábánál {IP cím} {inverz maszk}} area 0</li>
 						</ul>
+					<p>-subinterface</p>
+						<ul style="padding-left: 6%">
+							<li>encapsulation dotlq {vlan szám}</li>
+						</ul>
 					</section>
 
 					<section class="text">
@@ -348,28 +352,28 @@
 						</ul>
 					<p>-Vlanok létrehozása</p>
 						<ul style="padding-left: 6%;">
-							<li>vlan {vlan száma}</li>
-							<li>name {vlan neve}</li>
+							<li>vlan {vlan szám}</li>
+							<li>name {vlan név}</li>
 						</ul>
 						<ul style="padding-left: 6%;">
-							<li>interface {interface neve}</li>
-							<li>switchport access vlan {vlan száma}</li>
+							<li>interface {interface név}</li>
+							<li>switchport access vlan {vlan szám}</li>
 							<li>switchport mode access</li>
 						</ul>
 						<ul style="padding-left: 6%;">
-							<li>interface {interface neve}</li>
+							<li>interface {interface név}</li>
 							<li>switchport mode trunk</li>
 						</ul>
 					<p>-Vlan voice</p>
 						<ul style="padding-left: 6%;">
-							<li>interface {interface neve}</li>
-							<li>switchport voice vlan {vlan száma}</li>
+							<li>interface {interface név}</li>
+							<li>switchport voice vlan {vlan szám}</li>
 							<li>mls qos trust cos</li>
 						</ul>
 					<p>-Vlan native</p>
 						<ul style="padding-left: 6%;">
-							<li>interface {interface neve}</li>
-							<li>switchport trunk nativce vlan {vlan száma}</li>
+							<li>interface {interface név}</li>
+							<li>switchport trunk nativce vlan {vlan szám}</li>
 						</ul>
 					</section>
 
