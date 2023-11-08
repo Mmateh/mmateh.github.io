@@ -135,4 +135,19 @@ function load() {
     else if (selected == "45") {
         document.getElementById("pdfek").innerHTML = '<div class="keret"><iframe src="Töri/TöriÚj2/26.07_Az_USA_kialakulása.pdf" frameborder="0"></iframe></div>'
     }
+    else if (selected == "46") {
+        document.getElementById("pdfek").innerHTML = '<div class="keret"><iframe src="Töri/TöriÚj3/1_A-forradalmakat-felváltó-hatalmi-politika.pdf" frameborder="0"></iframe></div>'
+    }
+    else if (selected == "47") {
+        document.getElementById("pdfek").innerHTML = '<div class="keret"><iframe src="Töri/TöriÚj3/2_Az-Olasz-egység-megvalósulása.pdf" frameborder="0"></iframe></div>'
+    }
+    else if (selected == "48") {
+        document.getElementById("pdfek").innerHTML = '<div class="keret"><iframe src="Töri/TöriÚj3/3_A-német-egység-létrejötte.pdf" frameborder="0"></iframe></div>'
+    }
+    else if (selected == "49") {
+        document.getElementById("pdfek").innerHTML = '<div class="keret"><iframe src="Töri/TöriÚj3/Szövetségi rendszerek001.pdf" frameborder="0"></iframe></div>'
+    }
+    else if (selected == "50") {
+        document.getElementById("pdfek").innerHTML = '<div class="keret"><iframe src="Töri/TöriÚj2/Az_ipari_forradalom001.pdf" frameborder="0"></iframe></div>'
+    }
 }

@@ -64,29 +64,6 @@
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Programozási nyelvek</a>
-                            <ul class="dropdown-menu dropdown-menu-dark scrollable-menu">
-                              <li><a class="dropdown-item disabled" href="php.html">PHP</a></li>
-                              <li><a class="dropdown-item" href="html.html">HTML</a></li>
-                              <li><a class="dropdown-item" href="css.html">CSS</a></li>
-                              <li><a class="dropdown-item disabled" href="javascript.html">JavaScript</a></li>
-                              <li><a class="dropdown-item" href="python.html">Python</a></li>
-                              <li><a class="dropdown-item disabled" href="java.html">Java</a></li>
-                              <li><a class="dropdown-item disabled" href="c.html">C</a></li>
-                              <li><a class="dropdown-item disabled" href="c#.html">C#</a></li>
-                              <li><a class="dropdown-item disabled" href="c++.html">C++</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="git.html">Git</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="mysql.html">MySQL</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" href="mongodb.html">MongoDB</a>
-                        </li>
-                        <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Fizika</a>
                             <ul class="dropdown-menu dropdown-menu-dark scrollable-menu" id="items">
                                 <li><a class="dropdown-item" href="#seb">Sebesség</a></li>
@@ -215,7 +192,46 @@
                                     <li><a class="dropdown-item" href="#amplitudo">Amplitúdó és pillanatnyi kitérés</a></li>
                                 </ul>
                                 <li><a class="dropdown-item" href="#rezgomkin">A rezgőmozgás kinematikája</a></li>
+                                <li><a class="dropdown-item" href="#mateming">Matematikai inga</a></li>
+                                <li><a class="dropdown-item" href="#hullamtan">Hullámtan, mechanikai hullámok</a></li>
+                                <li><a class="dropdown-item" href="#hullamegyenlet">Hullámegyenlet</a></li>
+                                <li><a class="dropdown-item" href="#visszhang">Visszhang</a></li>
+                                <li><a class="dropdown-item" href="#doppler">Doppler jelenség</a></li>
+                                <li><a class="dropdown-item" href="#valtoaram">A váltóáram (váltakozóáram) <br>A váltóáram keletkezése</a></li>
+                                <ul class="sorol">
+                                    <li><a class="dropdown-item" href="#valtoaram_hat">A váltóáram hatásai</a></li>
+                                    <li><a class="dropdown-item" href="#valtoaram_telj">A váltóáram teljesítménye</a></li>
+                                </ul>
+                                <li><a class="dropdown-item" href="#villamosgep">A villamos gépek</a></li>
+                                <ul class="sorol">
+                                    <li><a class="dropdown-item" href="#gen">Generátorok</a></li>
+                                    <li><a class="dropdown-item" href="#motor">Motorok</a></li>
+                                    <li><a class="dropdown-item" href="#transz">Transzformátor</a></li>
+                                </ul>
                             </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Programozási nyelvek</a>
+                            <ul class="dropdown-menu dropdown-menu-dark scrollable-menu">
+                              <li><a class="dropdown-item disabled" href="php.html">PHP</a></li>
+                              <li><a class="dropdown-item" href="html.html">HTML</a></li>
+                              <li><a class="dropdown-item" href="css.html">CSS</a></li>
+                              <li><a class="dropdown-item disabled" href="javascript.html">JavaScript</a></li>
+                              <li><a class="dropdown-item" href="python.html">Python</a></li>
+                              <li><a class="dropdown-item disabled" href="java.html">Java</a></li>
+                              <li><a class="dropdown-item disabled" href="c.html">C</a></li>
+                              <li><a class="dropdown-item disabled" href="c#.html">C#</a></li>
+                              <li><a class="dropdown-item disabled" href="c++.html">C++</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="git.html">Git</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="mysql.html">MySQL</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="mongodb.html">MongoDB</a>
                         </li>
                     </ul>
                 </div>
@@ -1703,7 +1719,7 @@
                     <p>y = A * sin 2 * 𝝅 *(<span class="unli">  t  </span>-<span class="unli">  x  </span>) <br><span style="padding-left: 133px;">T</span><span style="padding-left: 18px;">λ</span></p>
                     <p>A hullámegyenlet a haladó hullám térbeli és időbeli elhelyezkedését írja le.</p>
                     
-                <h3 id="visszahng">Visszhang</h3>
+                <h3 id="visszhang">Visszhang</h3>
                     <p>A hang terjedési sebessége a levegőben 340 m/s. A fülünk 0,1 secundumos időkülönbséget tud észlelni.</p>
                     <div class="row">
                         <div class="col-md-2 col-sm-6">
@@ -1787,19 +1803,19 @@
                         <li>forgó rész (rotor) - mágnes vagy elektromágnes</li>
                         <li>álló rész (sztator) - tekrecs</li>
                     </ol>
-                    <h5>Generátorok</h5>
+                    <h5 id="gen">Generátorok</h5>
                         <ol class="in" type="1">
                             <li>Alternátor- mozgási energiából elektromos energiát, váltakozó feszültség</li>
                             <li>Egyenáramú generátor - egyenirányítja a váltakozó áramot</li>
                             <li>Dinamó - az elektromágnest nem külön áramforrással táplálják, hanem ezt is maga a dinamó táplálja - az öngerjesztés elve <br>Feltalálója: Jedlik Ányos - 19. század - magyar fizikus</li>
                         </ol>
-                    <h5>Motorok</h5>
+                    <h5 id="motor">Motorok</h5>
                         <ol class="in" type="1">
                             <li>Szinkronmotor - a belevezetett váltóáram frekvenciája megegyezik a forgó rész frekvenciájával. Legnagyobb előnyük az állandó fordulatszám.</li>
                             <li>Aszinkronmotor - nincs szinkronban az előbb említett két frekvencia - nem állandó a fordulatszám. Ebben a két motorban közös, hogy legtöbbször mindkettő háromfázisú.</li>
                             <li>Egyenáramú motor - egyenáramú generátor (a villamos energiát mechanikai energiává alakítja)</li>
                         </ol>
-                    <h5>Transzformátorok</h5>
+                    <h5 id="transz">Transzformátorok</h5>
                         <p>A transzformátor lényegében egy közös vasmagon elhelyezett két tekercs.</p>
                         <img src="css/fix-photo/transzformator.png" alt="Transzformátor" class="img-thumbnail" width="300px">
                         <section class="in"><sup><b>
@@ -1819,6 +1835,12 @@
                             <li>R = ρ * <span class="unli">  l  </span> <br> <span style="padding-left: 57px;">A</span> <br>↓<br>a vezeték ellenállásának csökkentésével <br>↓<br>a keresztmetszet megnövelésével. Ennek hátránya, hogy több oszlop kéne</li>
                             <li>p = U * I = R * I<sup>2</sup> <br>↓<br>az áramerősség csökkentésével, ami a feszültség növelését jelenti <br>↓<br>feltranszformálás => magas feszültség</li>
                         </ol>
+                       <p>A transtformátor két tekercsének menetszáma úgy aránylik egymáshoz, mint a tekercsek feszültségei.</p>
+                       <p>primér tekercs: N<sub>1</sub>, U<sub>1</sub> <br>szekundér tekercs: N<sub>2</sub>, U<sub>2</sub></p>
+                       <p><span class="unli">  N<sub>1</sub></span> = <span class="unli">  U<sub>1</sub>  </span> <br><span style="padding-left: 7px;">N<sub>2</sub></span><span style="padding-left: 26px;">U<sub>2</sub></span></p>
+                       <p>A transzformátoroknál érvényes az energiamegmaradás törvénye, ami azt jelenti, hogsy a transzformátorokban a primér és szekundér tekercsben a teljesítmény megegyezik.</p>
+                       <p>Teljesítmény: p = u * i</p>
+                       <p>primér teljesítmény = szekundér teljesítmény <br>U<sub>1</sub> * i<sub>1</sub> = U<sub>2</sub> * i<sub>2</sub></p>
 
         </div>
 
