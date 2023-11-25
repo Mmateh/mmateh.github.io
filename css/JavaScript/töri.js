@@ -159,4 +159,7 @@ function load() {
     else if (selected == "53") {
         document.getElementById("pdfek").innerHTML = '<div class="keret"><iframe src="Töri/TöriÚj3/9-Az-egyenlőtlen-fejlődés-Az-Antant-létrejötte.pdf" frameborder="0"></iframe></div>'
     }
+    else if (selected == "54") {
+        document.getElementById("pdfek").innerHTML = '<div class="keret"><iframe src="Töri/TöriÚj3/03_Az_ország_a_dualizmus_korában.pdf" frameborder="0"></iframe></div>'
+    }
 }
