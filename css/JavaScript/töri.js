@@ -150,4 +150,16 @@ function load() {
     else if (selected == "50") {
         document.getElementById("pdfek").innerHTML = '<div class="keret"><iframe src="Töri/TöriÚj2/Az_ipari_forradalom001.pdf" frameborder="0"></iframe></div>'
     }
+    else if (selected == "51") {
+        document.getElementById("pdfek").innerHTML = '<div class="keret"><iframe src="Töri/TöriÚj3/Megtorlás és önkényuralom Magyarországon az 1848.pdf" frameborder="0"></iframe></div>'
+    }
+    else if (selected == "52") {
+        document.getElementById("pdfek").innerHTML = '<div class="keret"><iframe src="Töri/TöriÚj3/A_gyarmatositas_ujabb_hullama001.pdf" frameborder="0"></iframe></div>'
+    }
+    else if (selected == "53") {
+        document.getElementById("pdfek").innerHTML = '<div class="keret"><iframe src="Töri/TöriÚj3/9-Az-egyenlőtlen-fejlődés-Az-Antant-létrejötte.pdf" frameborder="0"></iframe></div>'
+    }
+    else if (selected == "54") {
+        document.getElementById("pdfek").innerHTML = '<div class="keret"><iframe src="Töri/TöriÚj3/03_Az_ország_a_dualizmus_korában.pdf" frameborder="0"></iframe></div>'
+    }
 }
