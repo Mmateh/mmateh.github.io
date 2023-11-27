@@ -105,78 +105,114 @@
 
                 <h3>Alapbeállítások</h3>
 
-                    <h5>A switch rendszerindítási sorrendje</h5>
-                        <ol type="1">
-                            <li>A switch elindít egy power-on self-test (POST) programot. Ez leellenőrzi a CPU-t, DRAM-ot és flash memóriában található fájlrendszert.</li>
-                            <li>Következőnek a switch elindítja a boot loadert. Ez egy kicsi program a ROM-ban tárolva, amely a POST után fut le.</li>
-                            <li></li>
+                    <h5>A switch LED jelzései</h5>
+                        <ol type="1" class="in">
+                            <li>SYST: Rendszer áramellátását jelzi:</li>
+                            <ul>
+                                <li>LED nem világít: nincs bekapcsolva</li>
+                                <li>LED zölden világít: megfelelően működik</li>
+                                <li>LED sárgán világít: áram alatt, nem működik</li>
+                            </ul>
+                            <li>RPS (Redundant Power System): RPS állapotát jelzi:</li>
+                            <ul>
+                                <li>LED nem világít: nincs bekapcsolva</li>
+                                <li>LED zölden világít: csatlakozatva van</li>
+                                <li>LED zölden villog: csatlakoztatva van, nem elérhető</li>
+                                <li>LED sárgán világít: készenléti üzemmód</li>
+                                <li>LED sárgán villog: switch tápegysége hibás</li>
+                            </ul>
+                            <li>STAT: Port státusz módja:</li>
+                            <ul>
+                                <li>LED nem világít: nincs kapcsolat</li>
+                                <li>LED zölden világít: van kapcsolat</li>
+                                <li>LED zölden villog: adatot küld vagy fogad</li>
+                                <li>LED sárgán világít: blokkolva van</li>
+                                <li>LED sárgán villog: tiltva van</li>
+                            </ul>
+                            <li>DUPLX: Duplex módot jelzi:</li>
+                            <ul>
+                                <li>LED nem világít: félduplex (half-duplex)</li>
+                                <li>LED zölden világít: teljes duplex (full-duplex)</li>
+                            </ul>
+                            <li>SPEED: Port sebesség módja:</li>
+                            <ul>
+                                <li>LED nem világít: 10 Mbps</li>
+                                <li>LED zölden világít: 100 Mbps</li>
+                                <li>LED zölden villog: 1000 Mbps</li>
+                            </ul>
+                            <li>PoE (Power over Ethernet): PoE módot jelzi:</li>
+                            <ul>
+                                <li>LED nem világít: nincs tápellátáshiány vagy -meghibásodás</li>
+                                <li>LED zölden világít: PoE mód ki van választva</li>
+                                <li>LED sárgán világít: PoE-hiba vagy tápellátáshiány</li>
+                            </ul>
                         </ol>
 
             <h1>Introduction to Networks</h1>
 
-            <h3 id="szallitasireteg">Szállítási réteg</h3>
+                <h3 id="szallitasireteg">Szállítási réteg</h3>
                 
-                <h5>Szállítási réteg szerepe</h5>
-                    <p>Különböző állomásokon futó alkalmazások közötti logikai kommunikáció. A szállítási rétegnek nincs tudomása a célállomás típusáról, az adathordozó típusáról, az adatok által megtett útvonalról, a kapcsolat torlódásáról vagy a hálózat méretéről.</p>
+                    <h5>Szállítási réteg szerepe</h5>
+                        <p>Különböző állomásokon futó alkalmazások közötti logikai kommunikáció. A szállítási rétegnek nincs tudomása a célállomás típusáról, az adathordozó típusáról, az adatok által megtett útvonalról, a kapcsolat torlódásáról vagy a hálózat méretéről.</p>
 
-                <h5>Szállítási réteg feladatai</h5>
-                    <ul>
-                        <li>Az egyedi párbeszédek nyomon követése</li>
-                        <li>Az adatcsomagok szegmentálása és ismételt összeállítása</li>
-                        <li>Fejlécadatok hozzáadása</li>
-                        <li>Az alkalmazások azonosítása</li>
-                        <li>Párbeszéd multiplexelése</li>
-                    </ul>
-
-                <h5>Szállítási réteg protokolljai</h5>
-                    <p>Meghatározzák hogy miként szállíthatóak és hogy megbízhatóak-e az üzenetek.</p>
-                    <ul>
-                        <li>TCP (Transmission Control Protocol)</li>
-                        <li>UDP (User Datagram Protocol)</li>
-                    </ul>
-
-                <h5>TCP</h5>
-                    <p>A TCP megbízható és teljeskörű protokoll, amely garantálja az összes adat célba érkezését.
-                    Biztosítja az alkalmazásadatok célbaérkezését, amelyek további feldolgozást igényelnek a 
-                    küldő és fogadó állomásokon.</p>
-                    <p>A TCP szegmensekre bontja az adatokat és ellenőrizhető a szegmensek sorrendje.</p>
-                    <p>A megbízhatóságát az alábbi műveletekkel biztosítja:
+                    <h5>Szállítási réteg feladatai</h5>
                         <ul>
-                            <li>Adatszegmensek számozása és nyomonkövetése</li>
-                            <li>Megérkezett adatok nyugtázása</li>
-                            <li>Nem nyugtázott adatok újraküldése egy bizonyos idő után</li>
-                            <li>Rossz sorrendben érkező Adatszegmensek rendezése</li>
-                            <li>Elfogadható sebességgel történő adatküldés</li>
+                            <li>Az egyedi párbeszédek nyomon követése</li>
+                            <li>Az adatcsomagok szegmentálása és ismételt összeállítása</li>
+                            <li>Fejlécadatok hozzáadása</li>
+                            <li>Az alkalmazások azonosítása</li>
+                            <li>Párbeszéd multiplexelése</li>
                         </ul>
-                    </p>
-                    <p>A párbeszéd éllapotának fenntartása és az információ nyomon követése érdekében először
-                    kapcsolatot kell létesítenie, ezért a TCP kapcsolatorientált protokoll.
-                    </p>
 
-                <h5>UDP</h5>
-                    <p>Nem kínál megbíthatóságot és adatfolyam vezérlést, ennek köszönhetően gyorsabban feldolgozható
-                    mint a TCP. Csupán alapfunkciókat biztosít, így nagyon csekély többletterhelést okoz és 
-                    adatellenőrzést sem végez.</p>
-                    <p>Az UDP az adatokat datagramokra bontja, amelyeket szegmenseknek is nevezünk.</p>
-                    <p>Mivel nem kínál megbízhatóságot vagy adatfolyam-vezérlést, nem kell kapcsolatot létrehozni.
-                    Ezért az UDP állapot nélküli protokoll.</p>
-
-                <h5>Megfelelő szállítási protokoll a megfelelő alkalmazáshoz</h5>
-                    <img src="css/fix-photo/UDP-TCP.png" alt="UDP-TCP" class="img-thumbnail">
-
-            <h3>Adatkapcsolati réteg</h3>
-                
-                <h5>Adatkapcsolati réteg szerepe</h5>
-                    <p>Az adatkapcsolati réteg felelős a hálózati kártyák (NIC) egymás közti kommunikációjáért.
+                    <h5>Szállítási réteg protokolljai</h5>
+                        <p>Meghatározzák hogy miként szállíthatóak és hogy megbízhatóak-e az üzenetek.</p>
                         <ul>
-                            <li>Felsőbb rétegek számára nyújt hozzáférést</li>
-                            <li>Fogadja a 3. rétegbeli csomagokat és beágyazza 2. rétegbeli keretbe</li>
-                            <li>Szabályozza az adatok közegre helyezését és fogadását</li>
-                            <li>Keretek cseréjét végzi a végpontok között a közegen keresztül</li>
-                            <li>Fogadja a 3. rétegbeli csomagokat és megfelelő felsőbb rétegbeli protokollhoz irányítja őket</li>
-                            <li>Hibakeresést hajt végre, és elutasítja a hibás kereteket</li>
+                            <li>TCP (Transmission Control Protocol)</li>
+                            <li>UDP (User Datagram Protocol)</li>
                         </ul>
-                    </p>
+
+                    <h5>TCP</h5>
+                        <p>A TCP megbízható és teljeskörű protokoll, amely garantálja az összes adat célba érkezését.
+                        Biztosítja az alkalmazásadatok célbaérkezését, amelyek további feldolgozást igényelnek a 
+                        küldő és fogadó állomásokon.</p>
+                        <p>A TCP szegmensekre bontja az adatokat és ellenőrizhető a szegmensek sorrendje.</p>
+                        <p>A megbízhatóságát az alábbi műveletekkel biztosítja:
+                            <ul>
+                                <li>Adatszegmensek számozása és nyomonkövetése</li>
+                                <li>Megérkezett adatok nyugtázása</li>
+                                <li>Nem nyugtázott adatok újraküldése egy bizonyos idő után</li>
+                                <li>Rossz sorrendben érkező Adatszegmensek rendezése</li>
+                                <li>Elfogadható sebességgel történő adatküldés</li>
+                            </ul>
+                        </p>
+                        <p>A párbeszéd éllapotának fenntartása és az információ nyomon követése érdekében először
+                        kapcsolatot kell létesítenie, ezért a TCP kapcsolatorientált protokoll.
+                        </p>
+
+                    <h5>UDP</h5>
+                        <p>Nem kínál megbíthatóságot és adatfolyam vezérlést, ennek köszönhetően gyorsabban feldolgozható
+                        mint a TCP. Csupán alapfunkciókat biztosít, így nagyon csekély többletterhelést okoz és 
+                        adatellenőrzést sem végez.</p>
+                        <p>Az UDP az adatokat datagramokra bontja, amelyeket szegmenseknek is nevezünk.</p>
+                        <p>Mivel nem kínál megbízhatóságot vagy adatfolyam-vezérlést, nem kell kapcsolatot létrehozni.
+                        Ezért az UDP állapot nélküli protokoll.</p>
+
+                    <h5>Megfelelő szállítási protokoll a megfelelő alkalmazáshoz</h5>
+                        <img src="css/fix-photo/UDP-TCP.png" alt="UDP-TCP" class="img-thumbnail">
+
+                <h3>Adatkapcsolati réteg</h3>
+                    
+                    <h5>Adatkapcsolati réteg szerepe</h5>
+                        <p>Az adatkapcsolati réteg felelős a hálózati kártyák (NIC) egymás közti kommunikációjáért.
+                            <ul>
+                                <li>Felsőbb rétegek számára nyújt hozzáférést</li>
+                                <li>Fogadja a 3. rétegbeli csomagokat és beágyazza 2. rétegbeli keretbe</li>
+                                <li>Szabályozza az adatok közegre helyezését és fogadását</li>
+                                <li>Keretek cseréjét végzi a végpontok között a közegen keresztül</li>
+                                <li>Fogadja a 3. rétegbeli csomagokat és megfelelő felsőbb rétegbeli protokollhoz irányítja őket</li>
+                                <li>Hibakeresést hajt végre, és elutasítja a hibás kereteket</li>
+                            </ul>
+                        </p>
                 
         </div>
 
