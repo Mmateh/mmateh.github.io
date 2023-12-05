@@ -208,6 +208,14 @@
                                     <li><a class="dropdown-item" href="#motor">Motorok</a></li>
                                     <li><a class="dropdown-item" href="#transz">Transzformátor</a></li>
                                 </ul>
+                                <li><a class="dropdown-item" href="#elektro_hullam">Elektromágneses hullámok</a></li>
+                                <li><a class="dropdown-item" href="#hir">Hírközlő rendszerek</a></li>
+                                <li><a class="dropdown-item" href="#feny,optika">Fényytan, optika</a></li>
+                                <li><a class="dropdown-item" href="#geo_optika">Geometriai optika</a></li>
+                                <ul class="sorol">
+                                    <li><a class="dropdown-item" href="#sik_t">Síktükrök</a></li>
+                                    <li><a class="dropdown-item" href="#gomb_t">Gömbtükrök</a></li>
+                                </ul>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -1830,7 +1838,7 @@
                        <p>Teljesítmény: p = u * i</p>
                        <p>primér teljesítmény = szekundér teljesítmény <br>U<sub>1</sub> * i<sub>1</sub> = U<sub>2</sub> * i<sub>2</sub></p>
 
-                <h3>Elektromágneses hullámok</h3>
+                <h3 id="elektro_hullam">Elektromágneses hullámok</h3>
                     <p>Helyezzün kegy áramkörbe kondenzátort és tekercset, majd a kondenzátor lemezeit nyissuk szét. Ekkor az elektromos tér kiszabadul a környezetbe és egy periódusosan változó elektromos és mágneses teret kapunk pl.: rádióhullámok, TV hullámok, mobiltelefonok</p>
                     <img src="css/fix-photo/elektromos_hullamok.png" alt="Elektromos hullámok" width="500px" class="img-thumbnail">
                     <p>Amíg a frekvencia 50 Hz körüli (max 100 Hz), addig elektromágneses rezgésekről beszélünk pl.: váltakozó áram. Nagyobb frekvencia esetán (10<sup>7</sup>Hz - 10<sup>27</sup>Hz) viszont elektromágneses hullámokról beszélünk. Elektromágneses hullámzás esetén elektromos és mágneses energia tejed egyszerre, amit elektromágneses energiának nevezünk. A terjedési sebessége az elektromágneses hullámoknak a fény terjedési sebességével egyezik meg.</p>
@@ -1856,7 +1864,7 @@
                     <br>c - fény sebessége (3*10<sup>8</sup>m/s)
                     </b></sup></section>
 
-                <h3>Hírközlő rendszerek</h3>
+                <h3 id="hir">Hírközlő rendszerek</h3>
                     <p>A mindennapi életben gyakran kell átvinni hangot, képlet nagy távolságokra. Ezeket elektromágneses hullámok segítaségével valósíthatják meg a hírközlő rendszerek.</p>
                     
                     <p><b>Mikrofon</b> - a hanghullám energiáját elektromos energiává változtatja. Ez egy elektroakusztikai átalakító.</p>
@@ -1865,7 +1873,7 @@
                     <p><b>Dekódolás (demoduláció)</b> - a hanghullámok leszedése a vivőhullámokról.</p>
                     <p><b>Hangszóró (reproduktor)</b> - az átvitt akusztikai jel elektromos energiát alakítja vissza hangenergiává. Ez szintén egy elektroakusztikai átalakítás.</p>
 
-                <h3>Fényytan, optika</h3>
+                <h3 id="feny,optika">Fényytan, optika</h3>
                     <p>A fény az energiának egyik fajtája. A fény kettős (duális) természetű. Viselkedhet úgy mint hullám, illetve mint részecske. Először a hullám természetével fogunk foglalkozni (fényvisszaverődés, fénytörés). Utána pedig a részecskével fogunk foglalkozni (fotonok).</p>
                     <p>A fény elektromágneses hullám, amely transzverzálisan terjed. A fény terjedéséhez nincs szükség közegre, míg a hanghullám terjedéséhez szükséges a levegő.</p>
                     <p>A fényforrásokat két nagy csoportra osztjuk:</p>
@@ -1881,7 +1889,7 @@
                         <li>Fizikai optika</li>
                     </ol>
 
-                <h3>Geometriai optika</h3>
+                <h3 id="geo_optika">Geometriai optika</h3>
                     <p>Fényvisszaverődés</p>
                     <p>Ha a fénysugarak két közeg határához ér egy része elnyelődik, másik része visszaverődik. <br>pl.: víz széléről a fény visszaverődik <br>a víz esetén egy része megtörik</p>
                     <p>A fényvisszaverődést tükrös visszaverődésnek is nevezzük.</p>
@@ -1896,10 +1904,32 @@
                     <br>β - visszaverődési szög
                     </b></sup></section>
                     <p>α = β</p>
-                    <h5>Síktükrök</h5>
-                        <p>pl.: fodrász és közmetikai szalon, fürdőszoba, előszoba, zsebtükrök, periszkóp, macskaszem, mérőműszerek</p>
+                    
+                    <h5 id="sik_t">Síktükrök</h5>
+                        <p>Síktükröket hsználunk pl.: fodrász és közmetikai szalonokban, fürdőszobában, előszobában, zsebtükrökhöz, periszkópokhoz, macskaszemhez, mérőműszerekhez.</p>
                         <p>A síktükrök mindig egyenesállású, a tárggyal megegyező nagyságú képet adnak. A síktükrökben a bal és a jobb oldal felcserélődik. A síktükrök képszerkesztése megegyezik a tengelyes tükrözéssel.</p>
                         <img src="css/fix-photo/siktukor.png" alt="Tengelyes tükrözés" width="200px" class="img-thumbnail">
+                    
+                    <h5 id="gomb_t">Gömbtükrök</h5>
+                        <p>Ha a tükröző felület nem sík, akkor gombtükörről beszélünk. <br>A gömbtükröknek két fajtája van:</p>
+                        <ul class="in">
+                            <li>homorú gömbtükrök</li>
+                        </ul>
+                        <img src="css/fix-photo/homoru.png" alt="Homorú tükör" width="300px" class="img-thumbnail">
+                        <ul class="in">
+                            <li>domború gömbtükör</li>
+                        </ul>
+                        <img src="css/fix-photo/domboru.png" alt="Domború tükör" width="300px" class="img-thumbnail">
+                        <p>r = 2 * f <br>f = <span class="unli">  r  </span> <br><span style="padding-left: 28px;">2</span></p>
+                        <section class="in"><sup><b>
+                            O - tökör csúcsa
+                        <br>F - fókuszpont vagy gyújtópont
+                        <br>G - görbületi küzéppont
+                        <br>f - fókusztávolság
+                        <br>r - görbületi sugár
+                        </b></sup></section>
+                        <p>Homorú tükröket használják fogászati rendelőkben, illetve autóban a fényszóró előtti tükör. <br>Domború tükröket használnak beláthatatlan kanyaroknál, útkereszteződésekben, illetve az autók visszapillantó tükrében is.</p>
+                        <p>A homorú tükröknél a kép lehet nagyított vagy kicsinyített, illetve egyenes állású vagy fordított állású. <br>A domború tükröknél mindig egyenes állású kicsinyített képet kapunk.</p>
 
         </div>
 
