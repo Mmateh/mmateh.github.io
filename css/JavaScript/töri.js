@@ -162,4 +162,7 @@ function load() {
     else if (selected == "54") {
         document.getElementById("pdfek").innerHTML = '<div class="keret"><iframe src="Töri/TöriÚj3/03_Az_ország_a_dualizmus_korában.pdf" frameborder="0"></iframe></div>'
     }
+    else if (selected == "55") {
+        document.getElementById("pdfek").innerHTML = '<div class="keret"><iframe src="Töri/TöriÚj3/Budapest_A fiatal főváros_es_a_torlodo_tarsadalom001.pdf" frameborder="0"></iframe></div>'
+    }
 }
