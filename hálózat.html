@@ -304,6 +304,19 @@
 							<li>ip dhcp excluded-address {kezdő IP} {vég IP}</li>
 							<li>dns-server {IP cím}</li>
 						</ul>
+					<p>-DHCP kikapcsolása</p>
+						<ul style="padding-left: 6%;">
+							<li>no service dhcp</li>
+						</ul>
+					<p>-DHCP szerver engedélyezése</p>
+						<ul style="padding-left: 6%;">
+							<li>service dhcp</li>
+						</ul>
+					<p>-DHCP Relay</p>
+						<ul style="padding-left: 6%;">
+							<li>interface {interface neve}</li>
+							<li>ip helper-address {szerver cím}</li>
+						</ul>
 					<p>-forgalomirányítás (ip route)</p>
 						<ul style="padding-left: 6%;">
 							<li>ip route {nem látott hálózat {IP cím} + {maszk}} {másik bemenő interface IP}</li>
