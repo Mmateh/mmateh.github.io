@@ -56,25 +56,25 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Tantárgyak</a>
                             <ul class="dropdown-menu dropdown-menu-dark scrollable-menu">
-                              <li><a class="dropdown-item" href="töri.html">Történelem</a></li>
-                              <li><a class="dropdown-item" href="fizika.html">Fizika</a></li>
-                              <li><a class="dropdown-item disabled" href="matek.html">Matek</a></li>
-                              <li><a class="dropdown-item" href="hálózat.html">Hálózat</a></li>
-                              <li><a class="dropdown-item" href="hálózatelmélet.html">Hálózat elmélet</a></li>
+                                <li><a class="dropdown-item" href="töri.html">Történelem</a></li>
+                                <li><a class="dropdown-item" href="fizika.html">Fizika</a></li>
+                                <li><a class="dropdown-item disabled" href="matek.html">Matek</a></li>
+                                <li><a class="dropdown-item" href="hálózat.html">Hálózat</a></li>
+                                <li><a class="dropdown-item" href="hálózatelmélet.html">Hálózat elmélet</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Programozási nyelvek</a>
                             <ul class="dropdown-menu dropdown-menu-dark scrollable-menu">
-                              <li><a class="dropdown-item disabled" href="php.html">PHP</a></li>
-                              <li><a class="dropdown-item" href="html.html">HTML</a></li>
-                              <li><a class="dropdown-item" href="css.html">CSS</a></li>
-                              <li><a class="dropdown-item disabled" href="javascript.html">JavaScript</a></li>
-                              <li><a class="dropdown-item" href="python.html">Python</a></li>
-                              <li><a class="dropdown-item disabled" href="java.html">Java</a></li>
-                              <li><a class="dropdown-item disabled" href="c.html">C</a></li>
-                              <li><a class="dropdown-item disabled" href="c#.html">C#</a></li>
-                              <li><a class="dropdown-item disabled" href="c++.html">C++</a></li>
+                                <li><a class="dropdown-item disabled" href="php.html">PHP</a></li>
+                                <li><a class="dropdown-item" href="html.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="css.html">CSS</a></li>
+                                <li><a class="dropdown-item disabled" href="javascript.html">JavaScript</a></li>
+                                <li><a class="dropdown-item" href="python.html">Python</a></li>
+                                <li><a class="dropdown-item disabled" href="java.html">Java</a></li>
+                                <li><a class="dropdown-item disabled" href="c.html">C</a></li>
+                                <li><a class="dropdown-item disabled" href="c#.html">C#</a></li>
+                                <li><a class="dropdown-item disabled" href="c++.html">C++</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -100,38 +100,146 @@
             <hr>
 
             <h3>Trigonometria</h3>
+                <p>A sinust, cosinust, tangenst és pitagoras tételt csak derékszögű háromszögnél lehet használni.</p>
 
                 <h5>Pitagorasz tétel</h5>
-                    <p>a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup></p>
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6">
+                            <img src="css/fix-photo/sin cos.png" alt="Sinus" class="img-thumbnail" width="100%">
+                        </div>
+                        <div class="col-md-8 col-sm-6">
+                            <p>a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup></p>
+                            <p>sin<sup>2</sup>α + cos<sup>2</sup>α = 1</p>
+                        </div>
+                    </div>
 
-                <h5>Heron képlet (Háromszög területe)</h5>
-                    <p><b>T = √<span class="upli">s *(s-a)(s-b)(s-c)</span></b></p>
-                    <p><b>s = <span class="unli">a + b + c</span> <br><span style="padding-left: 56px;"></span>2</b></p>
-
+                <h5>Terület számítás</h5>
+                    <h6>Alap képletek</h6>
+                        <p><b>T = <span class="unli">  c * m  </span> <br><span style="padding-left: 48px;">2</span></b></p>
+                        <p><b>T = <span class="unli">  a * b  </span> <br><span style="padding-left: 48px;">2</span></b></p>
+                    <h6>Terület számítás sinussal</h6>
+                        <p><b>T = <span class="unli">  b * c * sin α  </span> <br><span style="padding-left: 73px;">2</span></b></p>
+                    <h6>Heron képlet</h6>
+                        <p><b>T = √<span class="upli">s *(s-a)(s-b)(s-c)</span></b></p>
+                        <p><b>s = <span class="unli">a + b + c</span> <br><span style="padding-left: 56px;"></span>2</b></p>
+                        
                 <h5>Magasságtétel</h5>
                     <p style="line-height: 35px;"><img src="css/fix-photo/magastetel.png" alt="Magasságtétel" class="img-thumbnail" width="250px">
-                    <p><b>m = √<span class="upli">p * q</span></b></p>
-                    <p><b>b = √<span class="upli">p * c</span></b></p>
-                    <p><b>a = √<span class="upli">q * c</span></b></p>
+                    <p><b>m=√<span class="upli">p*q</span>ㅤvagyㅤm<sup>2</sup>=p*q</b></p>
 
-                <h5>Sinus, Cosinus, Tangens és Cotangens</h5>
-                    <div>
-                        <img src="css/fix-photo/sin cos.png" alt="Sin/Cos/Tan/Cotan" class="img-thumbnail" width="500px">
+                <h6>Befogótételek</h6>
+                    <p><b>b=√<span class="upli">p*c</span>ㅤvagyㅤb<sup>2</sup>=p*cㅤvagyㅤb<sup>2</sup>=p*(p+q)</b></p>
+                    <p><b>a=√<span class="upli">q*c</span>ㅤvagyㅤa<sup>2</sup>=q*cㅤvagyㅤa<sup>2</sup>=q*(q+p)</b></p>
+
+                <h5>A szögfüggvények bevezetése</h5>
+                    <p>Derékszögű háromszögben az α hegyesszög szinuszának nevezzük a szöggel szemközti befogó és az átfogó hosszának hányadosát. Jelölése: sin α.</p>
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6">
+                            <img src="css/fix-photo/sin cos.png" alt="Sinus" class="img-thumbnail" width="100%">
+                        </div>
+                        <div class="col-md-8 col-sm-6">
+                            <p>sin α = <span class="unli">  a  </span> <br><span style="padding-left: 61px;">c</span></p>
+                            <p>sin β = <span class="unli">  b  </span> <br><span style="padding-left: 60px;">c</span></p>
+                        </div>
                     </div>
+                    <p>Derékszögű háromszögben az α hegyesszög koszinuszának nevezzük a szög melletti befogó és az átfogó hányadosátt. Jelölése: cos α.</p>
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6">
+                            <img src="css/fix-photo/sin cos.png" alt="Sinus" class="img-thumbnail" width="100%">
+                        </div>
+                        <div class="col-md-8 col-sm-6">
+                            <p>cos α = <span class="unli">  b  </span> <br><span style="padding-left: 65px;">c</span></p>
+                            <p>cos β = <span class="unli">  a  </span> <br><span style="padding-left: 64px;">c</span></p>
+                        </div>
+                    </div>
+                    <p>Derékszögű háromszögben az α hegyesszög tangensének nevezzük a szöggel szemközti befogó és a szög melletti befogó hosszának hányadosát. Jelölése: tan α.</p>
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6">
+                            <img src="css/fix-photo/sin cos.png" alt="Sinus" class="img-thumbnail" width="100%">
+                        </div>
+                        <div class="col-md-8 col-sm-6">
+                            <p>tan α = <span class="unli">  a  </span> <br><span style="padding-left: 63px;">b</span></p>
+                            <p>tan β = <span class="unli">  b  </span> <br><span style="padding-left: 63px;">a</span></p>
+                        </div>
+                    </div>
+                    <p>A sinus és cosinus értékének mindig 0,x-nek kell lennie és ebből számítjuk ki a szöget.</p>
+                    <p>A tangest érték lehet lehet 1 fölötto amiből számoljuk ki a szöget.</p>
                 
-                <h5>Sin Cos táblázat</h5>
+                <h5>Összefüggések a hegyesszögek szögfüggvényei között</h5>
                     <div>
                         <img src="css/fix-photo/sin cos table.png" alt="Sin/Cos táblázat" class="img-thumbnail" width="400px">
                     </div>
+                    <p>tan α = <span class="unli">  sin α  </span> <br><span style="padding-left: 60px;">cos α</span></p>
 
-                <h5>Terület számolás pitagorasz tétellel</h5>
+                <hr>
+
+                <p>Tetszőleges háromszögben érvényes a trigonometrikus területképlet:</p>
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <img src="css/fix-photo/tetszoleges_haromszog.png" alt="Háromszög" class="img-thumbnail" width="100%">
+                    </div>
+                    <div class="col-md-8 col-sm-6">
+                        <p>t =<span class="unli">  a * b * sin γ  </span> <br><span style="padding-left: 63px;">2</span></p>
+                        <p>t =<span class="unli">  a * c * sin β  </span> <br><span style="padding-left: 63px;">2</span></p>
+                        <p>t =<span class="unli">  b * c * sin α  </span> <br><span style="padding-left: 63px;">2</span></p>
+                    </div>
+                </div>
+
+                <h5>Szinusztétel</h5>
+                    <p>a:b:c = sin α : sin β : sin γ (A szokásos jelöléseket használva)</p>
+                    <p>Bármely háromszögben az oldalak hosszának aránya megegyezik az oldalakkal szemközti szögek szinuszainak arányával.</p>
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6">
+                            <img src="css/fix-photo/szinusztetel.png" alt="Háromszög" class="img-thumbnail" width="100%">
+                        </div>
+                        <div class="col-md-8 col-sm-6">
+                            <p>a:b:c = sin α : sin β : sin γ</p>
+                            <p>2R = <span class="unli">ㅤaㅤ</span>=<span class="unli">ㅤbㅤ</span>=<span class="unli">ㅤcㅤ</span> <br><span style="padding-left: 40px;">sin α</span><span style="padding-left: 20px;">sin β</span><span style="padding-left: 20px;">sin γ</span></p>
+                        </div>
+                    </div>
+
+                <h5>Cosinustétel</h5>
+                    <p>Bármely háromszögben c<sup>2</sup>=a<sup>2</sup>+b<sup>2</sup>-2ab*cos γ. (A szabályos jelöléseket használva)</p>
+                    <p>A szimmetrikus összefüggések: a<sup>2</sup>=c<sup>2</sup>+b<sup>2</sup>-2cb*cos α és b<sup>2</sup>=c<sup>2</sup>+a<sup>2</sup>-2ca*cos β</p>
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6">
+                            <img src="css/fix-photo/szinusztetel.png" alt="Háromszög" class="img-thumbnail" width="100%">
+                        </div>
+                        <div class="col-md-8 col-sm-6">
+                            <p>c<sup>2</sup>=a<sup>2</sup>+b<sup>2</sup>-2ab*cos γ</p>
+                            <p>a<sup>2</sup>=c<sup>2</sup>+b<sup>2</sup>-2cb*cos α</p>
+                            <p>b<sup>2</sup>=c<sup>2</sup>+a<sup>2</sup>-2ca*cos β</p>
+                        </div>
+                    </div>
+
+                <h5>Háromszögbe és köré rajzolt kör</h5>
+                    <p>Minden háromszögbe és háromszög köré szerkeszthető körvonal. Ha a háromszögbe szerkeszted, akkor belülről érinti minhárom oldalt.</p>
+                    <p>Ezt a szögfelezőkkel tudjuk megcsinálni.</p>
+                    <p>A háromszög köré rajzolt kör pedig áthalad háromszög mindhárom csúcsán, ezt oldalfelező merőlegessel tudjuk megcsinálni.</p>
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6">
+                            <img src="css/fix-photo/haromszog_kor.png" alt="Háromszög" class="img-thumbnail" width="100%">
+                        </div>
+                        <div class="col-md-8 col-sm-6">
+                            <p>t = <span class="unli">  a*b*c  </span> <br><span style="padding-left: 38px;">4*R</span></p>
+                            <p>t = r * s</p>
+                            <p>s = <span class="unli">a + b + c</span> <br><span style="padding-left: 56px;"></span>2</p>
+                        </div>
+                    </div>
+
+                <h5>Pitagorasz képlet</h5>
                     <p>Mekkora az ,,a" oldalú szabályos háromszög magassága és területe? Egy szabályos háromszög magassága ,,m". Mekkora az oldala és területe?</p>
-                    <img src="css/fix-photo/m=.png" alt="Mennyi az ,m'?" class="img-thumbnail" width="400px">
-                    <p>Pitagorasz:</p> 
-                    <p>m = <span class="unli">√3 * a</span> <br><span style="padding-left: 51px;">2</span></p>
-                    <p>T = <span class="unli">√3 * a<sup>2</sup></span> <br><span style="padding-left: 45px;">4</span></p>
-                    <p>a = <span class="unli">2m</span> <br><span style="padding-left: 30px;">√3</span></p>
-                    <p>T = <span class="unli">m<sup>2</sup></span> <br><span style="padding-left: 30px;">√3</span></p>
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6">
+                            <img src="css/fix-photo/m=.png" alt="Mennyi az ,m'?" class="img-thumbnail" width="100%">
+                        </div>
+                        <div class="col-md-8 col-sm-6">
+                            <p>m = <span class="unli">√3 * a</span> <br><span style="padding-left: 51px;">2</span></p>
+                            <p>T = <span class="unli">√3 * a<sup>2</sup></span> <br><span style="padding-left: 45px;">4</span></p>
+                            <p>a = <span class="unli">2m</span> <br><span style="padding-left: 30px;">√3</span></p>
+                            <p>T = <span class="unli">m<sup>2</sup></span> <br><span style="padding-left: 30px;">√3</span></p>
+                        </div>
+                    </div>
 
             <hr>
 
