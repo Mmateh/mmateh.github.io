@@ -60,25 +60,25 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Tantárgyak</a>
                             <ul class="dropdown-menu dropdown-menu-dark scrollable-menu">
-                              <li><a class="dropdown-item" href="töri.html">Történelem</a></li>
-                              <li><a class="dropdown-item" href="fizika.html">Fizika</a></li>
-                              <li><a class="dropdown-item" href="matek.html">Matek</a></li>
-                              <li><a class="dropdown-item disabled" href="hálózat.html">Hálózat</a></li>
-                              <li><a class="dropdown-item" href="hálózatelmélet.html">Hálózat elmélet</a></li>
+                                <li><a class="dropdown-item" href="töri.html">Történelem</a></li>
+                                <li><a class="dropdown-item" href="fizika.html">Fizika</a></li>
+                                <li><a class="dropdown-item" href="matek.html">Matek</a></li>
+                                <li><a class="dropdown-item disabled" href="hálózat.html">Hálózat</a></li>
+                                <li><a class="dropdown-item" href="hálózatelmélet.html">Hálózat elmélet</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Programozási nyelvek</a>
                             <ul class="dropdown-menu dropdown-menu-dark scrollable-menu">
-                              <li><a class="dropdown-item disabled" href="php.html">PHP</a></li>
-                              <li><a class="dropdown-item" href="html.html">HTML</a></li>
-                              <li><a class="dropdown-item" href="css.html">CSS</a></li>
-                              <li><a class="dropdown-item disabled" href="javascript.html">JavaScript</a></li>
-                              <li><a class="dropdown-item" href="python.html">Python</a></li>
-                              <li><a class="dropdown-item disabled" href="java.html">Java</a></li>
-                              <li><a class="dropdown-item disabled" href="c.html">C</a></li>
-                              <li><a class="dropdown-item disabled" href="c#.html">C#</a></li>
-                              <li><a class="dropdown-item disabled" href="c++.html">C++</a></li>
+                                <li><a class="dropdown-item disabled" href="php.html">PHP</a></li>
+                                <li><a class="dropdown-item" href="html.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="css.html">CSS</a></li>
+                                <li><a class="dropdown-item disabled" href="javascript.html">JavaScript</a></li>
+                                <li><a class="dropdown-item" href="python.html">Python</a></li>
+                                <li><a class="dropdown-item disabled" href="java.html">Java</a></li>
+                                <li><a class="dropdown-item disabled" href="c.html">C</a></li>
+                                <li><a class="dropdown-item disabled" href="c#.html">C#</a></li>
+                                <li><a class="dropdown-item disabled" href="c++.html">C++</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -244,7 +244,7 @@
 				<br>
 
 				<h3>Hálózat parancsok</h3>
-					
+
 					<h5>(config)#:</h5>
 
 					<section class="text">
@@ -303,6 +303,19 @@
 							<li>exit</li>
 							<li>ip dhcp excluded-address {kezdő IP} {vég IP}</li>
 							<li>dns-server {IP cím}</li>
+						</ul>
+					<p>-DHCP kikapcsolása</p>
+						<ul style="padding-left: 6%;">
+							<li>no service dhcp</li>
+						</ul>
+					<p>-DHCP szerver engedélyezése</p>
+						<ul style="padding-left: 6%;">
+							<li>service dhcp</li>
+						</ul>
+					<p>-DHCP Relay</p>
+						<ul style="padding-left: 6%;">
+							<li>interface {interface neve}</li>
+							<li>ip helper-address {szerver cím}</li>
 						</ul>
 					<p>-forgalomirányítás (ip route)</p>
 						<ul style="padding-left: 6%;">
@@ -385,6 +398,14 @@
 						<ul style="padding-left: 6%">
 							<li>spanning-tree mode pvst / rapid pvst</li>
 						</ul>
+					<p>-EtherChannel</p>
+						<ul style="padding-left: 6%">
+							<li>interface range {port név}</li>
+							<li>shutdown</li>
+							<li>channel-group {group szám} mode {mód}</li>
+							<li>no shutdown</li>
+							<li>interface port-channel {group szám}</li>
+							<li>switchport mode trunk</li>
 					</section>
 
 					<section class="text">

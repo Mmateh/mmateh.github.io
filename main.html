@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/1cad54f882.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/book.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="website icon" href="css/fix-photo/icon.png">
+        <script src="https://kit.fontawesome.com/1cad54f882.js" crossorigin="anonymous"></script>
+        <script src="css/JavaScript/navbar.js"></script>
+        <script src="css/JavaScript/fizika-calculator.js"></script>
+        <script src="css/JavaScript/search.js"></script>
+        <title>Document</title>
+
+    </head>
+
+
+    <body id="fizika">
+
+        <input class="none" type="checkbox" id="checkbox-cover">
+        <input class="none" type="checkbox" id="checkbox-page1">
+        <input class="none" type="checkbox" id="checkbox-page2">
+        <input class="none" type="checkbox" id="checkbox-page3">
+        <input class="none" type="checkbox" id="checkbox-page4">
+        <input class="none" type="checkbox" id="checkbox-page5">
+        <input class="none" type="checkbox" id="checkbox-page6">
+        <input class="none" type="checkbox" id="checkbox-page7">
+        <input class="none" type="checkbox" id="checkbox-page8">
+        <input class="none" type="checkbox" id="checkbox-page9">
+        <input class="none" type="checkbox" id="checkbox-page10">
+        <input class="none" type="checkbox" id="checkbox-page11">
+        <input class="none" type="checkbox" id="checkbox-page12">
+        <div class="book">
+            <div class="cover">
+                <h1 style="position: fixed; font-size: 10rem;">Fizika</h1>
+                <label for="checkbox-cover"></label>
+            </div>
+            <div class="page" id="page1">
+                <div class="front-page">
+                    <h3 id="seb">Sebesség</h3>
+                        <p>A sebesség nem más mint időegyseég alatt megtett távolság. Ha 1 m/s a sebesség akkor a tömegpont 1 sec alatt 1 métert tesz meg.</p>
+                        <p>1 m/s = 3,6 km/h</p>
+                        <p>v =<span class="unli">  s  </span> <br><span style="padding-left: 30px;">t</span></p>
+                        <section class="in"><sup><b>
+                            v - sebesség (m/s)
+                        <br>s - távolság (m)
+                        <br>t - idő (s)
+                        </b></sup></section>
+                        <div class="row">
+                            <div class="col-sm-12 col-md-12 mb-3">                        
+                                <label for="seb_v">Sebesség (v)</label><br>
+                                <input type="number" id="seb_v" class="font-control" placeholder="m/s">
+                            </div>
+                            <div class="col-sm-12 col-md-12 mb-3">
+                                <label for="seb_s">Távolság (s)</label><br>
+                                <input type="number" id="seb_s" class="font-control" placeholder="m">
+                            </div>
+                            <div class="col-sm-12 col-md-12 mb-3">                        
+                                <label for="seb_t">Idő (t)</label><br>
+                                <input type="number" id="seb_t" class="font-control" placeholder="s">                  
+                            </div>
+                        </div>
+                        <button onclick="szamitas_seb()" class="btn btn-primary mt-4 in">Számol</button>
+                        <button onclick="on_seb()" class="btn btn-success mt-4">Új számítás</button>
+
+                    <label class="next" for="checkbox-page1"><i class="fas fa-chevron-right"></i></label>
+                </div>
+                <div class="back-page">
+                    <h3 id="gyors">Gyorsulás</h3>
+                        <p>A gyorsulás nem más, mint időegység alatti sebességváltozás.</p>
+                        <p>a =<span class="unli">  v  </span><br><span style="padding-left: 30px;">t</span></p>
+                        <section class="in"><sup><b>
+                                a - gyorsulás (m/s<sup>2</sup>)
+                            <br>v - sebesség (m/s)
+                            <br>t - idő (s)
+                        </b></sup></section>
+                        <div class="row">
+                            <div class="col-sm-12 col-md-12 mb-3">
+                                <label for="gyors_a">Gyorsulás (a)</label><br>
+                                <input type="number" id="gyors_a" class="font-control" placeholder="m/s">
+                            </div>
+                            <div class="col-sm-12 col-md-12 mb-3">
+                                <label for="gyors_v">Sebesség (v)</label><br>
+                                <input type="number" id="gyors_v" class="font-control" placeholder="m/s&sup2">
+                            </div>
+                            <div class="col-sm-12 col-md-12 mb-3">
+                                <label for="gyors_t">Idő (t)</label><br>
+                                <input type="number" id="gyors_t" class="font-control" placeholder="sec">
+                            </div>
+                        </div>
+                        <button onclick="szamitas_gyors()" class="btn btn-primary mt-4 in">Számol</button>
+                        <button onclick="on_gyors()" class="btn btn-success mt-4">Új számítás</button>
+
+                    <label class="prev" for="checkbox-page1"><i class="fas fa-chevron-left"></i></label>
+                </div>
+            </div>
+
+            <div class="page" id="page2">
+                <div class="front-page">
+                    <h3 id="szab">Szabadesés</h3>
+                        <p>A levegő ellenállása miatt igazán csak légüres térben lehetséges. (Newton cső) A szabadesés egyenletesen gyorsuló mozgás. A szabadon eső testnek másodpercenként 10 m/s-mal nő a sebesége.</p>
+                        <p>v = g * t</p>
+                        <p>s = 0,5 * g * t<sup>2</sup></p>
+                        <section class="in"><sup><b>
+                                v - sebesség (m/s)
+                            <br>g - nehézségi gyorsulás(gravitáció) (m/s<sup>2</sup>)
+                            <br>t - idő (s)
+                            <br>s - távolság (m)
+                        </b></sup></section>
+                        <div class="row">
+                            <div class="col-sm-12 col-md-12 mb-3">
+                                <label for="szab_v">Sebesség (v)</label><br>
+                                <input type="number" id="szab_v" class="font-control" placeholder="m/s">
+                            </div>
+                            <div class="col-sm-12 col-md-12 mb-3">                   
+                                <label for="szab_t">Idő (t)</label><br>
+                                <input type="number" id="szab_t" class="font-control" placeholder="sec">           
+                            </div>
+                            <div class="col-sm-12 col-md-12 mb-3">       
+                                <label for="szab_s">Távolság (s)</label><br>
+                                <input type="number" id="szab_s" class="font-control" placeholder="m">
+                            </div>
+                        </div>
+                        <button onclick="szamitas_szab()" class="btn btn-primary mt-4 in">Számol</button>
+                        <button onclick="on_szab()" class="btn btn-success mt-4">Új számítás</button>
+                    <label class="next" for="checkbox-page2"><i class="fas fa-chevron-right"></i></label>
+                </div>
+                <div class="back-page">
+                    <h3 id="test">Testek súlya</h3>
+                        <p>A tömeg sehol nem változik, csak a súly. Minden testet a föld egy bizinyos erővel vonz. Ezt az erőt nehézségi erőnek nevezzük, amelynek nagysága megegyezik a test súlyával.</p>
+                        <p>G = m * g</p>
+                        <section class="in"><sup><b>
+                                G - nehézségi erő (N - Newton)
+                            <br>g - nehézségi gyorsulás(gravitáció) (m/s<sup>2</sup>)
+                            <br>m - tömeg (kg)
+                        </b></sup></section>
+                        <div class="row">
+                            <div class="col-sm-12 col-md-12 mb-6">
+                                <label for="test_G">Nehézségi erő (G)</label><br>
+                                <input type="number" id="test_G" class="font-control" placeholder="N">
+                            </div>
+                            <div class="col-sm-12 col-md-12 mb-6">
+                                <label for="test_m">Tömeg (m)</label><br>
+                                <input type="number" id="test_m" class="font-control" placeholder="kg">
+                            </div>
+                        </div>
+                        <button onclick="szamitas_test()" class="btn btn-primary mt-4 in">Számol</button>
+                        <button onclick="on_test()" class="btn btn-success mt-4">Új számítás</button>
+                    <label class="prev" for="checkbox-page2"><i class="fas fa-chevron-left"></i></label>
+                </div>
+            </div>
+
+            <div class="page" id="page3">
+                <div class="front-page">
+                    <h3 id="mech">Mechanikai munka</h3>
+                        <p>Fizikai értelemben akkor beszélünk munkavégzésről, ha egy test erő hatására elmozdul.</p>
+                        <p>Joule - 19. század - angol fizikus</p>
+                        <p>W = F * s</p>
+                        <section class="in"><sup><b>
+                                W - munka (J - Joule)
+                            <br>F - erő (N)
+                            <br>s - hossz (m)
+                        </b></sup></section>
+                        <div class="row">
+                            <div class="col-sm-12 col-md-12 mb-3">
+                                <label for="mech_W">Munka (W)</label><br>
+                                <input type="number" id="mech_W" class="font-control" placeholder="J">
+                            </div>
+                            <div class="col-sm-12 col-md-12 mb-3">                   
+                                <label for="mech_F">Erő (F)</label><br>
+                                <input type="number" id="mech_F" class="font-control" placeholder="N">
+                            </div>
+                            <div class="col-sm-12 col-md-12 mb-3">       
+                                <label for="mech_s">Hossz (s)</label><br>
+                                <input type="number" id="mech_s" class="font-control" placeholder="m">
+                            </div>
+                        </div>
+                        <button onclick="szamitas_mech()" class="btn btn-primary mt-4 in">Számol</button>
+                        <button onclick="on_mech()" class="btn btn-success mt-4">Új számítás</button>
+                    <label class="next" for="checkbox-page3"><i class="fas fa-chevron-right"></i></label>
+                </div>
+                <div class="back-page">
+                    <h3 id="telj">Teljesítmény</h3>
+                        <p>A munkavégzés során fontos, hogy mennyi ideig tart a munkavégzés. A teljesítmény nem más mint időegység alatti munkavégzés.</p>
+                        <p>Watt - 18. század - skót mechanikus, feltaláló</p>
+                        <p>P =<span class="unli">  W  </span> <br><span style="padding-left: 36px;"></span> t</p>
+                        <section class="in"><sup><b>
+                                P - teljesítmény (W - Watt)
+                            <br>W - munka (J)
+                            <br>t - idő (s)
+                        </b></sup></section>
+                        <div class="row">
+                            <div class="col-sm-12 col-md-12 mb-3">
+                                <label for="telj_P">Teljesítmény (P)</label><br>
+                                <input type="number" id="telj_P" class="font-control" placeholder="W">
+                            </div>
+                            <div class="col-sm-12 col-md-12 mb-3">
+                                <label for="telj_W">Munka (W)</label><br>
+                                <input type="number" id="telj_W" class="font-control" placeholder="J">
+                            </div>
+                            <div class="col-sm-12 col-md-12 mb-3">
+                                <label for="telj_t">Idő (t)</label><br>
+                                <input type="number" id="telj_t" class="font-control" placeholder="sec">
+                            </div>
+                        </div>
+                        <button onclick="szamitas_telj()" class="btn btn-primary mt-4 in">Számol</button>
+                        <button onclick="on_telj()" class="btn btn-success mt-4">Új számítás</button>
+                    <label class="prev" for="checkbox-page3"><i class="fas fa-chevron-left"></i></label>
+                </div>
+            </div>
+
+            <div class="page" id="page4">
+                <div class="front-page">
+                    <h3 id="hely">Helyzeti energia</h3>
+                        <p>Ha egy m tömegű testet h magasságba felemelünk, akkor annak a testnek helyzeti energiája lesz.</p>
+                        <p>E<sub>helyzeti</sub> = E<sub>potenciális</sub> = m * g * h</p>
+                        <section class="in"><sup><b>
+                                E - energia (J)
+                            <br>m - tömeg (kg)
+                            <br>g - gravitáció
+                            <br>h - magasság (m)
+                        </b></sup></section>
+                        <div class="row">
+                            <div class="col-sm-12 col-md-12 mb-3">
+                                <label for="hely_E">Energia (E)</label><br>
+                                <input type="number" id="hely_E" class="font-control" placeholder="J">
+                            </div>
+                            <div class="col-sm-12 col-md-12 mb-3">
+                                <label for="hely_m">Tömeg (m)</label><br>
+                                <input type="number" id="hely_m" class="font-control" placeholder="kg">
+                            </div>
+                            <div class="col-sm-12 col-md-12 mb-3">
+                                <label for="hely_h">Magasság (h)</label><br>
+                                <input type="number" id="hely_h" class="font-control" placeholder="m">
+                            </div>
+                        </div>
+                        <button onclick="szamitas_hely()" class="btn btn-primary mt-4 in">Számol</button>
+                        <button onclick="on_hely()" class="btn btn-success mt-4">Új számítás</button>
+                    <label class="next" for="checkbox-page4"><i class="fas fa-chevron-right"></i></label>
+                </div>
+                <div class="back-page">
+                    <h3 id="mozg">Mozgási energia</h3>
+                        <p>A mozgási enmergia függ a test tömegétől és a sebességétől.</p>
+                        <p>E<sub>mozgási</sub> = E<sub>kinetikus</sub> = 0,5 * m * v<sup>2</sup></p>
+                        <section class="in"><sup><b>
+                                E - energia (J)
+                            <br>m - tömeg (kg)
+                            <br>v - gyorsulás (m/s)
+                        </b></sup></section>
+                        <div class="row">
+                            <div class="col-sm-12 col-md-12 mb-3">
+                                <label for="mozg_E">Energia (E)</label><br>
+                                <input type="number" id="mozg_E" class="font-control" placeholder="J">
+                            </div>
+                            <div class="col-sm-12 col-md-12 mb-3">
+                                <label for="mozg_m">Tömeg (m)</label><br>
+                                <input type="number" id="mozg_m" class="font-control" placeholder="kg">
+                            </div>
+                            <div class="col-sm-12 col-md-12 mb-3">
+                                <label for="mozg_v">Sebesség (v)</label><br>
+                                <input type="number" id="mozg_v" class="font-control" placeholder="m/s">
+                            </div>
+                        </div>
+                        <button onclick="szamitas_mozg()" class="btn btn-primary mt-4 in">Számol</button>
+                        <button onclick="on_mozg()" class="btn btn-success mt-4">Új számítás</button>
+                    <label class="prev" for="checkbox-page4"><i class="fas fa-chevron-left"></i></label>
+                </div>
+            </div>
+
+            <div class="page" id="page5">
+                <div class="front-page">
+                    <h3 id="new">Newton gravitációs törvénye</h3>
+                        <p>A gravitációs erő egyenesen arányos a két test tömegének szorzatával és fordítva arányos a köztük lévő távolság négyzetével.</p>
+                        <p>Ez a képlet azt jelenti, hogy minden test vonza egymást egyenlő nagyságú de ellentétes irányű erővel.</p>
+                        <p>F<sub>g</sub> = Κ * <span class="unli">  m<sub>1</sub> * m<sub>2</sub>  </span> <br><span style="padding-left: 89px;"></span>r<sup> 2</sup></p>
+                        <section class="in"><sup><b>
+                                Κ - Kappa: gravitációs állandó: 6,67 * 10<sup>-11</sup>
+                            <br>A világegyetemben ez az érték mindenhol ugyanaz.
+                            <br>F - gravitációs erő (N)
+                            <br>m - tömeg (kg)
+                            <br>r - távolság (m)
+                        </b></sup></section>
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6 mb-3">
+                                <label for="new_F">Gravitációs erő (F)</label><br>
+                                <input type="number" id="new_F" class="font-control" placeholder="N">
+                            </div>
+                            <div class="col-sm-12 col-md-6 mb-3">
+                                <label for="new_m1">Tömeg (m<sub>1</sub>)</label><br>
+                                <input type="number" id="new_m1" class="font-control" placeholder="kg">
+                            </div>
+                            <div class="col-sm-12 col-md-6 mb-3">
+                                <label for="new_m2">Tömeg (m<sub>2</sub>)</label><br>
+                                <input type="number" id="new_m2" class="font-control" placeholder="kg">
+                            </div>
+                            <div class="col-sm-12 col-md-6 mb-3">
+                                <label for="new_r">Távolság (r)</label><br>
+                                <input type="number" id="new_r" class="font-control" placeholder="m">
+                            </div>
+                        </div>
+                        <button onclick="szamitas_new()" class="btn btn-primary mt-4 in">Számol</button>
+                        <button onclick="on_new()" class="btn btn-success mt-4">Új számítás</button>
+                    <label class="next" for="checkbox-page5"><i class="fas fa-chevron-right"></i></label>
+                </div>
+                <div class="back-page">
+                    <h3 id="imp">Impulzus</h3>
+                        <p>Az impulzus a tömeg és a sebesség szorzata.</p>
+                        <p>Newton az "F = m * a"-t az impulzusból vezette le.</p>
+                        <p>p = m * v</p><p>F =<span class="unli">  p  </span> =<span class="unli">  m * v  </span> = m * a <br><span style="padding-left: 32px;"></span>t <span style="padding-left: 42px;"></span>t</p>
+                        <section class="in"><sup><b>
+                            p - impulzus (kgm/s)
+                        <br>m - tömeg (kg)
+                        <br>v - sebesség (m/s)
+                        <br>F - erő (N)
+                        <br>t - idő (s)
+                        <br>a - gyorsulás (m/s<sup>2</sup>)
+                        </b></sup></section>
+                    <label class="prev" for="checkbox-page5"><i class="fas fa-chevron-left"></i></label>
+                </div>
+            </div>
+
+            <div class="page" id="page6">
+                <div class="front-page">
+                    <h3 id="forg">Forgatónyomaték</h3>
+                        <p>Az erő és az erőkar szorzata.</p>
+                        <p>M = F * r</p>
+                        <section class="in"><sup><b>
+                            M - forgatónyomaték (Nm)
+                        <br>F - erő (N)
+                        <br>r - erőkar (m)
+                        </b></sup></section>
+                    <label class="next" for="checkbox-page6"><i class="fas fa-chevron-right"></i></label>
+                </div>
+                <div class="back-page">
+                    <h3 id="hőmé">Hőmérséklet mérése</h3>
+                        <p>A hőmérséklet mérése hőmérővel történik. A fizikában higanyhőmérőt használnak. Ha a hőmérőt melegítjük a higany térfogata tágul és a higany a csőben tágul.</p>
+                        <p>A nálunk használatos hőmérőnek két alappontja van. A 0°C az olvadó jég hőmérséklete, a 100°C a forrásban lévő víz hőmérséklete. A celsius skálát egy svéd csillagászról nevezték el: Anders Celsius (1701-1744)</p>
+                        <section class="in"><sup><b>
+                            T - hőmérséklet (°C vagy °K)
+                        </b></sup></section>
+                        <br>
+                        <p>A világegyetemben előforduló hőmérséklet a -273,15°C. Azért nincs hidegebb, mert a részecskék nem mozognak, ezért nem termelődik belső energia.<br>-273,15°C = 0K<br>A K a Kelvinfokot jelenti. A K negatív nem lehet.</p>
+                    <label class="prev" for="checkbox-page6"><i class="fas fa-chevron-left"></i></label>
+                </div>
+            </div>
+
+            <div class="page" id="page7">
+                <div class="front-page">
+                    <h3 id="testb">Test belső energiája</h3>
+                        <p>Minden test részecskéből épül fel (szilárd, folyékony, gáz). Ezek a részecskék állandóan rezegnek vagy mozognak. Ha a testeket melegítik a részecskék felgyorsulnak, mozgásuk megélénkül és ilyen esetben a test belső energiája nő. Abban az esetben ha a test hőmérséklete csökken, akkor a test belső energiája is csökken. A test belső energiája 0 sosem lehet.</p>
+                        <p>Mértékegysége a Joulre (J).</p>
+                    <label class="next" for="checkbox-page7"><i class="fas fa-chevron-right"></i></label>
+                </div>
+                <div class="back-page">
+                    <h3 id="hőv">Hővezetők és hőszigetelők</h3>
+                        <p>A hővezetés a szilárd anyagoknál fordul elő.</p>
+                        <ul class="in">
+                            <li>Hővezetők: réz, alumínium, vas</li>
+                            <li>Félvezetők: kő, üveg, cserép, porcelán</li>
+                            <li>Hőszigetelők: gyapjú, toll, hungarocel, fa, fűrészpor, jég</li>
+                        </ul>
+                        <p>Egy hótakaró védőhatása akkora, mint egy ugyanolyan vastag téglafalé.</p>
+                    <label class="prev" for="checkbox-page7"><i class="fas fa-chevron-left"></i></label>
+                </div>
+            </div>
+
+            <div class="page" id="page8">
+                <div class="front-page">
+                    <h3 id="hőár">Hőáramlás</h3>
+                        <p>A hőáramlás folyadékoknál és gázoknál jöhet létre. Ha a folyadékokat vagy gázokat melegítjük, akkor a térfogatuk megnő, sűrűségük csökken. Aminek kissebb a sűrűsége mindig feláramlik és helyére hideg kerül. Ezt nevezik hőáramlásnak.</p>
+                        <p>Folyadékokra példa a radiátorokban a víz.</p>
+                        <p>Gáznál a léggömb.</p>
+                        <p>ρ = <span class="unli">  m  </span> <br><span style="padding-left: 37px;">V</span></p>
+                        <section class="in"><sup><b>
+                            ρ - hőáramlás
+                        <br>m - tömeg (kg)
+                        <br>V - térfogat (m<sup>3</sup>)
+                        </b></sup></section>
+                    <label class="next" for="checkbox-page8"><i class="fas fa-chevron-right"></i></label>
+                </div>
+                <div class="back-page">
+                    <h3 id="hős">Hősugárzás</h3>
+                        <p>Hideg téli napokon is érezzük a napnak a sugarát annak ellenére, hogy a környezetet nem melegíti fel. Ezt nevezzük hősugárzásnak.</p>
+                    <label class="prev" for="checkbox-page8"><i class="fas fa-chevron-left"></i></label>
+                </div>
+            </div>
+
+            <div class="page" id="page9">
+                <div class="front-page">
+                    <h3 id="hőm">Hőmennyiség</h3>
+                        <p>A belső energiaváltozást hőmennyiségnek nevezzük.</p>
+                        <p>Q = m * c * ΔT</p>
+                        <section class="in"><sup><b>
+                            Q - energia (J - Joule)
+                        <br>m - tömeg (kg)
+                        <br>c - fajhő (J/kg°C)
+                        <br>ΔT - hőmérséklet változás (˚C)
+                        </b></sup></section>
+                        <p>Ha a test hőmérséklete nő pl.: melegítés, akkor a belső energiája is nő.</p>
+                        <p>Ha a test hőmérséklete csökken pl.: hűtés, akkor a belső energiája is csökken.</p>
+                    <label class="next" for="checkbox-page9"><i class="fas fa-chevron-right"></i></label>
+                </div>
+                <div class="back-page">
+                    <h3 id="faj">Fajhő</h3>
+                        <p>A fajhő megmutatja, hogy 1kg anyag 1°C-al való melegítésekor vagy hűtésekor mennyivel növekszik vagy csökken a test belső energiája. Pl.: A víz fajhője 4200 J/kg°C vagy 4,2 kJ/kg°C</p>
+                        <p>1kg víz (csak víznél 1l) 1°C-al való melegítésekor a víz belső energiája 4200 J-lal nő.</p>
+                        <p>1kg víz (csak víznél 1l) 1°C-al való hűtésekor a víz belső energiája 4200 J-lal csökken.</p>
+                        <p>Q = m * c * ΔT <br>t = <span class="unli">m<sub>1</sub>*c<sub>1</sub>*t<sub>1</sub> + m<sub>2</sub>*c<sub>2</sub>*t<sub>2</sub></span> <br><span style="padding-left: 38px;">m<sub>1</sub>*c<sub>1</sub> + m<sub>2</sub>*c<sub>2</sub></span></p>
+                        <ul class="in">
+                            <li>Jég fajhője:<span style="padding-left: 10px;">2100 J/kg°C</span></li>
+                            <li>Vízgőz:<span style="padding-left: 43px;">2000 J/kg°C</span></li>
+                            <li>Alumínium:<span style="padding-left: 22px;">880 J/kg°C</span></li>
+                            <li>Acél:<span style="padding-left: 70px;">460 J/kg°C</span></li>
+                            <li>Réz:<span style="padding-left: 75px;">400 J/kg°C</span></li>
+                        </ul>
+                    <label class="prev" for="checkbox-page9"><i class="fas fa-chevron-left"></i></label>
+                </div>
+            </div>
+
+            <div class="page" id="page10">
+                <div class="front-page">
+
+                    <label class="next" for="checkbox-page10"><i class="fas fa-chevron-right"></i></label>
+                </div>
+                <div class="back-page">
+                    
+                    <label class="prev" for="checkbox-page10"><i class="fas fa-chevron-left"></i></label>
+                </div>
+            </div>
+
+            <div class="page" id="page11">
+                <div class="front-page">
+
+                    <label class="next" for="checkbox-page11"><i class="fas fa-chevron-right"></i></label>
+                </div>
+                <div class="back-page">
+                    
+                    <label class="prev" for="checkbox-page11"><i class="fas fa-chevron-left"></i></label>
+                </div>
+            </div>
+
+            <div class="back-cover"></div>
+        </div>
+    </body>
+
+</html>
