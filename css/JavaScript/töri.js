@@ -168,4 +168,26 @@ function load() {
     else if (selected == "56") {
         document.getElementById("pdfek").innerHTML = '<div class="keret"><iframe src="Töri/TöriÚj3/03_Az_első_világháborút_lezáró_békeszerződések röv.pdf" frameborder="0"></iframe></div>'
     }
+    else if (selected == "57") {
+        document.getElementById("pdfek").innerHTML = '<div class="keret"><iframe src="Töri/TöriÚj3/Magyarorszag_az_I.Vh-ban.pdf" frameborder="0"></iframe></div>'
+    }
+    else if (selected == "58") {
+        document.getElementById("pdfek").innerHTML = '<div class="keret"><iframe src="Töri/TöriÚj3/A_tanacskoztarsasag001.pdf" frameborder="0"></iframe></div>'
+    }
+    else if (selected == "59") {
+        document.getElementById("pdfek").innerHTML = '<div class="keret"><iframe src="Töri/TöriÚj3/Az ellenforradalom_1919.pdf" frameborder="0"></iframe></div>'
+    }
+    else if (selected == "60") {
+        document.getElementById("pdfek").innerHTML = '<div class="keret"><iframe src="Töri/TöriÚj3/Trianon001.pdf" frameborder="0"></iframe></div>'
+    }
+    else if (selected == "61") {
+        document.getElementById("pdfek").innerHTML = '<div class="keret"><iframe src="Töri/TöriÚj3/AZ_OLASZ_FASIZMUS001.pdf" frameborder="0"></iframe></div>'
+    }
+    else if (selected == "62") {
+        document.getElementById("pdfek").innerHTML = '<div class="keret"><iframe src="Töri/TöriÚj3/A világforradalom bűvöletében001.pdf" frameborder="0"></iframe></div>'
+    }
+    else if (selected == "63") {
+        document.getElementById("pdfek").innerHTML = '<div class="keret"><iframe src="Töri/TöriÚj3/A_bolsevik_oroszorszag001.pdf" frameborder="0"></iframe></div>'
+    }
+
 }
