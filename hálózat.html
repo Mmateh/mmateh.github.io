@@ -334,6 +334,17 @@
 							<li>router OSPF {folyamatazonosító}</li>
 							<li>network {hálózat lábánál {IP cím} {inverz maszk}} area 0</li>
 						</ul>
+						<ul style="padding-left: 6%;">
+							<li>default-information originate</li>
+							<li>ip nat inside static {mit IP} {mire IP}</li>
+						</ul>
+					<p>-statikus NAT</p>
+						<ul style="padding-left: 6%;">
+							<li>interface {interface}</li>
+							<li>ip nat outside</li>
+							<li>interface {interface}</li>
+							<li>ip nat inside</li>
+						</ul>
 					<p>-subinterface</p>
 						<ul style="padding-left: 6%">
 							<li>interface {interface név}.{vlan szám}</li>
