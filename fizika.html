@@ -238,6 +238,19 @@
                                 <ul class="sorol">
                                     <li><a class="dropdown-item" href="#messzelatok">Messzelátók, távcsövek</a></li>
                                 </ul>
+                                <li><a class="dropdown-item" href="#fizikai_optika">Fizikai optika</a></li>
+                                <li><a class="dropdown-item" href="#elektromagneses_spektrum">Elektromágneses spektrum</a></li>
+                                <li><a class="dropdown-item" href="#szinkepzes">Színképzés</a></li>
+                                <li><a class="dropdown-item" href="#feny_interferenciaja">A fény interferenciája</a></li>
+                                <li><a class="dropdown-item" href="#fotometria_alapjai">A fotometria alapjai</a></li>
+                                <div class="dropdown-divider"></div>
+                                <li><a class="dropdown-item" href="#modern_fizika_alapjai">A modern fizika alapjai</a></li>
+                                <li><a class="dropdown-item" href="#kvantumfizika_alapjai">A kvantumfizika alapjai</a></li>
+                                <ul class="sorol">
+                                    <li><a class="dropdown-item" href="#homersekleti_sugarzas">A hőmérsékleti sugárzás</a></li>
+                                    <li><a class="dropdown-item" href="#Stephan_Boltzmann">Stephan-Boltzmann-féle törvény</a></li>
+                                    <li><a class="dropdown-item" href="#Wien">A Wien-féle eltolódási törvény</a></li>
+                                </ul>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -1269,8 +1282,8 @@
                 </p>
             
             <h3 id="elemunka">Elektromos munkavégzés és teljesítmény</h3>
-                <span>Az elektromos munkát úgy  számítjuk ki, hogy a feszültséget, az áramot és az időt összehasonlítjuk.
-                <br>W = U * I * t
+                <p>Az elektromos munkát úgy számítjuk ki, hogy a feszültséget, az áramot és az időt összehasonlítjuk.</p>
+                <p>W = U * I * t</p>
                 <sup><b>
                     <br>W = elktromos munka (J)
                     <br>U = feszültség (V)
@@ -1943,14 +1956,69 @@
                         <img src="css/fix-photo/domboru.png" alt="Domború tükör" width="300px" class="img-thumbnail">
                         <p>r = 2 * f <br>f = <span class="unli">  r  </span> <br><span style="padding-left: 28px;">2</span></p>
                         <section class="in"><sup><b>
-                            O - tökör csúcsa
-                        <br>F - fókuszpont vagy gyújtópont
-                        <br>G - görbületi küzéppont
-                        <br>f - fókusztávolság
-                        <br>r - görbületi sugár
+                                O - tökör csúcsa
+                            <br>F - fókuszpont vagy gyújtópont
+                            <br>G - görbületi küzéppont
+                            <br>f - fókusztávolság
+                            <br>r - görbületi sugár
                         </b></sup></section>
                         <p>Homorú tükröket használják fogászati rendelőkben, illetve autóban a fényszóró előtti tükör. <br>Domború tükröket használnak beláthatatlan kanyaroknál, útkereszteződésekben, illetve az autók visszapillantó tükrében is.</p>
                         <p>A homorú tükröknél a kép lehet nagyított vagy kicsinyített, illetve egyenes állású vagy fordított állású. <br>A domború tükröknél mindig egyenes állású kicsinyített képet kapunk.</p>
+                    
+                    <h5 id="gomb_sug">Gömbtükrök nevezetes sugármenetei</h5>
+                        <div class="row">
+                            <div class="col col-sm-12 col-md-3">
+                                <img src="css/fix-photo/tukor1.png" alt="Tükör" width="300px" class="img-thumbnail">
+                            </div>
+                            <div class="col col-sm-12 col-md-9">
+                                <p>A geometriai középponton áthaladó fénysugár önmagába verődik vissza.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col col-sm-12 col-md-3">
+                                <img src="css/fix-photo/tukor2.png" alt="Tükör" width="300px" class="img-thumbnail">
+                            </div>
+                            <div class="col col-sm-12 col-md-9">
+                                <p>Az optikai középpontban beeső fénsugarak szimmetrikusan verődnek vissza.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col col-sm-12 col-md-3">
+                                <img src="css/fix-photo/tukor3.png" alt="Tükör" width="300px" class="img-thumbnail">
+                            </div>
+                            <div class="col col-sm-12 col-md-9">
+                                <p>A párhuzamosan beeső fénysugarak a fókuszponton át verődnek vissza.</p>
+                                <p>Ami a fókuszponton megy át, az párhuzamosan verődik vissza.</p>
+                            </div>
+                        </div>
+                        <p>K - kép</p>
+                        <p>T - tárgy</p>
+                        <img src="css/fix-photo/tukor_kep1.png" alt="Tükörkép" width="300px" class="img-thumbnail">
+                        <img src="css/fix-photo/tukor_kep2.png" alt="Tükörkép" width="300px" class="img-thumbnail">
+                        <img src="css/fix-photo/tukor_kep3.png" alt="Tükörkép" width="300px" class="img-thumbnail">
+                        <img src="css/fix-photo/tukor_kep4.png" alt="Tükörkép" width="300px" class="img-thumbnail">
+                        <img src="css/fix-photo/tukor_kep5.png" alt="Tükörkép" width="300px" class="img-thumbnail">
+                        <p>A domború tükörre csak egy szerkesztés van:</p>
+                        <img src="css/fix-photo/tukor_kep_domboru.png" alt="Tükörkép" width="300px" class="img-thumbnail">
+
+                <h3>Gömbtükrök távolságtörvénye</h3>
+                    <p>A tárgytávolság és a képtávolság reciprok értékeinek az összege a fókusztávolság reciprokával egyenlő.</p>
+                    <p><span class="unli">  1  </span>+<span class="unli">  1  </span>=<span class="unli">  1  </span> <br><span style="padding-left: 8px;">t</span><span style="padding-left: 26px;">k</span><span style="padding-left: 26px;">f</span></p>
+                    <p>r = 2 * f</p>
+                    <section class="in"><sup><b>
+                            t - tárgytávolság (m vagy cm)
+                        <br>k - képtávolság (m vagy cm)
+                        <br>f - fókusztávolság (m vagy cm)
+                    </b></sup></section>
+                    <p>Tükrök nagyítását úgy számítjuk ki, hogy a képnagyságot vagy képtávolságot elosztjuk a tárgynagysággal vagy a tárgytávolsággal.</p>
+                    <p>N = <span class="unli">  K  </span>=<span class="unli">  k  </span> <br><span style="padding-left: 39px;">T</span><span style="padding-left: 26px;">t</span></p>
+                    <section class="in"><sup><b>
+                            N - nagyítás
+                        <br>K - képnagyság (m vagy cm)
+                        <br>T - tárgynagyság (m vagy cm)
+                        <br>k - képtávolság (m vagy cm)
+                        <br>t - tárgytávolság (m vagy cm)
+                    </b></sup></section>
 
                     <h5 id="gombtukor_nevezetes">Gömbtükrök nevezetes sugármenetei</h5>
                         <div class="row">
@@ -2209,7 +2277,7 @@
                         <p>A Galilei-féle távcső egyenes állású, nagyított képet ad.</p>
                         <p>Látcsövek, mivel a csillagászati távcsövek általában fordított állású képet adnak, ezért a földi látcsövekbe még egy képfordító lencserendszert is tesznek (pl.: színházi látcső, puskákon található látcső)</p>
 
-                <h3>Fizikai optika <br>A szóródás és színek</h3>
+                <h3 id="fizikai_optika">Fizikai optika <br>A szóródás és színek</h3>
                     <p>Keskeny részen át ejtsünk fehér fényt prizmára. Az ernyőn szivárványszínű sáv keletkezik, amelyet színképnek (spektrum) nevezünk.</p>
                     <img src="css/fix-photo/spektrum.png" alt="Spektrum" class="img-thumbnail" width="400px">
                     <p>Ezt a jelenséget színszóródásnak vagy diszperziónak nevezzük.</p>
@@ -2221,6 +2289,115 @@
                     </b></sup></section>
                     <img src="css/fix-photo/nehany_fenyhullam.png" alt="Néhány fényhullám hullámhossza és rezgésszáma" class="img-thumbnail" width="500px">
 
+                <h3 id="elektromagneses_spektrum">Elektromágneses spektrum</h3>
+                    <p>Az elektromágneses spektrumban több sugárzás van.</p>
+                    <ol type="1" class="in">
+                        <li>rádióhullám</li>
+                        <li>mikrohullám</li>
+                        <li>infravörös</li>
+                        <li>látható fény (vörös, narancssárga, sárga, zöld, kék, lila)</li>
+                        <li>ultraibolya</li>
+                        <li>röntgensugárzás</li>
+                        <li>gammasugárzás</li>
+                    </ol>
+                    <p>A fény elektromágneses sugárzás. Ha a fény vákumban vagy légüres térben halad, akkor nem látjuk. A Naptól a fény kb. 8,5 perc alatt jut el a Földre.</p>
+                    <p>Fizeau francia fizikus 1849-ben mérte meg a fény sebességét: 300 000 km/s értéket kapott vákumra. Azóta kiderült, hogy a fény sebességénél nagyobb sebesség a természetben nincs.</p>
+                    <p>Anyagi közegben a fény sebessége mindig kisebb mint vákuumban. Vízben a fény terjedési sebessége 225 000 km/s, üvegben 200 000 km/s.</p>
+                    <p>Az infravörös sugárzás a Földet melegíti. Az ultraibolya sugárzás az ember bőrét barnítja. Az ultraibolya sugárzást a Föld ózonrétege fékezi, elnyeli. Az ózonréteg károsodásával ózonlyukak keletkeznek, melyek bőrrákot okozhatnak.</p>
+                    <p>Ha színes sugarakat gyűjtünk össze, akkor fehér fényt kapunk.</p>
+                    <img src="css/fix-photo/spektrum_vissza.png" alt="Spektrum" class="img-thumbnail" width="400px">
+
+                <h3 id="szinkepzes">Színképzés <br>Spektrográsia</h3>
+                    <p>Az izzó szilárd és cseppfolyós testek folyamatos színképet adnak (a színek között nincs éles határ → összemösódnak → folyamatosan látjuk).</p>
+                    <p>Minden anyag gőzének vagy izzó gáznak színképe vonalas színkép.</p>
+                    <p>Az infravörös (vörösön innen), a látható fény és az ultraibolya (ibolyántúli) sugarak összességét optikai színképnek nevezzük.</p>
+                    <p>Felhasználhatóság:</p>
+                    <ul class="in">
+                        <li>infravörös (hősugárzás) - orvostudomány, ipar, haditechnika</li>
+                        <li>ultraibolya - kémiai és biológiai hatások → szolárium, kvarclámpa</li>
+                    </ul>
+
+                <h3 id="feny_interferenciaja">A fény interferenciája</h3>
+                    <p>Ha keskeny résen áthaladó, homogén fény útjába a fénysugárral párhuzamosan síktükröt helyezünk, akkor a mögötte lévő ernyő egy részén sötét és világos csíkokat láthatunk.</p>
+                    <p>Az interferencia csíkok távolsága a fény színétől függ. Az olajon is ez a jelenség figyelhető meg.</p>
+
+                <h3 id="fotometria_alapjai">A fotometria alapjai</h3>
+                    <h6>1. A fényforrás fényerőssége</h6>
+                        <p>Jele: I</p>
+                        <p>Egysége: [I] = cdㅤKandeia - latin szó, gyertya</p>
+                        <p>gyertyafény => 1cd</p>
+                    <h6>2. A fényáram</h6>
+                        <p>Jele: ϕ</p>
+                        <p>Egysége: [ϕ] = lmㅤLumen</p>
+                        <p>1 lm fényáramot létesít az 1 cd fényerősségű fényforrás.</p>
+                        <p>A közönséges izzólámpa wattonként kb. 1 lm fényáramot sugároz (1 lm = 1 Watt).</p>
+                    <h6>3. Megvilágítás erőssége</h6>
+                        <p>Jele: E</p>
+                        <p>Egysége: [E] = luxㅤLux</p>
+                        <p>1 lux a megvilágítás erőssége ahol 1 m<sup>2</sup>-re 1 lm fényáram esik.</p>
+                        <ul class="in">
+                            <li>teliholdas éjszaka<span style="padding-left: 70px;">0,5 Lux</span></li>
+                            <li>nappal a szabadban<span style="padding-left: 34px;">2 000 Lux</span></li>
+                            <li>nyári napsütés<span style="padding-left: 55px;">100 000 Lux</span></li>
+                            <li>olvasás, írás<span style="padding-left: 112px;">70 Lux</span></li>
+                            <li>rajzoláshoz<span style="padding-left: 108px;">200 Lux</span></li>
+                        </ul>
+
+                        <p style="margin-top: 40px;">A fotometria alaptörvénye</p>
+                        <p>A megvilágítás fordítottan arányos a fény forrásától mért távolság négyzetével.</p>
+                        <p><span class="unli">  E<sub>1</sub>  </span>=<span class="unli">  r<sup>2</sup>  </span> <br><span style="padding-left: 6px;">E<sub>2</sub></span><span style="padding-left: 23px;">r<sup>1</sup></span></p>
+
+                <h3 id="modern_fizika_alapjai">A modern fizika alapjai</h3>
+                    <h5>Klasszikus fizika (19.sz.):</h5>
+                        <p>Mechanika<span style="padding-left: 84px;">- Newton</span></p>
+                        <p>Hőtan<span style="padding-left: 116px;">- Boltzmann, Joule</span></p>
+                        <p>Elektro mágnesesség<span style="padding-left: 10px;">- Faraday, Maxwell</span></p>
+                    <h5>Modern fizika (20.sz.):</h5>
+                        <p>Kvantumfizika<span style="padding-left: 60px;">- Planck</span></p>
+                        <p>Magfizika<span style="padding-left: 90px;">- Curie</span></p>
+                        <p>Relativitás elmélet<span style="padding-left: 30px;">- Einstein</span></p>
+
+                <h3 id="kvantumfizika_alapjai">A kvantumfizika alapjai</h3>
+                    <p>Az elektromágneses elmélettel mind az elektromos, mind a fényjelenségek értelmezhetők.</p>
+                    <p>Nehézségek és ellentmondások adódhatnak azonban néhány fizikai jelenség esetében.</p>
+                    
+                    <h5 id="homersekleti_sugarzas">A hőmérsékleti sugárzás</h5>
+                        <p>Ha fémdarabot melegítünk, a fématomok mozgási energiája megnövekszik. Alacsonyabb hőmérsékleten a test láthatlan hősugarakat bocsájt ki (infrasugarakat). A hőmérséklet emelkedésével megjelenik a látható színkép összes színe. Kb. 1 000 °C-nál már ultrabolya sugarak is kimutathatók.</p>
+                        <p>A testek hőmérsékletétől függő elektromágneses sugárzást hőmérsékleti sugárzásnak nevezzük.</p>
+                    
+                    <h5 id="Stephan_Boltzmann">Stephan-Boltzmann-féle törvény</h5>
+                        <p>Stephan - 19. század - osztrák fizikus</p>
+                        <p>Boltzmann - 19-20. század - osztrák fizikus</p>
+                        <p>A test egységnyi felületéről időegység alatt kisugárzó összes energia a sugárzó test abszolút hőmérsékletének negyedik hatványával arányos.</p>
+                        <p>E = σ * T<sup>4</sup></p>
+                        <section class="in"><sup><b>
+                            E - energia sugárzás (J)
+                        <br>σ - arányossági tényező (J*K<sup>-4</sup>)
+                        <br>T - termodinamikai hőmérséklet (Kelvin)
+                        </b></sup></section>
+                        <p>σ állandó értéke: σ=5,67*10<sup>-8</sup> J*K<sup>-4</sup></p>
+                        <p>E törvényből következik, hogy minden test a hőmérsékletétől függően sugároz energiát.</p>
+
+                    <h5 id="Wien">A Wien-féle eltolódási törvény</h5>
+                        <p>Wien - 19-20. század - német fizikus</p>
+                        <p>A kisugárzott fény hullámhossza és az abszolút hőmérséklet szorzata állandó.</p>
+                        <p>λ<sub>MAX</sub>*T - ÁLLANDÓ</p>
+                        <section class="in"><sup><b>
+                            λ - hullámhossz (Hz)
+                        <br>T - hőmérséklet (Kelvin)
+                        </b></sup></section>
+                        <p>λ állandó értéke: λ<sub>MAX</sub> * T = 2,836*10<sup>-3</sup> m*K</p>
+                        <img src="css/fix-photo/Wien.png" alt="Grafikon" width="500px" class="img-thumbnail">
+                        <p>Max Plack - 19-20. század - Nobel-díjas, német fizikus</p>
+                        <p>Az energiasugárzás nem folytonosan, hanem szakaszosan, ugrásszerűen, meghatározott kis adagokban, kvantumokban történik.</p>
+                        <p>E = h * f</p>
+                        <section class="in"><sup><b>
+                            E - energia (J)
+                        <br>h -Planck-féle állandó (J*sec)
+                        <br>f - frekvencia (Hz)
+                        </b></sup></section>
+                        <p>A képletben található h egy arányossági tényező, a Planck-féle állandó.</p>
+                        <p>h állandó értéke: h=6,625*10<sup>-34</sup> J*sec</p>
 
         </div>
 
