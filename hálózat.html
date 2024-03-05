@@ -103,11 +103,11 @@
 					<form action="javascript:void(0);">
 						<div class="multi-fields style-2">
 							<div class="form-group">
-								<label>IP cím és maszk</label>
+								<label><b><u>IP cím és maszk</u></b></label>
 								<input type="text" onchange="calculateAndUpdateValues(&#39;setAddressBlock&#39;, &#39;design&#39;);tableResize();" id="addressBlock" class="form-control" autocorrect="off" autocapitalize="none">
 							</div>
 							<div class="form-group select-field">
-								<label>Maszk</label>
+								<label><b><u>Maszk</u></b></label>
 								<select class="form-control" onchange="calculateAndUpdateValues(&#39;setSubnetMask&#39;, &#39;design&#39;);tableResize();" id="subnetMask">
 									<option value="255.0.0.0">255.0.0.0/8</option>
 									<option value="255.128.0.0">255.128.0.0/9</option>
@@ -137,7 +137,7 @@
 								</select>
 							</div>
 							<div class="form-group select-field">
-								<label>Hostok száma</label>
+								<label><b><u>Hostok száma</u></b></label>
 								<select class="form-control" onchange="calculateAndUpdateValues(&#39;setNoOfHosts&#39;, &#39;design&#39;);tableResize();" id="hostBits">
 									<option value="0">1</option>
 									<option value="1">2</option>
@@ -167,7 +167,7 @@
 								</select>
 							</div>
 							<div class="form-group select-field min-field">
-								<label>Alhálózatok száma</label>
+								<label><b><u>Alhálózatok száma</u></b></label>
 								<select class="form-control" onchange="calculateAndUpdateValues(&#39;setNoOfSubnets&#39;, &#39;design&#39;);tableResize();" id="subnetBits">
 									<option value="0">1</option>
 									<option value="1">2</option>
@@ -201,23 +201,23 @@
 			<hr>								
 										
 						<div class="multi-fields style-2">
-							<div class="form-group"><label>Hálózat</label>
+							<div class="form-group"><label><b><u>Hálózat</u></b></label>
 								<input type="text" class="form-control" readonly="" id="cidrNotation_in" autocorrect="off" autocapitalize="none">
 							</div>
-							<div class="form-group"><label>Első és utolsó cím</label>
+							<div class="form-group"><label><b><u>Első és utolsó cím</u></b></label>
 								<input type="text" class="form-control" readonly="" id="addressRange_cidr_in" autocorrect="off" autocapitalize="none">
 							</div>
-							<div class="form-group"><label>Szórási cím</label>
+							<div class="form-group"><label><b><u>Szórási cím</u></b></label>
 								<input type="text" class="form-control" readonly="" id="broadcast_cidr_in" autocorrect="off" autocapitalize="none">
 							</div>
-							<div class="form-group min-field"><label>Wildcard Mask</label>
+							<div class="form-group min-field"><label><b><u>Wildcard Mask</u></b></label>
 								<input type="text" class="form-control" readonly="" id="wildcard_cidr_in" autocorrect="off" autocapitalize="none">
 							</div>
 						</div>
 					</form>
 				</section>
 				<section class="com-section pb-0 " id="SubnetDetailsDiv" style="display: block;">
-				<h1>Alhálózatok</h1>
+				<h3>Alhálózatok</h3>
 					<div class="table-responsive" style="background-color: white; border-radius: 10px;">
 						<div id="tableDiv" style="display: block;">
 							<div id="newDiv" class="table-responsive">
@@ -499,7 +499,7 @@
 						</ul>
 					</section>
 
-					<h5>#</h5>
+					<h3>#:</h3>
 
 					<section class="text">
 					<h6>Mentés:</h6>

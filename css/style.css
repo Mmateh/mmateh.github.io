@@ -338,3 +338,11 @@ section {
     padding-top: 20px;
     border-radius: 30px;
 }
+
+select {
+    margin-bottom: 20px;
+}
+
+input {
+    margin-bottom: 20px;
+}
