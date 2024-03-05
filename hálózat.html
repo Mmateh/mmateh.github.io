@@ -321,6 +321,10 @@
 						<ul style="padding-left: 6%;">
 							<li>ip route {nem látott hálózat {IP cím} + {maszk}} {másik bemenő interface IP}</li>
 						</ul>
+					<p>-IPv6 forgalomirányítás (ip route)</p>
+						<ul style="padding-left: 6%;">
+							<li>ipv6 route {nem látott hálózat IP cím}/{maszk} {másik bemenő interface IP}</li>
+						</ul>
 					<p>-forgalomirányítás (RIP)</p>
 						<ul style="padding-left: 6%;">
 							<li>passive-interface {nem router felé néző interface neve}</li>
@@ -349,6 +353,12 @@
 						<ul style="padding-left: 6%">
 							<li>interface {interface név}.{vlan szám}</li>
 							<li>encapsulation dotlq {vlan szám}</li>
+						</ul>
+					<p>-SLAAC</p>
+						<ul style="padding-left: 6%">
+							<li>ipv6 enable</li>
+							<li>ipv6 address dhcp</li>
+							<li>ipv6 address autoconfig</li>
 						</ul>
 					</section>
 
