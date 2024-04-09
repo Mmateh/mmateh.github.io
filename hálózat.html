@@ -288,12 +288,33 @@
 
 					<section class="text">
 					<h6>Router:</h6>
-					<p>-IP cím adás</p>
+					<p>-IPv4 cím adás</p>
 						<ul style="padding-left: 6%;">
 							<li>interface {interface neve}</li>
 							<li>ip address {IP cím} {maszk}</li>
 							<li>no shutdown</li>
 							<li>description {leírás}</li>
+						</ul>
+					<p>-IPv6 cím adás (statefull)</p>
+						<ul style="padding-left: 6%;">
+							<li>ipv6 unicast-routing</li>
+							<li>ipv6 dhcp pool {név}</li>
+							<li>adress prefix {ipv6 hálózat cím}/{maszk}</li>
+							<li>domain-name {domain}</li>
+							<li>dns {ipv6 cím}</li>
+							<li>interface {interface név}</li>
+							<li>ipv6 nd managed-config-flag</li>
+							<li>ipv6 dhcp server {dhcp pool név}</li>
+						</ul>
+					<p>-IPv6 cím adás (stateless)</p>
+						<ul style="padding-left: 6%;">
+							<li>ipv6 unicast-routing</li>
+							<li>ipv6 dhcp pool {név}</li>
+							<li>domain-name {domain}</li>
+							<li>dns {ipv6 cím}</li>
+							<li>interface {interface név}</li>
+							<li>ipv6 nd other-config-flag</li>
+							<li>ipv6 dhcp server {dhcp pool név}</li>
 						</ul>
 					<p>-DHCP</p>
 						<ul style="padding-left: 6%;">
@@ -341,6 +362,13 @@
 						<ul style="padding-left: 6%;">
 							<li>default-information originate</li>
 							<li>ip nat inside static {mit IP} {mire IP}</li>
+						</ul>
+					<p>-IPv6 forgalomirányítás (OSPF)</p>
+						<ul style="padding-left: 6%;">
+							<li>ipv6 router ospf {id}</li>
+							<li>router-id {ipv4 cím}</li>
+							<li>interface {interface név}</li>
+							<li>ipv6 ospf {id} area {szám}</li>
 						</ul>
 					<p>-statikus NAT</p>
 						<ul style="padding-left: 6%;">
