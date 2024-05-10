@@ -118,6 +118,7 @@
     background-color: #232729;
     margin-left: 30px;
     margin-right: 30px;
+    border: black solid 2px;
 }
 /*Parancsok betolása*/
 .be {
@@ -336,7 +337,7 @@ img {
 section {
     padding: 5px;
     padding-top: 20px;
-    border-radius: 30px;
+    border-radius: 20px;
 }
 
 select {
