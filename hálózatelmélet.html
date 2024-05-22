@@ -150,69 +150,54 @@
 
             <h1>Introduction to Networks</h1>
 
-                <h3 id="szallitasireteg">Szállítási réteg</h3>
-                
-                    <h5>Szállítási réteg szerepe</h5>
-                        <p>Különböző állomásokon futó alkalmazások közötti logikai kommunikáció. A szállítási rétegnek nincs tudomása a célállomás típusáról, az adathordozó típusáról, az adatok által megtett útvonalról, a kapcsolat torlódásáról vagy a hálózat méretéről.</p>
-
-                    <h5>Szállítási réteg feladatai</h5>
-                        <ul>
-                            <li>Az egyedi párbeszédek nyomon követése</li>
-                            <li>Az adatcsomagok szegmentálása és ismételt összeállítása</li>
-                            <li>Fejlécadatok hozzáadása</li>
-                            <li>Az alkalmazások azonosítása</li>
-                            <li>Párbeszéd multiplexelése</li>
-                        </ul>
-
-                    <h5>Szállítási réteg protokolljai</h5>
-                        <p>Meghatározzák hogy miként szállíthatóak és hogy megbízhatóak-e az üzenetek.</p>
-                        <ul>
-                            <li>TCP (Transmission Control Protocol)</li>
-                            <li>UDP (User Datagram Protocol)</li>
-                        </ul>
-
-                    <h5>TCP</h5>
-                        <p>A TCP megbízható és teljeskörű protokoll, amely garantálja az összes adat célba érkezését.
-                        Biztosítja az alkalmazásadatok célbaérkezését, amelyek további feldolgozást igényelnek a 
-                        küldő és fogadó állomásokon.</p>
-                        <p>A TCP szegmensekre bontja az adatokat és ellenőrizhető a szegmensek sorrendje.</p>
-                        <p>A megbízhatóságát az alábbi műveletekkel biztosítja:
-                            <ul>
-                                <li>Adatszegmensek számozása és nyomonkövetése</li>
-                                <li>Megérkezett adatok nyugtázása</li>
-                                <li>Nem nyugtázott adatok újraküldése egy bizonyos idő után</li>
-                                <li>Rossz sorrendben érkező Adatszegmensek rendezése</li>
-                                <li>Elfogadható sebességgel történő adatküldés</li>
-                            </ul>
-                        </p>
-                        <p>A párbeszéd éllapotának fenntartása és az információ nyomon követése érdekében először
-                        kapcsolatot kell létesítenie, ezért a TCP kapcsolatorientált protokoll.
-                        </p>
-
-                    <h5>UDP</h5>
-                        <p>Nem kínál megbíthatóságot és adatfolyam vezérlést, ennek köszönhetően gyorsabban feldolgozható
-                        mint a TCP. Csupán alapfunkciókat biztosít, így nagyon csekély többletterhelést okoz és 
-                        adatellenőrzést sem végez.</p>
-                        <p>Az UDP az adatokat datagramokra bontja, amelyeket szegmenseknek is nevezünk.</p>
-                        <p>Mivel nem kínál megbízhatóságot vagy adatfolyam-vezérlést, nem kell kapcsolatot létrehozni.
-                        Ezért az UDP állapot nélküli protokoll.</p>
-
-                    <h5>Megfelelő szállítási protokoll a megfelelő alkalmazáshoz</h5>
-                        <img src="css/fix-photo/UDP-TCP.png" alt="UDP-TCP" class="img-thumbnail">
-
-                <h3>Adatkapcsolati réteg</h3>
+                <h3>Hálózat átviteli közeg</h3>
+                    <p><b>Fémdrót kábel:</b> Elektromos impulzusokkal működik</p>
+                    <p><b>Üveg- vagy műanyag szálas kábel:</b> Fényvillanásokkal működik</p>
+                    <p><b>Vezeték nélküli:</b> Elektromágneses hullámokkal frekvencia alapon működik</p>
                     
-                    <h5>Adatkapcsolati réteg szerepe</h5>
-                        <p>Az adatkapcsolati réteg felelős a hálózati kártyák (NIC) egymás közti kommunikációjáért.
-                            <ul>
-                                <li>Felsőbb rétegek számára nyújt hozzáférést</li>
-                                <li>Fogadja a 3. rétegbeli csomagokat és beágyazza 2. rétegbeli keretbe</li>
-                                <li>Szabályozza az adatok közegre helyezését és fogadását</li>
-                                <li>Keretek cseréjét végzi a végpontok között a közegen keresztül</li>
-                                <li>Fogadja a 3. rétegbeli csomagokat és megfelelő felsőbb rétegbeli protokollhoz irányítja őket</li>
-                                <li>Hibakeresést hajt végre, és elutasítja a hibás kereteket</li>
-                            </ul>
-                        </p>
+                <h3>Felhőtípusok</h3>
+                    <p><b>Publikus felhő:</b> Mindenki elérheti. Fizetős vagy ingyenes.</p>
+                    <p><b>Privát felhő:</b> Adott szervezet vagy felhasználó érheti el. Létrehozása költséges.</p>
+                    <p><b>Hibrid felhő:</b> Több részből áll. Különböző hozzáférés.</p>
+                    <p><b>Közösségi felhő:</b> Adott szervezet érheti el. Szervezetre szabott.</p>
+
+                <h3>Biztonsági fenyegetések</h3>
+                    <p><b>Vírusok, férgek, trójai programok:</b> Rosszindulatú szoftver. Helyi eszközön fut.</p>
+                    <p><b>Kémprogram(spyware), reklámprogram(adware):</b> Információt gyűjt. Helyi eszközön fut.</p>
+                    <p><b>Nulladik napi(zero-day) támadás:</b> Biztonsági rés ismerté válásának napján megjelenő támadás.</p>
+                    <p><b>Személyes fenyegetés:</b> Személy felhasználói eszközt támad meg.</p>
+                    <p><b>Szolgáltatás-megtagadásos támadás:</b> Lelassít vagy elérhetetlenné tesz szolgálatokat vagy folyamatokat.</p>
+                    <p><b>Adatelhallgatás és -lopás:</b> Személyes adatot rögzít szervezet hálózatából.</p>
+                    <p><b>Személyazonosság-lopás:</b> Személy felhasználó adatait lopja el privát adatok hozzáféréséhez.</p>
+
+                <h3>Biztonsági megoldások</h3>
+                    <p><b>Vírus- és kémprogramkereső:</b> Megvédik az eszközt a kártékony szoftverektől.</p>
+                    <p><b>Tűzfal:</b> Blokkolja a jogosulatlan hozzáférést a rendszerhez.</p>
+                    <p><b>Dedikált tűzfalrendszerek:</b> Fejlettebb, részletesebb tűzfal beállítások.</p>
+                    <p><b>Hozzáférési listák(ACL):</b> IP-cím alapján szűr.</p>
+                    <p><b>Behatolás-megelőző rendszerek(IPS):</b> Azonosítjálk a gyorsan terjedő fenyegetést.</p>
+                    <p><b>Virtuális magánhálózatok(VPN):</b> Biztonságos hozzáférés távolról.</p>
+
+                <h3>Hozzáférési módok</h3>
+                    <p><b>Konzol:</b> Eszköz karbantartására létrehozott fizikai port.</p>
+                    <p><b>Secure Shell(SSH):</b> Virtuális interfacen keresztül paramcssoros kapcsolat.</p>
+                    <p><b>Telnet:</b> Nem biztonságos virtuális interface.</p>
+
+                <h3>Küldési módok</h3>
+                    <p><b>Unicast:</b> Egy eszköz számára küld üzenetet.</p>
+                    <p><b>Multicast:</b> Több eszköz számára küld üzenetet.</p>
+                    <p><b>Broadcast:</b> Minden eszköz számára küld üzenetet.</p>
+
+                <h3>Hálózati protokollok funkciói</h3>
+                    <img src="css/fix-photo/protokoll_function.png" alt="Protokoll funkciók" class="img-thumbnail" width="50%" style="max-width: 100%;">
+
+                <h3>Protokollok együttműködése</h3>
+                    <p><b>Hypertext Transfer Protocol(HTTP):</b> Webszerver és kliens közti kommunikáció. Leírja a kérések és válaszok formáját és tartalmát.</p>
+                    <p><b>Transmission Control Protocol(TCP):</b> Egyedi párbeszédet hoz létre. Megbízható kézbesítést garantál és adatfolyam-vezérlést is biztosít.</p>
+                    <p><b>Internet Protocol(IP):</b> Üzenetek továbbítása a küldőtől a címzettig.</p>
+                    <p><b>Ethernet:</b> Azonos Ethernet LAN-on elhelyezkedő hálózati interface között továbbítja az üzenetet.</p>
+
+                <img src="css/fix-photo/UDP-TCP.png" alt="UDP-TCP" class="img-thumbnail">
                 
         </div>
 
