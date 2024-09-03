@@ -189,5 +189,32 @@ function load() {
     else if (selected == "63") {
         document.getElementById("pdfek").innerHTML = '<div class="keret"><iframe src="Töri/TöriÚj3/A_bolsevik_oroszorszag001.pdf" frameborder="0"></iframe></div>'
     }
+    else if (selected == "64") {
+        document.getElementById("pdfek").innerHTML = '<div class="keret"><iframe src="Töri/TöriÚj3/A_nacizmus002.pdf" frameborder="0"></iframe></div>'
+    }
+    else if (selected == "65") {
+        document.getElementById("pdfek").innerHTML = '<div class="keret"><iframe src="Töri/TöriÚj3/A_Bethleni_konszolidacio001.pdf" frameborder="0"></iframe></div>'
+    }
+    else if (selected == "66") {
+        document.getElementById("pdfek").innerHTML = '<div class="keret"><iframe src="Töri/TöriÚj3/A II VH es elozmenyei.pdf" frameborder="0"></iframe></div>'
+    }
+    else if (selected == "67") {
+        document.getElementById("pdfek").innerHTML = '<div class="keret"><iframe src="Töri/TöriÚj3/A II VH es elozmenyei_II_resz.pdf" frameborder="0"></iframe></div>'
+    }
+    else if (selected == "68") {
+        document.getElementById("pdfek").innerHTML = '<div class="keret"><iframe src="Töri/TöriÚj3/A II VH - MO_a_II_VH-ban.pdf" frameborder="0"></iframe></div>'
+    }
+    else if (selected == "69") {
+        document.getElementById("pdfek").innerHTML = '<div class="keret"><iframe src="Töri/TöriÚj3/A II VH es elozmenyei_IV_resz.pdf" frameborder="0"></iframe></div>'
+    }
+    else if (selected == "70") {
+        document.getElementById("pdfek").innerHTML = '<div class="keret"><iframe src="Töri/TöriÚj3/A II VH es elozmenyei_V_resz.pdf" frameborder="0"></iframe></div>'
+    }
+    else if (selected == "71") {
+        document.getElementById("pdfek").innerHTML = '<div class="keret"><iframe src="Töri/TöriÚj3/A II VH es elozmenyei_VI_resz_002.pdf" frameborder="0"></iframe></div>'
+    }
+    else if (selected == "72") {
+        document.getElementById("pdfek").innerHTML = '<div class="keret"><iframe src="Töri/TöriÚj3/holokauszt001.pdf" frameborder="0"></iframe></div>'
+    }
 
 }

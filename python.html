@@ -93,321 +93,1158 @@
 
         <div class="container backgrund">
             
-            <h3 class="felso">Változók</h3>
-                <p>    
-                    <p class="cim bg-dark mark text-secondary">#  Kiírás</p>
-                    <br>print("Ez az első anyag")
-                    <br>
-                    <br>
-                    <p class="cim bg-dark mark text-secondary">#  Az alap változó</p>
-                    <br>alap1 = 3
-                    <br>alap2 = "szöveg"
-                    <br>print(alap1)
-                    <br>print(alap2)
-                    <br>
-                    <br>
-                    <p class="cim bg-dark mark text-secondary">#  Lista változó</p>
-                    <br>lista = [2,7,"b","alma"]
-                    <br>print(lista)
-                    <br>
-                    <br>
-                    <p class="cim bg-dark mark text-secondary">#  Változó bekérése</p>
-                    <br>bekérés = input("Adj meg valamit: ")
-                    <br>print(bekérés)
-                    <br>
-                    <br>
-                    <p class="cim bg-dark mark text-secondary">#  Változó értékének megadása</p>
-                    <br>szám = int(2)
-                    <br>print(szám)
-                    <br>
-                    <br>tört = float(2.5)
-                    <br>print(tört)
-                    <br>
-                    <br>szöveg = str("szöveg")
-                    <br id="műv1">print(szöveg)
-                </p>
+            <h1>Eredeti videó:</h1>
+            <div style="width: 100%; height: 25vh;"><iframe class="responsive-iframe" height="100%" width="100%" src="https://www.youtube.com/embed/XKHEtdqhLK8?list=PLMFpchlo9hXpQdy33lfAqmovjUVBaTxja" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
 
-            <h3 class="felso">Műveletek 1/2</h3>
+                <h3>Alapok</h3>
+                    <section class="text">
+                        <p><b class="py">print()</b> - Kiírja a képernyőre a szöveget</p>
 
-                <p>
-                    <p class="cim bg-dark mark text-secondary">#  Összeadás</p>
-                    <br>a = 4
-                    <br>print(a)
-                    <br>a += 2
-                    <br>print(a)
-                    <br>
-                    <br>
-                    <p class="cim bg-dark mark text-secondary">#  Kivonás</p>
-                    <br>b = 10
-                    <br>print(b)
-                    <br>b -= 3
-                    <br>print(b)
-                    <br>
-                    <br>
-                    <p class="cim bg-dark mark text-secondary">#  Szorzás</p>
-                    <br>c = 2*3
-                    <br>print(c)
-                    <br>
-                    <br>
-                    <p class="cim bg-dark mark text-secondary">#  Osztás</p>
-                    <br>d = 10/3
-                    <br>print(d)
-                    <br>
-                    <br>
-                    <p class="cim bg-dark mark text-secondary">#  Hányszor van meg benne</p>
-                    <br>e = int(10/3)
-                    <br>print(e)
-                    <br>
-                    <br>
-                    <p class="cim bg-dark mark text-secondary">#  Maradék</p>
-                    <br>f = 10%3
-                    <br>print(f)
-                    <br>
-                    <br>
-                    <p class="cim bg-dark mark text-secondary">#  Hatványozás</p>
-                    <br>g = 3**2
-                    <br>print(g)
-                    <br>
-                    <br>
-                    <p class="cim bg-dark mark text-secondary">#  Gyökvonás</p>
-                    <br>h = 9**(1/2)
-                    <br id="műv2">print(h)
-                </p>
+                        <section class="ex">
+                            <p>print("Hello World!")
+                            <section class="out">Hello World!</section></p>
 
-            <h3 class="felso">Műveletek 2/2</h3>
+                            <p>print("Alma" , "a kedvenc gyümölcsöm")
+                            <section class="out">Alma a kedvenc gyümölcsöm</section></p>
+                        </section>
+                        <p><b class="py">type(</b><b class="com">változó</b><b class="py">)</b> - Megadja a változó típusát, ami több fajta is lehet:</p>
+                        <ul class="in">
+                            <li><b class="py">int</b> - Pozitív vagy negatív teljes szám</li>
+                            <li><b class="py">float</b> - Pozitív vagy negatív tört szám/li>
+                            <li><b class="py">str</b> - szöveg</li>
+                            <li><b class="py">bool</b> - True vagy False</li>
+                        </ul>
+                        <section class="ex">
+                            <p>print(type("Alma"))
+                            <section class="out">class 'str'</section></p>
+
+                            <p>print(type("5"))
+                            <section class="out">class 'str'</section></p>
+
+                            <p>print(type(5))
+                            <section class="out">class 'int'</section></p>
+
+                            <p>print(type(5.5))
+                            <section class="out">class 'float'</section></p>
+
+                            <p>print(type(True))
+                            <section class="out">class 'bool'</section></p>
+                        </section>
+                    </section>
+
+                <h3>Változók</h3>
+                    <section class="text">
+                        <p><b class="com">változó</b> <b class="py">=</b> <b class="com">érték</b> - A változónak megadunk egy értéket, ami több fajta is lehet:</p>
+                        <ul class="in">
+                            <li><b class="py">int</b> - A számot elég megadni</li>
+                            <li><b class="py">float</b> - A tört számot ponttal lehet tagolni</li>
+                            <li><b class="py">str</b> - A szöveget "" közé kell tenni</li>
+                            <li><b class="py">bool</b> - True vagy False érték</li>
+                        </ul>
+                        <section class="ex">
+                            <p>gyümölcs_nev = "Alma"
+                            <br>print(gyümölcs_nev)
+                            <section class="out">Alma</section></p>
+                        </section>
+                    </section>
+
+                <h3>Műveletek változókkal</h3>
+                <section class="text">
+                    <p><b class="com">változó</b> <b class="py">+=</b> <b class="com">szám</b> - Hozzáadja a számot a változó értékéhez</p>
+                    <p><b class="com">változó</b> <b class="py">-=</b> <b class="com">szám</b> - Kivonja a számot a változó értékéből</p>
+                    <p><b class="com">változó</b> <b class="py">*=</b> <b class="com">szám</b> - Szorozza a változó értékét a számmal</p>
+                    <p><b class="com">változó</b> <b class="py">/=</b> <b class="com">szám</b> - Osztja a változó értékét a számmal</p>
+                    <p><b class="com">változó</b> <b class="py">%=</b> <b class="com">szám</b> - Osztja a változó értékét a számmal és visszaadja a maradékot</b></p>
+                    <p><b class="com">változó</b> <b class="py">**=</b> <b class="com">szám</b> - A változó értékét a megadott szám hátványra teszi</p>
+                    <section class="ex">
+                        <p>gyümölcs_nev = "Alma"
+                        <br>print(gyümölcs_nev + "a kedvenc gyümölcsöm")
+                        <section class="out">Almaa kedvenc gyümölcsöm</section></p>
+
+                        <p>vezetéknév = "Kovács"
+                        <br>keresztnév = "Béla"
+                        <br>print(vezetéknév + " " + keresztnév)
+                        <section class="out">Kovács Béla</section></p>
+
+                        <p>szám_1 = 5
+                        <br>szám_2 = 10
+                        <br>print(szám_1 + szám_2)
+                        <section class="out">15</section></p>
+
+                        <p>szám_1 = 10
+                        <br>szám_1 += 5
+                        <br>print(szám_1)
+                        <section class="out">15</section></p>
+
+                        <p>szám_1 = 10
+                        <br>szám_1 -= 5
+                        <br>print(szám_1)
+                        <section class="out">5</section></p>
+
+                        <p>szám_1 = 10
+                        <br>szám_1 *= 5
+                        <br>print(szám_1)
+                        <section class="out">50</section></p>
+
+                        <p>szám_1 = 10
+                        <br>szám_1 /= 5
+                        <br>print(szám_1)
+                        <section class="out">2</section></p>
+
+                        <p>szám_1 = 10
+                        <br>szám_1 %= 5
+                        <br>print(szám_1)
+                        <section class="out">0</section></p>
+
+                        <p>szám_1 = 10
+                        <br>szám_1 **= 5
+                        <br>print(szám_1)
+                        <section class="out">100000</section></p>
+                    </section>
+                </section>
+
+                <h3>Egysoros értékadás</h3>
+                    <section class="text">
+                        <p><b class="com">változó_1, változó_2, változó_3</b> <b class="py">= "</b><b class="com">érték_1</b><b class="py">",</b> <b class="com">érték_2</b><b class="py">,</b> <b class="com">True</b> - Egy soron belül meg lehet adni a különböző változók értékét</p>
+                        <section class="ex">
+                            <p>név, kor, nagykorú = "Béla", 18, True 
+                            <br>print(név)
+                            <br>print(kor)
+                            <br>print(nagykorú)
+                            <section class="out">Béla
+                            <br>18
+                            <br>True</section></p>
+
+                            <p>Feladat: János, Béla és Károly 20 évesek. Add meg a nevüket változónak és a korukat értéknek.
+                            <br>János = Béla = Károly = 20
+                            <br>print(János)
+                            <br>print(Béla)
+                            <br>print(Károly)
+                            <section class="out">20
+                            <br>20
+                            <br>20</section></p>
+                        </section>
+                    </section>
+
+                <h3>Szöveg szerkesztése</h3>
+                    <section class="text">
+                        <p><b class="py">print(len(</b><b class="com">változó</b><b class="py">))</b> - Megadja a változó értékének hosszát</p>
+                        <section class="ex">
+                            <p>gyümölcs = "Alma"
+                            <br>print(len(gyümölcs))
+                            <br>print(len("gyümölcs"))
+                            <section class="out">4
+                            <br>8</section></p>
+                        </section>
+                        <p><b class="py">print(</b><b class="com">változó</b><b class="py">.find("</b><b class="com">szöveg</b><b class="py">"))</b> - Megkeresi, hogy a megadott szöveg a változóban hányadik helyen szerepel (a szöveg helyének számolása 0-tól kezdődik)</p>
+                        <section class="ex">
+                            <p>gyümölcs = "Alma"
+                            <br>print(gyümölcs.find("a"))
+                            <br>print(gyümölcs.find("A"))
+                            <br>print(gyümölcs.find("lm"))
+                            <section class="out">3
+                            <br>0
+                            <br>1</section></p>
+                        </section>
+                        <p><b class="py">print(</b><b class="com">változó</b><b class="py">.capitalize())</b> - Az első betűt nagybetűre változtatja</p>
+                        <section class="ex">
+                            <p>gyümölcs = "alma"
+                            <br>print(gyümölcs.capitalize())
+                            <section class="out">Alma</section></p>
+                        </section>
+                        <p><b class="py">print(</b><b class="com">változó</b><b class="py">.upper())</b> - Az egész szöveget nagybetűsre változtatja</p>
+                        <section class="ex">
+                            <p>gyümölcs = "alma"
+                            <br>print(gyümölcs.upper())
+                            <section class="out">ALMA</section></p>
+                        </section>
+                        <p><b class="py">print(</b><b class="com">változó</b><b class="py">.lower())</b> - Az egész szöveget kisbetűsre változtatja</p>
+                        <section class="ex">
+                            <p>gyümölcs = "ALMA"
+                            <br>print(gyümölcs.lower())
+                            <section class="out">alma</section></p>
+                        </section>
+                        <p><b class="py">print(</b><b class="com">változó</b><b class="py">.isdigit())</b> - A változó szövegétől függően True vagy False értéket ad ki (összes karakter szám)</p>
+                        <section class="ex">
+                            <p>szám = "5"
+                            <br>print(szám.isdigit())
+                            <section class="out">True</section></p>
+
+                            <p>szám = "5.6"
+                            <br>print(szám.isdigit())
+                            <section class="out">False</section></p>
+
+                            <p>szám = "alma"
+                            <br>print(szám.isdigit())
+                            <section class="out">False</section></p>
+                        </section>
+                        <p><b class="py">print(</b><b class="com">változó</b><b class="py">.isalpha())</b> - A változó szövegétől függően True vagy False értéket ad ki (összes karakter abc betű)</p>
+                        <section class="ex">
+                            <p>gyümölcs = "alma"
+                            <br>print(gyümölcs.isalpha())
+                            <section class="out">True</section></p>
+
+                            <p>gyümölcs = "alma körte"
+                            <br>print(gyümölcs.isalpha())
+                            <section class="out">False</section></p>
+
+                            <p>gyümölcs = "alma1"
+                            <br>print(gyümölcs.isalpha())
+                            <section class="out">False</section></p>
+                        </section>
+                        <p><b class="py">print(</b><b class="com">változó</b><b class="py">.count("</b><b class="com">szöveg</b><b class="py">"))</b> - Megadja, hogy a megadott szöveg hányször szerepel a változóban</p>
+                        <section class="ex">
+                            <p>gyümölcs = "alma"
+                            <br>print(gyümölcs.count("a"))
+                            <section class="out">2</section></p>
+                            <p>gyümölcs = "alma"
+                            <br>print(gyümölcs.count("l"))
+                            <section class="out">1</section></p>
+                        </section>
+                        <p><b class="py">print(</b><b class="com">változó</b><b class="py">.replace("</b><b class="com">eredeti szöveg</b><b class="py">", "</b><b class="com">új szöveg</b><b class="py">"))</b> - Az eredeti szöveget kicseréli az új szövegre</p>
+                        <section class="ex">
+                            <p>gyümölcs = "alma"
+                            <br>print(gyümölcs.replace("a", "e"))
+                            <section class="out">elme</section></p>
+                        </section>
+                        <p><b class="py">print(</b><b class="com">változó</b><b class="py">*</b><b class="com">szám</b><b class="py">)</b> - Kiírja a változó értékét annyiszor amennyi a szám</p>
+                        <section class="ex">
+                            <p>gyümölcs = "Alma"
+                            <br>print(gyümölcs*3)
+                            <section class="out">AlmaAlmaAlma</section></p>
+                        </section>
+                    </section>
+
+            <h3>Típus változtatása</h3>
+                <section class="text">
+                    <p><b class="com">változó</b> <b class="py">= str(</b><b class="com">érték</b><b class="py">)</b> - A változó értékét szöveggé alakítjuk</p>
+                    <p><b class="com">változó</b> <b class="py">= int(</b><b class="com">érték</b><b class="py">)</b> - A változó értékét egész számra alakítjuk</p>
+                    <p><b class="com">változó</b> <b class="py">= float(</b><b class="com">érték</b><b class="py">)</b> - A változó értékét tört számra alakítjuk</b></p>
+                    <p><b class="com">változó</b> <b class="py">= bool(</b><b class="com">érték</b><b class="py">)</b> - A változó értékét True vagy False-ra alakítjuk</b></p>
+                    <section class="ex">
+                        <p>kor = str(20)
+                        <br>print("A te korod: " + kor)
+                        <section class="out">A te korod: 20</section></p>
+
+                        <p>kor = 20
+                        <br>print("A te korod: " + str(kor))
+                        <section class="out">A te korod: 20</section></p>
+
+                        <p>kor = 20.5
+                        <br>print(int(kor))
+                        <section class="out">20</section></p>
+
+                        <p>kor = "20"
+                        <br>kor = int(20)
+                        <br>kor += 1
+                        <br>print(kor)
+                        <section class="out">21</section></p>
+                    </section>
+                </section>
+
+            <h3>Felhasználói bekérések</h3>
+                <section class="text">
+                    <p><b class="py">input("</b><b class="com">szöveg</b><b class="py">")</b> - Bekér egy szöveget</p>
+                    <p><b class="com">változó</b> <b class="py">= input("</b><b class="com">szöveg</b><b class="py">")</b> - Bekér egy szöveget és elmenti a változóba</p>
+                    <section class="ex">
+                        <p>nev = input("Mi a neved: ")
+                        <br>print(nev)
+                        <section class="out">Mi a neved: Béla
+                        <br>Béla</section></p>
+
+                        <p>nev = input("Mi a neved: ")
+                        <br>print("Szia" , nev)
+                        <br>print("Szia " + nev)
+                        <br>print("Szia" + " " + nev)
+                        <section class="out">Mi a neved: Béla
+                        <br>Szia Béla
+                        <br>Szia Béla
+                        <br>Szia Béla</section></p>
+                    </section>
+                    <p><b class="com">változó</b> <b class="py">= int(input("</b><b class="com">szöveg</b><b class="py">"))</b> - A bekért szöveget egész számmá alakítja (csak akkor működik, ha a bekért szöveghez számot adunk meg)</p>
+                    <p><b class="com">változó</b> <b class="py">= float(input("</b><b class="com">szöveg</b><b class="py">"))</b> - A bekért szöveget tört számmmá alakítja (csak akkor működik, ha a bekért szöveghez számot adunk meg)</p>
+                    <section class="ex">
+                        <p>kor = int(input("Mi a korod: "))
+                        <br>print(kor)
+                        <section class="out">Mi a korod: 20
+                        <br>20</section></p>
+
+                        <p>kor = float(input("Mi a korod: "))
+                        <br>print(kor)
+                        <section class="out">Mi a korod: 20.5
+                        <br>20.5</section></p>
+
+                        <p>kor = float(input("Mi a korod: "))
+                        <br>kor += 5
+                        <br>print(kor)
+                        <section class="out">Mi a korod: 20
+                        <br>25</section></p>
+
+                        <p>kor = int(input("Mi a korod: "))
+                        <br>print("Te " + str(kor) + " éves vagy")
+                        <section class="out">Mi a korod: 20
+                        <br>Te 20 éves vagy</section></p>
+                    </section>
+                </section>
+
+            <h3>Matematikai funkciók</h3>
+                <section class="text">
+                    <p><b class="py">import math</b> - Matematikai funkciókat importál</p>
+                    <p><b class="py">print(math.round(</b><b class="com">változó</b><b class="py">))</b> - A legközelebbi egész számra kerekíti a változót</p>
+                    <section class="ex">
+                        <p>print(round(5.1))
+                        <section class="out">5</section></p>
+
+                        <p>szám = 5.5
+                        <br>print(round(szám))
+                        <section class="out">6</section></p>
+
+                        <p>szám = float(input("Kérek egy számot: "))
+                        <br>print(round(szám))
+                        <section class="out">Kérek egy számot: 5.4
+                        <br>5</section></p>
+                    </section>
+                    <p><b class="py">print(math.ceil(</b><b class="com">változó</b><b class="py">))</b> - Felfelé kerekíti a változót</p>
+                    <section class="ex">
+                        <p>import math
+                        <br>print(math.ceil(5.1))
+                        <section class="out">6</section></p>
+
+                        <p>import math
+                        <br>szám = 5.4
+                        <br>print(math.ceil(szám))
+                        <section class="out">6</section></p>
+
+                        <p>import math
+                        <br>szám = float(input("Kérek egy számot: "))
+                        <br>print(math.ceil(szám))
+                        <section class="out">Kérek egy számot: 5.4
+                        <br>6</section></p>
+                    </section>
+                    <p><b class="py">print(math.floor(</b><b class="com">változó</b><b class="py">))</b> - Lefelé kerekíti a változót</p>
+                    <section class="ex">
+                        <p>import math
+                        <br>print(math.floor(5.1))
+                        <section class="out">5</section></p>
+
+                        <p>import math
+                        <br>szám = 5.9
+                        <br>print(math.floor(szám))
+                        <section class="out">5</section></p>
+
+                        <p>import math
+                        <br>szám = float(input("Kérek egy számot: "))
+                        <br>print(math.floor(szám))
+                        <section class="out">Kérek egy számot: 5.8
+                        <br>5</section></p>
+                    </section>
+                    <p><b class="py">print(abs(</b><b class="com">változó</b><b class="py">))</b> - Megadja a szám abszolút értékét</p>
+                    <section class="ex">
+                        <p>print(abs(-5.1))
+                        <section class="out">5.1</section></p>
+
+                        <p>szám = 5.5
+                        <br>print(abs(szám))
+                        <section class="out">5.5</section></p>
+
+                        <p>szám = float(input("Kérek egy számot: "))
+                        <br>print(abs(szám))
+                        <section class="out">Kérek egy számot: -5.4
+                        <br>5.4</section></p>
+                    </section>
+                    <p><b class="py">print(pow(</b><b class="com">változó<b class="py">,</b> szám</b><b class="py">))</b> - A változó értékét a megadott szám hátványra teszi</p>
+                    <section class="ex">
+                        <p>print(pow(2, 3))
+                        <section class="out">8</section></p>
+
+                        <p>szám = 2
+                        <br>print(pow(szám, 3))
+                        <section class="out">8</section></p>
+
+                        <p>szám = int(input("Kérek egy számot: "))
+                        <br>print(pow(szám, 3))
+                        <section class="out">Kérek egy számot: 2
+                        <br>8</section></p>
+                    </section>
+                    <p><b class="py">print(math.sqrt(</b><b class="com">változó</b><b class="py">))</b> - A változó értékét a négyzetgyökre teszi</p>
+                    <section class="ex">
+                        <p>print(math.sqrt(4))
+                        <section class="out">2</section></p>
+
+                        <p>szám = 4
+                        <br>print(math.sqrt(szám))
+                        <section class="out">2</section></p>
+
+                        <p>szám = int(input("Kérek egy számot: "))
+                        <br>print(math.sqrt(szám))
+                        <section class="out">Kérek egy számot: 4
+                        <br>2</section></p>
+                    </section>
+                    <p><b class="py">print(max(</b><b class="com">változó_1<b class="py">,</b>változó_2<b class="py">,</b>változó_3...</b><b class="py">))</b> - Megadja a változók közül a legnagyobb értékét</p>
+                    <section class="ex">
+                        <p>print(max(5, 10, 15))
+                        <section class="out">15</section></p>
+
+                        <p>szám_1 = 5
+                        <br>szám_2 = 10
+                        <br>szám_3 = 15
+                        <br>print(max(szám_1, szám_2, szám_3))
+                        <section class="out">15</section></p>
+
+                        <p>szám_1 = int(input("Kérek egy számot: "))
+                        <br>szám_2 = int(input("Kérek egy számot: "))
+                        <br>szám_3 = int(input("Kérek egy számot: "))
+                        <br>print(max(szám_1, szám_2, szám_3))
+                        <section class="out">Kérek egy számot: 5
+                        <br>Kérek egy számot: 10
+                        <br>Kérek egy számot: 15
+                        <br>15</section></p>
+                    </section>
+                    <p><b class="py">print(min(</b><b class="com">változó_1<b class="py">,</b>változó_2<b class="py">,</b>változó_3...</b><b class="py">))</b> - Megadja a változók közül a legkisebb értékét</p>
+                    <section class="ex">
+                        <p>print(min(5, 10, 15))
+                        <section class="out">5</section></p>
+
+                        <p>szám_1 = 5
+                        <br>szám_2 = 10
+                        <br>szám_3 = 15
+                        <br>print(min(szám_1, szám_2, szám_3))
+                        <section class="out">5</section></p>
+
+                        <p>szám_1 = int(input("Kérek egy számot: "))
+                        <br>szám_2 = int(input("Kérek egy számot: "))
+                        <br>szám_3 = int(input("Kérek egy számot: "))
+                        <br>print(min(szám_1, szám_2, szám_3))
+                        <section class="out">Kérek egy számot: 5
+                        <br>Kérek egy számot: 10
+                        <br>Kérek egy számot: 15
+                        <br>5</section></p>
+                    </section>
+                </section>
+
+                <h3>Szöveg tagolása</h3>
+                    <section class="text">
+                        <p><b class="com">változó_1</b> <b class="py">=</b> <b class="com">változó_2</b><b class="py">[<b class="com">kezdés</b><b class="py">:</b><b class="com">befejezés</b><b class="py">:</b><b class="com">ugrás</b>]</b> - A megadott szövegből kiszed egy részt, ami a megadott karaktertől kezdődik (0-tól kezdve) és megadott karakternél fejeződik be (1-től kezdve), valamint meg lehet adni, hogy hányasával írja ki a karaktereket.</p>
+                        <section class="ex">
+                            <p>gyümölcs = "alma"
+                            <br>print(gyümölcs[0:4])
+                            <section class="out">alma</section></p>
+
+                            <p>gyümölcs = "alma"
+                            <br>print(gyümölcs[0:])
+                            <section class="out">alma</section></p>
+
+                            <p>gyümölcs = "alma"
+                            <br>print(gyümölcs[2:4])
+                            <section class="out">ma</section></p>
+
+                            <p>gyümölcs = "alma"
+                            <br>print(gyümölcs[:4])
+                            <section class="out">alma</section></p>
+
+                            <p>étel = "almáspite"
+                            <br>print(étel[4:9])
+                            <section class="out">spite</section></p>
+
+                            <p>étel = "almáspite"
+                            <br>print(étel[0:9:2])
+                            <section class="out">amsi</section></p>
+
+                            <p>étel = "almáspite"
+                            <br>print(étel[0:9:3])
+                            <section class="out">aái</section></p>
+
+                            <p>étel = "almáspite"
+                            <br>print(étel[::2])
+                            <section class="out">amsie</section></p>
+
+                            <p>étel = "almáspite"
+                            <br>print(étel[::-1])
+                            <section class="out">etipsámla</section></p>
+                        </section>
+                        <p><b class="com">változó</b> <b class="py">= slice(</b><b class="com">kezdés</b><b class="py">,</b><b class="com">befejezés</b><b class="py">)</b> - A megadott szövegből kiszed egy részt, ami a megadott karaktertől kezdődik (0-tól kezdve) és megadott karakternél fejeződik be (1-től kezdve), ami akár negatív is lehet (-1-től kezdve, visszafele).</p>
+                        <section class="ex">
+                            <p>link_1 = "https://mmateh.github.io/python.html"
+                            <br>link_2 = "https://mmateh.github.io/mysql.html"
+                            <br>rész = slice(25,-5)
+                            <br>print(link_1[rész])
+                            <br>print(link_2[rész])
+                            <section class="out">python
+                            <br>mysql</section></p>
+                        </section>
+                    </section>
+
+                <h3>Elágazások</h3>
+                    <section class="text">
+                        <p><b class="py">if</b> <b class="com">feltétel</b><b class="py">:</b> - Csak akkor futtatja le a programot, ha a feltétel igaz.</p>
+                        <p><b class="py">elif</b> <b class="com">feltétel</b><b class="py">:</b> - Ha az if feltétele nem teljesül, elif-fel csinálhatunk mégegy feltételt (több is lehet).</p>
+                        <p><b class="py">else:</b> - Ha egyik feltétel sem teljesül, akkor futtatja le ezt.</p>
+                        <p><b class="com">a</b> <b class="py">></b> <b class="com">b</b> - A bal oldal nagyobb.</p>
+                        <p><b class="com">a</b> <b class="py"><</b> <b class="com">b</b> - A jobb oldal nagyobb.</p>
+                        <p><b class="com">a</b> <b class="py">>=</b> <b class="com">b</b> - A bal oldal nagyobb vagy egyenlő.</p>
+                        <p><b class="com">a</b> <b class="py"><=</b> <b class="com">b</b> - A jobb oldal nagyobb vagy egyenlő.</p>
+                        <p><b class="com">a</b> <b class="py">==</b> <b class="com">b</b> - Egyenlő.</p>
+                        <p><b class="com">a</b> <b class="py">!></b> <b class="com">b</b> - A bal oldal nem nagyobb.</p>
+                        <p><b class="com">a</b> <b class="py">!<</b> <b class="com">b</b> - A jobb oldal nem nagyobb.</p>
+                        <p><b class="com">a</b> <b class="py">!=</b> <b class="com">b</b> - Nem egyenlő.</p>
+                        <section class="ex">
+                            <p>kor = int(input("Korod: "))
+                            <br>if kor >= 18:
+                            <br><span class="if">print("Nagykorú vagy")</span>
+                            <br>else:
+                            <br><span class="if">print("Kiskorú vagy")</span>
+                            <section class="out">Korod: 20
+                            <br>Nagykorú vagy</section></p>
+                        </section>
+                    </section>
                     
-                <p>
-                    <p class="cim bg-dark mark text-secondary">#  if művelet</p>
-                    <br>a = int(input("Add meg az a-t: "))
-                    <br>if a == 2:
-                    <br>ㅤㅤprint("Az a értéke 2")
-                    <br>else:
-                    <br>ㅤㅤprint("Az a értéke nem 2, hanem",a)
-                    <br>
-                    <br>
-                    <p class="cim bg-dark mark text-secondary">#  for művelet</p>
-                    <br> for resz in range(a):
-                    <br>ㅤㅤprint(resz)
-                    <br>
-                    <br>
-                    <p class="cim bg-dark mark text-secondary">#  while művelet</p>
-                    <br>c = 0
-                    <br>while c != a:
-                    <br>ㅤㅤprint("Nem egyenlő még!")
-                    <br>ㅤㅤc += 1
-                    <br>
-                    <br>
-                    <p class="cim bg-dark mark text-secondary">#  def művelet</p>
-                    <br>def próba():
-                    <br>ㅤㅤprint("Működik")
-                    <br>
-                    <br id="lista1">próba()
-                </p>
+                <h3>Logikai operátorok</h3>
+                    <section class="text">
+                        <p><b class="com">a>b</b> <b class="py">and</b> <b class="com">b>c</b> - Mind a két feltételnek érvényesnek kell lennie.</p>
+                        <p><b class="com">a>b</b> <b class="py">or</b> <b class="com">b>c</b> - Csak az egyik feltételnek kell érvényesnek lennie.</p>
+                        <p><b class="py">not</b> - Tagadja a feltételt.</p>
+                        <section class="ex">
+                            <p>hiany = int(input("Hiányzások száma:"))
+                            <br>if not(hiany >= -1):
+                            <br><span class="if">print("Valós értéket adj meg.")</span>
+                            <br>elif hiany < 2 :
+                            <br><span class="if">print("Nem történik semmi.")</span>
+                            <br>elif 2 <= hiany and hiany < 4:
+                            <br><span class="if">print("Figyelmeztetést kap!")</span>
+                            <br>elif 4 <= hiany and hiany < 8:
+                            <br><span class="if">print("Osztályfőnöki intőt kap!")</span>
+                            <br>elif 8 <= hiany and hiany < 10:
+                            <br><span class="if">print("Igazgatói megrovást kap!")</span>
+                            <br>elif (10 <= hiany):
+                            <br><span class="if">print("Felfüggesztésben részesül!")</span>
+                            <section class="out">Hiányzások száma: 4
+                            <br>Osztályfőnöki intőt kap!</section></p>
+                        </section>
+                    </section>
 
-            <h3 class="felso">Lista műveletek 1/2</h3>
-                
-                <p>
-                    <p class="cim bg-dark mark text-secondary">#  Lista kiírása</p>
-                    <br>szamok = [4,5,2,5,4,5,12,4,6]
-                    <br>print(szamok)
-                    <br>a = len(szamok)
-                    <br>for c in range(a):
-                    <br>ㅤㅤprint(szamok[c])
-                    <br>
-                    <br>
-                    <br>
-                    <p class="cim bg-dark mark text-secondary">#  Átírás</p>
-                    <br>szamok[3] = 111
-                    <br>print(szamok)
-                    <br>
-                    <br>
-                    <br>
-                    <p class="cim bg-dark mark text-secondary">#  Adatbeadás (For)</p>
-                    <br>n = int(input("Hány eleme legyen?: "))
-                    <br>szam = [0]*n
-                    <br>for i in range(n):
-                    <br>ㅤㅤszam[i] = input("Mi legyen a szám?: ")
-                    <br>print(szam)
-                    <br>
-                    <br>
-                    <br>
-                    <p class="cim bg-dark mark text-secondary">#  Adatbeadás (While)</p>
-                    <br>k = int(input("Hány eleme legyen?: "))
-                    <br>h = 0
-                    <br>sz = [0]*k
-                    <br> while h < k:
-                    <br>ㅤㅤsz[h] = input("Mi legyen a szám?: ")
-                    <br>ㅤㅤh += 1
-                    <br>print(sz)
-                    <br>
-                    <br>
-                    <br>
-                    <p class="cim bg-dark mark text-secondary">#  Lista bővítése</p>
-                    <br>s = [ ]
-                    <br>j = int(input("Mennyi adatot tegyünk be?: "))
-                    <br>for i in range(j):
-                    <br>ㅤㅤg = input("Kérek egy számot: ")
-                    <br>ㅤㅤs.append(g)
-                    <br>print(s)
-                    <br>
-                    <br>
-                    <br>
-                    <p class="cim bg-dark mark text-secondary">#  Lista bővítése ameddig nem nulla</p>
-                    <br>r = int(input("Kérek egy számot: "))
-                    <br>t = [ ]
-                    <br>while r != 0:
-                    <br>ㅤㅤt.append(r)
-                    <br>ㅤㅤr = int(input("Kérek egy számot: "))
-                    <br>print(t)
-                    <br>
-                    <br>
-                    <br>
-                    <p class="cim bg-dark mark text-secondary">#  Lista bővítése ameddig a név nem "vége"</p>
-                    <br>aa = input("Kérek egy nevet: ")
-                    <br>nev = [ ]
-                    <br>suly = [ ]
-                    <br>while aa != "vége":
-                    <br>ㅤㅤnev.append(aa)
-                    <br>ㅤㅤbb = input("Kérem a súlyát: ")
-                    <br>ㅤㅤsuly.append(bb)
-                    <br id="lista2">ㅤㅤaa = input("Kérek egy nevet: ")
-                </p>
+                <h3>While loop</h3>
+                    <section class="text">
+                        <p><b class="py">while</b> <b class="com">feltétel</b><b class="py">:</b> - Ameddig a feltétel igaz, addig futtatja a programot.</p>
+                        <section class="ex">
+                            <p>while 1==1:
+                            <br><span class="if">print("Végtelenségig kiírja!")</span>
+                            <section class="out">Végtelenségig kiírja!
+                            <br>Végtelenségig kiírja!
+                            <br>...</section></p>
 
-            <h3 class="felso">Lista műveletek 2/2</h3>
+                            <p>i = 0
+                            <br>while i < 5:
+                            <br><span class="if">print(i)</span>
+                            <br><span class="if">i += 1</span>
+                            <section class="out">0
+                            <br>1
+                            <br>2
+                            <br>3
+                            <br>4</section></p>
 
-                <p>
-                    <br>neve = ["a","b","c"]
-                    <br>suly = [40,60,50]
-                    <br>
-                    <br>
-                    <br>
-                    <p class="cim bg-dark mark text-secondary">#  Hosszmérés  //len()</p>
-                    <br>print("__________________")
-                    <br>hossz = len(neve)
-                    <br>print(hossz,"a lista eleme.")
-                    <br>
-                    <br>
-                    <br>
-                    <p class="cim bg-dark mark text-secondary">#  Összegzés listában  //sum()</p>
-                    <br>print("__________________")
-                    <br>osszeg = sum(suly)
-                    <br>print(osszeg,"a súlyok összege.")
-                    <br>
-                    <br>
-                    <br>
-                    <p class="cim bg-dark mark text-secondary">#  Súlyok között a legnagyobb adat meghatározása  //max()</p>
-                    <br>print("__________________")
-                    <br>legnagyobb = max(suly)
-                    <br>print(legnagyobb,"a legnagyobb a súlyok között.")
-                    <br>
-                    <br>
-                    <br>
-                    <p class="cim bg-dark mark text-secondary">#  Súlyok között a legkissebb adat meghatározása  //min()</p>
-                    <br>print("__________________")
-                    <br>legkissebb = min(suly)
-                    <br>print(legkissebb,"a legkissebb a súlyok között.")
-                    <br>
-                    <br>
-                    <br>
-                    <p class="cim bg-dark mark text-secondary">#  Növekvő sorrendbe rendezni a listát  //.sort()</p>
-                    <br>print("__________________")
-                    <br>suly.sort()
-                    <br>print(suly)
-                    <br>
-                    <br>
-                    <br>
-                    <p class="cim bg-dark mark text-secondary">#  Csökkenő sorrendbe rendezni a listát  //.reverse()</p>
-                    <br>print("__________________")
-                    <br>suly.reverse()
-                    <br>print(suly)
-                    <br>
-                    <br>
-                    <br>
-                    <p class="cim bg-dark mark text-secondary">#  Egy adat eleme e a listának  //'adat' in 'lista'</p>
-                    <br>print("__________________")
-                    <br>h = int(input("Kérek egy számot: "))
-                    <br>c = h in suly
-                    <br>print("Benne van a listában?",c)
-                    <br>
-                    <br>hh = input("Kérek egy nevet: ")
-                    <br>cc = hh in neve
-                    <br>print("Benne van a listában?",cc)
-                    <br>
-                    <br>
-                    <br>
-                    <p class="cim bg-dark mark text-secondary">#  Elem törlése a listából  //.remove('hányadik elem')</p>
-                    <br>print("__________________")
-                    <br>print(suly)
-                    <br>aa = int(input("Melyik elemet törölje: "))
-                    <br>if aa in suly:
-                    <br>ㅤㅤsuly.remove(aa)
-                    <br>ㅤㅤprint(suly)
-                    <br>else:
-                    <br>ㅤㅤprint("Ilyen elem nincs")
-                    <br>
-                    <br>
-                    <br>
-                    <p class="cim bg-dark mark text-secondary">#  Törlés jobb megoldással  //del 'lista'</p>
-                    <br>keres = input("Kit akarunk törölni: ")
-                    <br>if keres in neve:
-                    <br>ㅤㅤhany = neve.index(keres)
-                    <br>ㅤㅤdel neve[hany]
-                    <br>ㅤㅤdel suly[hany]
-                    <br>else:
-                    <br>ㅤㅤprint("Nem eleme a listának")
-                    <br>print(neve)
-                    <br>print(suly)
-                    <br>
-                    <br>
-                    <br>
-                    <p class="cim bg-dark mark text-secondary">#  Elem keresés és hányadik ha benne van  //.index('keresett dolog')</p>
-                    <br>print("__________________")
-                    <br>kit = input("Kit keresünk: ")
-                    <br>if kit in neve:
-                    <br>ㅤㅤsor = neve.index(kit)
-                    <br>ㅤㅤprint("A listában a sora",sor)
-                    <br>ㅤㅤprint("Neve:",neve[sor],"    Súlya:",suly[sor])
-                    <br>else:
-                    <br id="file">ㅤㅤprint("Nem eleme a listának")
-                </p>
+                            <p>név = ""
+                            <br>while len(név) == 0:
+                            <br><span class="if">név = input("Add meg a neved: ")</span>
+                            <br>print("Hello " + név)
+                            <section class="out">Add meg a neved:</section></p>
 
-            <h3 class="felso">Fájl műveletek</h3>
+                            <p>név = ""
+                            <br>while not név:
+                            <br><span class="if">név = input("Add meg a neved: ")</span>
+                            <br>print("Hello " + név)
+                            <section class="out">Add meg a neved:</section></p>
+                        </section>
+                    </section>
 
-                <p>
-                    <p class="cim bg-dark mark text-secondary">Fájl megnyitása</p>
-                    <br>file = open("teszt.txt","művelet",encoding="UTF-8")
-                    <h5>Művelet típusok</h5>
-                    <ul>
-                        <li>"r" - Beolvasás</li>
-                        <li>"a" - Bővítés</li>
-                        <li>"w" - Írás</li>
-                        <li>"x" - Létrehozás</li>
-                        <br>
-                        <li>"t" - Szövegtípus</li>
-                        <li>"b" - Számtípus</li>
-                    </ul>
-                    <p class="cim bg-dark mark text-secondary">Fájl szerkesztése</p>
-                    <br>file.write("példa")ㅤ-ㅤÍrás, Bővítés
-                    <br>print(file.read())ㅤ-ㅤMinden beolvasása
-                    <br>print(file.read(szám))ㅤ-ㅤAnnyi beolvasása amennyi a szám
-                    <br>print(file.readline())ㅤ-ㅤEgy sor beolvasása
-                    <br>print(file.readline())ㅤ-ㅤAnnyi sor beolvasása amennyi a szám
-                    <br>
-                    <br>
-                    <br>
-                    <p class="cim bg-dark mark text-secondary">Fájl bezárása</p>
-                    <br>file.close()
-                    <br>
-                    <br>
-                    <br>
-                    <p class="cim bg-dark mark text-secondary">Fájl törlése</p>
-                    <br>import os
-                    <br>os.remove("teszt.txt")
-                    <br>
-                    <br>
-                    <br>
+                <h3>For loop</h3>
+                    <section class="text">
+                        <p><b class="py">for</b><b class="com"> index </b><b class="py">in range(</b><b class="com">érték</b><b class="py">):</b> - A zárójelben lévő értéknek megfelelően fut</p>
+                        <section class="ex">
+                            <p>for i in range(5):
+                            <br><span class="if">print(i)</span>
+                            <section class="out">0
+                            <br>1
+                            <br>2
+                            <br>3
+                            <br>4</section></p>
 
-                </p>
+                            <p>for i in range(5,10):
+                            <br><span class="if">print(i)</span>
+                            <section class="out">5
+                            <br>6
+                            <br>7
+                            <br>8
+                            <br>9</section></p>
+
+                            <p>for i in range(5,10,2):
+                            <br><span class="if">print(i)</span>
+                            <section class="out">5
+                            <br>7
+                            <br>9</section></p>
+                            <p>for i in "Béla":
+                            <br><span class="if">print(i)</span>
+                            <section class="out">B
+                            <br>é
+                            <br>l
+                            <br>a</section></p>
+                        </section>
+                    </section>
+            
+                <h3>Idő műveletek</h3>
+                    <section class="text">
+                        <p><b class="py">import time</b> - Idő funkciókat importál.</p>
+                        <p><b class="py">time.sleep(</b><b class="com">szám</b><b class="py">)</b> - A megadott számot vár másodpercekben</p>
+                        <section class="ex">
+                            <p>for seconds in range(10,0,-1):
+                            <br><span class="if">print(seconds)</span>
+                            <br><span class="if">time.sleep(1)</span>
+                            <br>print("Boldog új évet!")
+                            <section class="out">10
+                            <br>9
+                            <br>8
+                            <br>7
+                            <br>6
+                            <br>5
+                            <br>4
+                            <br>3
+                            <br>2
+                            <br>1
+                            <br>Boldog új évet!</section></p>
+                        </section>
+                    </section>
+
+                <h3>Befészkelt ciklus</h3>
+                    <section class="text">
+                        <p><b class="py">for</b><b class="com"> index_1 </b><b class="py">in range(</b><b class="com">érték</b><b class="py">):</b> <br><span class="if"><b class="py">for</b><b class="com"> index_2 </b><b class="py">in range(</b><b class="com">érték</b><b class="py">):</b></span> <br><span class="if_2"><b class="py">print("</b><b class="com">karakter</b><b class="py">", end="")</b></span> <br><span class="if"><b class="py">print()</b></span> <span class="if_2"> - A belső ciklus mindig befejezi az ismétlést mialatt a külső ciklus egy ismétlést hajt végre.</span></p>
+                        <section class="ex">
+                            <p>sor = int(input("Mennyi sor legyen: "))
+                            <br>oszlop = int(input("Mennyi oszlop legyen: "))
+                            <br>karakter = input("Add meg a használni kívánt karaktert: ")
+                            <br>for i in range(sor):
+                            <br><span class="if">for j in range(oszlop):
+                            <br><span class="if_2">print(karakter, end="")
+                            <br><span class="if">print()</span>
+                            <section class="out">Mennyi sor legyen: 3
+                            <br>Mennyi oszlop legyen: 5
+                            <br>Add meg a használni kívánt karaktert: *
+                            <br>*****
+                            <br>*****
+                            <br>*****</section></p>
+                        </section>
+                    </section>
+
+                <h3>Ciklusvezérlési utasítások</h3>
+                    <section class="text">
+                        <p><b class="py">break</b> - A ciklus befejezésére való.</p>
+                        <section class="ex">
+                            <p>while True:
+                            <br><span class="if">name = input("Add meg a neved: ")</span>
+                            <br><span class="if">if name != "":</span>
+                            <br><span class="if_2">break</span>
+                            <section class="out">Add meg a neved:</section></p>
+                        </section>
+                        <p><b class="py">continue</b> - A következő ciklus interakcióhoz lép.</p>
+                        <section class="ex">
+                            <p>telefonszám = "123-456-7890"
+                            <br>for i in telefonszám:
+                            <br><span class="if">if i == "-":</span>
+                            <br><span class="if_2">continue</span>
+                            <br><span class="if">print(i, end="")</span>
+                            <section class="out">1234567890</section></p>
+                        </section>
+                        <p><b class="py">pass</b> - Nem csinál semmit, helyettesítésnek van</p>
+                        <section class="ex">
+                                <p>for i in range(1,9):
+                                <br><span class="if">if i == 5:</span>
+                                <br><span class="if_2">pass</span>
+                                <br><span class="if">else:</span>
+                                <br><span class="if_2">print(i)</span>
+                                <section class="out">1
+                                <br>2
+                                <br>3
+                                <br>4
+                                <br>6
+                                <br>7
+                                <br>8</section></p>
+                        </section>
+                    </section>
+
+                <h3>Listák</h3>
+                    <section class="text">
+                        <p><b class="com">lista</b> <b class="py">= [</b><b class="com">adat_1</b><b class="py">,</b><b class="com">adat_2</b><b class="py">,</b><b class="com">adat_3...</b><b class="py">]</b> - Több adat tárolása egy változón belül.</p>
+                        <p><b class="py">print(</b><b class="com">lista</b><b class="py">[<b class="com">szám</b>])</b> - A lista szám (0-tól kezdve) által megadott értékét írja ki.</p>
+                        <p><b class="com">lista</b><b class="py">[</b><b class="com">szám</b><b class="py">] = "</b><b class="com">adat</b><b class="py">"</b> - A szám által megadott helyre kicseréli az adatot.</p>
+                        <p><b class="py">for</b> <b class="com">index</b> <b class="py">in</b> <b class="com">lista</b><b class="py">:</b> <br><span class="if"><b class="py">print(</b><b class="com">index</b><b class="py">)</b></span> <span class="if_2"> - Kiírja a lista minden elemét egyesével.</span></p>
+                        <section class="ex">
+                            <p>ételek = ["pizza","hamburger","hotdog","spagetti"]
+                            <br>print(ételek)
+                            <section class="out">['pizza', 'hamburger', 'hotdog', 'spagetti']</section></p>
+                            <p>ételek = ["pizza","hamburger","hotdog","spagetti"]
+                            <br>print(ételek[2])
+                            <section class="out">hotdog</section></p>
+
+                            <p>ételek = ["pizza","hamburger","hotdog","spagetti"]
+                            <br>ételek[1] = "leves"
+                            <br>print(ételek[1])
+                            <section class="out">leves</section></p>
+                            <p>ételek = ["pizza","hamburger","hotdog","spagetti"]
+                            <br>for x in ételek:
+                            <br><span class="if">print(x)</span>
+                            <section class="out">pizza
+                            <br>hamburger
+                            <br>hotdog
+                            <br>spagetti</section></p>
+                        </section>
+                        <p><b class="com">lista</b><b class="py">.append("</b><b class="com">adat</b><b class="py">")</b> - Hozzáadja az adatot a lista utolsó helyére.</p>
+                        <section class="ex">
+                            <p>ételek = ["pizza","hamburger","hotdog","spagetti"]
+                            <br>ételek.append("leves")
+                            <br>print(ételek)
+                            <section class="out">['pizza', 'hamburger', 'hotdog', 'spagetti','leves']</section></p>
+                        </section>
+                        <p><b class="com">lista</b><b class="py">.remove("</b><b class="com">adat</b><b class="py">")</b> - Törli az adatot a listából.</p>
+                        <section class="ex">
+                            <p>ételek = ["pizza","hamburger","hotdog","spagetti"]
+                            <br>ételek.remove("hotdog")
+                            <br>print(ételek)
+                            <section class="out">['pizza', 'hamburger', 'spagetti']</section></p>
+                        </section>
+                        <p><b class="com">lista</b><b class="py">.pop()</b> - Törli az utolsó adatot a listából.</p>
+                        <section class="ex">
+                            <p>ételek = ["pizza","hamburger","hotdog","spagetti"]
+                            <br>ételek.pop()
+                            <br>print(ételek)
+                            <section class="out">['pizza', 'hamburger', 'hotdog']</section></p>
+                        </section>
+                        <p><b class="com">lista</b><b class="py">.insert(</b><b class="com">szám</b><b class="py">,"</b><b class="com">adat</b><b class="py">")</b> - Beilleszti az adatot a számmal megadott (0-tól kezdve) helyre.</p>
+                        <section class="ex">
+                            <p>ételek = ["pizza","hamburger","hotdog","spagetti"]
+                            <br>ételek.insert(2,"leves")
+                            <br>print(ételek)
+                            <section class="out">['pizza', 'hamburger', 'leves' , 'hotdog', 'spagetti']</section></p>
+                        </section>
+                        <p><b class="com">lista</b><b class="py">.sort()</b> - Betűrendbe állítja a lista adatait.</p>
+                        <section class="ex">
+                            <p>ételek = ["pizza","hamburger","hotdog","spagetti"]
+                            <br>ételek.sort()
+                            <br>print(ételek)
+                            <section class="out">['hamburger', 'hotdog', 'pizza', 'spagetti']</section></p>
+                        </section>
+                        <p><b class="com">lista</b><b class="py">.clear()</b> - Törli a lista összes adatát.</p>
+                        <section class="ex">
+                            <p>ételek = ["pizza","hamburger","hotdog","spagetti"]
+                            <br>ételek.clear()
+                            <br>print(ételek)
+                            <section class="out">
+                            <br></section></p>
+                        </section>
+                    </section>
+
+                <h3>2D listák</h3>
+                    <section class="text">
+                        <p><b class="com">lista</b> <b class="py">= [</b><b class="com">lista_1</b><b class="py">, </b><b class="com">lista_2</b><b class="py">,</b><b class="com">lista_3...</b><b class="py">]</b> - Listákat lehet tárolni egy listában.</p>
+                        <section class="ex">
+                            <p>ételek = ["pizza","hamburger","hotdog","spagetti"]
+                            <br>italok = ["cola","víz","soda","tea"]
+                            <br>desszertek = ["fagyi","süti","palacsinta","gofri"]
+                            <br>menü = [ételek, italok, desszertek]
+                            <br>print(menü)
+                            <section class="out">[['pizza', 'hamburger', 'hotdog', 'spagetti'], ['cola', 'víz', 'soda', 'tea'], ['fagyi', 'süti', 'palacsinta', 'gofri']]</section></p>
+                        </section>
+                        <p><b class="py">print(</b><b class="com">lista</b><b class="py">[<b class="com">szám</b>])</b> - A lista szám (0-tól kezdve) által megadott listát írja ki.</p>
+                        <section class="ex">
+                            <p>ételek = ["pizza","hamburger","hotdog","spagetti"]
+                            <br>italok = ["cola","víz","soda","tea"]
+                            <br>desszertek = ["fagyi","süti","palacsinta","gofri"]
+                            <br>menü = [ételek, italok, desszertek]
+                            <br>print(menü[1])
+                            <section class="out">['cola', 'víz', 'soda', 'tea']</section></p>
+                        </section>
+                        <p><b class="py">print(</b><b class="com">lista</b><b class="py">[<b class="com">szám</b>][<b class="com">szám</b>])</b> - Az első szám a külső lista szám által (0-tól kezdve) megadott listát írja ki, a második szám a belső lista szám által (0-tól kezdve) megadott elemét írja ki.</p>
+                        <section class="ex">
+                            <p>ételek = ["pizza","hamburger","hotdog","spagetti"]
+                            <br>italok = ["cola","víz","soda","tea"]
+                            <br>desszertek = ["fagyi","süti","palacsinta","gofri"]
+                            <br>menü = [ételek, italok, desszertek]
+                            <br>print(menü[1][2])
+                            <section class="out">soda</section></p>
+                        </section>
+                    </section>
+
+                <h3>Rekordok</h3>
+                    <section class="text">
+                        <p><b class="com">rekord</b> <b class="py">= ("</b><b class="com">adat_1</b><b class="py">",</b> <b class="com">adat_2</b><b class="py">, "</b><b class="com">adat_3...</b><b class="py">")</b> - Rendezett és megváltoztathatatlan adatgyűjtemény.</p>
+                        <p><b class="com">rekord</b><b class="py">.count(</b><b class="com">adat</b><b class="py">)</b> - Megadja az értéket, amennyiszer a megadott adat megjelenik a rekordon belül.</p>
+                        <p><b class="com">rekord</b><b class="py">.index(</b><b class="com">adat</b><b class="py">)</b> - Megadja, hogy hányadik helyen (0-tól kezdve) szerepel a megadott adat.</p>
+                        <section class="ex">
+                            <p>tanuló = ("Béla", 17, "Férfi")
+                            <br>print(tanuló.count("Béla"))
+                            <br>print(tanuló.index("Férfi"))
+                            <section class="out">1
+                            <br>2</section></p>
+
+                            <p>tanuló = ("Béla", 17, "Férfi")
+                            <br>for x in tanuló:
+                            <br><span class="if">print(x)</span>
+                            <section class="out">Béla
+                            <br>17
+                            <br>Férfi</section></p>
+
+                            <p>if "Béla" in tanulók:
+                            <br><span class="if">print("Béla itt van!")</span>
+                            <section class="out">Béla itt van!</section></p>
+                        </section>
+                    </section>
+
+                <h3>Készletek</h3>
+                    <section class="text">
+                        <p><b class="com">készlet</b> <b class="py">= ("</b><b class="com">adat_1</b><b class="py">", "</b><b class="com">adat_2</b><b class="py">", "</b><b class="com">adat_3...</b><b class="py">")</b> - Rendezetlen, ismétlésmentes adatgyűjtemény.</p>
+                        <p><b class="com">készlet</b><b class="py">.add(</b><b class="com">adat</b><b class="py">)</b> - Hozzáadja az adatot a készlethez.</p>
+                        <p><b class="com">készlet</b><b class="py">.remove(</b><b class="com">adat</b><b class="py">)</b> - Kiszedi az adatot a készletből.</p>
+                        <p><b class="com">készlet</b><b class="py">.clear()</b> - Kiüríti a készletet.</p>
+                        <section class="ex">
+                            <p>evőeszközök = {"villa", "kanál", "kés"}
+                            <br>for x in evőeszközök:
+                            <br><span class="if">print(x)</span>
+                            <section class="out">kanál
+                            <br>villa
+                            <br>kés</section></p>
+
+                            <p>evőeszközök = {"villa", "kanál", "kés"}
+                            <br>evőeszközök.add("szalvéta")
+                            <br>for x in evőeszközök:
+                            <br><span class="if">print(x)</span>
+                            <section class="out">kés
+                            <br>kanál
+                            <br>szalvéta
+                            <br>villa</section></p>
+
+                            <p>evőeszközök = {"villa", "kanál", "kés"}
+                            <br>evőeszközök.remove("kés")
+                            <br>for x in evőeszközök:
+                            <br><span class="if">print(x)</span>
+                            <section class="out">villa
+                            <br>kanál</section></p>
+
+                            <p>evőeszközök = {"villa", "kanál", "kés"}
+                            <br>evőeszközök.clear()
+                            <br>for x in evőeszközök:
+                            <br><span class="if">print(x)</span>
+                            <section class="out">
+                            <br></section></p>
+                        </section>
+                        <p><b class="com">készlet_1</b><b class="py">.update(</b><b class="com">készlet_2</b><b class="py">)</b> - A zárójelen belüli készletet hozzáadja a készlethez.</p>
+                        <section class="ex">
+                            <p>evőeszközök = {"villa", "kanál", "kés"}
+                            <br>teríték = {"tányér", "pohár"}
+                            <br>evőeszközök.update(teríték)
+                            <br>for x in evőeszközök:
+                            <br><span class="if">print(x)</span>
+                            <section class="out">kanál
+                            <br>pohár
+                            <br>tányér
+                            <br>villa
+                            <br>kés</section></p>
+                        </section>
+                        <p><b class="com">készlet_1</b> <b class="py">=</b> <b class="com">készlet_2</b><b class="py">.union(</b><b class="com">készlet_3</b><b class="py">)</b> - Egyesíti az egyenlőségjel után lévő két készletet egy külön készletbe.</p>
+                        <section class="ex">
+                            <p>evőeszközök = {"villa", "kanál", "kés"}
+                            <br>teríték = {"tányér", "pohár"}
+                            <br>evőeszközök.update(teríték)
+                            <br>ebédlőasztal = evőeszközök.union(teríték)
+                            <br>for x in ebédlőasztal:
+                            <br><span class="if">print(x)</span>
+                            <section class="out">kanál
+                            <br>pohár
+                            <br>tányér
+                            <br>villa
+                            <br>kés</section></p>
+                        </section>
+                        <p><b class="com">készlet_1</b><b class="py">.difference(</b><b class="com">készlet_2</b><b class="py">)</b> - Megadja a két készlet közötti különbséget.</p>
+                        <section class="ex">
+                            <p>evőeszközök = {"villa", "kanál", "kés"}
+                            <br>teríték = {"tányér", "pohár","kés"}
+                            <br>print(evőeszközök.difference(teríték))
+                            <section class="out">kanál
+                            <br>villa</section></p>
+
+                            <p>evőeszközök = {"villa", "kanál", "kés"}
+                            <br>teríték = {"tányér", "pohár","kés"}
+                            <br>print(teríték.difference(evőeszközök))
+                            <section class="out">tányér
+                            <br>pohár</section></p>
+                        </section>
+                        <p><b class="com">készlet_1</b><b class="py">.intersection(</b><b class="com">készlet_2</b><b class="py">)</b> - Megadja a két készlet közötti közös értékeket.</p>
+                        <section class="ex">
+                            <p>evőeszközök = {"villa", "kanál", "kés"}
+                            <br>teríték = {"tányér", "pohár","kés"}
+                            <br>print(evőeszközök.intersection(teríték))
+                            <section class="out">kés</section></p>
+                        </section>
+                    </section>
+
+                <h3>Szótárak</h3>
+                    <section class="text">
+                        <p><b class="com">szótár</b> <b class="py">= {</b><b class="com">kulcs_1</b><b class="py">:</b><b class="com">adat_1</b><b class="py">,</b> <b class="com">kulcs_2</b><b class="py">:</b><b class="com">adat_2...</b><b class="py">}</b> - Egy változtatható, rendezetlen adat gyűjtemény egy egyedi kulccsal. Gyorsan el lehet érni az adatot.</p>
+                        <section class="ex">
+                            <p>fővárosok = {"Magyarország":"Budapest",
+                            <br><span class="if_2">"Ausztria":"Bécs",</span>
+                            <br><span class="if_2">"Spanyolország":"Madrid",</span>
+                            <br><span class="if_2">"Oroszország":"Moszkva"}</span>
+                            <br>print(fővárosok["Ausztria"])
+                            <section class="out">Bécs</section></p>
+                        </section>
+                        <p><b class="com">szótár</b><b class="py">.get(</b><b class="com">kulcs</b><b class="py">)</b> - Ellenőrzi, hogy a megadott adat szerepel-e a szótárban.</p>
+                        <section class="ex">
+                            <p>fővárosok = {"Magyarország":"Budapest",
+                            <br><span class="if_2">"Ausztria":"Bécs",</span>
+                            <br><span class="if_2">"Spanyolország":"Madrid",</span>
+                            <br><span class="if_2">"Oroszország":"Moszkva"}</span>
+                            <br>print(fővárosok.get("Németország"))
+                            <section class="out">None</section></p>
+                        </section>
+                        <p><b class="com">szótár</b><b class="py">.keys()</b> - Kiírja az összes kulccsot.</p>
+                        <p><b class="com">szótár</b><b class="py">.values()</b> - Kiírja az összes adatot.</p>
+                        <p><b class="com">szótár</b><b class="py">.items()</b> - Kiírja az egész szótár tartalmát.</p>
+                        <section class="ex">
+                            <p>fővárosok = {"Magyarország":"Budapest",
+                            <br><span class="if_2">"Ausztria":"Bécs",</span>
+                            <br><span class="if_2">"Spanyolország":"Madrid",</span>
+                            <br><span class="if_2">"Oroszország":"Moszkva"}</span>
+                            <br>print(fővárosok.keys())
+                            <section class="out">dict_keys(['Magyarország', 'Ausztria', 'Spanyolország', 'Oroszország'])</section></p>
+
+                            <p>fővárosok = {"Magyarország":"Budapest",
+                            <br><span class="if_2">"Ausztria":"Bécs",</span>
+                            <br><span class="if_2">"Spanyolország":"Madrid",</span>
+                            <br><span class="if_2">"Oroszország":"Moszkva"}</span>
+                            <br>print(fővárosok.values())
+                            <section class="out">dict_values(['Budapest', 'Bécs', 'Madrid', 'Moszkva'])</section></p>
+
+                            <p>fővárosok = {"Magyarország":"Budapest",
+                            <br><span class="if_2">"Ausztria":"Bécs",</span>
+                            <br><span class="if_2">"Spanyolország":"Madrid",</span>
+                            <br><span class="if_2">"Oroszország":"Moszkva"}</span>
+                            <br>print(fővárosok.items())
+                            <section class="out">dict_items([('Magyarország', 'Budapest'), ('Ausztria', 'Bécs'), ('Spanyolország', 'Madrid'), ('Oroszország', 'Moszkva')])</section></p>
+
+                            <p>fővárosok = {"Magyarország":"Budapest",
+                            <br><span class="if_2">"Ausztria":"Bécs",</span>
+                            <br><span class="if_2">"Spanyolország":"Madrid",</span>
+                            <br><span class="if_2">"Oroszország":"Moszkva"}</span>
+                            <br>for key,value in fővárosok.items():
+                            <br><span class="if">print(key, value)</span>
+                            <section class="out">Magyarország Budapest
+                            <br>Ausztria Bécs
+                            <br>Spanyolország Madrid
+                            <br>Oroszország Moszkva</section></p>
+                        </section>
+                        <p><b class="com">szótár</b><b class="py">.update({</b><b class="com">kulcs</b><b class="py">:</b><b class="com">adat</b><b class="py">})</b> - Hozzáadja a kulcsot és adatot a szótárhoz.</p>
+                        <section class="ex">
+                            <p>fővárosok = {"Magyarország":"Budapest",
+                            <br><span class="if_2">"Ausztria":"Bécs",</span>
+                            <br><span class="if_2">"Spanyolország":"Madrid",</span>
+                            <br><span class="if_2">"Oroszország":"Moszkva"}</span>
+                            <br>fővárosok.update({"Németország":"Berlin"})
+                            <br>for key,value in fővárosok.items():
+                            <br><span class="if">print(key, value)</span>
+                            <section class="out">Magyarország Budapest
+                            <br>Ausztria Bécs
+                            <br>Spanyolország Madrid
+                            <br>Oroszország Moszkva
+                            <br>Németország Berlin</section></p>
+
+                            <p>fővárosok = {"Magyarország":"Debrecen",
+                            <br><span class="if_2">"Ausztria":"Bécs",</span>
+                            <br><span class="if_2">"Spanyolország":"Madrid",</span>
+                            <br><span class="if_2">"Oroszország":"Moszkva"}</span>
+                            <br>fővárosok.update({"Magyarország":"Budapest"})
+                            <br>for key,value in fővárosok.items():
+                            <br><span class="if">print(key, value)</span>
+                            <section class="out">Magyarország Budapest
+                            <br>Ausztria Bécs
+                            <br>Spanyolország Madrid
+                            <br>Oroszország Moszkva</section></p>
+                        </section>
+                        <p><b class="com">szótár</b><b class="py">.pop(</b><b class="com">kulcs</b><b class="py">)</b> - Kitörli a kulcsot adattal együtt a szótárból.</p>
+                        <p><b class="com">szótár</b><b class="py">.clear()</b> - Kitörli az összes adatot a szótárból.</p>
+                        <section class="ex">
+                            <p>fővárosok = {"Magyarország":"Budapest",
+                            <br><span class="if_2">"Ausztria":"Bécs",</span>
+                            <br><span class="if_2">"Spanyolország":"Madrid",</span>
+                            <br><span class="if_2">"Oroszország":"Moszkva"}</span>
+                            <br>fővárosok.pop({"Ausztria"})
+                            <br>for key,value in fővárosok.items():
+                            <br><span class="if">print(key, value)</span>
+                            <section class="out">Magyarország Budapest
+                            <br>Spanyolország Madrid
+                            <br>Oroszország Moszkva
+                            <br>Németország Berlin</section></p>
+
+                            <p>fővárosok = {"Magyarország":"Budapest",
+                            <br><span class="if_2">"Ausztria":"Bécs",</span>
+                            <br><span class="if_2">"Spanyolország":"Madrid",</span>
+                            <br><span class="if_2">"Oroszország":"Moszkva"}</span>
+                            <br>fővárosok.clear()
+                            <br>for key,value in fővárosok.items():
+                            <br><span class="if">print(key, value)</span>
+                            <section class="out">
+                            <br></section></p>
+                        </section>
+                    </section>
+
+                <h3>Index operátorok</h3>
+                    <section class="text">
+                        <p><b class="com">változó</b><b class="py">[</b><b class="com">szám</b><b class="py">]</b> - A változó szám (0-tól kezdve) által megadott helyen szereplő karakterét adja meg.</p>
+                        <section class="ex">
+                            <p>név = "kovács béla"
+                            <br>if(név[0].islower()):
+                            <br><span class="if">név = név.capitalize()</span>
+                            <br>print(név)
+                            <section class="out">Kovács béla</section></p>
+                            <p>név = "Kovács Béla!"
+                            <br>vezetéknév = név[0:6].upper()
+                            <br>keresztnév = név[7:11].lower()
+                            <br>utolsó_karakter = név[-1]
+                            <br>print(vezetéknév)
+                            <br>print(keresztnév)
+                            <br>print(utolsó_karakter)
+                            <section class="out">KOVÁCS
+                            <br>béla
+                            <br>!</section></p>
+                            <p>név = "Kovács Béla!"
+                            <br>vezetéknév = név[:6].upper()
+                            <br>keresztnév = név[7:].lower()
+                            <br>utolsó_karakter = név[-1]
+                            <br>print(vezetéknév)
+                            <br>print(keresztnév)
+                            <br>print(utolsó_karakter)
+                            <section class="out">KOVÁCS
+                            <br>béla!
+                            <br>!</section></p>
+                        </section>
+                    </section>
+
+                <h3>Funkciók</h3>
+                    <section class="text">
+                        <p><b class="py">def</b> <b class="com">funkciónév</b><b class="py">():</b> - A kód azon része, amely csak meghívásra aktiválódik.</p>
+                        <section class="ex">
+                            <p>def szia():
+                            <br><span class="if">print("Szia!")</span>
+                            <br>szia()
+                            <section class="out">Szia!</section></p>
+
+                            <p>def szia():
+                            <br><span class="if">print("Szia!")</span>
+                            <br><span class="if">print("Legyen szép napod!")</span>
+                            <br>szia()
+                            <br>szia()
+                            <section class="out">Szia!
+                            <br>Legyen szép napod!
+                            <br>Szia!
+                            <br>Legyen szép napod!</section></p>
+                        </section>
+                        <p><b class="py">def</b> <b class="com">funkciónév</b><b class="py">(</b><b class="com">paraméter_1</b><b class="py">,</b><b class="com">paraméter_2...</b><b class="py">):</b> - A kód azon része, amely csak meghívásra aktiválódik.</p>
+                        <section class="ex">
+                            <p>def szia(név):
+                            <br><span class="if">print("Szia " + név + "!")</span>
+                            <br><span class="if">print("Legyen szép napod!")</span>
+                            <br>szia("Béla")
+                            <section class="out">Szia Béla!
+                            <br>Legyen szép napod!</section></p>
+
+                            <p>def szia(név):
+                            <br><span class="if">print("Szia " + név + "!")</span>
+                            <br><span class="if">print("Legyen szép napod!")</span>
+                            <section class="out"><br></section></p>
+
+                            <p>def szia(vezetéknév,keresztnév):
+                            <br><span class="if">print("Szia " + vezetéknév + " " + keresztnév + "!")</span>
+                            <br><span class="if">print("Legyen szép napod!")</span>
+                            <br>vezetéknév = "Kovács"
+                            <br>keresztnév = "Béla"
+                            <br>szia(vezetéknév, keresztnév)
+                            <section class="out">Szia Kovács Béla!
+                            <br>Legyen szép napod!</section></p>
+
+                            <p>def szia(vezetéknév,keresztnév,kor):
+                            <br><span class="if">print("Szia " + vezetéknév + " " + keresztnév + "!")</span>
+                            <br><span class="if">print("Te " + str(kor) + " éves vagy!")</span>
+                            <br><span class="if">print("Legyen szép napod!")</span>
+                            <br>vezetéknév = input("Vezetékneved: ")
+                            <br>keresztnév = input("Keresztneved: ")
+                            <br>kor = int(input("Korod: "))
+                            <br>szia(vezetéknév, keresztnév, kor)
+                            <section class="out">Vezetékneved: Kovács
+                            <br>Keresztneved: Béla
+                            <br>Korod: 20
+                            <br>Szia Kovács Béla!
+                            <br>Te 20 éves vagy!
+                            <br>Legyen szép napod!</section></p>
+                        </section>
+                    </section>
+
+                <h3>Return operátor</h3>
+                    <section class="text">
+                        <p><b class="py">return</b> <b class="com">érték</b> - Visszaadja az értéket.</p>
+                        <section class="ex">
+                            <p>def szorzás(szám1, szám2):
+                            <br><span class="if">eredmény = szám1 * szám2</span>
+                            <br><span class="if">return eredmény</span>
+                            <br>print(szorzás(6,8))
+                            <section class="out">48</section></p>
+
+                            <p>def szorzás(szám1, szám2):
+                            <br><span class="if">eredmény = szám1 * szám2</span>
+                            <br><span class="if">return eredmény</span>
+                            <br>x = szorzás(6,8)
+                            <br>print(x)
+                            <section class="out">48</section></p>
+                        </section>
+                    </section>
+
+                <h3>Kulcsszavak</h3>
+                    <section class="text">
+                        <p><b class="com">kulcsszó</b><b class="py">="</b><b class="com">érték</b><b class="py">"</b> - A funkciókhoz beadható paramétert lehet vele megadni. A sorrend nem számít.</p>
+                        <section class="ex">
+                            <p>def hello(vezeték, középső, kereszt):
+                            <br><span class="if">print("Szia", vezeték, középső, kereszt)</span>
+                            <br>hello(középső="Károly", kereszt="Béla", vezeték="Kovács")
+                            <section class="out">Szia Kovács Károly Béla</section></p>
+                        </section>
+                    </section>
+
+                <h3>Befészkelt funkciók</h3>
+                    <section class="text">
+                        <p><b class="com">funkció_1</b><b class="py">(</b><b class="com">funkció_2</b><b class="py">(</b><b class="com">funkció_3...</b><b class="py">(</b><b class="com">érték</b><b class="py">)))</b> - Egy olyan funkció amit egy másik funkción belül hívnak meg. A legbelső funkciót végzi el először és a visszaadott értékkel számolja a következő funkciót.</p>
+                        <section class="ex">
+                            <p>print(round(abs(float(input("Adj meg egy negatív tört számot: ")))))
+                            <section class="out">Adj meg egy negatív tört számot: -3.14
+                            <br>3</section></p>
+                        </section>
+                    </section>
+
+                <h3>Hatáskör</h3>
+                    <section class="text">
+                        <p>A hatáskör azt adja meg, hogy az adott változó a kód melyik területen érhető el.</p>
+                        <section class="ex">
+                            <p>név = "Béla" #global (bárhol el lehet érni a kódban)
+                            <br>def név_kiírás():
+                            <br><span class="if">név = "Károly" #local (csak a funkción belül lehet elérni)</span>
+                            <br><span class="if">print(név)</span>
+                            <br>név_kiírás()
+                            <br>print(név)
+                            <section class="out">Károly
+                            <br>Béla</section></p>
+                            <p>név = "Béla" #global (bárhol el lehet érni a kódban)
+                            <br>def név_kiírás():
+                            <br><span class="if">print(név)</span>
+                            <br>név_kiírás()
+                            <br>print(név)
+                            <section class="out">Béla
+                            <br>Béla</section></p>
+                        </section>
+                    </section>
 
         </div>
 

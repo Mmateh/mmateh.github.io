@@ -125,17 +125,45 @@
     margin-left: 55px;
 }
 /*Példa*/
-.end {
+.ex {
     background-color: white;
     color: black;
-    border-radius: 50px;
-    margin-top: 10px;
-    margin-left: 70px;
-    margin-right: 70px;
+    border-radius: 5px;
+    margin-top: 2px;
+    margin-bottom: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+/*Képlet szövegének alap színe*/
+.com {
+    color: #dae44c;
 }
 /*Adatbázis színe*/
 .db {
     color: #5BA4E0;
+}
+/*Python színe*/
+.py {
+    color: #e49400f5;
+}
+/*Python bekezdés 1tab*/
+.if {
+   padding-left: 20px; 
+}
+/*Python bekezdés 2tab*/
+.if_2 {
+    padding-left: 40px; 
+}
+/*Output*/
+.out {
+    background-color: #dfdfdf;
+    color: #000;
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 /*......Matek oldal formázása......*/
@@ -198,11 +226,11 @@
     float: left;
     margin: 10px;
 }
-
+/*Aláhúzás*/
 .unli {
     border-bottom: #ffffff solid 1.5px;
 }
-
+/*Főlé vonal*/
 .upli {
     border-top: #ffffff solid 1px;
 }
