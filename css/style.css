@@ -124,6 +124,14 @@
 .be {
     margin-left: 55px;
 }
+/*Terminál parancsok színe*/
+.term {
+    color: #4AF626;
+}
+/*Terminál szöveg alap színe*/
+.termcom {
+    color: #006400;
+}
 /*Példa*/
 .ex {
     background-color: white;
@@ -134,10 +142,6 @@
     margin-left: 40px;
     margin-right: 40px;
 }
-/*Képlet szövegének alap színe*/
-.com {
-    color: #dae44c;
-}
 /*Adatbázis színe*/
 .db {
     color: #5BA4E0;
@@ -145,6 +149,10 @@
 /*Python színe*/
 .py {
     color: #e49400f5;
+}
+/*Python szöveg alap színe*/
+.pycom {
+    color: #dae44c;
 }
 /*Python bekezdés 1tab*/
 .if {

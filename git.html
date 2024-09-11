@@ -78,7 +78,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled" href="git.html">Git</a>
+                            <a class="nav-link disabled" href="git.html">Terminál parancsok</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="mysql.html">MySQL</a>
@@ -94,51 +94,149 @@
         <div class="container backgrund">
             
             <h1>Linux parancsok</h1>
-                <p>-fájlok</p>
-                <ul class="in">
-                    <li>ls: Listázás</li>
-                    <li>nano {fájlnév}: Szövegszerkesztő megnyitása a megadott fájlnévvel</li>
-                    <li>cat {fájlnév}: A megadott fájl tartalmának kiírása a képernyőre</li>
-                </ul>
-                <p>-mappák</p>
-                <ul class="in">
-                    <li>mkdir {mappanév}: Új mappa létrehozása a jelenlegi könyvtárban</li>
-                    <li>cd {mappanév}: Belépés a megadott nevű mappába</li>
-                    <li>cd ..: Visszalépés egy szinttel a mappa hierarchiában</li>
-                    <li>rmdir {mappanév}: A megadott mappa törlése (csak akkor, ha üres)</li>
-                    <li>pwd: A jelenlegi munkakönyvtár teljes elérési útvonala</li>
-                    <li>tree: A jelenlegi könyvtárban található mappák és fájlok hierarchiáját ábrázoló fa-struktúra kiírása</li>
-                </ul>
-                <p>-egyéb</p>
-                <ul class="in">
-                    <li>echo: A megadott szöveg kiírása a képernyőre</li>
-                </ul>
+                <h3>Fájlok</h3>
+                    <section class="text">
+                        <p><b class="term">ls</b> - Listázás</p>
+                        <p><b class="term">nano</b> <b class="termcom">fájlnév</b> - Szövegszerkesztő megnyitása a megadott fájlnévvel</p>
+                        <p><b class="term">cat</b> <b class="termcom">fájlnév</b> - A megadott fájl tartalmának kiírása a képernyőre</p>
+                    </section>
+
+                <h3>Mappák</h3>
+                    <section class="text">
+                        <p><b class="term">mkdir</b> <b class="termcom">mappanév</b> - Új mappa létrehozása a jelenlegi könyvtárban</p>
+                        <p><b class="term">cd</b> <b class="termcom">mappanév</b> - Belépés a megadott nevű mappába</p>
+                        <p><b class="term">cd ..</b> - Visszalépés egy szinttel a mappa hierarchiában</p>
+                        <p><b class="term">rmdir</b> <b class="termcom">mappanév</b> - A megadott mappa törlése (csak akkor, ha üres)</p>
+                        <p><b class="term">pwd</b> - A jelenlegi munkakönyvtár teljes elérési útvonala</p>
+                        <p><b class="term">tree</b> - A jelenlegi könyvtárban található mappák és fájlok hierarchiáját ábrázoló fa-struktúra kiírása</p>
+                    </section>
+                    
+                <h3>Egyéb</h3>
+                    <section class="text">
+                        <p><b class="term">echo</b> - A megadott szöveg kiírása a képernyőre</p>
+                    </section>
+            
+            <hr>
+            
+            <h1>Windows parancsok</h1>
+                <h3>Alapok</h3>
+                    <section class="text">
+                        <p><b class="termcom">parancs</b> <b class="term">/?</b> - Kiírja a parancs lehetőségeit</p>
+                        <p><b class="termcom">parancs</b> <b class="term">| findstr</b> <b class="termcom">szöveg</b> - Kiírja a megadott szöveget tartalmazó eredményét az adott parancsnak</p>
+                        <p><b class="termcom">parancs</b> <b class="term">| clip</b> - Kiírja a parancs kimenetelét a vágó memóriába</p>
+                        <p><b class="term">help</b> - Kiírja az összes parancsot</p>
+                        <p><b class="term">cls</b> - Parancssor törlése a konzolból</p>
+                        <p><b class="term">ping</b> <b class="termcom">IPcím vagy webcím</b> - 4 jelet küld és kiírja a választ</p>
+                        <p><b class="term">ping -t</b> <b class="termcom">IPcím vagy webcím</b> - Folyamatos jelet küld és kiírja a választ</p>
+                    </section>
+
+                <h3>Lemezkezelés</h3>
+                    <section class="text">
+                        <p><b class="term">chkdsk</b> - Kiírja a lemez információit</p>
+                        <p><b class="term">chkdsk /f</b> - A megadott lemezen ellenőrzi a fileokat és javítja a hibákat</p>
+                        <p><b class="term">chkdsk /r</b> - A megadott lemezen ellenőrzi a szektorokat és javítja a hibákat</p>
+                        <p><b class="term">sfc /scannow</b> - Ellenőrzi a rendszerfileokat és javítja a hibákat</p>
+                        <p><b class="term">format</b> - Leformáz egy meghajtót</p>
+                    </section>
+                    <section class="text">
+                        <p><b class="term">DISM /Online /Cleanup-Image /CheckHealth</b> - Gyors ellenőrzést végez</p>
+                        <p><b class="term">DISM /Online /Cleanup-Image /ScanHealth</b> - Alapos ellenőrzést végez</p>
+                        <p><b class="term">DISM /Online /Cleanup-Image /RestoreHealth</b> - Helyreállítja a problémákat</p>
+                    </section>
+
+                <h3>Filekezelés</h3>
+                    <section class="text">
+                        <p><b class="termcom">meghajtó</b><b class="term">:</b> - Az adott meghajtóba lép</p>
+                        <p><b class="term">dir</b> - Kiírja a mappa tartalmát</p>
+                        <p><b class="term">cd</b> <b class="termcom">mappanév</b> - A megadott mappába lép</p>
+                        <p><b class="term">cd</b> <b class="termcom">..</b> - Kilép a mappából</p>
+                        <p><b class="term">mkdir</b> <b class="termcom">név</b> - Létrehoz egy mappát a megadott néven</p>
+                        <p><b class="term">rmdir</b> <b class="termcom">név</b> - Kitörli a megadott nevű mappát</p>
+                        <p><b class="term">type</b> <b class="termcom">filenév</b> - Kiírja a file tartalmát a terminálba</p>
+                    </section>
+                    <section class="text">
+                        <p><b class="term">assoc</b> - Megadja, hogy az adott filetípust milyen alkalmazással nyitja meg</p>
+                        <p><b class="term">assoc .</b><b class="termcom">filetípus</b><b class="term">=</b><b class="termcom">program</b> - Az adott filetípusnak beállítja a megnyitáshoz használandó alkalmazást</p>
+                    </section>
+                    <section class="text">
+                        <p><b class="term">tasklist</b> - Kiírja a futó fájlokat</p>
+                        <p><b class="term">taskkill /f /pid</b> <b class="termcom">fileID</b> - Leállítja a megadott filet</p>
+                    </section>
+
+                <h3>IP config</h3>
+                    <section class="text">
+                        <p><b class="term">ipconfig</b> - IP címének lekérdezése</p>
+                        <p><b class="term">ipconfig /release</b> - IP cím törlése</p>
+                        <p><b class="term">ipconfig /renew</b> - IP cím újratöltése</p>
+                        <p><b class="term">ipconfig /all</b> - Minden IP cím lekérdezése</p>
+                        <p><b class="term">ipconfig /displaydns</b> - DNS címlekérdezése</p>
+                        <p><b class="term">ipconfig /flushdns</b> - DNS Resolver Cache törlése</p>
+                        <p><b class="term">ipconfig /release-dns</b> - DNS cím törlése</p>
+                    </section>
+
+                <h3>Hálózat</h3>
+                    <section class="text">
+                        <p><b class="term">nslookup</b> <b class="termcom">webcím</b> - A megadott webcím IP címét visszaadja</p>
+                        <p><b class="term">tracert</b> <b class="termcom">IPcím vagy webcím</b> - Megmutatja a megtett utat a megadott címhez</p>
+                        <p><b class="term">netstat</b> - Megadja, hogy mire vagyunk csatlakoztatva vagy mi van ránk csatlakozva</p>
+                        <p><b class="term">netstat -af</b> - Megadja a megnyitott portokat</p>
+                        <p><b class="term">netstat -o</b> - Megadja a megnyitott portokat PID-val együtt</p>
+                        <p><b class="term">netstat -e -t</b> <b class="termcom">szám</b> - Portstatisztikát ad meg a megadott számú másodpercenként</p>
+                        <p><b class="term">route print</b> - Kiírja az utat amit adott weboldalakhoz tenne meg a szamítógép</p>
+                        <p><b class="term">route add</b> <b class="termcom">cél_IPcím</b> <b class="term">mask</b> <b class="termcom">maszk_IPcím gateway_IPcím</b> - A megadott cél IP címnek létrehoz egy utat a megadott gatewayen keresztül</p>
+                        <p><b class="term">route delete</b> <b class="termcom">IPcím</b> - Törli a megadott cél IP címnek létrehozott utat</p>
+                    </section>
+
+                <h3>Egyéb</h3>
+                    <section class="text">
+                        <p><b class="term">shutdown /s</b> - Leállítja a gépet</p>
+                        <p><b class="term">shutdown /s -t</b> <b class="termcom">szám</b> - Leállítja a gépet a megadott számú másodperc után</p>
+                        <p><b class="term">shutdown /a</b> - A számítógép léállításának megszakítása</p>
+                        <p><b class="term">shutdown /r /fw /f /t</b> <b class="termcom">szám</b> - A megadott számú másodperc után újraindítja a gépet és a BIOS-ba lép</p>
+                    </section>
+                    <section class="text">
+                        <p><b class="term">netsh wlan show wlanreport</b> - Készít egy jelentést a WLAN-ról</p>
+                        <p><b class="term">netsh interface show interface</b> - Megmutatja az interfaceket</p>
+                        <p><b class="term">netsh interface ip show address</b> - Az interfacek IP címének lekérdezése</p>
+                        <p><b class="term">netsh interface ip show dnsservers</b> - Az interfacek DNS címének lekérdezése</p>
+                        <p><b class="term">netsh advfirewall set allprofiles state off</b> - Kikapcsolja a tűzfalat</p>
+                        <p><b class="term">netsh advfirewall set allprofiles state on</b> - Bekapcsolja a tűzfalat</p>
+                        <p><b class="term">getmac /v</b> - A MAC-címeket írja ki</p>
+                    </section>
+
+                <h3>Energia</h3>
+                    <section class="text">
+                        <p><b class="term">powercfg /energy</b> - Az energiahasználattal kapcsolatban ad meg információt</p>
+                        <p><b class="term">powercfg /batteryreport</b> - Az akkumlátorral kapcsolatban ad meg információt</p>
+                    </section>
             
             <hr>
 
             <h1>Git parancsok</h1>
-                <p>-github</p>
-                    <ul class="in">
-                        <li>git config --global user.name {felhasználónév}: regisztrálja a felhasználónevet</li>
-                        <li>git config --global user.email {email cím}: regisztrálja az emailt</li>
-                        <li>git clone {github link}: leklónozza a github mappát és tartalmát</li>
-                    </ul>
-                <p>-fájlok és mappák</p>
-                    <ul class="in">
-                        <li>git init {mappanév}: Létrehozza a gitet</li>
-                        <li>git add {fájlnév}: Hozzáadja a megadott fájlt a git előkészítő részére</li>
-                        <li>git add *: Hozzáad minden fájlt a git előkészítő részére</li>
-                        <li>git commit -m “{Üzenet}”: Feltölti a fájlokat egy üzenettel az előkészítőből a gitre</li>
-                        <li>git log: Listázza a verziókat</li>
-                    </ul>
-                <p>-elágazások</p>
-                    <ul class="in">
-                        <li>git branch: Listázza az elágazásokat</li>
-                        <li>git branch {elágazásnév}: Létrehoz egy elágazást</li>
-                        <li>git branch -d {elágazásnév}: Törli az elágazást</li>
-                        <li>git checkout {elágazásnév}: Belép az elágazásba</li>
-                        <li>git diff: Megadja a különbséget két verzió között</li>
-                    </ul>
+                <h3>Github</h3>
+                    <section class="text">
+                        <p><b class="term">git config --global user.name</b> <b class="termcom">felhasználónév</b> - Regisztrálja a felhasználónevet</p>
+                        <p><b class="term">git config --global user.email</b> <b class="termcom">email_cím</b> - Regisztrálja az emailt</p>
+                        <p><b class="term">git clone</b> <b class="termcom">github_link</b> - Leklónozza a github mappát és tartalmát</p>
+                    </section>
+                
+                <h3>Fájlok és mappák</h3>
+                    <section class="text">
+                        <p><b class="term">git init</b> <b class="termcom">mappanév</b> - Létrehozza a gitet</p>
+                        <p><b class="term">git add</b> <b class="termcom">fájlnév</b> - Hozzáadja a megadott fájlt a git előkészítő részére</p>
+                        <p><b class="term">git add *</b> - Hozzáad minden fájlt a git előkészítő részére</p>
+                        <p><b class="term">git commit -m “</b><b class="termcom">Üzenet</b><b class="term">”</b> - Feltölti a fájlokat egy üzenettel az előkészítőből a gitre</p>
+                        <p><b class="term">git log</b> - Listázza a verziókat</p>
+                    </section>
+
+                <h3>Elágazások</h3>
+                    <section class="text">
+                        <p><b class="term">git branch</b> - Listázza az elágazásokat</p>
+                        <p><b class="term">git branch</b> <b class="termcom">elágazásnév</b> - Létrehoz egy elágazást</p>
+                        <p><b class="term">git branch -d</b> <b class="termcom">elágazásnév</b> - Törli az elágazást</p>
+                        <p><b class="term">git checkout</b> <b class="termcom">elágazásnév</b> - Belép az elágazásba</p>
+                        <p><b class="term">git diff</b> - Megadja a különbséget két verzió között</p>
+                    </section>
                     
         </div>
 
