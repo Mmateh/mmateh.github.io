@@ -63,8 +63,8 @@
                                 <li><a class="dropdown-item" href="töri.html">Történelem</a></li>
                                 <li><a class="dropdown-item" href="fizika.html">Fizika</a></li>
                                 <li><a class="dropdown-item" href="matek.html">Matek</a></li>
-                                <li><a class="dropdown-item disabled" href="hálózat.html">Hálózat</a></li>
-                                <li><a class="dropdown-item" href="hálózatelmélet.html">Hálózat elmélet</a></li>
+                                <li><a class="dropdown-item disabled" href="hálózat_parancsok.html">Hálózat parancsok</a></li>
+                                <li><a class="dropdown-item" href="hálózat_elmélet.html">Hálózat elmélet</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -82,7 +82,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="git.html">Terminál parancsok</a>
+                            <a class="nav-link" href="terminál_parancsok.html">Terminál parancsok</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="mysql.html">MySQL</a>
@@ -104,11 +104,11 @@
 						<div class="multi-fields style-2">
 							<div class="form-group">
 								<label><b><u>IP cím és maszk</u></b></label>
-								<input type="text" onchange="calculateAndUpdateValues(&#39;setAddressBlock&#39;, &#39;design&#39;);tableResize();" id="addressBlock" class="form-control" autocorrect="off" autocapitalize="none">
+								<input style="background-color: #adadad;" type="text" onchange="calculateAndUpdateValues(&#39;setAddressBlock&#39;, &#39;design&#39;);tableResize();" id="addressBlock" class="form-control" autocorrect="off" autocapitalize="none">
 							</div>
 							<div class="form-group select-field">
 								<label><b><u>Maszk</u></b></label>
-								<select class="form-control" onchange="calculateAndUpdateValues(&#39;setSubnetMask&#39;, &#39;design&#39;);tableResize();" id="subnetMask">
+								<select style="background-color: #adadad;" class="form-control" onchange="calculateAndUpdateValues(&#39;setSubnetMask&#39;, &#39;design&#39;);tableResize();" id="subnetMask">
 									<option value="255.0.0.0">255.0.0.0/8</option>
 									<option value="255.128.0.0">255.128.0.0/9</option>
 									<option value="255.192.0.0">255.192.0.0/10</option>
@@ -138,7 +138,7 @@
 							</div>
 							<div class="form-group select-field">
 								<label><b><u>Hostok száma</u></b></label>
-								<select class="form-control" onchange="calculateAndUpdateValues(&#39;setNoOfHosts&#39;, &#39;design&#39;);tableResize();" id="hostBits">
+								<select style="background-color: #adadad;" class="form-control" onchange="calculateAndUpdateValues(&#39;setNoOfHosts&#39;, &#39;design&#39;);tableResize();" id="hostBits">
 									<option value="0">1</option>
 									<option value="1">2</option>
 									<option value="2">4</option>
@@ -168,7 +168,7 @@
 							</div>
 							<div class="form-group select-field min-field">
 								<label><b><u>Alhálózatok száma</u></b></label>
-								<select class="form-control" onchange="calculateAndUpdateValues(&#39;setNoOfSubnets&#39;, &#39;design&#39;);tableResize();" id="subnetBits">
+								<select style="background-color: #adadad;" class="form-control" onchange="calculateAndUpdateValues(&#39;setNoOfSubnets&#39;, &#39;design&#39;);tableResize();" id="subnetBits">
 									<option value="0">1</option>
 									<option value="1">2</option>
 									<option value="2">4</option>
@@ -202,23 +202,23 @@
 										
 						<div class="multi-fields style-2">
 							<div class="form-group"><label><b><u>Hálózat</u></b></label>
-								<input type="text" class="form-control" readonly="" id="cidrNotation_in" autocorrect="off" autocapitalize="none">
+								<input style="background-color: #adadad;" type="text" class="form-control" readonly="" id="cidrNotation_in" autocorrect="off" autocapitalize="none">
 							</div>
 							<div class="form-group"><label><b><u>Első és utolsó cím</u></b></label>
-								<input type="text" class="form-control" readonly="" id="addressRange_cidr_in" autocorrect="off" autocapitalize="none">
+								<input style="background-color: #adadad;" type="text" class="form-control" readonly="" id="addressRange_cidr_in" autocorrect="off" autocapitalize="none">
 							</div>
 							<div class="form-group"><label><b><u>Szórási cím</u></b></label>
-								<input type="text" class="form-control" readonly="" id="broadcast_cidr_in" autocorrect="off" autocapitalize="none">
+								<input style="background-color: #adadad;" type="text" class="form-control" readonly="" id="broadcast_cidr_in" autocorrect="off" autocapitalize="none">
 							</div>
 							<div class="form-group min-field"><label><b><u>Wildcard Mask</u></b></label>
-								<input type="text" class="form-control" readonly="" id="wildcard_cidr_in" autocorrect="off" autocapitalize="none">
+								<input style="background-color: #adadad;" type="text" class="form-control" readonly="" id="wildcard_cidr_in" autocorrect="off" autocapitalize="none">
 							</div>
 						</div>
 					</form>
 				</section>
 				<section class="com-section pb-0 " id="SubnetDetailsDiv" style="display: block;">
 				<h3>Alhálózatok</h3>
-					<div class="table-responsive" style="background-color: white; border-radius: 10px;">
+					<div class="table-responsive" style="background-color: #adadad; border-radius: 10px;">
 						<div id="tableDiv" style="display: block;">
 							<div id="newDiv" class="table-responsive">
 								<table id="newtable" class="table table-bordered table-stripped mb-0">
@@ -245,7 +245,7 @@
 
 				<h1>Hálózat parancsok</h1>
 
-					<h3>(config)#:</h3>
+					<h2>(config)#:</h2>
 
 						<h5>Elnevezés:</h5>
 							<section class="text">
@@ -421,6 +421,11 @@
 							</section>
 					
 						<h5>Switch:</h5>
+							<h6>-Boot system parancs</h6>
+							<section class="text">
+								Switch(config)# boot system
+							</section>
+
 							<h6>-IP cím adás</h6>
 							<section class="text">
 								<p>Switch(config)# interface vlan {vlan szám}</p>

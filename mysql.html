@@ -59,8 +59,8 @@
                                 <li><a class="dropdown-item" href="töri.html">Történelem</a></li>
                                 <li><a class="dropdown-item" href="fizika.html">Fizika</a></li>
                                 <li><a class="dropdown-item" href="matek.html">Matek</a></li>
-                                <li><a class="dropdown-item" href="hálózat.html">Hálózat</a></li>
-                                <li><a class="dropdown-item" href="hálózatelmélet.html">Hálózat elmélet</a></li>
+                                <li><a class="dropdown-item" href="hálózat_parancsok.html">Hálózat parancsok</a></li>
+                                <li><a class="dropdown-item" href="hálózat_elmélet.html">Hálózat elmélet</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -78,7 +78,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="git.html">Terminál parancsok</a>
+                            <a class="nav-link" href="terminál_parancsok.html">Terminál parancsok</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link disabled" href="mysql.html">MySQL</a>
@@ -96,7 +96,7 @@
             <h1>Eredeti videó:</h1>
             <div style="width: 100%; height: 25vh;"><iframe class="responsive-iframe" height="100%" width="100%" src="https://www.youtube.com/embed/5OdVJbNCSso" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
                 
-                <h3>Jelzések:</h3>
+                <h2>Jelzések</h2>
                     <section class="text"><p>'name'ㅤ-ㅤAdott dolognak a neve</p></section>
                     <section class="text"><p>'condition'ㅤ-ㅤAdott dolognak megadottt feltétel</p></section>
                     <section class="text"><p><b class="db">type</b>ㅤ-ㅤAdott dolog típusa ami lehet:</p>
@@ -127,7 +127,7 @@
                         </ul>
                     </section></section>
 
-                <h3>Alapok</h3>
+                <h2>Alapok</h2>
                     <section class="text">
                         <p>sudo mysqlㅤ-ㅤMySQL elindítása</p>
                         <p><b class="db">CREATE DATABASE</b> 'name';ㅤ-ㅤLétrehoz egy adatbázist a megadott néven</p>
@@ -143,7 +143,7 @@
                         <p><b class="db">SELECT</b> * <b class="db">FROM</b> 'name' <b class="db">WHERE</b> 'condition';ㅤ-ㅤAz összes oszlopot kiírja a kiválasztott táblázatban a feltételnek megfelelően</p>
                     </section>
 
-                <h3>Mentés</h3>
+                <h2>Mentés</h2>
                     <section class="text">
                         <p><b class="db">COMMIT</b>;ㅤ-ㅤCsinál egy mentéspontot</p>
                         <p><b class="db">SET</b> autocommit = <b class="db">ON</b>;ㅤ-ㅤAz autómata mentést bekapcsolja</p>
@@ -151,7 +151,7 @@
                         <p><b class="db">ROLLBACK</b>;ㅤ-ㅤVisszaállítja a mentésponthoz</p>
                     </section>
 
-                <h3>Táblázat alapok</h3>
+                <h2>Táblázat alapok</h2>
                     <section class="text">
                         <p><b class="db">CREATE TABLE</b> 'name' (ㅤ-ㅤTáblázat létrehozása</p>
                         <p class="be">'name' <b class="db">type</b>,ㅤ-ㅤHozzáad egy oszlopot a megadott névvel és értékkel rendelkezve</p>
@@ -163,13 +163,13 @@
                         <p><b class="db">DROP TABLE</b> 'name';ㅤ-ㅤKitörli a megadott táblázatot</p>
                     </section>
 
-                <h3>Adatok táblázatba helyezése</h3>
+                <h2>Adatok táblázatba helyezése</h2>
                     <section class="text">
                         <p><b class="db">INSERT INTO</b> 'name' <b class="db">VALUES</b> ('name');ㅤ-ㅤA kiválasztott táblázatba betölti a beírt adatokat</p>
                         <p><b class="db">INSERT INTO</b> 'name' ('name') <b class="db">VALUES</b> ('name');ㅤ-ㅤA kiválasztott táblázat megadott oszlopaiba betölti a beírt adatokat</p>
                     </section>
                 
-                <h3>Formázások</h3>
+                <h2>Formázások</h2>
                     <section class="text">
                         <p><b class="db">ALTER DATABASE</b> 'name' <b class="db">READ ONLY</b> = 1;ㅤ-ㅤCsak olvasni lehet az adatbázist</p>
                         <p><b class="db">ALTER DATABASE</b> 'name' <b class="db">READ ONLY</b> = 0;ㅤ-ㅤÍrni és olvasni is lehet az adatbázist</p>

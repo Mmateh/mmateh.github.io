@@ -1,5 +1,5 @@
 #hatter {
-    background-image: url(photo/summer.jpg);
+    background-image: url(photo/autumn.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -145,6 +145,18 @@
 /*Adatbázis színe*/
 .db {
     color: #5BA4E0;
+}
+/*Hálózat elmélet színe*/
+.halo {
+    color:rgb(0, 160, 235);
+}
+/*Hálózat elmélet zöld színe*/
+.halo_zold {
+    color: rgb(1, 204, 1)
+}
+/*Hálózat elmélet sárga színe*/
+.halo_sarga {
+    color: #d8ca00;
 }
 /*Python színe*/
 .py {
@@ -320,13 +332,14 @@ body {
 }
 
 h1 {
+    margin-top: 10px;
     text-align: center;
     border: #f2f3f5 2px solid;
 }
 
-h3 {
+h2 {
     margin-top: 30px;
-    line-height: 40px;
+    line-height: 50px;
     border-radius: 7px;
     background-color: #212529;
     font-weight: bolder;
@@ -335,6 +348,21 @@ h3 {
     margin-left: 0px;
     margin-right: 0px;
     text-align: center;
+    display: block;
+}
+
+h3 {
+    margin-top: 30px;
+    line-height: 40px;
+    width: 1500px;
+    max-width: 95%;
+    border-radius: 13px;
+    background-color: #0f0d0d;
+    font-weight: bolder;
+    color: #cecece;
+    padding: 10px;
+    text-align: center;
+    margin: auto;
 }
 
 h5 {

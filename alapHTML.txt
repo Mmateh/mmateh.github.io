@@ -59,8 +59,8 @@
                                 <li><a class="dropdown-item" href="töri.html">Történelem</a></li>
                                 <li><a class="dropdown-item" href="fizika.html">Fizika</a></li>
                                 <li><a class="dropdown-item" href="matek.html">Matek</a></li>
-                                <li><a class="dropdown-item" href="hálózat.html">Hálózat</a></li>
-                                <li><a class="dropdown-item" href="hálózatelmélet.html">Hálózat elmélet</a></li>
+                                <li><a class="dropdown-item" href="hálózat_parancsok.html">Hálózat</a></li>
+                                <li><a class="dropdown-item" href="hálózat_elmélet.html">Hálózat elmélet</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -78,7 +78,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="git.html">Terminál parancsok</a>
+                            <a class="nav-link" href="terminál_parancsok.html">Terminál parancsok</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="mysql.html">MySQL</a>

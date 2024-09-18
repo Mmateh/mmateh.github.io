@@ -59,7 +59,7 @@
                                 <li><a class="dropdown-item" href="töri.html">Történelem</a></li>
                                 <li><a class="dropdown-item" href="fizika.html">Fizika</a></li>
                                 <li><a class="dropdown-item" href="matek.html">Matek</a></li>
-                                <li><a class="dropdown-item" href="hálózat.html">Hálózat</a></li>
+                                <li><a class="dropdown-item" href="hálózat_parancsok.html">Hálózat parancsok</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -85,7 +85,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="git.html">Terminál parancsok</a>
+                            <a class="nav-link" href="terminál_parancsok.html">Terminál parancsok</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="mysql.html">MySQL</a>
@@ -103,65 +103,72 @@
 
             <h1>Switching, Routing and Wireless Essentials</h1>
 
-                <h3>Alapbeállítások</h3>
+                <h2>Alapbeállítások</h2>
+
+                    <h5>A switch rendszerindítási sorrendje</h5>
+                        <section class="text">
+
+                        </section>
 
                     <h5>A switch LED jelzései</h5>
-                        <ol type="1" class="in">
-                            <li>SYST: Rendszer áramellátását jelzi:</li>
-                            <ul>
-                                <li>LED nem világít: nincs bekapcsolva</li>
-                                <li>LED zölden világít: megfelelően működik</li>
-                                <li>LED sárgán világít: áram alatt, nem működik</li>
-                            </ul>
-                            <li>RPS (Redundant Power System): RPS állapotát jelzi:</li>
-                            <ul>
-                                <li>LED nem világít: nincs bekapcsolva</li>
-                                <li>LED zölden világít: csatlakozatva van</li>
-                                <li>LED zölden villog: csatlakoztatva van, nem elérhető</li>
-                                <li>LED sárgán világít: készenléti üzemmód</li>
-                                <li>LED sárgán villog: switch tápegysége hibás</li>
-                            </ul>
-                            <li>STAT: Port státusz módja:</li>
-                            <ul>
-                                <li>LED nem világít: nincs kapcsolat</li>
-                                <li>LED zölden világít: van kapcsolat</li>
-                                <li>LED zölden villog: adatot küld vagy fogad</li>
-                                <li>LED sárgán világít: blokkolva van</li>
-                                <li>LED sárgán villog: tiltva van</li>
-                            </ul>
-                            <li>DUPLX: Duplex módot jelzi:</li>
-                            <ul>
-                                <li>LED nem világít: félduplex (half-duplex)</li>
-                                <li>LED zölden világít: teljes duplex (full-duplex)</li>
-                            </ul>
-                            <li>SPEED: Port sebesség módja:</li>
-                            <ul>
-                                <li>LED nem világít: 10 Mbps</li>
-                                <li>LED zölden világít: 100 Mbps</li>
-                                <li>LED zölden villog: 1000 Mbps</li>
-                            </ul>
-                            <li>PoE (Power over Ethernet): PoE módot jelzi:</li>
-                            <ul>
-                                <li>LED nem világít: nincs tápellátáshiány vagy -meghibásodás</li>
-                                <li>LED zölden világít: PoE mód ki van választva</li>
-                                <li>LED sárgán világít: PoE-hiba vagy tápellátáshiány</li>
-                            </ul>
-                        </ol>
+                        <section class="text">
+                            <ol type="1" class="in">
+                                <li class="halo">SYST: Rendszer áramellátását jelzi:</li>
+                                <ul>
+                                    <li><b>LED nem világít</b>: nincs bekapcsolva</li>
+                                    <li><b class="halo_zold">LED zölden világít</b>: megfelelően működik</li>
+                                    <li><b class="halo_sarga">LED sárgán világít</b>: áram alatt, nem működik</li>
+                                </ul>
+                                <li class="halo">RPS (Redundant Power System): RPS állapotát jelzi:</li>
+                                <ul>
+                                    <li><b>LED nem világít</b> nincs bekapcsolva</li>
+                                    <li><b class="halo_zold">LED zölden világít</b>: csatlakozatva van</li>
+                                    <li><b class="halo_zold">LED zölden villog</b>: csatlakoztatva van, nem elérhető</li>
+                                    <li><b class="halo_sarga">LED sárgán világít</b>: készenléti üzemmód</li>
+                                    <li><b class="halo_sarga">LED sárgán villog</b>: switch tápegysége hibás</li>
+                                </ul>
+                                <li class="halo">STAT: Port státusz módja:</li>
+                                <ul>
+                                    <li><b>LED nem világít</b>: nincs kapcsolat</li>
+                                    <li><b class="halo_zold">LED zölden világít</b>: van kapcsolat</li>
+                                    <li><b class="halo_zold">LED zölden villog</b>: adatot küld vagy fogad</li>
+                                    <li><b class="halo_sarga">LED sárgán világít</b>: blokkolva van</li>
+                                    <li><b class="halo_sarga">LED sárgán villog</b>: tiltva van</li>
+                                </ul>
+                                <li class="halo">DUPLX: Duplex módot jelzi:</li>
+                                <ul>
+                                    <li><b>LED nem világít</b> félduplex (half-duplex)</li>
+                                    <li><b class="halo_zold">LED zölden világít</b>: teljes duplex (full-duplex)</li>
+                                </ul>
+                                <li class="halo">SPEED: Port sebesség módja:</li>
+                                <ul>
+                                    <li><b>LED nem világít</b>: 10 Mbps</li>
+                                    <li><b class="halo_zold">LED zölden világít</b>: 100 Mbps</li>
+                                    <li><b class="halo_zold">LED zölden villog</b>: 1000 Mbps</li>
+                                </ul>
+                                <li class="halo">PoE (Power over Ethernet): PoE módot jelzi:</li>
+                                <ul>
+                                    <li><b>LED nem világít</b>: nincs tápellátáshiány vagy -meghibásodás</li>
+                                    <li><b class="halo_zold">LED zölden világít</b>: PoE mód ki van választva</li>
+                                    <li><b class="halo_sarga">LED sárgán világít</b>: PoE-hiba vagy tápellátáshiány</li>
+                                </ul>
+                            </ol>
+                        </section>
 
             <h1>Introduction to Networks</h1>
 
-                <h3>Hálózat átviteli közeg</h3>
+                <h2>Hálózat átviteli közeg</h2>
                     <p><b>Fémdrót kábel:</b> Elektromos impulzusokkal működik</p>
                     <p><b>Üveg- vagy műanyag szálas kábel:</b> Fényvillanásokkal működik</p>
                     <p><b>Vezeték nélküli:</b> Elektromágneses hullámokkal frekvencia alapon működik</p>
                     
-                <h3>Felhőtípusok</h3>
+                <h2>Felhőtípusok</h2>
                     <p><b>Publikus felhő:</b> Mindenki elérheti. Fizetős vagy ingyenes.</p>
                     <p><b>Privát felhő:</b> Adott szervezet vagy felhasználó érheti el. Létrehozása költséges.</p>
                     <p><b>Hibrid felhő:</b> Több részből áll. Különböző hozzáférés.</p>
                     <p><b>Közösségi felhő:</b> Adott szervezet érheti el. Szervezetre szabott.</p>
 
-                <h3>Biztonsági fenyegetések</h3>
+                <h2>Biztonsági fenyegetések</h2>
                     <p><b>Vírusok, férgek, trójai programok:</b> Rosszindulatú szoftver. Helyi eszközön fut.</p>
                     <p><b>Kémprogram(spyware), reklámprogram(adware):</b> Információt gyűjt. Helyi eszközön fut.</p>
                     <p><b>Nulladik napi(zero-day) támadás:</b> Biztonsági rés ismerté válásának napján megjelenő támadás.</p>
@@ -170,7 +177,7 @@
                     <p><b>Adatelhallgatás és -lopás:</b> Személyes adatot rögzít szervezet hálózatából.</p>
                     <p><b>Személyazonosság-lopás:</b> Személy felhasználó adatait lopja el privát adatok hozzáféréséhez.</p>
 
-                <h3>Biztonsági megoldások</h3>
+                <h2>Biztonsági megoldások</h2>
                     <p><b>Vírus- és kémprogramkereső:</b> Megvédik az eszközt a kártékony szoftverektől.</p>
                     <p><b>Tűzfal:</b> Blokkolja a jogosulatlan hozzáférést a rendszerhez.</p>
                     <p><b>Dedikált tűzfalrendszerek:</b> Fejlettebb, részletesebb tűzfal beállítások.</p>
@@ -178,33 +185,33 @@
                     <p><b>Behatolás-megelőző rendszerek(IPS):</b> Azonosítjálk a gyorsan terjedő fenyegetést.</p>
                     <p><b>Virtuális magánhálózatok(VPN):</b> Biztonságos hozzáférés távolról.</p>
 
-                <h3>Hozzáférési módok</h3>
+                <h2>Hozzáférési módok</h2>
                     <p><b>Konzol:</b> Eszköz karbantartására létrehozott fizikai port.</p>
                     <p><b>Secure Shell(SSH):</b> Virtuális interfacen keresztül paramcssoros kapcsolat.</p>
                     <p><b>Telnet:</b> Nem biztonságos virtuális interface.</p>
 
-                <h3>Kommunikációs alapok</h3>
+                <h2>Kommunikációs alapok</h2>
                     <p><b>Az üzenet forrása (küldő, feladó):</b> Az üzenetek forrásai emberek vagy elektronikus eszközök, amelyeknek üzenetet kell küldeniük más személyeknek vagy eszközöknek.</p>
                     <p><b>Az üzenet célja (címzett, fogadó):</b> A célállomás fogadja és értelmezi az üzenetet.</p>
                     <p><b>Csatorna:</b> Az a közeg (média) alkotja, amely azt az utat biztosítja, amelyen az üzenetek haladnak a forrástól a célig.</p>
 
-                <h3>Üzenet időzítése</h3>
+                <h2>Üzenet időzítése</h2>
                     <p><b>Adatfolyam-vezérlés (Flow Control):</b> Meghatározza, hogy mennyi információt és milyen sebességgel küldhetünk el.</p>
                     <p><b>Válaszidő-túllépés (Response Timeout):</b> Ha a kérdésre nem jön válasz elfogadható időn belül, akkor annak megfelelően reagál.</p>
                     <p><b>Hozzáférési mód (Access Method):</b> Meghatározza, hogy ki mikor küldhet üzenetet.</p>
 
-                <h3>Küldési módok</h3>
+                <h2>Küldési módok</h2>
                     <p><b>Unicast:</b> Egy eszköz számára küld üzenetet.</p>
                     <p><b>Multicast:</b> Több eszköz számára küld üzenetet.</p>
                     <p><b>Broadcast:</b> Minden eszköz számára küld üzenetet.</p>
 
-                <h3>Hálózati protokollok funkciói</h3>
+                <h2>Hálózati protokollok funkciói</h2>
                     <img src="css/fix-photo/protokoll_function.png" alt="Protokoll funkciók" class="img-thumbnail" width="50%" style="max-width: 100%;">
 
-                <h3>Hálózati protokollok áttekintése</h3>
+                <h2>Hálózati protokollok áttekintése</h2>
                     <img src="css/fix-photo/halozat_protocoll.png" alt="Hákózati protokollok" class="img-thumbnail" width="50%" style="max-width: 100%;">
 
-                <h3>Protokollok együttműködése</h3>
+                <h2>Protokollok együttműködése</h2>
                     <p><b>Hypertext Transfer Protocol(HTTP):</b> Webszerver és kliens közti kommunikáció. Leírja a kérések és válaszok formáját és tartalmát.</p>
                     <p><b>Transmission Control Protocol(TCP):</b> Egyedi párbeszédet hoz létre. Megbízható kézbesítést garantál és adatfolyam-vezérlést is biztosít.</p>
                     <p><b>Internet Protocol(IP):</b> Üzenetek továbbítása a küldőtől a címzettig.</p>
