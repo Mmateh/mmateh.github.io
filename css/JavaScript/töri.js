@@ -202,7 +202,7 @@ function load() {
         document.getElementById("pdfek").innerHTML = '<div class="keret"><iframe src="Töri/TöriÚj3/A II VH es elozmenyei_II_resz.pdf" frameborder="0"></iframe></div>'
     }
     else if (selected == "68") {
-        document.getElementById("pdfek").innerHTML = '<div class="keret"><iframe src="Töri/TöriÚj3/A II VH - MO_a_II_VH-ban.pdf" frameborder="0"></iframe></div>'
+        document.getElementById("pdfek").innerHTML = '<div class="keret"><iframe src="Töri/TöriÚj3/A II VH es elozmenyei_III_resz.pdf" frameborder="0"></iframe></div>'
     }
     else if (selected == "69") {
         document.getElementById("pdfek").innerHTML = '<div class="keret"><iframe src="Töri/TöriÚj3/A II VH es elozmenyei_IV_resz.pdf" frameborder="0"></iframe></div>'
@@ -215,6 +215,9 @@ function load() {
     }
     else if (selected == "72") {
         document.getElementById("pdfek").innerHTML = '<div class="keret"><iframe src="Töri/TöriÚj3/holokauszt001.pdf" frameborder="0"></iframe></div>'
+    }
+    else if (selected == "73") {
+        document.getElementById("pdfek").innerHTML = '<div class="keret"><iframe src="Töri/TöriÚj3/01-A_hideghaboru_korszaka_es_a_Szovjet_tomb_kialakulasa_003.pdf" frameborder="0"></iframe></div>'
     }
 
 }
