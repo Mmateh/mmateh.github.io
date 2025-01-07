@@ -219,5 +219,26 @@ function load() {
     else if (selected == "73") {
         document.getElementById("pdfek").innerHTML = '<div class="keret"><iframe src="Töri/TöriÚj3/01-A_hideghaboru_korszaka_es_a_Szovjet_tomb_kialakulasa_003.pdf" frameborder="0"></iframe></div>'
     }
+    else if (selected == "74") {
+        document.getElementById("pdfek").innerHTML = '<div class="keret"><iframe src="Töri/TöriÚj3/Rakosi-sztalinista-diktaturaja.-Nagy-Imre-reformkiserlete002.pdf" frameborder="0"></iframe></div>'
+    }
+    else if (selected == "75") {
+        document.getElementById("pdfek").innerHTML = '<div class="keret"><iframe src="Töri/TöriÚj3/1956_003.pdf" frameborder="0"></iframe></div>'
+    }
+    else if (selected == "76") {
+        document.getElementById("pdfek").innerHTML = '<div class="keret"><iframe src="Töri/TöriÚj3/A harmadik világ és a helyi háborúk.pdf" frameborder="0"></iframe></div>'
+    }
+    else if (selected == "77") {
+        document.getElementById("pdfek").innerHTML = '<div class="keret"><iframe src="Töri/TöriÚj3/05_Szuperhatalmak02.pdf" frameborder="0"></iframe></div>'
+    }
+    else if (selected == "78") {
+        document.getElementById("pdfek").innerHTML = '<div class="keret"><iframe src="Töri/TöriÚj3/A szovjet tömb meggyengülése001.pdf" frameborder="0"></iframe></div>'
+    }
+    else if (selected == "79") {
+        document.getElementById("pdfek").innerHTML = '<div class="keret"><iframe src="Töri/TöriÚj3/Rendszervaltozasok001.pdf" frameborder="0"></iframe></div>'
+    }
+    else if (selected == "80") {
+        document.getElementById("pdfek").innerHTML = '<div class="keret"><iframe src="Töri/TöriÚj3/A kétpólusú világrend megszűnése001.pdf" frameborder="0"></iframe></div>'
+    }
 
 }
