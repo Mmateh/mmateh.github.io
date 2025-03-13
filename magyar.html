@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="website icon" href="css/fix-photo/icon.png">
+        <script src="css/JavaScript/navbar.js"></script>
+        <script src="css/JavaScript/search.js"></script>
+        <script>
+            document.onkeydown = function (e) {
+                if (event.keyCode == 123) {
+                    return false;
+                }
+                if (e.ctrlKey && e.shiftKey && (e.keyCode == 'I'.charCodeAt(0) || e.keyCode == 'i'.charCodeAt(0))) {
+                    return false;
+                }
+                if (e.ctrlKey && e.shiftKey && (e.keyCode == 'C'.charCodeAt(0) || e.keyCode == 'c'.charCodeAt(0))) {
+                    return false;
+                }
+                if (e.ctrlKey && e.shiftKey && (e.keyCode == 'J'.charCodeAt(0) || e.keyCode == 'j'.charCodeAt(0))) {
+                    return false;
+                }
+                if (e.ctrlKey && (e.keyCode == 'U'.charCodeAt(0) || e.keyCode == 'u'.charCodeAt(0))) {
+                    return false;
+                }
+                if (e.ctrlKey && (e.keyCode == 'S'.charCodeAt(0) || e.keyCode == 's'.charCodeAt(0))) {
+                    return false;
+                }
+            }
+        </script>
+        
+        <title>Tananyagok - Főoldal</title>
+
+    </head>
+
+
+    <body class="text-dark" id="magyar" oncontextmenu="return false;">
+
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+            <div class="collapse navbar-collapse container-fluid" >
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">Főoldal</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="index.html" role="button" data-bs-toggle="dropdown">Tantárgyak</a>
+                            <ul class="dropdown-menu dropdown-menu-dark scrollable-menu">
+                                <li><a class="dropdown-item" href="töri.html">Történelem</a></li>
+                                <li><a class="dropdown-item disabled" href="magyar.html">Magyar</a></li>
+                                <li><a class="dropdown-item" href="matek.html">Matek</a></li>
+                                <li><a class="dropdown-item" href="fizika.html">Fizika</a></li>
+                                <li><a class="dropdown-item" href="hálózat_parancsok.html">Hálózat</a></li>
+                                <li><a class="dropdown-item disabled" href="hálózat_elmélet.html">Hálózat elmélet</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Programozási nyelvek</a>
+                            <ul class="dropdown-menu dropdown-menu-dark scrollable-menu">
+                                <li><a class="dropdown-item disabled" href="php.html">PHP</a></li>
+                                <li><a class="dropdown-item" href="html.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="css.html">CSS</a></li>
+                                <li><a class="dropdown-item disabled" href="javascript.html">JavaScript</a></li>
+                                <li><a class="dropdown-item" href="python.html">Python</a></li>
+                                <li><a class="dropdown-item disabled" href="java.html">Java</a></li>
+                                <li><a class="dropdown-item disabled" href="c.html">C</a></li>
+                                <li><a class="dropdown-item disabled" href="c#.html">C#</a></li>
+                                <li><a class="dropdown-item disabled" href="c++.html">C++</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="terminál_parancsok.html">Terminál parancsok</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="mysql.html">MySQL</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="mongodb.html">MongoDB</a>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container backgrund">
+
+            <h1>Nyelvtan</h1>
+
+                <h2>Szófajok</h2>
+
+                    <h3>Főnév</h3>
+                        <ul class="in">
+                            <li>Élőlények (pl. fa, virág, kutya)</li>
+                            <li>Élettelen tárgyak (pl. asztal, pohár, autó)</li>
+                            <li>Elvont fogalmak (pl. boldogság, harag, tudás)</li>
+                        </ul>
+
+                    <h3>Ige</h3>
+                        <ul class="in">
+                            <li>Cselekvés (pl. alszik, vezet, tanul)</li>
+                            <li>Történés, állapot (pl. repül, örül) </li>
+                            <li>Létezést (pl. van, nincs)</li>
+                        </ul>
+
+                    <h3>Melléknév</h3>
+                        <ul class="in">
+                            <li>Személyek, tárgyak, fogalmi dolgok tulajdonsága vagy egyéb jellemzője</li>
+                            <li>Valaminek a természete, szokása (pl. türelmes, becsületes)</li>
+                            <li>Valamivel való ellátottság (pl. eszes, élő)</li>
+                            <li>Valaminek a hiánya (pl. felhőtlen, védtelen)</li>
+                            <li>Valahová tartozás, származás (pl. egyetemi, magyarországi)</li>
+                            <li>Valamilyen helyzet (pl. hátsó, függőleges)</li>
+                            <li>Nagyság, mérték (pl. tenyérnyi, ládányi)</li>
+                        </ul>
+
+                    <h3>Számnév</h3>
+                        <ul class="in">
+                            <li>Személyek, tárgyak, fogalmi dolgok mennyisége (pl. negyvennyolc, rengeteg)</li>
+                            <li>Sorban elfoglalt hely (pl. első, utolsó)</li>
+                            <li>Egészhez viszonyított rész (pl. tized, kilenced)</li>
+                        </ul>
+
+                    <h3>Határozószó</h3>
+                        <ul class="in">
+                            <li>Cselekvés helye (pl. kint, ott, arrafelé)</li>
+                            <li>Cselekvés ideje (pl. tegnap, egy nap múlva)</li>
+                            <li>Cselekvés módja (pl. gyorsan, autóval)</li>
+                            <li>Cselekvés állapota (pl. hason, együtt)</li>
+                            <li>Cselekvés minőség foka (pl. félig-meddig, nagyjából)</li>
+                        </ul>
+
+                    <hr>
+
+                    <h3>Személyes névmás</h3>
+                        <ul class="in">
+                            <li>Személyek, ritkábban dolgok, megszemélyesített fogalmak neve</li>
+                        </ul>
+                        <table class="table table-bordered table-dark szemn">
+                            <tr>
+                                <th>Egyesszám</th>
+                                <th>Többesszám</th>
+                            </tr>
+                            <tr>
+                                <td>Én (E/1)</td>
+                                <td>Mi (T/1)</td>
+                            </tr>
+                            <tr>
+                                <td>Te (E/2)</td>
+                                <td>Ti (T/2)</td>
+                            </tr>
+                            <tr>
+                                <td>Ő (E/3)</td>
+                                <td>Ők (T/3)</td>
+                            </tr>
+                        </table>
+
+                    <h3>Birtokos névmás</h3>
+                        <ul class="in">
+                            <li>Személyek valamelyikének a birtoka</li>
+                        </ul>
+                        <table class="table table-bordered table-dark szemn">
+                            <tr>
+                                <th>Egyesszám</th>
+                                <th>Többesszám</th>
+                            </tr>
+                            <tr>
+                                <td>Enyém (E/1)</td>
+                                <td>Miénk (T/1)</td>
+                            </tr>
+                            <tr>
+                                <td>Tiéd (E/2)</td>
+                                <td>Tiétek (T/2)</td>
+                            </tr>
+                            <tr>
+                                <td>Övé (E/3)</td>
+                                <td>Övék (T/3)</td>
+                            </tr>
+                        </table>
+
+                    <h3>Visszaható névmás</h3>
+                        <ul class="in">
+                            <li>Más mondatrésznek alannyal való azonossága (pl. magam, magunk)</li>
+                        </ul>
+
+                    <h3>Kölcsönös névmás</h3>
+                        <ul class="in">
+                            <li>Két vagy több alany cselekvése kölcsönösen hat vagy kölcsönösen összefügg végzőire (pl. egymás, egymástól)</li>
+                        </ul>
+
+                    <h3>Mutató névmás</h3>
+                        <ul class="in">
+                            <li>Személyek, dolgok, fogalmak (pl. ezek, azok)</li>
+                            <li>Tulajdonság, jellemző, nagyság (pl. ilyen, olyan, akkora)</li>
+                            <li>Fajta, valamihez való hasonlóság (pl. afféle, efféle)</li>
+                        </ul>
+
+                    <h3>Kérdő névmás</h3>
+                        <ul class="in">
+                            <li>Élőlényekre, tárgyakra, elvont fogalmakra kérdez rá (pl. ki, micsoda)</li>
+                            <li>Tulajdonságra, jellemzőre, fajtára kérdeznek rá (pl. mely, milyen, miféle)</li>
+                            <li>Mennyiségre, sorszámra kérdeznek rá (pl. hány, mennyi)</li>
+                        </ul>
+
+                    <h3>Vonatkozó névmás</h3>
+                        <ul class="in">
+                            <li>Élőlényekre, tárgyakra, elvont fogalmakra utal (pl. aki, amely)</li>
+                            <li>Tulajdonságra utal vissza (pl. amilyen, amekkora)</li>
+                            <li>Mennyiségre utal vissza (pl. amennyi, ahány)</li>
+                        </ul>
+
+                    <h3>Határozatlan névmás</h3>
+                        <ul class="in">
+                            <li>Meg nem határozott személy, dolog, fogalom (pl. valaki, valami)</li>
+                            <li>Meg nem határozott tulajdonság (pl. valamilyen, némi)</li>
+                            <li>Meg nem határozott mennyiséget (pl. valamennyi, néhány)</li>
+                        </ul>
+
+                    <h3>Általános névmás</h3>
+                        <ul class="in">
+                            <li>Minden élőlény, tárgy, fogalom (pl. bármi, mindenki)</li>
+                            <li>Minden tulajdonság (pl. bármiféle, akármilyen)</li>
+                            <li>Minden mennyiségre (pl akármennyi, minden)</li>
+                        </ul>
+
+                    <hr>
+
+                    <h3>Főnévi igenév</h3>
+                        <ul class="in">
+                            <li>Elvontan cselekvés (pl. csinálni, tanulni [jó])</li>
+                            <li>Elvontan történés (pl. lobogni, reccsenni)</li>
+                            <li>Elvontan létezés, állapot (pl. lenni, örülni)</li>
+                            <li>Elvontan szerkezet részeként az ige eredeti jelentéstartalma (pl. [fog] esni, [szokott] lenni)</li>
+                        </ul>
+                    
+                    <h3>Melléknévi igenév</h3>
+                        <ul class="in">
+                            <li>Az igei jelentéstartalmat tulajdonságként, jellemzőként nevezi meg (pl. beadandó, nevető)</li>
+                        </ul>
+
+                    <h3>Határozói igenév</h3>
+                        <ul class="in">
+                            <li>A cselekvéstartalmat határozói körülményként nevezi meg (pl. olvasva [tanul], elsápadva [hallgat])</li>
+                        </ul>
+
+                    <hr>
+
+                    <h3>Határozott névelő</h3>
+                        <ul class="in">
+                            <li>A mögötte álló főnév, főnévi alaptagú kifejezés a beszélő szerint már ismert (pl. a, az)</li>
+                        </ul>
+
+                    <h3>Határozatlan névelő</h3>
+                        <ul class="in">
+                            <li>A mögötte álló főnév egyediségét emeli ki (pl. egy)</li>
+                        </ul>
+
+                    <h3>Névutó</h3>
+                        <ul class="in">
+                            <li>Viszonyjelentést hordozó szó, az előtte álló ragos vagy ragtalan névszót határozóvá teszi (pl. előtt, alatt)</li>
+                        </ul>
+
+                    <h3>Kötőszók</h3>
+                        <ul class="in">
+                            <li>Mondatrészek, mondatok összekapcsolására, a köztük lévő nyelvtani és logikai viszony kifejezésére alkalmas (pl. és, hogy, hiszen, minthogy)</li>
+                        </ul>
+
+                    <h3>Igekötő</h3>
+                        <ul class="in">
+                            <li>Igéhez, igei származékszókhoz kapcsolódik. Az igei jelentéstartalom időbeli, térbeli lefolyásával kapcsolatban módosítja a jelentést (pl. meg, le, agyon, át)</li>
+                        </ul>
+
+                    <h3>Segédige</h3>
+                        <ul class="in">
+                            <li>Olyan igei jellegű szó, amely úgy fejez ki mód-, idő, szám-, személyviszonyt, hogy egyúttal más szónak állítmányi szerepre alkalmas formáját is segíti megalkotni (pl. fog, volt, kell)</li>
+                        </ul>
+
+                    <h3>Módosítószó</h3>
+                        <ul class="in">
+                            <li>Mondat vagy mondatrész tartalmát módosítja, kifejezve a beszélő szubjektív viszonyát a mondottakhoz (pl. csak, nem, vajon)</li>
+                        </ul>
+
+                <h2>Műfajok</h2>
+
+                    <h3>Epika</h3>
+                        <ul class="in">
+                            <li>Az ábrázolás középpontjában a külvilág áll</li>
+                            <li>Középponjában egy történet áll</li>
+                            <li>Ennek elbeszélője a narrátor</li>
+                            <li>Monologikus szöveg</li>
+                            <li>Jellemző tér-idő szereplők viszonyrendszere</li>
+                            <li>Sokoldalúan jellemzett fő és mellékszereplők</li>
+                                <table class="table table-bordered table-dark szemn">
+                                    <tr>
+                                        <th colspan="2">Terjedelem</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Nagyepika</th>
+                                        <th>Kisepika</th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>hosszabb művek</p>
+                                            <p>a világot bonyolult összefüggéseiben mutatja be</p>
+                                            <p>térben és időben szerteágazó történet</p>
+                                        </td>
+                                        <td>
+                                            <p>Rövidebb alkotások</p>
+                                            <p>sűrítettebb</p>
+                                            <p>tömörebb</p>
+                                            <p>a valóság kisebb részletét mutatja be</p>
+                                            <p>kevés szereplő</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Műfajai</th>
+                                        <th>Műfajai</th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>regény</p>
+                                            <p>krimi</p>
+                                            <p>eposz</p>
+                                            <p>mese</p>
+                                        </td>
+                                        <td>
+                                            <p>novella</p>
+                                            <p>elbeszélés</p>
+                                            <p>mese</p>
+                                            <p>monda</p>
+                                            <p>legenda</p>
+                                            <p>anekdota</p> 
+                                        </td>
+                                    </tr>
+                                </table>
+                        </ul>    
+
+                    <h3>Líra</h3>
+                        <ul class="in">
+                            <li>Az ábrázolás középpontjaban az egyén belső világa áll (lírai én a vers beszélője)</li>
+                            <li>Érzelmi-gondolati-hangulati tartalom jellemzője a személyesség</li>
+                            <li>Műfajai:</li>
+                            <ul class="in">
+                                <li>dal</li>
+                                <li>epigramma</li>
+                                <li>óda</li>
+                                <li>himnusz</li>
+                                <li>elégia</li>
+                            </ul>
+                            <li>Nyelv:</li>
+                            <ul class="in">
+                                <li>tömör</li>
+                                <li>sűrített</li>
+                                <li>képhasználat</li>
+                            </ul>
+                            <li>Forma:</li>
+                            <ul class="in">
+                                <li>vers</li>
+                                <li>próza</li>
+                            </ul>
+                        </ul>
+
+                    <h3>Dráma</h3>
+                        <ul class="in">
+                            <li>Ábrázolás középpontjában a külvilág áll</li>
+                            <li>Az eseményeket a szereplő monológjaiból, dialógusaiból ismerjük meg</li>
+                            <li>Beszéd-cselekvés</li>
+                            <li>Színpadra szánt alkotás</li>
+                            <li>Díszlet, jelmez, színészi játék, világítás, tánc, zene</li>
+                            <li>Műfajai:</li>
+                            <ul class="in">
+                                <li>tragédia</li>
+                                <li>komédia</li>
+                            </ul>
+                        </ul>
+
+
+                        
+            <h1>Irodalom</h1>
+                        
+                <h2>Kosztolányi Dezső <br>(1885. március 29. Szabadka - 1936. november 3. Budapest)</h2>
+                    <p>Író, költő, műfordító, kritikus, esszéista, újságíró, eszperantista, Nyugat első nemzedékéhez tartozott. Epika, líra.</p>
+                    <p>Fizika-és matek tanár, iskolaigazgató</p>
+                        
+                    <h3>Rend</h3>
+                        <p><b>Cím:</b> előfeltevés: rendezettség, tisztaság</p>
+                        <p><b>Műfaj:</b> novella</p>
+                        <p><b>Tartalom:</b></p>
+                            <ul class="in">
+                                <li><b>Szerkezet:</b> 5 rész</li>
+                                <li><b>1-2. rész:</b></li>
+                                <ul class="in">
+                                    <li><b>1. rész:</b> Kosztolányi anyukája Pistit állítja be példaképnek. A szerzőt pedig szidta, korholta, mert rendetlen volt.</li>
+                                    <li><b>2. rész:</b> Pisti állandó dicsérése</li>
+                                </ul>
+                                <li><b>3-4-5. rész:</b></li>
+                                <ul class="in">
+                                    <li>Felnőtt és nem tudott megfelelni a saját elvárásainak</li>
+                                    <li>A történet csak fikció.</li>
+                                    <li>Külső és belső rend egyensúlyának hiánya tragédiába vezethet.</li>
+                                </ul>
+                            </ul>
+
+                    <h3>A kulcs</h3>
+                        <p><b>Cím:</b> tárgy, valaminek a nyitására, zárására alkalmas, átvitt értelemben valaminek a megoldása, jelképes</p>
+                        <p><b>Műfaj:</b> novella</p>
+                        <p><b>Tartalom:</b></p>
+                            <ul class="in">
+                                <li>A fiú megismeri az apját, a felnőttek világát, hivatalt</li>
+                                <li>Kulcs: kamrakulcs</li>
+                                <li>Kulcs az apa megismeréséhez</li>
+                                <li>Az apa tekintélye fokozatosan csökken, mert hazudik, szolga lelkű, kétszínű.</li>
+                                <li>A fiú elmegy elkérni az apjától a kamra kulcsot ó, de rájön, hogy az apja nem olyan fontos pozícióban van mint ahogy p ezt gondolta, ezért csalódik.</li>
+                            </ul>
+
+                    <h3>Édes Anna</h3>
+                        <p><b>Cím:</b> utal a főszereplőre</p>
+                        <p><b>Műfaj:</b> regény</p>
+                        <p><b>Tartalom:</b></p>
+                            <ul class="in">
+                                <li>Édes Anna a főszereplő és a címszereplő, ő követi el a gyilkosságot azért, mert nem emberként kezelik, robotként tekintenek rá. Nem is akart Vizyéknél szolgálna, kényszerítették. Majd beleszeret Vizyné unokaöccsébe, aki csak kihasználja, viszont senkinek nem beszélt a problémáiról, amik egy idő után felgyülemlett benne és ezért kettős gyilkosságot követett el.</li>
+                            </ul>
+                            
+                    <h3>Aranysárkány</h3>
+
+                    <h3>Pacsirta</h3>
+
+                <h2>Karinthy Frigyes <br>1887. június 25. Budapest - 1938. augusztus 29. Siófok</h2>
+                    <p>Magyar író, költő, műfordító, eszperantista</p>
+                    <p>Az 1905-ben tett érettségi vizsga után a matematika–fizika szakon, a bölcsészkaron és a sebészeten is hallgatott egyetemi előadásokat, viszont soha nem szerzett diplomát.</p>
+
+                    <h3>A cirkusz</h3>
+                        <p><b>Cím:</b></p>
+                            <ul class="in">
+                                <li>szabadidő eltöltésének helyszíne</li>
+                                <li>vidámság, jókedv kapcsolódik hozzá - akrobata mutatványok, művészet, bohóc</li>
+                            </ul>
+                        <p><b>Műfaj:</b> novella</p>
+                        <p><b>Tartalom:</b></p>
+                            <ul class="in">
+                                <li>Az elbeszélő (E/1)  gyermeknek az a vágya, hogy legyen hegedűje és vigye végig a cirkuszon, mutassa be neki a cirkuszt.</li>
+                                <li>Minden eltúlzott a műben.</li>
+                                <li>Álomkeret teszi lehetővé az irreális világot.</li>
+                                <li>Jelképes a történet, a művész és a közönség konfliktusát érzékelteti. Az alkotó és a közönség eltávolodott egymástól.</li>
+                            </ul>
+
+                <h2>Ottlik Géza <br>1912. május 9. Budapest - 1990. október 9.</h2>
+                    <p>Kossuth- és József Attila-díjas magyar író és műfordító</p>
+                    <p>A magyar intellektuális próza kiváló alkotója. Kiemelkedő tudású bridzsversenyző, többszörös magyar bajnok és válogatott, valamint világhírű szakíró, a bridzsjáték megújítója.</p>
+
+                    <h3>Az utolsó mese</h3>
+                        <p><b>Cím:</b> szokatlan mese</p>
+                        <p><b>Műfaj:</b> mese</p>
+                        <p><b>Tartalom:</b></p>
+                            <ul class="in">
+                                <li><b>1. bekezdés:</b> sűrített mese</li>
+                                <ul class="in">
+                                    <li>kezdés</li>
+                                    <li>sárkány legyőzése</li>
+                                    <li>kacsalábón forgókastély</li>
+                                    <li>lakodalom</li>
+                                </ul>
+                                <li>Modern mese</li>
+                                <li>A történet lezáratlan</li>
+                                <li>Megjelenik az elidegenedett világ jelképe</li>
+                            </ul>
+                        <p><b>Forma:</b></p>
+                            <ul class="in">
+                                <li><b>1. rész:</b> leírás-sűrített mese</li>
+                                <li><b>2. rész:</b> párbeszéd majd leírás</li>
+                            </ul>
+
+                <h2>Mikszáth Kálmán <br>1847. január 11. Szklabonya - 1910. Május 28. Budapest</h2>
+                    <p>Írói pályáját elbeszélésekkel kezdte. 1881-ben és 1882-ben megjelent két elbeszélés kötete, a <b>Tót atyafiak</b> és <b>A jó palócok</b> címmel. Ezek hozták meg számára a sikert.</p>
+
+                    <h3>Tímár Zsófi özvegysége</h3>
+                        <p><b>Cím:</b> konkrét női név- Tímár Zsófi főszereplő. Az özvegység utal a bekövetkező állapotra, a történet végére</p>
+                        <p><b>Műfaj:</b> novella</p>
+                        <p><b>Tartalom:</b></p>
+                            <ul class="in">
+                                <li>Végkifejlet: amikor ismét együtt folytathatták volna életüket, bekövetkezett a tragédia</li>
+                                <table class="table table-bordered table-dark szemn">
+                                    <tr>
+                                        <th colspan="2">Szereplők</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Zsófi</th>
+                                        <th>Péter</th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>szelíd</p>
+                                            <p>fehérarcú</p>
+                                            <p>kitartó</p>
+                                            <p>szerelmes</p>
+                                            <p>naív</p>
+                                            <p>bizakodó</p>
+                                            <p>mosolygós</p>
+                                            <p>nem csak akkor mikor örül, hanem bánatában is hűséges erősen hisz</p>
+                                        </td>
+                                        <td>
+                                            <p>hűtlen</p>
+                                            <p>szánalmas</p>
+                                            <p>gyáva</p>
+                                            <p>dolgos ember</p>
+                                            <p style="margin-top: 136px;">nem vesz tudomást a környezete véleményérő, gúnyos megjegyzéseiről</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </ul>
+                    <!--
+                    <h3></h3>
+                        <p><b>Cím:</b></p>
+                        <p><b>Műfaj:</b></p>
+                        <p><b>Tartalom:</b></p>
+                            <ul class="in">
+                                <li></li>
+                            </ul>
+                    -->
+
+        </div>
+
+    </body>
+
+</html>

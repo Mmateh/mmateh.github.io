@@ -57,8 +57,9 @@
                             <a class="nav-link dropdown-toggle" href="index.html" role="button" data-bs-toggle="dropdown">Tantárgyak</a>
                             <ul class="dropdown-menu dropdown-menu-dark scrollable-menu">
                                 <li><a class="dropdown-item" href="töri.html">Történelem</a></li>
-                                <li><a class="dropdown-item" href="fizika.html">Fizika</a></li>
+                                <li><a class="dropdown-item" href="magyar.html">Magyar</a></li>
                                 <li><a class="dropdown-item" href="matek.html">Matek</a></li>
+                                <li><a class="dropdown-item" href="fizika.html">Fizika</a></li>
                                 <li><a class="dropdown-item" href="hálózat_parancsok.html">Hálózat</a></li>
                                 <li><a class="dropdown-item" href="hálózat_elmélet.html">Hálózat elmélet</a></li>
                             </ul>

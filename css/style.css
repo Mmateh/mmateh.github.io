@@ -14,8 +14,8 @@
     background-size: cover;
 }
 
-#fizika {
-    background-image: url(fix-photo/fizika.webp);
+#magyar {
+    background-image: url(fix-photo/magyar.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -24,6 +24,14 @@
 
 #matek {
     background-image: url(fix-photo/matek.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#fizika {
+    background-image: url(fix-photo/fizika.webp);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -312,6 +320,13 @@
 .custom-select {
     position: relative;
     overflow: hidden;
+}
+
+.szemn {
+    width: 80%;
+    text-align: center;
+    margin: 0px auto;
+    margin-bottom: 20px;
 }
 
 
