@@ -240,5 +240,16 @@ function load() {
     else if (selected == "80") {
         document.getElementById("pdfek").innerHTML = '<div class="keret"><iframe src="Töri/TöriÚj3/A kétpólusú világrend megszűnése001.pdf" frameborder="0"></iframe></div>'
     }
-
+    else if (selected == "81") {
+        document.getElementById("pdfek").innerHTML = '<div class="keret"><iframe src="Töri/TöriÚj2/Az_utolso_Arpadok.pdf" frameborder="0"></iframe></div>'
+    }
+    else if (selected == "82") {
+        document.getElementById("pdfek").innerHTML = '<div class="keret"><iframe src="Töri/TöriÚj3/Rendszervaltozas_Magyarorszagon001.pdf" frameborder="0"></iframe></div>'
+    }
+    else if (selected == "83") {
+        document.getElementById("pdfek").innerHTML = '<div class="keret"><iframe src="Töri/TöriÚj3/A berendezkedő Kádár-rendszer.pdf" frameborder="0"></iframe></div>'
+    }
+    else if (selected == "84") {
+        document.getElementById("pdfek").innerHTML = '<div class="keret"><iframe src="Töri/TöriÚj3/EU_kialakulasa_es_mukodese.pdf" frameborder="0"></iframe></div>'
+    }
 }
