@@ -350,15 +350,18 @@ h1 {
     margin-top: 10px;
     text-align: center;
     border: #f2f3f5 2px solid;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #0f0d0d;
 }
 
 h2 {
     margin-top: 30px;
     line-height: 50px;
     border-radius: 7px;
-    background-color: #212529;
+    background-color: #161616;
     font-weight: bolder;
-    color: #6C757D;
+    color: #cecece;
     padding: 10px;
     margin-left: 0px;
     margin-right: 0px;
@@ -372,15 +375,15 @@ h3 {
     width: 1500px;
     max-width: 95%;
     border-radius: 13px;
-    background-color: #0f0d0d;
+    background-color: #212529;
     font-weight: bolder;
-    color: #cecece;
+    color: #6C757D;
     padding: 10px;
     text-align: center;
     margin: auto;
 }
 
-h5 {
+h4 {
     color: rgb(155, 155, 155);
     margin-left: 1%;
     margin-top: 20px;
@@ -391,7 +394,7 @@ h5 {
     text-decoration: underline rgb(104, 103, 103);
 }
 
-h6 {
+h5 {
     margin-left: 2%;
     font-size: 20px;
     text-decoration: underline rgb(119, 119, 119);
