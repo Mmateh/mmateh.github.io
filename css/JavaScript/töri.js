@@ -252,4 +252,7 @@ function load() {
     else if (selected == "84") {
         document.getElementById("pdfek").innerHTML = '<div class="keret"><iframe src="Töri/TöriÚj3/EU_kialakulasa_es_mukodese.pdf" frameborder="0"></iframe></div>'
     }
+    else if (selected == "85") {
+        document.getElementById("pdfek").innerHTML = '<div class="keret"><iframe src="Töri/TöriÚj3/Az_elso_vilaghaboru003.pdf" frameborder="0"></iframe></div>'
+    }
 }
