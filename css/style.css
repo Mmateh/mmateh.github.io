@@ -361,7 +361,7 @@ h2 {
     border-radius: 7px;
     background-color: #161616;
     font-weight: bolder;
-    color: #cecece;
+    color: #243d8f;
     padding: 10px;
     margin-left: 0px;
     margin-right: 0px;
@@ -377,28 +377,36 @@ h3 {
     border-radius: 13px;
     background-color: #212529;
     font-weight: bolder;
-    color: #6C757D;
+    color: #0d528f;
     padding: 10px;
     text-align: center;
     margin: auto;
+    font-size: 35px;
 }
 
 h4 {
-    color: rgb(155, 155, 155);
+    color: #7b74e6;
     margin-left: 1%;
     margin-top: 20px;
     font-weight: bold;
     font-style: italic;
-    font-size: 27px;
+    font-size: 30px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: underline rgb(104, 103, 103);
 }
 
 h5 {
     margin-left: 2%;
-    font-size: 20px;
+    font-size: 26px;
     text-decoration: underline rgb(119, 119, 119);
-    color: #dadada;
+    color: rgb(29, 210, 255);
+    font-weight: bolder;
+}
+
+h6 {
+    margin-left: 2%;
+    font-size: 20px;
+    text-decoration: underline rgb(170, 170, 170);
     font-weight: bolder;
 }
 
