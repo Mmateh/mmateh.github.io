@@ -99,25 +99,234 @@
             <h1>Linux parancsok</h1>
                 <h2>Fájlok</h2>
                     <section class="text">
-                        <p><b class="term">ls</b> - Listázás</p>
-                        <p><b class="term">nano</b> <b class="termcom">fájlnév</b> - Szövegszerkesztő megnyitása a megadott fájlnévvel</p>
-                        <p><b class="term">cat</b> <b class="termcom">fájlnév</b> - A megadott fájl tartalmának kiírása a képernyőre</p>
+                        <p><b class="term">mc</b> - Midnight Commander fájlkezelő</p>
+                        <ul class="in">
+                            <li><b class="term">sudo apt install mc</b> - Midnight Commander telepítése</li>
+                        </ul>
+                        <p><b class="term">clear</b> - A képernyő törlése</p>
+                        <p><b class="term">ls</b> - Listázza a fájlokat/mappákat</p>
+                        <p><b class="term">ls -a</b> - Listázza a fájlokat/mappákat a rejtetteket is beleértve</p>
+                        <p><b class="term">nano</b> <b class="termcom">fájlnév</b> - Szövegszerkesztő megnyitása a megadott fájlnévvel (le kell tölteni a nano-t)</p>
+                        <ul class="in">
+                            <li><b class="term">sudo apt install nano</b> - Nano telepítése</li>
+                        </ul>
+                        <p><b class="term">cat</b> <b class="termcom">fájlnév</b> - A megadott fájl tartalmának megtekintése</p>
+                        <p><b class="term">more <b class="termcom">fájlnév</b></b> - A megadott fájl tartalmának megtekintése lapozva</p>
+                        <p><b class="term">less <b class="termcom">fájlnév</b></b> - A megadott fájl tartalmának megtekintése visszagörgetési lehetőséggel</p>
+                        <p><b class="term">head <b class="termcom">fájlnév</b></b> - A megadott fájl első 10 sorának megtekintése</p>
+                        <p><b class="term">tail <b class="termcom">fájlnév</b></b> - A megadott fájl utolsó 10 sorának megtekintése</p>
+                        <p><b class="term">echo</b> - A megadott szöveg kiírása a képernyőre</p>
+                        <br>
+                        <p><b class="term">touch <b class="termcom">fájlnév</b></b> - Új üres fájlt hoz létre az adott mappában</p>
+                        <p><b class="term">touch .<b class="termcom">fájlnév</b></b> - Új üres rejtett fájlt hoz létre az adott mappában</p>
+                        <br>
+                        <p><b class="term">cp <b class="termcom">fájlnév célmappa</b></b> - A fájl másolása a célmappába</p>
+                        <p><b class="term">cp *.txt <b class="termcom">célmappa</b></b> - Az összes txt fájl másolása a célmappába</p>
+                        <p><b class="term">cp *.* <b class="termcom">célmappa</b></b> - Az összes fájl másolása a célmappába</p>
+                        <p><b class="term">cp -r <b class="termcom">mappa célmappa</b></b> - Mappa másolása másik mappába tartalmával együtt</p>
+                        <p><b class="term">cp -i <b class="termcom">fájl célmappa</b></b> - Fájl másolása mappába, felülírás esetén rákérdez</p>
+                        <p><b class="term">cp -u <b class="termcom">fájl célmappa</b></b> - Fájl másolása mappába ha a fájl nem létezik, vagy régebbi, mint a forrásfájl</p>
+                        <br>
+                        <p><b class="term">mv <b class="termcom">fájl célmappa</b></b> - Fájl áthelyezése mappába</p>
+                        <p><b class="term">mv <b class="termcom">miről mire</b></b> - Fájl átnevezése</p>
+                        <br>
+                        <p><b class="term">rm <b class="termcom">fájl</b></b> - Fájl törlése</p>
+                        <p><b class="term">rm <b class="termcom">mappa</b></b> - Mappa törlése</p>
+                        <p><b class="term">rm -rf <b class="termcom">mappa</b></b> - Mappa eltávolítása erőszakosan</p>
+                        <br>
+                        <p><b class="term">find <b class="termcom">mappa</b> -name <b class="termcom">fájlnév</b></b> - Fájl elérési útjának mutatása a megadott mappán belül</p>
+                        <p><b class="term">grep "<b class="termcom">szöveg</b>" <b class="termcom">fájl</b></b> - A megadott szöveg keresése a fájlban</p>
                     </section>
 
                 <h2>Mappák</h2>
                     <section class="text">
                         <p><b class="term">mkdir</b> <b class="termcom">mappanév</b> - Új mappa létrehozása a jelenlegi könyvtárban</p>
-                        <p><b class="term">cd</b> <b class="termcom">mappanév</b> - Belépés a megadott nevű mappába</p>
+                        <p><b class="term">mkdir .<b class="termcom">mappanév</b></b> - Új rejtett mappa létrehozása a jelenlegi könyvtárban</p>
+                        <p><b class="term">cd</b> <b class="termcom">mappanév</b> - (Change Directory) Belépés a megadott nevű mappába</p>
                         <p><b class="term">cd ..</b> - Visszalépés egy szinttel a mappa hierarchiában</p>
+                        <p><b class="term">cd ~</b> - Visszalépés a gyökérkönyvtárba</p>
+                        <p><b class="term">cd -</b> - Visszalépés az előző könyvtárba</p>
                         <p><b class="term">rmdir</b> <b class="termcom">mappanév</b> - A megadott mappa törlése (csak akkor, ha üres)</p>
-                        <p><b class="term">pwd</b> - A jelenlegi munkakönyvtár teljes elérési útvonala</p>
+                        <p><b class="term">pwd</b> - (Print Working Directory) Megjeleníti a terminál aktuális munkamappáját</p>
                         <p><b class="term">tree</b> - A jelenlegi könyvtárban található mappák és fájlok hierarchiáját ábrázoló fa-struktúra kiírása</p>
                     </section>
-                    
-                <h2>Egyéb</h2>
+
+                <h2>Attribútumok</h2>
                     <section class="text">
-                        <p><b class="term">echo</b> - A megadott szöveg kiírása a képernyőre</p>
+                        <p><b class="term">sudo chattr ±i <b class="termcom">fájl</b></b> - Írásvédettség (immunable) hozzáadása vagy elvonása a fájlhoz</p>
                     </section>
+
+                <h2>Fájlok és könyvtárak tulajdonsáhai</h2>
+                    <h3>Jogosultsági szintek</h3>   
+                        <section class="text">
+                            <p><b class="term">r</b> - olvasási jogosultság (read)</p>
+                            <p><b class="term">w</b> - írás jogosultság (write)</p>
+                            <p><b class="term">x</b> - végrehajtási jogosultság (execute)</p>
+                            <p><b class="term">-</b> - nincs jogosultság</p>
+                        </section>
+                    
+                    <h3>Jogosultsági szintek numerikusan</h3>
+                        <section class="text">
+                            <p><b class="term">r (read)</b> - Az értéke: <b class="term">4</b></p>
+                            <p><b class="term">w (write)</b> - Az értéke: <b class="term">2</b></p>
+                            <p><b class="term">x (execute)</b> - Az értéke: <b class="term">1</b></p>
+                            <br>
+                            <p><b class="term">7</b> - olvasás, írás és végrehajtás</p>
+                            <p><b class="term">6</b> - olvasás és írás</p>
+                            <p><b class="term">5</b> - olvasás és végrehajtás</p>
+                            <p><b class="term">4</b> - olvasás</p>
+                            <p><b class="term">3</b> - írás és végrehajtás</p>
+                            <p><b class="term">2</b> - írás</p>
+                            <p><b class="term">1</b> - végrehajtás</p>
+                            <p><b class="term">0</b> - nincs jogosultság</p>
+                        </section>
+                    
+                    <h3>Tulajdonlás</h3>
+                        <section class="text">
+                            <p><b class="term">u</b> - tulaj (user)</p>
+                            <p><b class="term">g</b> - csoport (group)</p>
+                            <p><b class="term">o</b> - egyéb (others)</p>
+                        </section>
+
+                    <h3>Fájltípusok</h3>
+                        <section class="text">
+                            <p><b class="term">-</b> - fájl (file)</p>
+                            <p><b class="term">d</b> - könyvtár (directory)</p>
+                            <p><b class="term">l</b> - szimbolikus link (symlink)</p>
+                            <p><b class="term">b</b> - blokk (block)</p>
+                            <p><b class="term">c</b> - karakter (character)</p>
+                            <p><b class="term">p</b> - cső (pipe)</p>
+                            <p><b class="term">s</b> - csatlakozó (socket IP+port)</p> 
+                        </section>
+
+                <h2>Jogosultságok</h2>
+                    <section class="text">
+                        <p><b class="term">ls -laF</b> - Minden fájl és mappa jogosultságai kiírása</p>
+                        <p><b class="term">ls -laF <b class="termcom">fájl</b></b> - A megadott fájl jogosultságai kiírása</p>
+                        <p><b class="term">sudo chmod u+<b class="termcom">jogosultsági_szint</b>,g+<b class="termcom">jogosultsági_szint</b>,o+<b class="termcom">jogosultsági_szint</b> <b class="termcom">fájl/mappa</b></b> - Fájlok és mappák jogosultságainak módosítása</p>
+                        <p><b class="term">sudo chmod <b class="termcom">tulajdonos</b>=<b class="termcom">jogosultsági_szint</b> <b class="termcom">fájl/mappa</b></b> - A megadott tulajdonos számára engedélyezi a megadott jogosultságokat a fájlhoz vagy mappához</p>
+                        <p><b class="term">sudo chmod <b class="termcom">jogosultságok_numerikusan</b></b> - Számok alapján adja meg a jogosultságot <b class="term">ugo</b> sorrendben</p>
+                        <p><b class="term">sudo chown -R <b class="termcom">felhasználó</b> <b class="termcom">mappa</b></b> - A mappa tulajdonosának rekurzív módosítása a benne lévő tartalommal együtt</p>
+                        <p><b class="term">sudo chgrp <b class="termcom">csoportnév</b> <b class="termcom">fájl</b></b> - A fájl csoportjának megváltoztatása</p>
+                    </section>
+                
+                <h2>Meghajtók</h2>
+                    <section class="text">
+                        <p><b class="term">lsblk</b> - Kilistázza a meghajtókat</p>
+                        <p><b class="term">sudo fdisk /dev/<b class="termcom">meghajtó</b></b> - Meghajtó partícionálása</p>
+                            <ul class="in">
+                                <li><b class="term">n</b> - Új partíció létrehozása</li>
+                                <ol class="in">
+                                    <li><b class="term">p</b> - Elsődleges partíció</li>
+                                    <li><b class="termcom">default</b> - Alapértelmezett partíciószám</li>
+                                    <li><b class="termcom">default</b> - Első szektor értéke</li>
+                                    <li><b class="termcom">default</b> - Utolsó szektor értéke</li>
+                                </ol>
+                                <li><b class="term">t</b> - Partíció típus kiválasztása</li>
+                                <ol class="in">
+                                    <li><b class="term">83</b> - Linux (RAID-hez ez kell)</li>
+                                    <li><b class="term">00</b> - Empty</li>
+                                    <li><b class="term">0b</b> - FAT32</li>
+                                    <li><b class="term">82</b> - SWAP</li>
+                                </ol>
+                                <li><b class="term">w</b> - Elmenti a beállításokat</li>
+                            </ul>
+                        <p><b class="term">sudo mkfs.ext4 -L</b> <b class="termcom"> elnevezés</b> <b class="term">/dev/<b class="termcom">meghajtó</b></b> - Elnevezi a meghjtót és ext4 fájlrendszert tesz rá</p>
+                        <p><b class="term">df -h</b> - A fájlrendszer lemezhasználatának kiiratása olvasható módon</p>
+                        <br>
+                        <p><b class="term">dd if=/dev/<b class="termcom">1.meghajtó</b>1 of=/dev/<b class="termcom">2.meghajtó</b>1</b> - Alacsony szintű másolás az első meghajtóról a második meghajtóra</p>
+                    </section>
+
+                <h2>APT csomagkezelő</h2>
+                    <section class="text">
+                        <p><b class="term">sudo apt install <b class="termcom">csomagnév</b></b> - Csomag telepítése</p>
+                        <p><b class="term">sudo apt remove <b class="termcom">csomagnév</b></b> - Csomag eltávolítása</p></p>
+                        <p><b class="term">sudo apt purge <b class="termcom">csomagnév</b></b> - Csomag eltávolítása + konfigurációval</p>
+                        <p><b class="term">sudo apt update</b> - Csomaglista frissítése</p>
+                        <p><b class="term">sudo apt upgrade</b> - Telepített csomagok frissítése</p>
+                        <p><b class="term">sudo apt autoremove</b> - Elavult csomagok eltávolítása</p>
+                        <p><b class="term">sudo apt search <b class="termcom">csomagnév</b></b> - Csomagok keresése</p>
+                        <p><b class="term">sudo apt show <b class="termcom">csomagnév</b></b> - Csomaginformációk megtekintése</p>
+                    </section>
+
+                <h2>RPM csomagkezelő</h2>
+                    <section class="text">
+                        <p><b class="term">sudo rpm -i <b class="termcom">csomagnév</b>.rpm</b> - Csomag telepítése</p>
+                        <p><b class="term">sudo rpm -e <b class="termcom">csomagnév</b>.rpm</b> - Csomag eltávolítása</p>
+                        <p><b class="term">sudo rpm -U <b class="termcom">csomagnév</b>.rpm</b> - Telepített csomag frissítése</p>
+                        <p><b class="term">sudo rpm -qi <b class="termcom">csomagnév</b></b> - Csomaginformációk megtekintése</p>
+                    </section>
+
+                <h2>Rendszer alapinformációinak megjelenítése</h2>
+                    <section class="text">
+                        <p><b class="term">neofetc</b> - Színes, telepíteni kell az alapcsomagot</p>
+                        <ul class="in">
+                            <li><b class="term">sudo apt install neofetch</b> - Neofetch telepítése</li>
+                        </ul>
+                        <p><b class="term">uname -a</b> - Alapinformációkat ír ki: rendszer, kernel, stb.</p>
+                        <p><b class="term">lsb_release -a</b> - Elavult, lsb-base és lsb-release csomagok kellenek hozzá</p>
+                        <p><b class="term">cat /etc/os-release</b> - Kiírja a disztribúció nevét és verzióját</p>
+                        <p><b class="term">hostnamectl</b> - Egymás alá írja ki a hosz és rendszerinformációkat</p>
+                    </section>
+
+                <h3>Repository</h3>
+                    <section class="text">
+                        <p><b class="term">sudo add-apt-repository ppa:graphics-drivers/ppa</b> - Grafikai driverek tárházának hozzáadása</p>
+                        <p><b class="term">sudo add-apt-repository --remove ppa:graphics-drivers/ppa</b> - Grafikai driverek tárházának eltávolítása</p>
+                        <p><b class="term">sudo apt update && sudo apt full-upgrade</b> - Csomaglista frissítése</p>
+                    </section>
+
+                <h2>Csomag telepítése</h2>
+                    <h3>Csomag telepítése (*.deb)</h3>
+                        <section class="text">
+                            <p><b class="term">sudo dpkg -i <b class="termcom">csomagnév</b>.deb</b> - *.deb csomag telepítése</p>
+                            <p><b class="term">sudo apt-get install -f</b> - A csomag hiányzó függőségeinek telepítése</p>
+                            <p><b class="term">sudo dpkg -r <b class="termcom">csomagnév</b>.deb</b> - *.deb csomag eltávolítása</p>
+                        </section>
+
+                    <h3>Szkript telepítése (*.run)</h3>
+                        <section class="text">
+                            <p><b class="term">sudo chmod +x <b class="termcom">csomagnév</b>.run</b> - A csomag futtatásához szükséges végrehajtási jogosultságok hozzáadása</p>
+                            <p><b class="term">./<b class="termcom">csomagnév</b>.run</b> - A telepítő futtatása</p>
+                        </section>
+
+                <h2>Ubuntu Server</h2>
+                    <h3>RAID1</h3>
+                        <section class="text">
+                            <ol class="in">
+                                <li><b class="termcom">Meghajtók formázása</b></li>
+                                <li><b class="term">sudo mkdir /mnt/<b class="termcom">mappanév</b></b> - Csatolási könyvtár létrehozása</li>
+                                <li><b class="term">sudo mount /dev/<b><b class="termcom">meghajtó</b></b>1 /mnt/<b class="termcom">mappanév</b></b> - Partíció csatolása</li>
+                                <li><b class="term">sudo nano /etc/fstab</b> - Csatolási fájl szerkesztése</li>
+                                <li class="in"><b class="term">/dev/<b class="termcom">meghajtó</b> /mnt/<b class="termcom">mappa</b> ext4 defaults 0 2</b> - Automatikus csatolás</li>
+                                <li><b class="term">sudo umount /mnt/<b class="termcom">mappanév</b></b> - Mindkét létrehozott partíció csatolása</li>
+                                <li><b class="term">sudo apt update && sudo apt install mdadm -y</b> - Szükséges RAID csomagok telepítése</li>
+                                <li><b class="term">sudo mdadm --create /dev/md/<b class="termcom">RAID mappa név</b> -l 1 -n 2 /dev/<b class="termcom">1.meghajtó</b>1 /dev/<b class="termcom">2.meghajtó</b>1</b> - RAID 1 tükrözése lérehozás a 2 lemezre</li>
+                                <li><b class="term">sudo mkfs.ext4 /dev/md/<b class="termcom">RAID mappa név</b></b> - RAID formázása</li>
+                                <li><b class="term">sudo mount /dev/md/<b class="termcom">RAID mappa név</b></b> - RAID csatolása</li>
+                            </ol>
+                            <p><b class="term">sudo systemctl status mdmonitor</b> - RAID állapotának ellenőrzése</p>
+                            <p><b class="term">cat /proc/mdstat</b> - RAID állapotának ellenőrzése</p>
+                        </section>
+                    
+                    <h3>Ubuntu verziófrissítése</h3>
+                        <section class="text">
+                            <p><b class="term">sudo apt update</b> - Lekéri a frissítési csomagokat</p>
+                            <p><b class="term">sudo apt upgrade</b> - Frissítés a lekért csomagokból</p>
+                            <p><b class="term">sudo apt install update-manager-core</b> - Frissítési mechanizmus meglétének ellenőrzése</p>
+                            <p><b class="term">sudo apt purge</b> - Kitörli a telepítési csomagokat</p>
+                            <p><b class="term">sudo do-release-upgrade</b> - Verziófrissítés</p>
+                        </section>
+
+                    <h3>Automatikus frissítés</h3>
+                        <section class="text">
+                            <p><b class="term">sudo apt install unattended-upgrades</b> - Automatikus frissítési mechanizmus telepítése</p>
+                            <p><b class="term">sudo systemctl enable unattended-upgrades</b> - Automatikus frissítési mechanizmus engedélyezése</p>
+                            <p><b class="term">sudo systemctl start unattended-upgrades</b> - Automatikus frissítési mechanizmus indítása</p>
+                            <p><b class="term">sudo systemctl status unattended-upgrades</b> - Automatikus frissítési mechanizmus állapotának ellenőrzése</p>
+                            <p><b class="term">sudo systemctl stop unattended-upgrades</b> - Automatikus frissítési mechanizmus leállítása</p>
+                            <p><b class="term">sudo systemctl disable unattended-upgrades</b> - Automatikus frissítési mechanizmus letiltása</p>
+                        </section>
             
             <hr>
             
@@ -158,12 +367,12 @@
                         <p><b class="term">type</b> <b class="termcom">filenév</b> - Kiírja a file tartalmát a terminálba</p>
                     </section>
                     <section class="text">
-                        <p><b class="term">assoc</b> - Megadja, hogy az adott filetípust milyen alkalmazással nyitja meg</p>
-                        <p><b class="term">assoc .</b><b class="termcom">filetípus</b><b class="term">=</b><b class="termcom">program</b> - Az adott filetípusnak beállítja a megnyitáshoz használandó alkalmazást</p>
+                        <p><b class="term">assoc</b> - Megadja, hogy az adott fájltípust milyen alkalmazással nyitja meg</p>
+                        <p><b class="term">assoc .</b><b class="termcom">fájltípus</b><b class="term">=</b><b class="termcom">program</b> - Az adott fájltípusnak beállítja a megnyitáshoz használandó alkalmazást</p>
                     </section>
                     <section class="text">
                         <p><b class="term">tasklist</b> - Kiírja a futó fájlokat</p>
-                        <p><b class="term">taskkill /f /pid</b> <b class="termcom">fileID</b> - Leállítja a megadott filet</p>
+                        <p><b class="term">taskkill /f /pid</b> <b class="termcom">fileID</b> - Leállítja a megadott fájlt</p>
                     </section>
 
                 <h2>IP config</h2>

@@ -248,57 +248,57 @@
 
 				<h1>Hálózat parancsok</h1>
 
-					<h2>(config)#:</h2>
+					<h2>(config)#</h2>
 
-						<h5>Elnevezés:</h5>
+						<h3>Elnevezés:</h3>
 							<section class="text">
-								<p>Router(config)# hostname {név}</p>
+								<p>Router(config)# hostname <input placeholder="név" style="width: 120px;"></input></p>
 							</section>
 							
-						<h5>Ellenőrzés kikerülése:</h5>
+						<h3>Ellenőrzés kikerülése:</h3>
 							<section class="text">
 								<p>Router(config)# no ip domain-lookup</p>
 							</section>
 							
-						<h5>Jelszavak:</h5>
+						<h3>Jelszavak:</h3>
 
-							<h6>-belépési jelszó</h6>
+							<h4>- Belépési jelszó</h4>
 							<section class="text">
-								<p>Router(config)# enable password {jelszó} </p>
+								<p>Router(config)# enable password <input placeholder="jelszó" style="width: 120px;"></input></p>
 							</section>
 
-							<h6>-config jelszó</h6>
+							<h4>- Config jelszó</h4>
 							<section class="text">
 								<p>Router(config)# enable secret {jelszó}</p>
 							</section>
 
-							<h6>-telnet vonal jelszó</h6>
+							<h4>- Telnet vonal jelszó</h4>
 							<section class="text">
 								<p>Router(config)# line vty 0 15</p>
 								<p>Router(config-line)# password {jelszó}</p>
 								<p>Router(config-line)# login</p>
 							</section>
 
-							<h6>-konzol vonal jelszó</h6>
+							<h4>- Konzol vonal jelszó</h4>
 							<section class="text">
 								<p>Router(config)# line console 0</p>
 								<p>Router(config-line)# password {jelszó}</p>
 								<p>Router(config-line)# login</p>
 							</section>
 
-							<h6>-jelszavak titkosítása</h6>
+							<h4>- Jelszavak titkosítása</h4>
 							<section class="text">
 								<p>Router(config)# service password-encryption</p>
 							</section>
 
-							<h6>-üdvözlő szöveg:</h6>
+							<h4>- Üdvözlő szöveg</h4>
 							<section class="text">
 								<p>Router(config)# banner motd "{szöveg}"</p>
 							</section>
 
-						<h5>Router:</h5>
+						<h3>Router:</h3>
 
-							<h6>-IPv4 cím</h6>
+							<h4>-IPv4 cím</h4>
 							<section class="text">
 								<p>Router(config)# interface {interface neve}</p>
 								<p>Router(config-if)# ip address {IP cím} {maszk}</p>
@@ -306,7 +306,7 @@
 								<p>Router(config-if)# description {leírás}</p>
 							</section>
 
-							<h6>-DHCP</h6>
+							<h4>-DHCP</h4>
 							<section class="text">
 								<p>Router(config)# ip dhcp pool {elnevezés}</p>
 								<p>Router(dhcp-config)# network {IP cím} {maszk}</p>
@@ -315,28 +315,28 @@
 								<p>Router(config)# ip dhcp excluded-address {kezdő IP} {vég IP}</p>
 							</section>
 
-							<h6>-DHCP kikapcsolása</h6>
+							<h4>-DHCP kikapcsolása</h4>
 							<section class="text">
 								<p>Router(config)# no service dhcp</p>
 							</section>
 
-							<h6>-DHCP bekapcsolása</h6>
+							<h4>-DHCP bekapcsolása</h4>
 							<section class="text">
 								<p>Router(config)# service dhcp</p>
 							</section>
 							
-							<h6>-DHCP Relay</h6>
+							<h4>-DHCP Relay</h4>
 							<section class="text">
 								<p>Router(config)# interface {interface neve}</p>
 								<p>Router(config-if)# ip helper-address {szerver cím}</p>
 							</section>
 
-							<h6>-forgalomirányítás (ip route)</h6>
+							<h4>-forgalomirányítás (ip route)</h4>
 							<section class="text">
 								<p>Router(config)# ip route {nem látott hálózat {IP cím} + {maszk}} {másik bemenő interface IP}</p>
 							</section>
 							
-							<h6>-forgalomirányítás (OSPF)</h6>
+							<h4>-forgalomirányítás (OSPF)</h4>
 							<section class="text">
 								<p>Router(config)# passive-interface {nem router felé néző interface neve}</p>
 								<p>Router(config)# router OSPF {folyamatazonosító}</p>
@@ -345,7 +345,7 @@
 								<p>Router(config-router)# ip nat inside static {mit IP} {mire IP}</p>
 							</section>
 							
-							<h6>-forgalomirányítás (RIP)</h6>
+							<h4>-forgalomirányítás (RIP)</h4>
 							<section class="text">
 								<p>Router(config)# passive-interface {nem router felé néző interface neve}</p>
 								<p>Router(config)# router rip</p>
@@ -355,7 +355,7 @@
 								<p>Router(config-router)# ip nat inside static {mit IP} {mire IP}</p>
 							</section>
 							
-							<h6>-statikus NAT</h6>
+							<h4>-statikus NAT</h4>
 							<section class="text">
 								<p>Router(config)# interface {interface}</p>
 								<p>Router(config-if)# ip nat outside</p>
@@ -363,14 +363,14 @@
 								<p>Router(config-if)# ip nat inside</p>
 							</section>
 		
-							<h6>-subinterface</h6>
+							<h4>-subinterface</h4>
 							<section class="text">
 								<p>Router(config)# interface {interface név}.{vlan szám}</p>
 								<p>Router(config-subif)# encapsulation dotlq {vlan szám}</p>
 							</section>
 
 								
-							<h6>-IPv6 cím</h6>
+							<h4>-IPv6 cím</h4>
 							<section class="text">
 								<p>Router(config)# interface {interface neve}</p>
 								<p>Router(config-if)# ipv6 address {IPv6 cím}/{maszk}</p>
@@ -379,7 +379,7 @@
 								<p>Router(config-if)# description {leírás}</p>
 							</section>
 								
-							<h6>-SLAAC</h6>
+							<h4>-SLAAC</h4>
 							<section class="text">
 								<p>Router(config)# interface {interface neve}</p>
 								<p>Router(config)# ipv6 enable</p>
@@ -387,7 +387,7 @@
 								<p>Router(config)# ipv6 address autoconfig</p>
 							</section>
 
-							<h6>-IPv6 cím (statefull)</h6>
+							<h4>-IPv6 cím (statefull)</h4>
 							<section class="text">
 								<p>Router(config)# ipv6 unicast-routing</p>
 								<p>Router(config)# ipv6 dhcp pool {név}</p>
@@ -399,7 +399,7 @@
 								<p>Router(config-if)# ipv6 dhcp server {dhcp pool név}</p>
 							</section>
 
-							<h6>-IPv6 cím (stateless)</h6>
+							<h4>-IPv6 cím (stateless)</h4>
 							<section class="text">
 								<p>Router(config)# ipv6 unicast-routing</p>
 								<p>Router(config)# ipv6 dhcp pool {név}</p>
@@ -410,12 +410,12 @@
 								<p>Router(config-if)# ipv6 dhcp server {dhcp pool név}</p>
 							</section>
 								
-							<h6>-IPv6 forgalomirányítás (ip route)</h6>
+							<h4>-IPv6 forgalomirányítás (ip route)</h4>
 							<section class="text">
 								<p>Router(config)# ipv6 route {nem látott hálózat IP cím}/{maszk} {másik bemenő interface IP}</p>
 							</section>
 
-							<h6>-IPv6 forgalomirányítás (OSPF)</h6>
+							<h4>-IPv6 forgalomirányítás (OSPF)</h4>
 							<section class="text">
 								<p>Router(config)# ipv6 router ospf {id}</p>
 								<p>Router(config-rtr)# router-id {ipv4 cím}</p>
@@ -423,13 +423,13 @@
 								<p>Router(config-if)# ipv6 ospf {id} area {szám}</p>
 							</section>
 					
-						<h5>Switch:</h5>
-							<h6>-Boot system parancs</h6>
+						<h3>Switch:</h3>
+							<h4>-Boot system parancs</h4>
 							<section class="text">
 								Switch(config)# boot system
 							</section>
 
-							<h6>-IP cím adás</h6>
+							<h4>-IP cím adás</h4>
 							<section class="text">
 								<p>Switch(config)# interface vlan {vlan szám}</p>
 								<p>Switch(config-if)# ip address {IP cím} {maszk}</p>
@@ -438,7 +438,7 @@
 								<p>Switch(config)# ip default-gateway {router IP cím}</p>
 							</section>
 
-							<h6>-SSH</h6>
+							<h4>-SSH</h4>
 							<section class="text">
 								<p>Switch(config)# username {felhasználó név} privilege 15 password {jelszó}</p>
 								<p>Switch(config)# hostname {elnevezés}</p>
@@ -451,7 +451,7 @@
 								<p>Switch(config-line)# login local</p>
 							</section>
 
-							<h6>-Vlanok létrehozása</h6>
+							<h4>-Vlanok létrehozása</h4>
 							<section class="text">
 								<p>Switch(config)# vlan {vlan szám}</p>
 								<p>Switch(config-vlan)# name {vlan név}</p>
@@ -465,32 +465,32 @@
 								<p>Switch(config-if)# switchport trunk allowed vlan {vlan szám},{vlan szám}</p>
 							</section>
 
-							<h6>-Vlan voice</h6>
+							<h4>-Vlan voice</h4>
 							<section class="text">
 								<p>Switch(config)# interface {interface név}</p>
 								<p>Switch(config-if)# switchport voice vlan {vlan szám}</p>
 								<p>Switch(config-if)# mls qos trust cos</p>
 							</section>
 
-							<h6>-Vlan native</h6>
+							<h4>-Vlan native</h4>
 							<section class="text">
 								<p>Switch(config)# interface {interface név}</p>
 								<p>Switch(config-if)# switchport trunk nativce vlan {vlan szám}</p>
 							</section>
 
-							<h6>-STP protokoll</h6>
+							<h4>-STP protokoll</h4>
 							<section class="text">
 								<p>Switch(config)# spanning-tree vlan {vlan szám} priority {prioritásszám}</p>
 							</section>
 
-							<h6>-RSTP protokoll</h6>
+							<h4>-RSTP protokoll</h4>
 							<section class="text">
 								<p>Switch(config)# spanning-tree mode pvst</p>
 								<p>vagy</p>
 								<p>Switch(config)# spanning-tree mode rapid pvst</p>
 							</section>
 
-							<h6>-EtherChannel</h6>
+							<h4>-EtherChannel</h4>
 							<section class="text">
 								<p>Switch(config)# interface range {port név}</p>
 								<p>Switch(config-if-range)# shutdown</p>
@@ -501,7 +501,7 @@
 							</section>
 
 					<section class="text">
-					<h6>PC:</h6>
+					<h4>PC:</h4>
 					<p>-IP cím adás</p>
 						<ul style="padding-left: 6%;">
 							<li>IP cím: {IP cím}</li>
@@ -515,7 +515,7 @@
 					</section>
 
 					<section class="text">
-					<h6>Server:</h6>
+					<h4>Server:</h4>
 					<p style="padding-left: 2%;">A Servereken a SERVICES fülön lehet állítani.</p>
 					<p>-WEB</p>
 					<p style="padding-left: 2%;">Be kell kapcsolni és lehet változtatni a tartalmát a weboldalnak.
@@ -567,7 +567,7 @@
 					<h2>#:</h2>
 
 					<section class="text">
-					<h6>Mentés:</h6>
+					<h4>Mentés:</h4>
 					<p>-configuráció mentése</p>
 						<ul style="padding-left: 6%;">
 							<li>copy running-config startup-config</li>
@@ -581,7 +581,7 @@
 					</section>
 
 					<section class="text">
-					<h6>Config:</h6>
+					<h4>Config:</h4>
 					<p>-futó</p>
 						<ul style="padding-left: 6%;">
 							<li>show running-config</li>
@@ -625,7 +625,7 @@
 					</section>
 
 					<section class="text">
-					<h6>Idő beállítás:</h6>
+					<h4>Idő beállítás:</h4>
 						<ul style="padding-left: 6%;">
 							<li>clock set {idő}</li>
 						</ul>
