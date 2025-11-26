@@ -17,6 +17,7 @@
         <link rel="website icon" href="css/fix-photo/info_icon.jpg">
         <script src="css/JavaScript/navbar.js"></script>
 		<script src="css/JavaScript/search.js"></script>
+		<script src="css/JavaScript/halozat.js"></script>
 		<script>
             document.onkeydown = function (e) {
                 if (event.keyCode == 123) {
@@ -252,48 +253,49 @@
 
 						<h3>Elnevezés:</h3>
 							<section class="text">
-								<p>Router(config)# hostname <input placeholder="név" style="width: 120px;"></input></p>
+								<p>Router(config)# hostname <input id="hostname" placeholder="név" style="width: 120px;"></input> <button onclick="hostname()" style="float: right;">Copy text</button></p>
+								
 							</section>
 							
 						<h3>Ellenőrzés kikerülése:</h3>
 							<section class="text">
-								<p>Router(config)# no ip domain-lookup</p>
+								<p>Router(config)# no ip domain-lookup <button onclick="domainlookup()" style="float: right;">Copy text</button></p>
 							</section>
 							
 						<h3>Jelszavak:</h3>
 
 							<h4>- Belépési jelszó</h4>
 							<section class="text">
-								<p>Router(config)# enable password <input placeholder="jelszó" style="width: 120px;"></input></p>
+								<p>Router(config)# enable password <input id="password" placeholder="jelszó" style="width: 120px;"></input> <button onclick="password()" style="float: right;">Copy text</button></p>
 							</section>
 
 							<h4>- Config jelszó</h4>
 							<section class="text">
-								<p>Router(config)# enable secret {jelszó}</p>
+								<p>Router(config)# enable secret <input id="configpswd" placeholder="jelszó" style="width: 120px;"></input> <button onclick="configpswd()" style="float: right;">Copy text</button></p>
 							</section>
 
 							<h4>- Telnet vonal jelszó</h4>
 							<section class="text">
-								<p>Router(config)# line vty 0 15</p>
-								<p>Router(config-line)# password {jelszó}</p>
+								<p>Router(config)# line vty 0 15 <button onclick="telnetpswd()" style="float: right;">Copy text</button></p>
+								<p>Router(config-line)# password <input id="telnetpswd" placeholder="jelszó" style="width: 120px;"></input></p>
 								<p>Router(config-line)# login</p>
 							</section>
 
 							<h4>- Konzol vonal jelszó</h4>
 							<section class="text">
-								<p>Router(config)# line console 0</p>
-								<p>Router(config-line)# password {jelszó}</p>
+								<p>Router(config)# line console 0 <button onclick="consolpswd()" style="float: right;">Copy text</button></p>
+								<p>Router(config-line)# password <input id="consolpswd" placeholder="jelszó" style="width: 120px;"></input></p>
 								<p>Router(config-line)# login</p>
 							</section>
 
 							<h4>- Jelszavak titkosítása</h4>
 							<section class="text">
-								<p>Router(config)# service password-encryption</p>
+								<p>Router(config)# service password-encryption <button onclick="pswdencryption()" style="float: right;">Copy text</button></p>
 							</section>
 
 							<h4>- Üdvözlő szöveg</h4>
 							<section class="text">
-								<p>Router(config)# banner motd "{szöveg}"</p>
+								<p>Router(config)# banner motd "<input id="banner" placeholder="szöveg" style="width: 120px;"></input>" <button onclick="banner()" style="float: right;">Copy text</button></p>
 							</section>
 
 						<h3>Router:</h3>
@@ -426,7 +428,7 @@
 						<h3>Switch:</h3>
 							<h4>-Boot system parancs</h4>
 							<section class="text">
-								Switch(config)# boot system
+								<p>Switch(config)# boot system</p>
 							</section>
 
 							<h4>-IP cím adás</h4>

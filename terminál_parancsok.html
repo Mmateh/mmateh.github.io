@@ -209,6 +209,42 @@
                         <p><b class="term">sudo chown -R <b class="termcom">felhasználó</b> <b class="termcom">mappa</b></b> - A mappa tulajdonosának rekurzív módosítása a benne lévő tartalommal együtt</p>
                         <p><b class="term">sudo chgrp <b class="termcom">csoportnév</b> <b class="termcom">fájl</b></b> - A fájl csoportjának megváltoztatása</p>
                     </section>
+
+                <h2>ACL parancsok</h2>
+                    <section class="text">
+                        <p><b class="term">getfacl <b class="termcom">/útvonal/fájl</b></b> - Az ACL megtekintése fájlokon és könyvtárakon</p>
+                        <br>
+                        <p><b class="term">setfacl -m u:<b class="termcom">felhasználó</b>:<b class="termcom">jogosultság fájlnév</b></b> - A felhasználó jogosultságainak beállítása</b></p>
+                        <p><b class="term">setfacl -m g:<b class="termcom">csoportnév</b>:<b class="termcom">jogosultság fájlnév</b></b> - A csoport jogosultságainak beállítása</p>
+                        <p><b class="term">setfacl -m o:<b class="termcom">jogosultság fájlnév</b></b> - A többi felhasználó jogosultságainak beállítása</p>
+                        <br>
+                        <p><b class="term">setfacl -x u:<b class="termcom">felhasználó</b> <b class="termcom"> fájlnév</b></b> - A felhasználó jogosultságainak törlése</p>
+                        <p><b class="term">setfacl -x g:<b class="termcom">csoportnév</b></b> - A csoport jogosultságainak törlése</p>
+                        <p><b class="term">setfacl -x o</b> - A többi felhasználó jogosultságainak törlése</p>
+                        <br>
+                        <p><b class="term">setfacl -b <b class="termcom">fájlnév</b></b> - Minden ACL törlése</p>
+                        <p><b class="term">setfacl -R -m u:<b class="termcom">felhasználó</b>:<b class="termcom">jogosultság mappa</b></b> - Rekurzív mód (az összes mappára és almappára vonatkozik)</p>
+                        <p><b class="term">setfacl -m d:u:<b class="termcom">felhasználó</b>:<b class="termcom">jogosultság</b></b> - A felhasználó jogosultságainak alapértelmezettbe tétele</p>
+                        <p><b class="term">setfacl -k <b class="termcom">fájlnév</b></b> - Alapértelmezett ACL-ek törlése</p>
+                    </section>
+
+                <h2>Felhasználók és csoportok</h2>
+                    <section class="text">
+                        <p><b class="term">useradd</b> - hozzáadás</p>
+                        <p><b class="term">usermod</b> - módosítás</p>
+                        <p><b class="term">userdel</b> - törlés</p>
+                        <p><b class="term">passwd</b> - jelszó</p>
+                        <br>
+                        <p><b class="term">groupadd</b> - hozzáadás</p>
+                        <p><b class="term">groupmod</b> - módosítás</p>
+                        <p><b class="term">groupdel</b> - törlés</p>
+                        <p><b class="term">gpasswd</b> - jelszó beállítása csoporthoz</p>
+                        <p><b class="term">gpasswd -a</b> - felhasználó hozzáadása csoporthoz</p>
+                        <p><b class="term">gpasswd -d</b> - felhasználó törlése csoportból</p>
+                        <br>
+                        <p><b class="term">su - <b class="termcom">felhasználó</b></b> - Átváltás a felhasználóra</p>
+                        <p><b class="term">id <b class="termcom">felhasználó</b></b> - Felhasználó csoportjainak megjelenítése</p>
+                    </section>
                 
                 <h2>Meghajtók</h2>
                     <section class="text">
