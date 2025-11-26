@@ -302,29 +302,29 @@
 
 							<h4>-IPv4 cím</h4>
 							<section class="text">
-								<p>Router(config)# interface {interface neve}</p>
-								<p>Router(config-if)# ip address {IP cím} {maszk}</p>
+								<p>Router(config)# interface <input id="ip4int" placeholder="interface neve" style="width: 120px;"></input> <button onclick="ip4()" style="float: right;">Copy text</button></p>
+								<p>Router(config-if)# ip address <input id="ip4addr" placeholder="IP cím" style="width: 120px;"></input> <input id="ip4mask" placeholder="maszk" style="width: 120px;"></input></p>
 								<p>Router(config-if)# no shutdown</p>
-								<p>Router(config-if)# description {leírás}</p>
+								<p>Router(config-if)# description <input id="ip4desc" placeholder="leírás (nem kötelező)" style="width: 160px;"></input></p>
 							</section>
 
 							<h4>-DHCP</h4>
 							<section class="text">
-								<p>Router(config)# ip dhcp pool {elnevezés}</p>
-								<p>Router(dhcp-config)# network {IP cím} {maszk}</p>
-								<p>Router(dhcp-config)# default-router {IP cím}</p>
-								<p>Router(dhcp-config)# dns-server {IP cím}</p>
-								<p>Router(config)# ip dhcp excluded-address {kezdő IP} {vég IP}</p>
+								<p>Router(config)# ip dhcp pool <input id="dhcpname" placeholder="elnevezés" style="width: 120px;"></input> <button onclick="dhcp()" style="float: right;">Copy text</button></p>
+								<p>Router(dhcp-config)# network <input id="dhcpaddr" placeholder="IP cím" style="width: 120px;"></input> <input id="dhcpmask" placeholder="maszk" style="width: 120px;"></input></p>
+								<p>Router(dhcp-config)# default-router <input id="dhcpnet" placeholder="IP cím" style="width: 120px;"></input></p>
+								<p>Router(dhcp-config)# dns-server <input id="dhcpdns" placeholder="IP cím" style="width: 120px;"></input></p>
+								<p>Router(config)# ip dhcp excluded-address <input id="dhcpexcip1" placeholder="IP cím (mettől)" style="width: 120px;"></input> <input id="dhcpexcip2" placeholder="IP cím (meddig)" style="width: 120px;"></input></p>
 							</section>
 
 							<h4>-DHCP kikapcsolása</h4>
 							<section class="text">
-								<p>Router(config)# no service dhcp</p>
+								<p>Router(config)# no service dhcp <button onclick="dhcpoff()" style="float: right;">Copy text</button></p>
 							</section>
 
 							<h4>-DHCP bekapcsolása</h4>
 							<section class="text">
-								<p>Router(config)# service dhcp</p>
+								<p>Router(config)# service dhcp <button onclick="dhcpon()" style="float: right;">Copy text</button></p>
 							</section>
 							
 							<h4>-DHCP Relay</h4>
