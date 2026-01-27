@@ -329,36 +329,39 @@
 							
 							<h4>-DHCP Relay</h4>
 							<section class="text">
-								<p>Router(config)# interface {interface neve}</p>
-								<p>Router(config-if)# ip helper-address {szerver cím}</p>
+								<p>Router(config)# interface <input id="dhcprelayint" placeholder="interface neve" style="width: 120px;"></input> <button onclick="dhcprelay()" style="float: right;">Copy text</button></p>
+								<p>Router(config-if)# ip helper-address <input id="dhcprelayhelper" placeholder="szerver cím" style="width: 120px;"></input></p>
 							</section>
 
 							<h4>-forgalomirányítás (ip route)</h4>
 							<section class="text">
-								<p>Router(config)# ip route {nem látott hálózat {IP cím} + {maszk}} {másik bemenő interface IP}</p>
+								<p>Router(config)# ip route <input id="iprouteip" placeholder="hálózat cím" style="width: 120px;"></input> <input id="iproutemask" placeholder="maszk" style="width: 120px;"></input> <input id="iprouteint" placeholder="interface" style="width: 120px;"></input> <button onclick="iproute()" style="float: right;">Copy text</button></p>
 							</section>
 							
 							<h4>-forgalomirányítás (OSPF)</h4>
 							<section class="text">
-								<p>Router(config)# passive-interface {nem router felé néző interface neve}</p>
-								<p>Router(config)# router OSPF {folyamatazonosító}</p>
-								<p>Router(config-router)# network {hálózat lábánál {IP cím} {inverz maszk}} area 0</p>
+								<button onclick="ospf()" style="float: right;">Copy text</button>
+								<p>Router(config)# router ospf <input id="ospfid" placeholder="folyamatazonosító" style="width: 140px;"></input></p>
+								<p>Router(config-router)# network <input id="ospfip" placeholder="IP cím" style="width: 120px;"></input> <input id="ospfmask" placeholder="inverz maszk" style="width: 120px;"></input> area <input id="ospfarea" placeholder="területazonosító" style="width: 130px;"></input></p>
+								<p>Router(config-router)# passive-interface <input id="ospfpas" placeholder="interface neve" style="width: 120px;"></input></p>
 								<p style="margin-top: 40px;">Router(config-router)# default-information originate</p>
 								<p>Router(config-router)# ip nat inside static {mit IP} {mire IP}</p>
 							</section>
 							
 							<h4>-forgalomirányítás (RIP)</h4>
 							<section class="text">
-								<p>Router(config)# passive-interface {nem router felé néző interface neve}</p>
+								<button onclick="rip()" style="float: right;">Copy text</button>
 								<p>Router(config)# router rip</p>
 								<p>Router(config-router)# version 2</p>
-								<p>Router(config-router)# network {hálózat lábánál {IP cím}}</p>
+								<p>Router(config-router)# network <input id="ripnet" placeholder="hálózat IP cím" style="width: 120px;"></input></p>
+								<p>Router(config-router)# passive-interface <input id="rippas" placeholder="nem router felé néző interface neve" style="width: 260px;"></input></p>
 								<p style="margin-top: 40px;">Router(config-router)# default-information originate</p>
 								<p>Router(config-router)# ip nat inside static {mit IP} {mire IP}</p>
 							</section>
 							
 							<h4>-statikus NAT</h4>
 							<section class="text">
+								<p>(WIP)</p>
 								<p>Router(config)# interface {interface}</p>
 								<p>Router(config-if)# ip nat outside</p>
 								<p>Router(config-if)# interface {interface}</p>

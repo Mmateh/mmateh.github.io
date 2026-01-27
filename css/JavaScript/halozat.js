@@ -101,3 +101,51 @@ function dhcpoff() {
 function dhcpon() {
     navigator.clipboard.writeText("service dhcp");
 }
+function dhcprelay() {
+    var Dhcprelayint = document.getElementById("dhcprelayint")
+    var Dhcprelayhelper = document.getElementById("dhcprelayhelper")
+    Dhcprelayint.select();
+    Dhcprelayint.setSelectionRange(0, 100);
+    Dhcprelayhelper.select();
+    Dhcprelayhelper.setSelectionRange(0, 100);
+    navigator.clipboard.writeText("interface "+Dhcprelayint.value+"\nip helper-address "+Dhcprelayhelper.value);
+}
+function iproute() {
+    var Iprouteip = document.getElementById("iprouteip")
+    var Iproutemask = document.getElementById("iproutemask")
+    var Iprouteint = document.getElementById("iprouteint")
+    Iprouteip.select();
+    Iprouteip.setSelectionRange(0, 100);
+    Iproutemask.select();
+    Iproutemask.setSelectionRange(0, 100);
+    Iprouteint.select();
+    Iprouteint.setSelectionRange(0, 100);
+    navigator.clipboard.writeText("ip route "+Iprouteip.value+" "+Iproutemask.value+" "+Iprouteint.value)
+}
+function ospf() {
+    var Ospfpas = document.getElementById("ospfpas")
+    var Ospfid = document.getElementById("ospfid")
+    var Ospfip = document.getElementById("ospfip")
+    var Ospfmask = document.getElementById("ospfmask")
+    var Ospfarea = document.getElementById("ospfarea")
+    Ospfpas.select();
+    Ospfpas.setSelectionRange(0, 100);
+    Ospfid.select();
+    Ospfid.setSelectionRange(0, 100);
+    Ospfip.select();
+    Ospfip.setSelectionRange(0, 100);
+    Ospfmask.select();
+    Ospfmask.setSelectionRange(0, 100);
+    Ospfarea.select();
+    Ospfarea.setSelectionRange(0, 100);
+    navigator.clipboard.writeText("router ospf "+Ospfid.value+"\nnetwork "+Ospfip.value+" "+Ospfmask.value+" area "+Ospfarea.value+"\npassive-interface "+Ospfpas.value);
+}
+function rip() {
+    var Rippas = document.getElementById("rippas")
+    var Ripnet = document.getElementById("ripnet")
+    Rippas.select();
+    Rippas.setSelectionRange(0, 100);
+    Ripnet.select();
+    Ripnet.setSelectionRange(0, 100);
+    navigator.clipboard.writeText("router rip"+"\nversion 2"+"\nnetwork "+Ripnet.value+"\npassive-interface "+Rippas.value);
+}
